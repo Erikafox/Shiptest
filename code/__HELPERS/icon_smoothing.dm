@@ -92,6 +92,9 @@ DEFINE_BITFIELD(smoothing_junction, list(
 						break; \
 					}; \
 					if(junction & direction_flag) { \
+						if(thing.type != source.type) { \
+							connector_junction |= direction_flag; \
+						}; \
 						break; \
 					}; \
 				}; \
