@@ -198,13 +198,15 @@
 	sheet_type = /obj/item/stack/sheet/mineral/wood
 	hardness = 70
 	explosion_block = 0
-	smoothing_flags = SMOOTH_BITMASK
+	smoothing_flags = SMOOTH_BITMASK | SMOOTH_CONNECTORS
 	smoothing_groups = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_WALLS, SMOOTH_GROUP_WOOD_WALLS)
 	canSmoothWith = list(SMOOTH_GROUP_WOOD_WALLS, SMOOTH_GROUP_WALLS)
+	connector_icon = 'icons/turf/connectors/wood_wall_connector.dmi'
+	no_connector_typecache = list(/turf/closed/wall/mineral/wood, /obj/structure/falsewall/wood)
 
 /turf/closed/wall/mineral/wood/yesdiag
 	icon_state = "wood_wall-255"
-	smoothing_flags = SMOOTH_BITMASK | SMOOTH_DIAGONAL_CORNERS
+	smoothing_flags = SMOOTH_BITMASK | SMOOTH_DIAGONAL_CORNERS | SMOOTH_CONNECTORS
 
 /turf/closed/wall/mineral/wood/nonmetal/icecropolis
 	baseturfs = /turf/open/indestructible/necropolis/air
