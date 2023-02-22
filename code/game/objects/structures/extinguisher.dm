@@ -167,5 +167,3 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/extinguisher_cabinet, 28)
 	icon_state = "extinguisher"
 	result_path = /obj/structure/extinguisher_cabinet
 	pixel_shift = 28
-	inverse_pixel_shift = TRUE
-	inverse = TRUE

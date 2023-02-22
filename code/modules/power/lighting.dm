@@ -21,9 +21,8 @@
 	icon = 'icons/obj/lighting.dmi'
 	icon_state = "tube-construct-item"
 	result_path = /obj/structure/light_construct
-	pixel_shift = 32
 	inverse = TRUE
-	inverse_pixel_shift = TRUE
+	pixel_shift = 32
 
 /obj/item/wallframe/light_fixture/small
 	name = "small light fixture frame"
@@ -213,7 +212,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/light_construct/small, 28)
 	name = "light fixture"
 	icon = 'icons/obj/lighting.dmi'
 	var/base_state = "tube"		// base description and icon_state
-	icon_state = "tube-on"
+	icon_state = "tube"
 	desc = "A lighting fixture."
 	layer = WALL_OBJ_LAYER
 	max_integrity = 100
@@ -273,7 +272,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/light/dim, 32)
 // the smaller bulb light fixture
 
 /obj/machinery/light/small
-	icon_state = "bulb-on"
+	icon_state = "bulb"
 	base_state = "bulb"
 	fitting = "bulb"
 	brightness = 4
@@ -829,6 +828,15 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/light/small/built, 28)
 	grind_results = list(/datum/reagent/silicon = 5, /datum/reagent/nitrogen = 10) //Nitrogen is used as a cheaper alternative to argon in incandescent lighbulbs
 	var/rigged = FALSE		// true if rigged to explode
 	var/brightness = 2 //how much light it gives off
+
+/obj/item/light/suicide_act(mob/living/carbon/user)
+	if (status == LIGHT_BROKEN)
+		user.visible_message("<span class='suicide'>[user] begins to stab [user.p_them()]self with \the [src]! It looks like [user.p_theyre()] trying to commit suicide!</span>")
+		return BRUTELOSS
+	else
+		user.visible_message("<span class='suicide'>[user] begins to eat \the [src]! It looks like [user.p_theyre()] not very bright!</span>")
+		shatter()
+		return BRUTELOSS
 
 /obj/item/light/tube
 	name = "light tube"
