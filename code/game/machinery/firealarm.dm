@@ -12,7 +12,6 @@
 	icon_state = "fire_bitem"
 	result_path = /obj/machinery/firealarm
 	pixel_shift = 32
-	inverse_pixel_shift = TRUE
 
 /obj/machinery/firealarm
 	name = "fire alarm"
@@ -40,13 +39,19 @@
 	var/last_alarm = 0
 	var/area/myarea = null
 
+	FASTDMM_PROP(\
+		set_instance_vars(\
+			pixel_x = dir == EAST ? 26 : (dir == WEST ? -26 : INSTANCE_VAR_DEFAULT),\
+			pixel_y = dir == NORTH ? 26 : (dir == SOUTH ? -26 : INSTANCE_VAR_DEFAULT)\
+		),\
+		dir_amount = 4\
+	)
+
 /obj/machinery/firealarm/Initialize(mapload, dir, building)
 	. = ..()
 	if(building)
 		buildstage = 0
 		panel_open = TRUE
-		if(dir)
-			setDir(dir)
 	update_icon()
 	myarea = get_area(src)
 	LAZYADD(myarea.firealarms, src)
@@ -124,7 +129,7 @@
 	last_alarm = world.time
 	var/area/A = get_area(src)
 	A.firealert(src)
-	playsound(loc, 'sound/machines/FireAlarm.ogg', 75)
+	playsound(loc, 'goon/sound/machinery/FireAlarm.ogg', 75)
 	if(user)
 		log_game("[user] triggered a fire alarm at [COORD(src)]")
 
