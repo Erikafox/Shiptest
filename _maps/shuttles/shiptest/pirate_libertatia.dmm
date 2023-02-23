@@ -11,20 +11,65 @@
 /obj/effect/turf_decal/box,
 /turf/open/floor/pod/light,
 /area/ship/bridge)
-"bh" = (
-/obj/machinery/light/small/directional/south,
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/layer4{
+"aN" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	dir = 4;
+	name = "Port Engines"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/obj/structure/sign/warning/vacuum/external{
-	pixel_y = 32
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/turf_decal/industrial/warning{
+/turf/open/floor/pod/dark,
+/area/ship/cargo)
+"aO" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	dir = 4;
+	name = "Port Engines"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
+/turf/open/floor/plating,
+/area/ship/hallway/port)
+"aW" = (
+/obj/machinery/holopad/emergency/command,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/button/door{
+	dir = 4;
+	id = "pirateshutters";
+	name = "Window Lockdown";
+	pixel_x = -25;
+	pixel_y = -5
+	},
+/obj/machinery/button/door{
+	dir = 4;
+	id = "piratecargo";
+	name = "Blast Door Control";
+	pixel_x = -25;
+	pixel_y = 5
+	},
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/pod/light,
-/area/ship/crew)
+/area/ship/bridge)
 "br" = (
 /obj/structure/closet/crate/critter{
 	name = "DANGER: DO NOT OPEN"
@@ -73,86 +118,23 @@
 	},
 /turf/open/floor/pod/light,
 /area/ship/bridge)
-"bZ" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 1
-	},
-/obj/structure/railing,
-/obj/effect/landmark/start/captain,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/item/radio/intercom/wideband/directional/east,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/chair/comfy/shuttle{
-	dir = 1
-	},
-/obj/structure/railing,
-/obj/item/radio/intercom/wideband/directional/east,
-/obj/item/radio/intercom/directional/east,
-/obj/effect/landmark/start/captain,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/pod/light,
-/area/ship/bridge)
 "cF" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/external)
-"cW" = (
-/obj/item/reagent_containers/glass/bottle/epinephrine{
-	pixel_x = 6
+"dw" = (
+/obj/structure/grille,
+/obj/machinery/door/poddoor/shutters{
+	id = "pirateshutters";
+	name = "Blast Shutters";
+	dir = 4
 	},
-/obj/item/reagent_containers/glass/bottle/charcoal{
-	pixel_x = -3
-	},
-/obj/item/reagent_containers/glass/bottle/epinephrine{
-	pixel_x = -3;
-	pixel_y = 8
-	},
-/obj/item/reagent_containers/glass/bottle/charcoal{
-	pixel_x = 6;
-	pixel_y = 8
-	},
-/obj/item/reagent_containers/syringe/epinephrine{
-	pixel_x = 3;
-	pixel_y = -2
-	},
-/obj/item/reagent_containers/syringe/epinephrine{
-	pixel_x = 4;
-	pixel_y = 1
-	},
-/obj/item/reagent_containers/syringe/epinephrine{
-	pixel_x = -2;
-	pixel_y = 5
-	},
-/obj/item/reagent_containers/syringe/epinephrine{
-	pixel_x = 2;
-	pixel_y = 8
-	},
-/obj/structure/table/reinforced,
-/obj/structure/sign/poster/contraband/random{
-	pixel_x = -32
-	},
-/obj/machinery/defibrillator_mount/loaded{
-	pixel_y = -32
-	},
-/obj/machinery/light/small/directional/west,
-/obj/effect/turf_decal/industrial/outline,
-/turf/open/floor/pod/light,
-/area/ship/crew)
+/obj/structure/window/plasma/reinforced/plastitanium,
+/turf/open/floor/plating,
+/area/ship/bridge)
 "dD" = (
 /obj/effect/turf_decal/industrial/warning,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
-"eB" = (
-/obj/structure/bed,
-/obj/structure/curtain/bounty,
-/obj/machinery/airalarm/directional/south,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/item/bedsheet/brown,
-/obj/machinery/firealarm/directional/west,
-/turf/open/floor/pod/light,
-/area/ship/crew)
 "eV" = (
 /obj/structure/cable,
 /obj/machinery/power/shuttle/engine/electric{
@@ -172,24 +154,30 @@
 	},
 /turf/open/floor/engine/hull/interior,
 /area/ship/cargo)
+"fi" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/obj/machinery/airalarm/directional/west,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/pod/light,
+/area/ship/bridge)
 "fq" = (
 /turf/open/floor/engine/hull,
 /area/ship/external)
-"fA" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 5
+"fx" = (
+/obj/docking_port/stationary{
+	dwidth = 4;
+	width = 8;
+	height = 15;
+	dir = 8
 	},
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/airalarm/directional/west,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating,
-/area/ship/hallway/starboard)
+/turf/template_noop,
+/area/template_noop)
 "fG" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/security)
@@ -201,59 +189,85 @@
 /obj/structure/fans/tiny,
 /turf/open/floor/engine/hull/interior,
 /area/ship/security)
-"ga" = (
-/obj/machinery/power/smes/engineering{
-	charge = 1e+006
+"gx" = (
+/obj/effect/spawner/lootdrop/minor/pirate_or_bandana,
+/obj/effect/spawner/lootdrop/minor/pirate_or_bandana,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/under/costume/sailor,
+/obj/item/clothing/under/costume/sailor,
+/obj/item/clothing/under/costume/sailor,
+/obj/item/clothing/under/costume/sailor,
+/obj/structure/closet/wall{
+	dir = 8;
+	icon_door = "grey_wall";
+	pixel_x = 28
 	},
-/obj/machinery/light/small/directional/west,
-/obj/structure/cable{
-	icon_state = "0-2"
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/effect/spawner/lootdrop/minor/pirate_or_bandana,
+/obj/effect/spawner/lootdrop/minor/pirate_or_bandana,
+/obj/machinery/light/small/directional/east,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/under/costume/sailor,
+/obj/item/clothing/under/costume/sailor,
+/obj/item/clothing/under/costume/sailor,
+/obj/item/clothing/under/costume/sailor,
+/obj/structure/closet/wall{
+	dir = 8;
+	icon_door = "grey_wall";
+	pixel_x = 28
 	},
 /obj/merge_conflict_marker{
 	name = "---Merge Conflict Marker---",
 	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
-/obj/machinery/power/smes/engineering{
-	charge = 1e+006
+/obj/effect/spawner/lootdrop/minor/pirate_or_bandana,
+/obj/effect/spawner/lootdrop/minor/pirate_or_bandana,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/under/costume/sailor,
+/obj/item/clothing/under/costume/sailor,
+/obj/item/clothing/under/costume/sailor,
+/obj/item/clothing/under/costume/sailor,
+/obj/structure/closet/wall{
+	dir = 8;
+	icon_door = "grey_wall";
+	pixel_x = 28
 	},
-/obj/machinery/light/small/directional/west,
-/obj/item/radio/intercom/directional/west,
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/turf/open/floor/plating,
-/area/ship/hallway/port)
-"ge" = (
-/obj/machinery/door/airlock/maintenance_hatch{
-	dir = 4;
-	name = "Port Engines"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
+/turf/open/floor/pod/light,
+/area/ship/crew)
+"gy" = (
+/obj/structure/railing,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
+	icon_state = "0-8"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/pod/dark,
-/area/ship/cargo)
-"gf" = (
-/obj/structure/grille,
-/obj/machinery/door/poddoor/shutters{
-	id = "pirateshutters";
-	name = "Blast Shutters";
-	dir = 4
-	},
-/obj/structure/window/plasma/reinforced/plastitanium,
-/turf/open/floor/plating,
-/area/ship/bridge)
-"gF" = (
+/obj/effect/landmark/start/security_officer,
+/turf/open/floor/pod/light,
+/area/ship/security)
+"hb" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/security)
+"hk" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 6
 	},
@@ -272,110 +286,9 @@
 /obj/item/radio/intercom/directional/west,
 /turf/open/floor/plating,
 /area/ship/hallway/port)
-"hb" = (
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/security)
-"hI" = (
-/obj/machinery/airalarm/directional/south,
-/obj/item/clothing/suit/space/orange,
-/obj/item/clothing/mask/breath,
-/obj/item/tank/internals/oxygen,
-/obj/item/clothing/head/helmet/space,
-/obj/effect/turf_decal/industrial/warning/corner{
-	dir = 1
-	},
-/obj/structure/closet/wall/red{
-	dir = 4;
-	name = "suit locker";
-	pixel_x = -28;
-	req_one_access_txt = "1"
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ship/security)
-"if" = (
-/obj/structure/table/reinforced,
-/obj/machinery/vending/wallmed{
-	pixel_y = 30
-	},
-/obj/item/storage/backpack/duffelbag/med/surgery,
-/obj/item/clothing/gloves/color/latex,
-/obj/item/clothing/mask/surgical,
-/obj/item/clothing/suit/apron/surgical,
-/obj/structure/sign/departments/medbay/alt{
-	pixel_x = -32
-	},
-/obj/item/healthanalyzer,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/light/small/directional/west,
-/turf/open/floor/pod/light,
-/area/ship/crew)
-"ii" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 6
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 6
-	},
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/power/apc/auto_name/directional/north,
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/structure/closet/emcloset/wall{
-	dir = 4;
-	pixel_x = -28
-	},
-/turf/open/floor/pod/light,
-/area/ship/cargo)
 "iA" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
-"iF" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=port";
-	location = "forward"
-	},
-/obj/structure/catwalk/over,
-/obj/effect/turf_decal/number/five{
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/ship/crew)
-"jc" = (
-/obj/structure/grille,
-/obj/machinery/door/poddoor/shutters{
-	dir = 4;
-	id = "pirateshutters";
-	name = "Blast Shutters"
-	},
-/obj/structure/window/plasma/reinforced/plastitanium,
-/turf/open/floor/plating,
-/area/ship/crew)
-"ji" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/airalarm/directional/north,
-/obj/structure/extinguisher_cabinet/directional/east,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/extinguisher_cabinet/directional/north,
-/obj/machinery/airalarm/directional/north,
-/turf/open/floor/pod/light,
-/area/ship/cargo)
 "jz" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Bridge"
@@ -393,27 +306,28 @@
 	},
 /turf/open/floor/pod/dark,
 /area/ship/bridge)
-"jZ" = (
-/obj/machinery/cryopod{
+"jV" = (
+/obj/structure/closet/crate/freezer/blood,
+/obj/item/reagent_containers/blood/universal{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/blood/universal,
+/obj/item/reagent_containers/blood/universal{
+	pixel_x = -4;
+	pixel_y = -4
+	},
+/obj/effect/decal/cleanable/blood/old,
+/obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/structure/curtain/bounty,
-/obj/machinery/computer/cryopod/directional/north{
-	pixel_y = -25
+/obj/effect/turf_decal/siding{
+	dir = 4
 	},
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/structure/cable,
 /turf/open/floor/pod/light,
 /area/ship/crew)
-"ke" = (
-/obj/machinery/light/small/directional/west,
-/obj/effect/turf_decal/industrial/stand_clear{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/turf_decal/industrial/warning{
-	dir = 10
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ship/cargo)
 "kF" = (
 /obj/machinery/door/poddoor{
 	id = "pirate_stbdtube";
@@ -421,56 +335,6 @@
 	},
 /obj/structure/fans/tiny,
 /turf/open/floor/engine/hull/interior,
-/area/ship/security)
-"lm" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/effect/turf_decal/industrial/stand_clear{
-	dir = 8
-	},
-/obj/machinery/door/window/eastright,
-/obj/machinery/button/massdriver{
-	id = "pirate_stbdtube";
-	name = "starboard launch tube button";
-	pixel_x = -15;
-	pixel_y = 26
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 8
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 4
-	},
-/obj/item/radio/intercom/directional/north,
-/obj/machinery/light/small/directional/south,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/effect/turf_decal/industrial/stand_clear{
-	dir = 8
-	},
-/obj/machinery/door/window/eastright,
-/obj/machinery/button/massdriver{
-	id = "pirate_stbdtube";
-	name = "starboard launch tube button";
-	pixel_x = -15;
-	pixel_y = 26
-	},
-/obj/item/radio/intercom/directional/north{
-	pixel_y = 22
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 8
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 4
-	},
-/turf/open/floor/mineral/plastitanium,
 /area/ship/security)
 "mg" = (
 /obj/machinery/mass_driver{
@@ -485,6 +349,16 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
+"mJ" = (
+/obj/structure/railing,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable{
+	icon_state = "4-6"
+	},
+/obj/structure/extinguisher_cabinet/directional/north,
+/obj/effect/landmark/start/security_officer,
+/turf/open/floor/pod/light,
+/area/ship/security)
 "mU" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
@@ -498,33 +372,6 @@
 	},
 /turf/open/floor/pod/light,
 /area/ship/security)
-"nf" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 1
-	},
-/obj/structure/cable{
-	icon_state = "8-10"
-	},
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/machinery/airalarm/directional/east,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating,
-/area/ship/hallway/port)
-"nq" = (
-/obj/machinery/door/airlock/hatch{
-	dir = 4;
-	name = "External Access Hatch"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
-/turf/open/floor/pod/light,
-/area/ship/crew)
 "nt" = (
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
@@ -581,23 +428,15 @@
 	},
 /turf/open/floor/engine/hull,
 /area/ship/external)
-"oZ" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/structure/cable{
-	icon_state = "5-9"
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+"pm" = (
+/obj/machinery/light/small/directional/west,
+/obj/effect/turf_decal/industrial/warning/corner{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/catwalk/over,
-/obj/effect/turf_decal/number/zero{
-	dir = 4
-	},
-/turf/open/floor/plating,
+/obj/machinery/suit_storage_unit/inherit,
+/obj/item/clothing/suit/space/hardsuit/swat,
+/obj/item/tank/jetpack/carbondioxide,
+/turf/open/floor/mineral/plastitanium,
 /area/ship/security)
 "pA" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -640,23 +479,96 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
-"qO" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 1
-	},
+"qi" = (
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/structure/cable{
-	icon_state = "1-4"
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 8
 	},
-/obj/structure/sign/poster/contraband/random{
-	pixel_x = -32
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
 	},
-/obj/machinery/light/small/directional/west,
-/turf/open/floor/pod/light,
-/area/ship/cargo)
+/obj/structure/catwalk/over,
+/obj/effect/turf_decal/miskilamo_small{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/crew)
+"qp" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/effect/turf_decal/industrial/stand_clear{
+	dir = 8
+	},
+/obj/machinery/door/window/eastright,
+/obj/machinery/button/massdriver{
+	id = "pirate_stbdtube";
+	name = "starboard launch tube button";
+	pixel_x = -15;
+	pixel_y = 26
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/item/radio/intercom/directional/north,
+/obj/machinery/light/small/directional/south,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/effect/turf_decal/industrial/stand_clear{
+	dir = 8
+	},
+/obj/machinery/door/window/eastright,
+/obj/machinery/button/massdriver{
+	id = "pirate_stbdtube";
+	name = "starboard launch tube button";
+	pixel_x = -15;
+	pixel_y = 26
+	},
+/obj/item/radio/intercom/directional/north{
+	pixel_y = 22
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/effect/turf_decal/industrial/stand_clear{
+	dir = 8
+	},
+/obj/machinery/door/window/eastright,
+/obj/machinery/button/massdriver{
+	id = "pirate_stbdtube";
+	name = "starboard launch tube button";
+	pixel_x = -15;
+	pixel_y = 26
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/item/radio/intercom/directional/north,
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/mineral/plastitanium,
+/area/ship/security)
 "rc" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/industrial/warning,
@@ -693,41 +605,93 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
-"rG" = (
-/obj/structure/railing,
+"rL" = (
+/obj/machinery/light/small/directional/west,
+/obj/effect/turf_decal/industrial/stand_clear{
+	dir = 1
+	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/cable{
-	icon_state = "4-6"
+/obj/effect/turf_decal/industrial/warning{
+	dir = 10
 	},
-/obj/structure/extinguisher_cabinet/directional/north,
-/obj/effect/landmark/start/security_officer,
-/turf/open/floor/pod/light,
+/turf/open/floor/mineral/plastitanium,
+/area/ship/cargo)
+"sc" = (
+/obj/machinery/airalarm/directional/south,
+/obj/item/clothing/suit/space/orange,
+/obj/item/clothing/mask/breath,
+/obj/item/tank/internals/oxygen,
+/obj/item/clothing/head/helmet/space,
+/obj/effect/turf_decal/industrial/warning/corner{
+	dir = 1
+	},
+/obj/structure/closet/wall/red{
+	dir = 4;
+	name = "suit locker";
+	pixel_x = -28;
+	req_one_access_txt = "1"
+	},
+/turf/open/floor/mineral/plastitanium,
 /area/ship/security)
-"sY" = (
-/obj/structure/toilet,
-/obj/structure/window/reinforced/tinted{
-	dir = 4
+"sx" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 8
 	},
-/obj/machinery/door/window/southright,
-/obj/structure/curtain/bounty,
-/obj/effect/decal/cleanable/vomit/old,
-/obj/machinery/light/small/directional/north,
-/turf/open/floor/pod/light,
-/area/ship/crew)
-"tA" = (
-/obj/structure/table,
-/obj/effect/spawner/lootdrop/donkpockets,
-/obj/effect/spawner/lootdrop/donkpockets,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/obj/item/radio/intercom/directional/north,
-/obj/item/lighter{
-	pixel_x = 14
+/obj/machinery/autolathe,
+/obj/machinery/status_display/shuttle{
+	pixel_y = -32
 	},
-/turf/open/floor/plasteel/grimy,
-/area/ship/crew)
+/obj/machinery/light/small/directional/south,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 10
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ship/security)
+"sI" = (
+/obj/machinery/firealarm/directional/south,
+/obj/item/kitchen/knife/hunting{
+	pixel_y = 5
+	},
+/obj/item/kitchen/knife/hunting,
+/obj/item/kitchen/knife/hunting{
+	pixel_y = -5
+	},
+/obj/item/storage/belt/security/webbing,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 6
+	},
+/obj/structure/closet/wall/red{
+	dir = 8;
+	name = "armory locker";
+	pixel_x = 28;
+	req_one_access_txt = "1"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ship/security)
 "tD" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/crew)
+"tR" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/effect/landmark/start/head_of_personnel,
+/obj/machinery/power/apc/auto_name/directional/east,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/status_display/shuttle{
+	pixel_y = -32
+	},
+/obj/item/gun/energy/e_gun/mini{
+	name = "first mate's derringer"
+	},
+/turf/open/floor/pod/light,
+/area/ship/bridge)
 "tT" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/crew)
@@ -760,6 +724,38 @@
 	},
 /turf/open/floor/pod/dark,
 /area/ship/crew)
+"uo" = (
+/obj/machinery/light/small/directional/south,
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/layer4{
+	dir = 4
+	},
+/obj/structure/sign/warning/vacuum/external{
+	pixel_y = 32
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/ship/crew)
+"up" = (
+/obj/structure/railing,
+/obj/item/radio/intercom/directional/north,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/railing,
+/obj/item/radio/intercom/directional/north{
+	pixel_y = 22
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/railing,
+/obj/item/radio/intercom/directional/north,
+/turf/open/floor/pod/light,
+/area/ship/cargo)
 "ut" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/layer2{
 	dir = 4
@@ -779,24 +775,6 @@
 	},
 /turf/open/floor/pod/light,
 /area/ship/crew)
-"vk" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 10
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/cable{
-	icon_state = "1-9"
-	},
-/obj/structure/cable{
-	icon_state = "8-10"
-	},
-/obj/item/radio/intercom/directional/east,
-/turf/open/floor/plating{
-	icon_state = "platingdmg3"
-	},
-/area/ship/hallway/starboard)
 "vW" = (
 /obj/structure/table,
 /obj/machinery/microwave{
@@ -807,73 +785,6 @@
 	},
 /turf/open/floor/pod/light,
 /area/ship/crew)
-"wb" = (
-/obj/structure/grille,
-/obj/machinery/door/poddoor/shutters{
-	dir = 4;
-	id = "pirateshutters";
-	name = "Blast Shutters"
-	},
-/obj/structure/window/plasma/reinforced/plastitanium,
-/obj/machinery/atmospherics/pipe/layer_manifold{
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/ship/security)
-"wf" = (
-/obj/machinery/door/airlock/maintenance_hatch{
-	dir = 4;
-	name = "Starboard Engines"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating,
-/area/ship/hallway/starboard)
-"wu" = (
-/obj/structure/closet/crate/freezer/blood,
-/obj/item/reagent_containers/blood/universal{
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/obj/item/reagent_containers/blood/universal,
-/obj/item/reagent_containers/blood/universal{
-	pixel_x = -4;
-	pixel_y = -4
-	},
-/obj/effect/decal/cleanable/blood/old,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding{
-	dir = 4
-	},
-/obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable,
-/turf/open/floor/pod/light,
-/area/ship/crew)
-"wv" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
-/obj/machinery/airalarm/directional/west,
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 6
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/pod/light,
-/area/ship/bridge)
 "wP" = (
 /obj/machinery/shower{
 	pixel_y = 15
@@ -893,14 +804,6 @@
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/crew)
-"xu" = (
-/obj/effect/decal/cleanable/oil/streak,
-/obj/structure/sign/warning/nosmoking{
-	pixel_x = 32
-	},
-/obj/machinery/light/small/directional/east,
-/turf/open/floor/pod/light,
-/area/ship/cargo)
 "xv" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -912,20 +815,16 @@
 /obj/structure/catwalk/over,
 /turf/open/floor/plating,
 /area/ship/crew)
-"xQ" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 8
+"xB" = (
+/obj/machinery/cryopod{
+	dir = 4
 	},
-/obj/machinery/autolathe,
-/obj/machinery/status_display/shuttle{
-	pixel_y = -32
+/obj/structure/curtain/bounty,
+/obj/machinery/computer/cryopod/directional/north{
+	pixel_y = -25
 	},
-/obj/machinery/light/small/directional/south,
-/obj/effect/turf_decal/industrial/warning{
-	dir = 10
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ship/security)
+/turf/open/floor/pod/light,
+/area/ship/crew)
 "yf" = (
 /obj/structure/chair/plastic,
 /obj/effect/landmark/start/assistant,
@@ -940,33 +839,42 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew)
-"yD" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 1
-	},
-/obj/effect/landmark/start/head_of_personnel,
-/obj/machinery/power/apc/auto_name/directional/east,
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/status_display/shuttle{
-	pixel_y = -32
-	},
-/obj/item/gun/energy/e_gun/mini{
-	name = "first mate's derringer"
-	},
-/turf/open/floor/pod/light,
-/area/ship/bridge)
 "yU" = (
 /obj/structure/sink{
 	dir = 8;
 	pixel_x = 12
 	},
 /obj/effect/decal/cleanable/vomit/old,
+/turf/open/floor/pod/light,
+/area/ship/crew)
+"zg" = (
+/obj/structure/grille,
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "pirateshutters";
+	name = "Blast Shutters"
+	},
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/machinery/atmospherics/pipe/layer_manifold{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/security)
+"zi" = (
+/obj/structure/table/reinforced,
+/obj/machinery/vending/wallmed{
+	pixel_y = 30
+	},
+/obj/item/storage/backpack/duffelbag/med/surgery,
+/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/mask/surgical,
+/obj/item/clothing/suit/apron/surgical,
+/obj/structure/sign/departments/medbay/alt{
+	pixel_x = -32
+	},
+/obj/item/healthanalyzer,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/pod/light,
 /area/ship/crew)
 "zR" = (
@@ -988,26 +896,120 @@
 	},
 /turf/open/floor/pod/light,
 /area/ship/crew)
-"At" = (
-/obj/machinery/door/airlock/hatch{
-	dir = 4;
-	name = "External Access Hatch"
-	},
+"zS" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "2-9"
+	},
+/obj/structure/catwalk/over,
+/obj/effect/turf_decal/miskilamo_small/left{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+/turf/open/floor/plating,
+/area/ship/crew)
+"zZ" = (
+/obj/effect/turf_decal/industrial/stand_clear{
 	dir = 4
 	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+/obj/machinery/door/window/westleft,
+/obj/machinery/button/massdriver{
+	id = "pirate_porttube";
+	name = "port launch tube button";
+	pixel_x = 15;
+	pixel_y = 26
+	},
+/obj/effect/turf_decal/industrial/warning{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/pod/light,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/item/radio/intercom/directional/north,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/effect/turf_decal/industrial/stand_clear{
+	dir = 4
+	},
+/obj/machinery/door/window/westleft,
+/obj/machinery/button/massdriver{
+	id = "pirate_porttube";
+	name = "port launch tube button";
+	pixel_x = 15;
+	pixel_y = 26
+	},
+/obj/item/radio/intercom/directional/north{
+	pixel_y = 22
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/effect/turf_decal/industrial/stand_clear{
+	dir = 4
+	},
+/obj/machinery/door/window/westleft,
+/obj/machinery/button/massdriver{
+	id = "pirate_porttube";
+	name = "port launch tube button";
+	pixel_x = 15;
+	pixel_y = 26
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/item/radio/intercom/directional/north,
+/turf/open/floor/mineral/plastitanium,
+/area/ship/security)
+"AL" = (
+/obj/structure/table,
+/obj/effect/spawner/lootdrop/donkpockets,
+/obj/effect/spawner/lootdrop/donkpockets,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/obj/item/radio/intercom/directional/north,
+/obj/item/lighter{
+	pixel_x = 14
+	},
+/turf/open/floor/plasteel/grimy,
 /area/ship/crew)
 "Bb" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
+"Be" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	dir = 4;
+	name = "Starboard Engines"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/ship/hallway/starboard)
 "Bi" = (
 /obj/structure/table,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
@@ -1035,21 +1037,16 @@
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/pod/light,
 /area/ship/crew)
-"BE" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
-	dir = 8
-	},
-/obj/structure/catwalk/over,
-/obj/effect/turf_decal/miskilamo_small{
+"BD" = (
+/obj/structure/toilet,
+/obj/structure/window/reinforced/tinted{
 	dir = 4
 	},
-/turf/open/floor/plating,
+/obj/machinery/door/window/southright,
+/obj/structure/curtain/bounty,
+/obj/effect/decal/cleanable/vomit/old,
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/pod/light,
 /area/ship/crew)
 "Cd" = (
 /obj/structure/cable,
@@ -1084,27 +1081,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew)
-"Co" = (
-/obj/machinery/firealarm/directional/south,
-/obj/item/kitchen/knife/hunting{
-	pixel_y = 5
-	},
-/obj/item/kitchen/knife/hunting,
-/obj/item/kitchen/knife/hunting{
-	pixel_y = -5
-	},
-/obj/item/storage/belt/security/webbing,
-/obj/effect/turf_decal/industrial/warning{
-	dir = 6
-	},
-/obj/structure/closet/wall/red{
-	dir = 8;
-	name = "armory locker";
-	pixel_x = 28;
-	req_one_access_txt = "1"
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ship/security)
 "Cx" = (
 /obj/structure/chair/plastic{
 	dir = 1
@@ -1128,8 +1104,55 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/ship/hallway/starboard)
+"Df" = (
+/obj/structure/reagent_dispensers/watertank,
+/obj/item/radio/intercom/directional/west,
+/turf/open/floor/pod/light,
+/area/ship/cargo)
 "DG" = (
 /obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/pod/light,
+/area/ship/crew)
+"Ec" = (
+/obj/item/reagent_containers/glass/bottle/epinephrine{
+	pixel_x = 6
+	},
+/obj/item/reagent_containers/glass/bottle/charcoal{
+	pixel_x = -3
+	},
+/obj/item/reagent_containers/glass/bottle/epinephrine{
+	pixel_x = -3;
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/glass/bottle/charcoal{
+	pixel_x = 6;
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/syringe/epinephrine{
+	pixel_x = 3;
+	pixel_y = -2
+	},
+/obj/item/reagent_containers/syringe/epinephrine{
+	pixel_x = 4;
+	pixel_y = 1
+	},
+/obj/item/reagent_containers/syringe/epinephrine{
+	pixel_x = -2;
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/syringe/epinephrine{
+	pixel_x = 2;
+	pixel_y = 8
+	},
+/obj/structure/table/reinforced,
+/obj/structure/sign/poster/contraband/random{
+	pixel_x = -32
+	},
+/obj/machinery/defibrillator_mount/loaded{
+	pixel_y = -32
+	},
+/obj/machinery/light/small/directional/west,
+/obj/effect/turf_decal/industrial/outline,
 /turf/open/floor/pod/light,
 /area/ship/crew)
 "Ey" = (
@@ -1139,39 +1162,15 @@
 /obj/structure/dresser,
 /turf/open/floor/pod/light,
 /area/ship/crew)
-"EN" = (
-/obj/machinery/door/airlock/maintenance_hatch{
-	dir = 4;
-	name = "Starboard Engines"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
+"EH" = (
+/obj/structure/bed,
+/obj/structure/curtain/bounty,
+/obj/machinery/airalarm/directional/south,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/pod/dark,
-/area/ship/cargo)
-"Fm" = (
-/obj/structure/railing,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/power/apc/auto_name/directional/north,
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/landmark/start/security_officer,
+/obj/item/bedsheet/brown,
+/obj/machinery/firealarm/directional/west,
 /turf/open/floor/pod/light,
-/area/ship/security)
+/area/ship/crew)
 "Fx" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/cargo)
@@ -1192,24 +1191,19 @@
 /obj/machinery/door/firedoor/border_only,
 /turf/open/floor/pod/dark,
 /area/ship/cargo)
-"FJ" = (
-/obj/machinery/light/small/directional/west,
-/obj/effect/turf_decal/industrial/warning/corner{
-	dir = 8
-	},
-/obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/hardsuit/swat,
-/obj/item/tank/jetpack/carbondioxide,
-/turf/open/floor/mineral/plastitanium,
-/area/ship/security)
 "FR" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/hallway/port)
-"GL" = (
-/obj/structure/reagent_dispensers/watertank,
-/obj/item/radio/intercom/directional/west,
-/turf/open/floor/pod/light,
-/area/ship/cargo)
+"GS" = (
+/obj/structure/grille,
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "pirateshutters";
+	name = "Blast Shutters"
+	},
+/obj/structure/window/plasma/reinforced/plastitanium,
+/turf/open/floor/plating,
+/area/ship/crew)
 "Hh" = (
 /obj/structure/railing,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -1247,7 +1241,18 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
-"Ih" = (
+"Ik" = (
+/obj/machinery/atmospherics/components/binary/pump/on/layer2,
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating,
+/area/ship/hallway/starboard)
+"IF" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/hallway/starboard)
+"IO" = (
 /obj/structure/grille,
 /obj/machinery/door/poddoor/shutters{
 	dir = 4;
@@ -1256,10 +1261,7 @@
 	},
 /obj/structure/window/plasma/reinforced/plastitanium,
 /turf/open/floor/plating,
-/area/ship/bridge)
-"IF" = (
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/hallway/starboard)
+/area/ship/security)
 "IS" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/hallway/port)
@@ -1361,26 +1363,6 @@
 /obj/effect/turf_decal/industrial/outline/yellow,
 /turf/open/floor/plating,
 /area/ship/hallway/starboard)
-"LR" = (
-/obj/machinery/holopad/emergency/command,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/button/door{
-	dir = 4;
-	id = "pirateshutters";
-	name = "Window Lockdown";
-	pixel_x = -25;
-	pixel_y = -5
-	},
-/obj/machinery/button/door{
-	dir = 4;
-	id = "piratecargo";
-	name = "Blast Door Control";
-	pixel_x = -25;
-	pixel_y = 5
-	},
-/obj/machinery/light/small/directional/west,
-/turf/open/floor/pod/light,
-/area/ship/bridge)
 "LU" = (
 /obj/machinery/power/port_gen/pacman/super,
 /obj/structure/cable/yellow{
@@ -1401,17 +1383,7 @@
 	icon_state = "platingdmg3"
 	},
 /area/ship/hallway/port)
-"Nq" = (
-/obj/structure/cable{
-	icon_state = "8-10"
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/turf_decal/industrial/warning{
-	dir = 9
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ship/cargo)
-"Ny" = (
+"Mw" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 1
@@ -1426,12 +1398,57 @@
 	},
 /turf/open/floor/plating,
 /area/ship/crew)
+"MC" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/sign/poster/contraband/random{
+	pixel_x = -32
+	},
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/pod/light,
+/area/ship/cargo)
+"Nq" = (
+/obj/structure/cable{
+	icon_state = "8-10"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 9
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ship/cargo)
 "Nz" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
+"NA" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/cable{
+	icon_state = "5-9"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/catwalk/over,
+/obj/effect/turf_decal/number/zero{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/security)
 "NN" = (
 /obj/structure/cable{
 	icon_state = "4-6"
@@ -1451,6 +1468,14 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
+"Og" = (
+/obj/effect/decal/cleanable/oil/streak,
+/obj/structure/sign/warning/nosmoking{
+	pixel_x = 32
+	},
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/pod/light,
+/area/ship/cargo)
 "Oo" = (
 /obj/structure/cable/yellow,
 /obj/machinery/power/terminal,
@@ -1463,6 +1488,27 @@
 	},
 /turf/open/floor/plating,
 /area/ship/hallway/starboard)
+"OD" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/structure/closet/emcloset/wall{
+	dir = 4;
+	pixel_x = -28
+	},
+/turf/open/floor/pod/light,
+/area/ship/cargo)
 "OO" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/industrial/warning{
@@ -1487,47 +1533,13 @@
 /turf/open/floor/plating,
 /area/ship/hallway/port)
 "PI" = (
-/obj/effect/spawner/lootdrop/minor/pirate_or_bandana,
-/obj/effect/spawner/lootdrop/minor/pirate_or_bandana,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/item/clothing/shoes/jackboots,
-/obj/item/clothing/shoes/jackboots,
-/obj/item/clothing/shoes/jackboots,
-/obj/item/clothing/shoes/jackboots,
-/obj/item/clothing/shoes/jackboots,
-/obj/item/clothing/under/costume/sailor,
-/obj/item/clothing/under/costume/sailor,
-/obj/item/clothing/under/costume/sailor,
-/obj/item/clothing/under/costume/sailor,
-/obj/structure/closet/wall{
-	dir = 8;
-	icon_door = "grey_wall";
-	pixel_x = 28
+/obj/machinery/atmospherics/components/binary/pump/on/layer2,
+/obj/machinery/power/apc/auto_name/directional/east,
+/obj/structure/cable{
+	icon_state = "0-2"
 	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/effect/spawner/lootdrop/minor/pirate_or_bandana,
-/obj/effect/spawner/lootdrop/minor/pirate_or_bandana,
-/obj/machinery/light/small/directional/east,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/item/clothing/shoes/jackboots,
-/obj/item/clothing/shoes/jackboots,
-/obj/item/clothing/shoes/jackboots,
-/obj/item/clothing/shoes/jackboots,
-/obj/item/clothing/shoes/jackboots,
-/obj/item/clothing/under/costume/sailor,
-/obj/item/clothing/under/costume/sailor,
-/obj/item/clothing/under/costume/sailor,
-/obj/item/clothing/under/costume/sailor,
-/obj/structure/closet/wall{
-	dir = 8;
-	icon_door = "grey_wall";
-	pixel_x = 28
-	},
-/turf/open/floor/pod/light,
-/area/ship/crew)
+/turf/open/floor/plating,
+/area/ship/hallway/port)
 "Qj" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -1544,6 +1556,25 @@
 	},
 /turf/open/floor/plating,
 /area/ship/hallway/port)
+"Qx" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/structure/catwalk/over,
+/obj/effect/turf_decal/number/two{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/security)
 "Rn" = (
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
@@ -1560,6 +1591,25 @@
 	},
 /turf/open/floor/plating,
 /area/ship/hallway/starboard)
+"RP" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/airalarm/directional/north,
+/obj/structure/extinguisher_cabinet/directional/east,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/extinguisher_cabinet/directional/north,
+/obj/machinery/airalarm/directional/north,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/airalarm/directional/north,
+/obj/structure/extinguisher_cabinet/directional/east,
+/turf/open/floor/pod/light,
+/area/ship/cargo)
 "RX" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
@@ -1672,23 +1722,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
-"SE" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 1
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/cable{
-	icon_state = "2-9"
-	},
-/obj/structure/catwalk/over,
-/obj/effect/turf_decal/miskilamo_small/left{
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/ship/crew)
 "SR" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -1705,36 +1738,16 @@
 	},
 /turf/open/floor/pod/light,
 /area/ship/cargo)
-"Tn" = (
-/obj/machinery/atmospherics/components/binary/pump/on/layer2,
-/obj/machinery/power/apc/auto_name/directional/west,
-/obj/structure/cable{
-	icon_state = "0-2"
+"Ts" = (
+/obj/machinery/door/airlock/hatch{
+	dir = 4;
+	name = "External Access Hatch"
 	},
-/turf/open/floor/plating,
-/area/ship/hallway/starboard)
-"Tx" = (
-/obj/machinery/power/smes/engineering{
-	charge = 1e+006
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
 	},
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/machinery/light/small/directional/east,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/machinery/power/smes/engineering{
-	charge = 1e+006
-	},
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/machinery/light/small/directional/east,
-/obj/item/radio/intercom/directional/east,
-/turf/open/floor/plating,
-/area/ship/hallway/starboard)
+/turf/open/floor/pod/light,
+/area/ship/crew)
 "TP" = (
 /obj/machinery/door/poddoor/shutters{
 	id = "piratecargo";
@@ -1759,16 +1772,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/hallway/starboard)
-"TX" = (
-/obj/structure/grille,
-/obj/machinery/door/poddoor/shutters{
-	dir = 4;
-	id = "pirateshutters";
-	name = "Blast Shutters"
-	},
-/obj/structure/window/plasma/reinforced/plastitanium,
-/turf/open/floor/plating,
-/area/ship/security)
 "Uv" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 4
@@ -1789,27 +1792,105 @@
 /area/ship/hallway/starboard)
 "Uw" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-9"
+	},
+/obj/structure/cable{
+	icon_state = "8-10"
+	},
+/obj/item/radio/intercom/directional/east,
+/turf/open/floor/plating{
+	icon_state = "platingdmg3"
+	},
+/area/ship/hallway/starboard)
+"Vr" = (
+/obj/structure/grille,
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "pirateshutters";
+	name = "Blast Shutters"
+	},
+/obj/structure/window/plasma/reinforced/plastitanium,
+/turf/open/floor/plating,
+/area/ship/bridge)
+"Vu" = (
+/obj/machinery/power/smes/engineering{
+	charge = 1e+006
+	},
+/obj/machinery/light/small/directional/west,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/power/smes/engineering{
+	charge = 1e+006
+	},
+/obj/machinery/light/small/directional/west,
+/obj/item/radio/intercom/directional/west,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/power/smes/engineering{
+	charge = 1e+006
+	},
+/obj/machinery/light/small/directional/west,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating,
+/area/ship/hallway/port)
+"VC" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 1
 	},
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "8-10"
 	},
 /obj/structure/cable{
-	icon_state = "1-8"
+	icon_state = "2-8"
 	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
-	dir = 8
-	},
-/obj/structure/catwalk/over,
-/obj/effect/turf_decal/number/two{
-	dir = 4
-	},
+/obj/machinery/airalarm/directional/east,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
-/area/ship/security)
+/area/ship/hallway/port)
 "VO" = (
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/pod/light,
 /area/ship/cargo)
+"VU" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/navbeacon{
+	codes_txt = "patrol;next_patrol=port";
+	location = "forward"
+	},
+/obj/structure/catwalk/over,
+/obj/effect/turf_decal/number/five{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/crew)
 "Wa" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
@@ -1818,19 +1899,6 @@
 	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/ship/cargo)
-"WA" = (
-/obj/structure/railing,
-/obj/item/radio/intercom/directional/north,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/railing,
-/obj/item/radio/intercom/directional/north{
-	pixel_y = 22
-	},
-/turf/open/floor/pod/light,
 /area/ship/cargo)
 "WC" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1868,17 +1936,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/hallway/starboard)
-"WW" = (
-/obj/machinery/light/small/directional/east,
-/obj/effect/turf_decal/industrial/stand_clear{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/turf_decal/industrial/warning{
-	dir = 6
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ship/cargo)
 "WZ" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
@@ -1889,6 +1946,43 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
+"Xq" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/structure/railing,
+/obj/effect/landmark/start/captain,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/radio/intercom/wideband/directional/east,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/structure/railing,
+/obj/item/radio/intercom/wideband/directional/east,
+/obj/item/radio/intercom/directional/east,
+/obj/effect/landmark/start/captain,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/structure/railing,
+/obj/item/radio/intercom/directional/east{
+	pixel_y = 7
+	},
+/obj/effect/landmark/start/captain,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/radio/intercom/wideband/directional/east{
+	pixel_y = -13
+	},
+/turf/open/floor/pod/light,
+/area/ship/bridge)
 "Xx" = (
 /obj/structure/rack,
 /obj/item/storage/bag/ore,
@@ -1917,66 +2011,123 @@
 "XJ" = (
 /turf/template_noop,
 /area/template_noop)
-"XU" = (
-/obj/effect/turf_decal/industrial/stand_clear{
+"YB" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	dir = 4;
+	name = "Starboard Engines"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/obj/machinery/door/window/westleft,
-/obj/machinery/button/massdriver{
-	id = "pirate_porttube";
-	name = "port launch tube button";
-	pixel_x = 15;
-	pixel_y = 26
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
 	},
-/obj/effect/turf_decal/industrial/warning{
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 4
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/pod/dark,
+/area/ship/cargo)
+"YQ" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 5
 	},
-/obj/item/radio/intercom/directional/north,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/airalarm/directional/west,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/ship/hallway/starboard)
+"YW" = (
+/obj/item/storage/box{
+	icon_state = "lethalshot_box";
+	name = "dusty shotshell box"
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 5
+	},
+/obj/structure/closet/wall/red{
+	dir = 8;
+	name = "armory locker";
+	pixel_x = 28;
+	req_one_access_txt = "1"
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/light/small/directional/east,
+/obj/item/storage/box{
+	icon_state = "lethalshot_box";
+	name = "dusty shotshell box"
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 5
+	},
+/obj/structure/closet/wall/red{
+	dir = 8;
+	name = "armory locker";
+	pixel_x = 28;
+	req_one_access_txt = "1"
+	},
 /obj/merge_conflict_marker{
 	name = "---Merge Conflict Marker---",
 	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
-/obj/effect/turf_decal/industrial/stand_clear{
-	dir = 4
-	},
-/obj/machinery/door/window/westleft,
-/obj/machinery/button/massdriver{
-	id = "pirate_porttube";
-	name = "port launch tube button";
-	pixel_x = 15;
-	pixel_y = 26
-	},
-/obj/item/radio/intercom/directional/north{
-	pixel_y = 22
+/obj/item/storage/box{
+	icon_state = "lethalshot_box";
+	name = "dusty shotshell box"
 	},
 /obj/effect/turf_decal/industrial/warning{
-	dir = 8
+	dir = 5
 	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 4
+/obj/structure/closet/wall/red{
+	dir = 8;
+	name = "armory locker";
+	pixel_x = 28;
+	req_one_access_txt = "1"
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
-"Yb" = (
-/obj/docking_port/stationary{
-	dwidth = 4;
-	width = 8;
-	height = 15;
-	dir = 8
+"YZ" = (
+/obj/machinery/power/smes/engineering{
+	charge = 1e+006
 	},
-/turf/template_noop,
-/area/template_noop)
-"YL" = (
-/obj/machinery/atmospherics/components/binary/pump/on/layer2,
-/obj/machinery/power/apc/auto_name/directional/east,
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
+/obj/machinery/light/small/directional/east,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/power/smes/engineering{
+	charge = 1e+006
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/light/small/directional/east,
+/obj/item/radio/intercom/directional/east,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/power/smes/engineering{
+	charge = 1e+006
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating,
-/area/ship/hallway/port)
+/area/ship/hallway/starboard)
 "Zc" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
@@ -1997,59 +2148,34 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/ship/hallway/port)
-"Zw" = (
-/obj/machinery/door/airlock/maintenance_hatch{
-	dir = 4;
-	name = "Port Engines"
+"ZB" = (
+/obj/machinery/light/small/directional/east,
+/obj/effect/turf_decal/industrial/stand_clear{
+	dir = 1
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 6
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ship/cargo)
+"ZD" = (
+/obj/machinery/door/airlock/hatch{
+	dir = 4;
+	name = "External Access Hatch"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/obj/structure/cable{
-	icon_state = "4-8"
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
 	},
-/obj/machinery/door/firedoor/border_only{
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
-/turf/open/floor/plating,
-/area/ship/hallway/port)
-"ZT" = (
-/obj/item/storage/box{
-	icon_state = "lethalshot_box";
-	name = "dusty shotshell box"
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 5
-	},
-/obj/structure/closet/wall/red{
-	dir = 8;
-	name = "armory locker";
-	pixel_x = 28;
-	req_one_access_txt = "1"
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/machinery/light/small/directional/east,
-/obj/item/storage/box{
-	icon_state = "lethalshot_box";
-	name = "dusty shotshell box"
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 5
-	},
-/obj/structure/closet/wall/red{
-	dir = 8;
-	name = "armory locker";
-	pixel_x = 28;
-	req_one_access_txt = "1"
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ship/security)
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/pod/light,
+/area/ship/crew)
 
 (1,1,1) = {"
 XJ
@@ -2099,8 +2225,8 @@ IS
 FR
 IV
 Mh
-ga
-gF
+Vu
+hk
 Zc
 nt
 Cd
@@ -2125,9 +2251,9 @@ XJ
 IS
 FR
 Ji
-YL
+PI
 Pf
-nf
+VC
 Zf
 Ll
 Cd
@@ -2144,7 +2270,7 @@ XJ
 XJ
 XJ
 XJ
-Yb
+fx
 XJ
 XJ
 XJ
@@ -2153,7 +2279,7 @@ XJ
 IS
 IS
 FR
-Zw
+aO
 FR
 IS
 IS
@@ -2166,12 +2292,12 @@ XJ
 XJ
 XJ
 fG
-TX
+IO
 fG
 XJ
 XJ
 tD
-nq
+Ts
 tD
 XJ
 XJ
@@ -2198,16 +2324,16 @@ hb
 fG
 XJ
 tT
-bh
+uo
 tT
 tD
-jc
+GS
 tT
 Fx
 Fx
 Fx
 FF
-ge
+aN
 FF
 Fx
 Fx
@@ -2220,43 +2346,43 @@ XJ
 XJ
 Bb
 hb
-XU
+zZ
 hb
 hb
 hb
 tT
 ut
 tT
-if
+zi
 By
-cW
+Ec
 FF
-ii
+OD
 Jr
-qO
+MC
 RX
 VO
-GL
+Df
 FF
 Fx
 "}
 (8,1,1) = {"
-gf
-Ih
+dw
+Vr
 Bb
-Ih
+Vr
 Bb
 iA
-rG
-FJ
+mJ
+pm
 pW
-hI
+sc
 tT
-At
+ZD
 wZ
 zR
 Ce
-wu
+jV
 FF
 Hh
 Jx
@@ -2264,26 +2390,26 @@ Nq
 Sc
 Wa
 HY
-ke
+rL
 TP
 "}
 (9,1,1) = {"
 XB
 au
-LR
+aW
 bz
-wv
+fi
 jz
 mU
 pA
-Uw
-oZ
+Qx
+NA
 tZ
-iF
+VU
 xv
-Ny
-BE
-SE
+Mw
+qi
+zS
 FH
 Hw
 Ko
@@ -2297,18 +2423,18 @@ fd
 (10,1,1) = {"
 XB
 az
-bZ
+Xq
 bG
-yD
+tR
 Bb
 nv
 pH
 rd
-xQ
+sx
 tT
 vW
 yf
-tA
+AL
 Cj
 Ey
 FF
@@ -2322,30 +2448,30 @@ rc
 TP
 "}
 (11,1,1) = {"
-gf
-Ih
+dw
+Vr
 Bb
-Ih
+Vr
 Bb
 iA
-Fm
-ZT
+gy
+YW
 rF
-Co
+sI
 tT
-sY
+BD
 yi
 Bi
 Cx
-jZ
+xB
 FF
-WA
+up
 KD
 NS
 SA
 WZ
 OO
-WW
+ZB
 TP
 "}
 (12,1,1) = {"
@@ -2355,20 +2481,20 @@ XJ
 XJ
 Bb
 hb
-lm
+qp
 hb
 hb
 hb
 tT
 wP
 yU
-PI
+gx
 DG
-eB
+EH
 FF
-ji
+RP
 KS
-xu
+Og
 SR
 Xx
 oo
@@ -2388,15 +2514,15 @@ fG
 XJ
 tD
 tD
-jc
+GS
 tD
-jc
+GS
 tD
 Fx
 Fx
 Fx
 FF
-EN
+YB
 FF
 Fx
 Fx
@@ -2409,7 +2535,7 @@ XJ
 XJ
 XJ
 fG
-wb
+zg
 fG
 XJ
 XJ
@@ -2450,7 +2576,7 @@ XJ
 Le
 Le
 IF
-wf
+Be
 IF
 Le
 Le
@@ -2476,9 +2602,9 @@ XJ
 Le
 IF
 LD
-Tn
+Ik
 Uv
-fA
+YQ
 tY
 Rn
 eV
@@ -2504,8 +2630,8 @@ Le
 IF
 LU
 Oo
-Tx
-vk
+YZ
+Uw
 CK
 WM
 eV
