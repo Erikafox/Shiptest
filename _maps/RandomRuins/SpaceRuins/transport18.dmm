@@ -50,23 +50,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark/airless,
 /area/ruin/space/has_grav/transport18mid)
-"ba" = (
-/obj/structure/lattice,
-/obj/structure/grille/broken,
-/turf/open/space,
-/area/space)
-"bh" = (
-/obj/structure/cable/cyan{
-	icon_state = "6-10"
-	},
-/obj/item/stack/cable_coil/cut/red,
-/obj/machinery/light/small/built/directional/north,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating{
-	icon_state = "platingdmg1"
-	},
-/area/ruin/space/transport18aft)
 "bT" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -74,11 +57,26 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/airless,
 /area/ruin/space/has_grav/transport18mid)
-"cN" = (
-/obj/structure/lattice,
-/obj/structure/reagent_dispensers/beerkeg,
-/turf/open/space,
-/area/space)
+"cL" = (
+/obj/machinery/light/broken/directional/north,
+/obj/machinery/suit_storage_unit/open,
+/obj/effect/turf_decal/industrial/fire{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/airless,
+/area/ruin/space/has_grav/transport18mid)
+"cZ" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/public{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/airless,
+/area/ruin/space/has_grav/transport18mid)
 "dp" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/effect/decal/cleanable/dirt,
@@ -103,13 +101,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark/airless,
 /area/ruin/space/has_grav/transport18mid)
-"dH" = (
-/obj/machinery/power/apc/auto_name/directional/east,
-/obj/structure/cable,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet/airless,
-/area/ruin/space/has_grav/transport18mid)
 "dU" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
@@ -124,17 +115,6 @@
 "eg" = (
 /turf/template_noop,
 /area/template_noop)
-"et" = (
-/obj/machinery/light/broken/directional/south,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/vomit/old,
-/obj/item/trash/plate{
-	pixel_x = 2;
-	pixel_y = 9
-	},
-/obj/structure/table/glass,
-/turf/open/floor/plasteel/airless,
-/area/ruin/space/has_grav/transport18mid)
 "eJ" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
@@ -164,6 +144,15 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/airless,
 /area/ruin/space/transport18aft)
+"fe" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light/small/broken/directional/south,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/transport18mid)
 "fw" = (
 /obj/machinery/power/smes,
 /obj/structure/cable{
@@ -174,18 +163,6 @@
 	icon_state = "platingdmg3"
 	},
 /area/ruin/space/transport18aft)
-"fx" = (
-/obj/item/wallframe/extinguisher_cabinet{
-	pixel_y = 32
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/light/small/broken/directional/south,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/airless,
-/area/ruin/space/has_grav/transport18mid)
 "fy" = (
 /obj/structure/reagent_dispensers/beerkeg,
 /obj/effect/turf_decal/industrial/outline/yellow,
@@ -238,22 +215,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/airless,
 /area/ruin/space/transport18aft)
-"gD" = (
-/obj/machinery/light/broken/directional/north,
-/obj/machinery/suit_storage_unit/open,
-/obj/effect/turf_decal/industrial/fire{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/airless,
-/area/ruin/space/has_grav/transport18mid)
-"gY" = (
-/obj/structure/table/reinforced,
-/obj/item/radio/intercom/directional/north,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/airless,
-/area/ruin/space/has_grav/transport18mid)
 "gZ" = (
 /obj/structure/reagent_dispensers/beerkeg,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -263,11 +224,32 @@
 /obj/structure/sign/warning/enginesafety,
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ruin/space/transport18aft)
+"hZ" = (
+/obj/structure/grille/broken,
+/obj/item/shard,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "transp19_windows";
+	dir = 4
+	},
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/transport18mid)
+"ih" = (
+/obj/structure/lattice,
+/obj/structure/grille/broken,
+/turf/open/space,
+/area/space)
 "iy" = (
 /obj/structure/bed,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/airless,
+/area/ruin/space/has_grav/transport18mid)
+"iB" = (
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/machinery/light/small/built/directional/north,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark/airless,
 /area/ruin/space/has_grav/transport18mid)
 "iD" = (
 /obj/structure/girder,
@@ -280,28 +262,6 @@
 /obj/effect/decal/cleanable/vomit/old,
 /turf/open/floor/plasteel/dark/airless,
 /area/ruin/space/has_grav/transport18mid)
-"iW" = (
-/obj/machinery/light/small/broken/directional/south,
-/obj/effect/turf_decal/industrial/outline/yellow,
-/obj/machinery/plumbing/tank,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/dark/airless,
-/area/ruin/space/has_grav/transport18mid)
-"iZ" = (
-/obj/machinery/power/apc/auto_name/directional/west,
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/item/trash/can,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet/blue/airless,
-/area/ruin/space/has_grav/transport18mid)
-"jl" = (
-/obj/item/trash/can,
-/turf/open/space,
-/area/space)
 "jq" = (
 /obj/structure/fluff/broken_flooring{
 	dir = 4;
@@ -312,17 +272,10 @@
 	icon_state = "platingdmg3"
 	},
 /area/ruin/space/transport18aft)
-"jr" = (
-/obj/item/storage/cans/sixbeer,
-/obj/item/storage/cans/sixbeer,
-/obj/item/storage/cans/sixbeer,
-/obj/item/storage/cans/sixbeer,
-/obj/item/storage/cans/sixbeer,
-/obj/effect/turf_decal/industrial/outline/yellow,
-/obj/structure/closet/crate/large{
-	name = "damp crate"
-	},
+"ju" = (
 /obj/machinery/light/small/directional/south,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark/airless,
 /area/ruin/space/has_grav/transport18mid)
@@ -333,6 +286,14 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/airless,
+/area/ruin/space/has_grav/transport18mid)
+"jC" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light/small/broken/directional/north,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/transport18mid)
 "jP" = (
 /obj/item/trash/can{
@@ -348,10 +309,6 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/space/transport18aft)
-"km" = (
-/obj/item/stack/sheet/metal,
-/turf/open/space,
-/area/space)
 "kC" = (
 /obj/structure/fluff/broken_flooring{
 	dir = 4;
@@ -373,12 +330,38 @@
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/plasteel/airless,
 /area/ruin/space/has_grav/transport18mid)
+"kM" = (
+/obj/structure/reagent_dispensers/beerkeg,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/machinery/light/small/directional/north,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark/airless,
+/area/ruin/space/has_grav/transport18mid)
+"kQ" = (
+/obj/item/stack/sheet/metal,
+/turf/template_noop,
+/area/space)
 "kR" = (
 /obj/item/wirecutters,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/ruin/space/transport18aft)
+"kZ" = (
+/obj/structure/table/reinforced,
+/obj/machinery/light/dim/directional/north,
+/obj/item/trash/plate{
+	pixel_x = -5
+	},
+/obj/item/trash/plate{
+	pixel_x = 5;
+	pixel_y = 7
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/airless,
+/area/ruin/space/has_grav/transport18mid)
 "la" = (
 /obj/structure/reagent_dispensers/beerkeg,
 /obj/effect/turf_decal/industrial/outline/yellow,
@@ -386,10 +369,9 @@
 /obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/plasteel/dark/airless,
 /area/ruin/space/has_grav/transport18mid)
-"lf" = (
-/obj/machinery/light/small/directional/north,
+"lt" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/machinery/plumbing/tank,
+/obj/machinery/light/small/broken/directional/north,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark/airless,
@@ -469,10 +451,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark/airless,
 /area/ruin/space/has_grav/transport18mid)
-"mj" = (
-/obj/item/stack/rods,
-/turf/open/space,
-/area/space)
 "mt" = (
 /obj/machinery/door/poddoor/multi_tile/three_tile_hor{
 	id = "transp19"
@@ -481,28 +459,10 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/transport18mid)
-"mA" = (
-/obj/machinery/door/airlock/hatch{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/pod,
-/area/ruin/space/has_grav/transport18mid)
 "mI" = (
 /obj/structure/sign/warning/nosmoking,
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ruin/space/transport18aft)
-"mU" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/light/small/directional/north,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/airless,
-/area/ruin/space/has_grav/transport18mid)
 "mX" = (
 /obj/item/wrench,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -552,13 +512,14 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/airless,
 /area/ruin/space/has_grav/transport18mid)
-"nL" = (
-/obj/structure/bed,
-/obj/machinery/light/directional/south,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet/airless,
-/area/ruin/space/has_grav/transport18mid)
+"nV" = (
+/obj/structure/lattice,
+/obj/structure/fluff/broken_flooring{
+	dir = 8;
+	icon_state = "plating"
+	},
+/turf/open/space,
+/area/space)
 "oa" = (
 /obj/item/storage/cans/sixbeer,
 /obj/item/storage/cans/sixbeer,
@@ -571,27 +532,6 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark/airless,
-/area/ruin/space/has_grav/transport18mid)
-"of" = (
-/obj/item/storage/cans/sixbeer,
-/obj/item/storage/cans/sixbeer,
-/obj/item/storage/cans/sixbeer,
-/obj/item/storage/cans/sixbeer,
-/obj/item/storage/cans/sixbeer,
-/obj/effect/turf_decal/industrial/outline/yellow,
-/obj/machinery/light/small/directional/north,
-/obj/item/stack/sheet/mineral/wood,
-/obj/effect/decal/cleanable/greenglow,
-/turf/open/floor/plasteel/dark/airless,
-/area/ruin/space/has_grav/transport18mid)
-"ot" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/light/small/broken/directional/south,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/transport18mid)
 "ou" = (
 /obj/effect/decal/cleanable/dirt,
@@ -629,10 +569,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/transport18mid)
-"oT" = (
-/obj/structure/girder,
-/turf/open/space,
-/area/space)
 "po" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -657,22 +593,58 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/transport18mid)
+"pI" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "transp19_windows";
+	dir = 4
+	},
+/obj/structure/grille,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/transport18mid)
 "pN" = (
 /obj/item/stack/rods,
 /turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/transport18mid)
+"pQ" = (
+/obj/machinery/light/dim/directional/west,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/vomit/old,
+/obj/item/shard,
+/turf/open/floor/plasteel/airless,
 /area/ruin/space/has_grav/transport18mid)
 "pR" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/reagent_dispensers/beerkeg,
 /turf/open/floor/plasteel/dark/airless,
 /area/ruin/space/has_grav/transport18mid)
-"qf" = (
-/obj/structure/fluff/broken_flooring{
-	dir = 2;
-	icon_state = "plating"
+"qa" = (
+/obj/machinery/light/broken/directional/south,
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/structure/cable,
+/obj/effect/turf_decal/industrial/fire,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
-/turf/template_noop,
-/area/space)
+/obj/machinery/light/broken/directional/south,
+/obj/machinery/power/apc/auto_name/south,
+/obj/structure/cable,
+/obj/effect/turf_decal/industrial/fire,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/airless,
+/area/ruin/space/has_grav/transport18mid)
+"qB" = (
+/obj/machinery/power/apc/auto_name/directional/east,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/item/trash/candy,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/airless,
+/area/ruin/space/has_grav/transport18mid)
 "qJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -688,13 +660,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel,
 /area/ruin/space/transport18aft)
-"qY" = (
-/obj/machinery/light/broken/directional/south,
-/obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable,
-/obj/effect/turf_decal/industrial/fire,
+"qN" = (
+/obj/structure/reagent_dispensers/beerkeg,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/machinery/light/small/broken/directional/south,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/airless,
+/turf/open/floor/plasteel/dark/airless,
 /area/ruin/space/has_grav/transport18mid)
 "re" = (
 /obj/machinery/door/airlock/hatch,
@@ -704,6 +676,10 @@
 "rC" = (
 /turf/closed/wall/rust,
 /area/ruin/space/has_grav/transport18mid)
+"rE" = (
+/obj/item/stack/sheet/mineral/titanium,
+/turf/open/space,
+/area/space)
 "rF" = (
 /obj/structure/fluff/broken_flooring,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -711,33 +687,44 @@
 	icon_state = "platingdmg3"
 	},
 /area/ruin/space/transport18aft)
-"rV" = (
-/obj/structure/table/reinforced,
-/obj/machinery/light/dim/directional/north,
-/obj/item/trash/plate{
-	pixel_x = -5
+"sh" = (
+/obj/item/wallframe/extinguisher_cabinet{
+	pixel_y = 32
 	},
-/obj/item/trash/plate{
-	pixel_x = 5;
-	pixel_y = 7
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
+/obj/machinery/light/small/broken/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/transport18mid)
+"sp" = (
+/obj/structure/fluff/broken_flooring{
+	dir = 2;
+	icon_state = "plating"
+	},
+/turf/template_noop,
+/area/space)
 "sr" = (
 /obj/effect/turf_decal/number/five{
 	dir = 1
 	},
 /turf/closed/wall/rust,
 /area/ruin/space/has_grav/transport18mid)
-"tb" = (
-/obj/structure/cable{
-	icon_state = "4-8"
+"tc" = (
+/obj/item/storage/cans/sixbeer,
+/obj/item/storage/cans/sixbeer,
+/obj/item/storage/cans/sixbeer,
+/obj/item/storage/cans/sixbeer,
+/obj/item/storage/cans/sixbeer,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/structure/closet/crate/large{
+	name = "damp crate"
 	},
-/obj/machinery/light/small/broken/directional/north,
+/obj/machinery/light/small/broken/directional/south,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/airless,
+/turf/open/floor/plasteel/dark/airless,
 /area/ruin/space/has_grav/transport18mid)
 "tu" = (
 /obj/structure/cable{
@@ -762,6 +749,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/airless,
 /area/ruin/space/has_grav/transport18mid)
+"tM" = (
+/obj/structure/bed,
+/obj/machinery/light/directional/south,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/carpet/airless,
+/area/ruin/space/has_grav/transport18mid)
 "tY" = (
 /obj/effect/spawner/structure/window/shuttle,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -769,18 +763,19 @@
 	},
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/transport18mid)
+"ui" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light/small/directional/north,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/transport18mid)
 "uj" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/airless,
 /area/ruin/space/has_grav/transport18mid)
 "uo" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/dark/airless,
-/area/ruin/space/has_grav/transport18mid)
-"ur" = (
-/obj/machinery/light/small/directional/north,
-/obj/effect/turf_decal/industrial/outline/yellow,
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark/airless,
 /area/ruin/space/has_grav/transport18mid)
@@ -822,13 +817,12 @@
 	icon_state = "platingdmg2"
 	},
 /area/ruin/space/transport18aft)
-"vr" = (
-/obj/structure/lattice,
+"vz" = (
 /obj/structure/fluff/broken_flooring{
 	dir = 4;
 	icon_state = "pile"
 	},
-/turf/template_noop,
+/turf/open/space,
 /area/space)
 "vN" = (
 /obj/item/clothing/gloves/color/fyellow/old,
@@ -844,6 +838,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/ruin/space/transport18aft)
+"wh" = (
+/obj/structure/fluff/broken_flooring{
+	dir = 4;
+	icon_state = "singular"
+	},
+/turf/open/space,
+/area/space)
 "wi" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -858,15 +859,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel,
 /area/ruin/space/transport18aft)
-"wj" = (
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "transp19_windows";
-	dir = 4
-	},
-/obj/structure/grille,
-/obj/item/shard,
-/turf/open/floor/plating/airless,
-/area/ruin/space/has_grav/transport18mid)
 "wu" = (
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -877,20 +869,19 @@
 	icon_state = "platingdmg3"
 	},
 /area/ruin/space/transport18aft)
-"wC" = (
-/obj/effect/turf_decal/industrial/outline/yellow,
-/obj/structure/reagent_dispensers/beerkeg,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/dark/airless,
-/area/ruin/space/has_grav/transport18mid)
-"wD" = (
-/obj/structure/grille/broken,
-/obj/item/shard,
+"wB" = (
+/obj/structure/grille,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "transp19_windows";
 	dir = 4
 	},
 /turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/transport18mid)
+"wC" = (
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/structure/reagent_dispensers/beerkeg,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark/airless,
 /area/ruin/space/has_grav/transport18mid)
 "wN" = (
 /obj/item/trash/can{
@@ -926,12 +917,8 @@
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ruin/space/has_grav/transport18mid)
-"xA" = (
-/obj/structure/fluff/broken_flooring{
-	dir = 2;
-	icon_state = "plating"
-	},
-/obj/structure/lattice,
+"xC" = (
+/obj/structure/reagent_dispensers/beerkeg,
 /turf/open/space,
 /area/space)
 "xD" = (
@@ -939,13 +926,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark/airless,
 /area/ruin/space/has_grav/transport18mid)
-"yk" = (
-/obj/structure/fluff/broken_flooring{
-	dir = 4;
-	icon_state = "pile"
-	},
-/turf/open/space,
-/area/space)
 "yv" = (
 /obj/structure/girder,
 /turf/open/floor/plating{
@@ -1014,6 +994,17 @@
 	icon_state = "platingdmg3"
 	},
 /area/ruin/space/transport18aft)
+"zM" = (
+/obj/machinery/light/broken/directional/south,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/vomit/old,
+/obj/item/trash/plate{
+	pixel_x = 2;
+	pixel_y = 9
+	},
+/obj/structure/table/glass,
+/turf/open/floor/plasteel/airless,
+/area/ruin/space/has_grav/transport18mid)
 "zN" = (
 /obj/item/stack/cable_coil/cut/red,
 /obj/effect/decal/cleanable/dirt,
@@ -1028,15 +1019,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark/airless,
 /area/ruin/space/has_grav/transport18mid)
-"Ah" = (
-/obj/structure/table/reinforced,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/item/radio/intercom/wideband/table{
-	dir = 1
+"AO" = (
+/obj/structure/fluff/broken_flooring{
+	dir = 4;
+	icon_state = "plating"
 	},
-/turf/open/floor/plasteel/airless,
-/area/ruin/space/has_grav/transport18mid)
+/turf/open/space,
+/area/space)
 "AU" = (
 /obj/structure/fluff/broken_flooring,
 /obj/effect/decal/cleanable/dirt,
@@ -1051,13 +1040,19 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark/airless,
 /area/ruin/space/has_grav/transport18mid)
-"Bv" = (
+"Bo" = (
 /obj/structure/reagent_dispensers/beerkeg,
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/machinery/light/small/broken/directional/south,
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark/airless,
+/area/ruin/space/has_grav/transport18mid)
+"BA" = (
+/obj/machinery/power/apc/auto_name/directional/east,
+/obj/structure/cable,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/carpet/airless,
 /area/ruin/space/has_grav/transport18mid)
 "BD" = (
 /obj/item/stack/ducts/fifty,
@@ -1077,19 +1072,20 @@
 	},
 /turf/closed/wall,
 /area/ruin/space/has_grav/transport18mid)
-"CH" = (
-/obj/machinery/light/small/directional/south,
-/obj/effect/turf_decal/industrial/outline/yellow,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/dark/airless,
+"BX" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "transp19_windows";
+	dir = 4
+	},
+/obj/structure/grille/broken,
+/turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/transport18mid)
 "CK" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/door_assembly/door_assembly_hatch,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/transport18mid)
-"CX" = (
+"CS" = (
 /obj/structure/lattice,
 /obj/structure/fluff/broken_flooring{
 	dir = 4;
@@ -1121,38 +1117,12 @@
 	},
 /turf/closed/wall/rust,
 /area/ruin/space/has_grav/transport18mid)
-"Dr" = (
-/obj/machinery/light/dim/directional/north,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet/airless,
-/area/ruin/space/has_grav/transport18mid)
 "Dy" = (
 /obj/structure/closet/secure_closet/freezer/fridge/open,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/plasteel/airless,
 /area/ruin/space/has_grav/transport18mid)
-"DF" = (
-/obj/structure/reagent_dispensers/beerkeg,
-/obj/effect/turf_decal/industrial/outline/yellow,
-/obj/machinery/light/small/directional/north,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/dark/airless,
-/area/ruin/space/has_grav/transport18mid)
-"DM" = (
-/obj/effect/turf_decal/industrial/outline/yellow,
-/obj/machinery/light/small/broken/directional/north,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/dark/airless,
-/area/ruin/space/has_grav/transport18mid)
-"EB" = (
-/obj/machinery/light/small/broken/directional/north,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/airless,
-/area/ruin/space/transport18aft)
 "ES" = (
 /obj/item/stack/cable_coil/cut/cyan,
 /obj/structure/fluff/broken_flooring{
@@ -1208,40 +1178,23 @@
 	},
 /turf/open/floor/plasteel/dark/airless,
 /area/ruin/space/has_grav/transport18mid)
-"Gp" = (
-/obj/structure/fluff/broken_flooring{
-	dir = 4;
-	icon_state = "singular"
-	},
-/turf/open/space,
-/area/space)
-"Gq" = (
-/obj/structure/grille,
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "transp19_windows";
-	dir = 4
-	},
-/turf/open/floor/plating/airless,
-/area/ruin/space/has_grav/transport18mid)
-"Hd" = (
-/obj/machinery/light/dim/directional/west,
+"Gt" = (
+/obj/machinery/light/dim/directional/north,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/vomit/old,
-/obj/item/shard,
-/turf/open/floor/plasteel/airless,
+/turf/open/floor/carpet/airless,
 /area/ruin/space/has_grav/transport18mid)
 "Hr" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ruin/space/transport18aft)
-"Hy" = (
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "transp19_windows";
-	dir = 4
+"HL" = (
+/obj/structure/fluff/broken_flooring{
+	dir = 1;
+	icon_state = "plating"
 	},
-/obj/structure/grille,
-/turf/open/floor/plating/airless,
-/area/ruin/space/has_grav/transport18mid)
+/obj/structure/lattice,
+/turf/open/space,
+/area/space)
 "HN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1277,9 +1230,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/transport18mid)
-"IF" = (
-/obj/item/stack/sheet/metal,
-/turf/template_noop,
+"Iz" = (
+/obj/structure/fluff/broken_flooring{
+	dir = 2;
+	icon_state = "plating"
+	},
+/obj/structure/lattice,
+/turf/open/space,
 /area/space)
 "IG" = (
 /obj/structure/cable{
@@ -1309,34 +1266,18 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/airless,
 /area/ruin/space/has_grav/transport18mid)
-"Jl" = (
-/obj/machinery/power/apc/auto_name/directional/east,
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/item/trash/candy,
+"Jv" = (
+/obj/machinery/light/small/directional/north,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/machinery/plumbing/tank,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/airless,
+/turf/open/floor/plasteel/dark/airless,
 /area/ruin/space/has_grav/transport18mid)
-"Jx" = (
-/obj/item/stack/cable_coil/cut/yellow,
-/turf/template_noop,
-/area/space)
 "JM" = (
 /obj/item/construction/plumbing,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark/airless,
-/area/ruin/space/has_grav/transport18mid)
-"JR" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/door/airlock/public{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/airless,
 /area/ruin/space/has_grav/transport18mid)
 "JV" = (
 /obj/structure/fluff/broken_flooring{
@@ -1362,9 +1303,6 @@
 	},
 /turf/open/floor/plasteel/dark/airless,
 /area/ruin/space/has_grav/transport18mid)
-"Le" = (
-/turf/open/space,
-/area/space)
 "Lg" = (
 /obj/structure/chair/comfy/shuttle,
 /obj/effect/decal/cleanable/dirt,
@@ -1386,13 +1324,6 @@
 	icon_state = "platingdmg1"
 	},
 /area/ruin/space/transport18aft)
-"LE" = (
-/obj/structure/fluff/broken_flooring{
-	dir = 4;
-	icon_state = "plating"
-	},
-/turf/open/space,
-/area/space)
 "LI" = (
 /obj/structure/door_assembly/door_assembly_hatch,
 /obj/item/stack/cable_coil/cut/red,
@@ -1405,20 +1336,15 @@
 	},
 /turf/open/floor/plating/airless,
 /area/ruin/space/transport18aft)
-"Mz" = (
-/obj/effect/spawner/structure/window/shuttle,
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "transp19_windows";
-	dir = 4
+"Mw" = (
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable{
+	icon_state = "0-2"
 	},
-/turf/open/floor/plating/airless,
-/area/ruin/space/has_grav/transport18mid)
-"MA" = (
-/obj/effect/turf_decal/industrial/outline/yellow,
-/obj/machinery/light/small/built/directional/north,
+/obj/item/trash/can,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/dark/airless,
+/turf/open/floor/carpet/blue/airless,
 /area/ruin/space/has_grav/transport18mid)
 "MV" = (
 /obj/structure/table/reinforced,
@@ -1435,10 +1361,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/transport18mid)
-"ND" = (
-/obj/structure/reagent_dispensers/beerkeg,
-/turf/open/space,
-/area/space)
 "NH" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
@@ -1446,13 +1368,26 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/airless,
 /area/ruin/space/has_grav/transport18mid)
-"Oi" = (
+"Oh" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "transp19_windows";
 	dir = 4
 	},
-/obj/structure/grille/broken,
+/obj/structure/grille,
+/obj/item/shard,
 /turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/transport18mid)
+"OF" = (
+/obj/item/storage/cans/sixbeer,
+/obj/item/storage/cans/sixbeer,
+/obj/item/storage/cans/sixbeer,
+/obj/item/storage/cans/sixbeer,
+/obj/item/storage/cans/sixbeer,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/machinery/light/small/directional/north,
+/obj/item/stack/sheet/mineral/wood,
+/obj/effect/decal/cleanable/greenglow,
+/turf/open/floor/plasteel/dark/airless,
 /area/ruin/space/has_grav/transport18mid)
 "OS" = (
 /obj/structure/frame/computer{
@@ -1461,11 +1396,25 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/airless,
 /area/ruin/space/has_grav/transport18mid)
+"OY" = (
+/obj/machinery/light/broken/directional/west,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/fluff/paper/stack{
+	dir = 8
+	},
+/turf/open/floor/plasteel/airless,
+/area/ruin/space/has_grav/transport18mid)
 "Pm" = (
 /obj/structure/girder,
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
+/area/ruin/space/transport18aft)
+"Po" = (
+/obj/machinery/light/small/broken/directional/north,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/airless,
 /area/ruin/space/transport18aft)
 "Pq" = (
 /obj/machinery/power/terminal{
@@ -1480,18 +1429,14 @@
 	icon_state = "platingdmg1"
 	},
 /area/ruin/space/transport18aft)
-"PC" = (
-/obj/structure/lattice,
-/obj/structure/fluff/broken_flooring{
-	dir = 8;
-	icon_state = "plating"
-	},
-/turf/open/space,
-/area/space)
-"PJ" = (
-/obj/structure/lattice,
-/turf/open/space,
-/area/space)
+"Py" = (
+/obj/machinery/light/small/broken/directional/south,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/machinery/plumbing/tank,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark/airless,
+/area/ruin/space/has_grav/transport18mid)
 "PV" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/trash/can,
@@ -1529,6 +1474,10 @@
 	icon_state = "platingdmg2"
 	},
 /area/ruin/space/transport18aft)
+"QF" = (
+/obj/item/trash/can,
+/turf/open/space,
+/area/space)
 "QP" = (
 /obj/structure/door_assembly/door_assembly_hatch,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1545,6 +1494,20 @@
 	pixel_y = -8
 	},
 /obj/effect/decal/cleanable/vomit/old,
+/turf/open/floor/plasteel/dark/airless,
+/area/ruin/space/has_grav/transport18mid)
+"Rj" = (
+/obj/item/storage/cans/sixbeer,
+/obj/item/storage/cans/sixbeer,
+/obj/item/storage/cans/sixbeer,
+/obj/item/storage/cans/sixbeer,
+/obj/item/storage/cans/sixbeer,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/structure/closet/crate/large{
+	name = "damp crate"
+	},
+/obj/machinery/light/small/directional/south,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark/airless,
 /area/ruin/space/has_grav/transport18mid)
 "Ro" = (
@@ -1576,6 +1539,10 @@
 /obj/item/storage/cans/sixbeer,
 /turf/open/floor/plasteel/dark/airless,
 /area/ruin/space/has_grav/transport18mid)
+"SJ" = (
+/obj/item/stack/sheet/metal,
+/turf/open/space,
+/area/space)
 "SQ" = (
 /obj/structure/mirror{
 	broken = 1;
@@ -1594,24 +1561,35 @@
 /obj/effect/decal/cleanable/vomit/old,
 /turf/open/floor/carpet/airless,
 /area/ruin/space/has_grav/transport18mid)
+"SS" = (
+/obj/item/stack/cable_coil/cut/yellow,
+/turf/template_noop,
+/area/space)
 "Tp" = (
 /obj/machinery/holopad,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/airless,
 /area/ruin/space/has_grav/transport18mid)
+"Tq" = (
+/obj/machinery/light/small/directional/north,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark/airless,
+/area/ruin/space/has_grav/transport18mid)
 "Tu" = (
 /obj/structure/reagent_dispensers/beerkeg,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark/airless,
 /area/ruin/space/has_grav/transport18mid)
-"TD" = (
-/obj/machinery/light/broken/directional/west,
-/obj/effect/decal/cleanable/dirt,
+"Ty" = (
+/turf/open/space,
+/area/space)
+"TO" = (
+/obj/structure/table/reinforced,
+/obj/item/radio/intercom/directional/north,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/fluff/paper/stack{
-	dir = 8
-	},
 /turf/open/floor/plasteel/airless,
 /area/ruin/space/has_grav/transport18mid)
 "TU" = (
@@ -1626,6 +1604,10 @@
 "TZ" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ruin/space/has_grav/transport18mid)
+"Uh" = (
+/obj/structure/lattice,
+/turf/open/space,
+/area/space)
 "Uu" = (
 /obj/machinery/door/airlock/hatch,
 /obj/structure/cable{
@@ -1648,13 +1630,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark/airless,
 /area/ruin/space/has_grav/transport18mid)
-"Va" = (
-/obj/structure/reagent_dispensers/beerkeg,
-/obj/effect/turf_decal/industrial/outline/yellow,
-/obj/machinery/light/small/broken/directional/south,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/dark/airless,
-/area/ruin/space/has_grav/transport18mid)
 "Vm" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1662,14 +1637,19 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/airless,
 /area/ruin/space/has_grav/transport18mid)
-"VG" = (
-/obj/structure/fluff/broken_flooring{
-	dir = 1;
-	icon_state = "plating"
-	},
+"Vt" = (
 /obj/structure/lattice,
+/obj/structure/reagent_dispensers/beerkeg,
 /turf/open/space,
 /area/space)
+"VN" = (
+/obj/effect/spawner/structure/window/shuttle,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "transp19_windows";
+	dir = 4
+	},
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/transport18mid)
 "Wb" = (
 /obj/structure/girder,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1681,6 +1661,14 @@
 /obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/plasteel/dark/airless,
 /area/ruin/space/has_grav/transport18mid)
+"Wg" = (
+/obj/structure/lattice,
+/obj/structure/fluff/broken_flooring{
+	dir = 4;
+	icon_state = "pile"
+	},
+/turf/template_noop,
+/area/space)
 "Wr" = (
 /obj/effect/turf_decal/number/zero{
 	color = "#000000"
@@ -1701,6 +1689,10 @@
 /obj/machinery/portable_atmospherics/canister/air,
 /turf/open/floor/plasteel/dark/airless,
 /area/ruin/space/has_grav/transport18mid)
+"WQ" = (
+/obj/structure/girder,
+/turf/open/space,
+/area/space)
 "Xb" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1714,23 +1706,21 @@
 /obj/structure/fluff/paper/stack,
 /turf/open/floor/carpet/blue/airless,
 /area/ruin/space/has_grav/transport18mid)
-"XQ" = (
-/obj/item/storage/cans/sixbeer,
-/obj/item/storage/cans/sixbeer,
-/obj/item/storage/cans/sixbeer,
-/obj/item/storage/cans/sixbeer,
-/obj/item/storage/cans/sixbeer,
-/obj/effect/turf_decal/industrial/outline/yellow,
-/obj/structure/closet/crate/large{
-	name = "damp crate"
-	},
-/obj/machinery/light/small/broken/directional/south,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/dark/airless,
-/area/ruin/space/has_grav/transport18mid)
 "XU" = (
 /turf/closed/wall/mineral/titanium,
 /area/ruin/space/has_grav/transport18mid)
+"Yy" = (
+/obj/structure/cable/cyan{
+	icon_state = "6-10"
+	},
+/obj/item/stack/cable_coil/cut/red,
+/obj/machinery/light/small/built/directional/north,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating{
+	icon_state = "platingdmg1"
+	},
+/area/ruin/space/transport18aft)
 "YC" = (
 /obj/effect/turf_decal/number/one{
 	color = "#000000";
@@ -1744,6 +1734,16 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark/airless,
+/area/ruin/space/has_grav/transport18mid)
+"YT" = (
+/obj/machinery/door/airlock/hatch{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/pod,
 /area/ruin/space/has_grav/transport18mid)
 "Zl" = (
 /obj/item/stack/cable_coil/cut/red,
@@ -1765,15 +1765,32 @@
 	icon_state = "platingdmg3"
 	},
 /area/ruin/space/transport18aft)
-"ZH" = (
-/obj/item/stack/sheet/mineral/titanium,
-/turf/open/space,
-/area/space)
+"ZU" = (
+/obj/structure/table/reinforced,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/radio/intercom/wideband/table{
+	dir = 1
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/table/reinforced,
+/obj/item/radio/intercom/wideband/directional/north,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/airless,
+/area/ruin/space/has_grav/transport18mid)
 "ZX" = (
 /obj/structure/girder,
 /obj/item/stack/sheet/mineral/titanium,
 /turf/open/floor/plating,
 /area/ruin/space/transport18aft)
+"ZY" = (
+/obj/item/stack/rods,
+/turf/open/space,
+/area/space)
 
 (1,1,1) = {"
 eg
@@ -1781,7 +1798,7 @@ eg
 eg
 eg
 eg
-mj
+ZY
 eg
 eg
 eg
@@ -1792,7 +1809,7 @@ eg
 eg
 Hr
 eg
-Gp
+wh
 eg
 eg
 eg
@@ -1827,7 +1844,7 @@ eg
 eg
 eg
 eg
-mj
+ZY
 eg
 eg
 eg
@@ -1853,7 +1870,7 @@ eg
 eg
 eg
 eg
-PJ
+Uh
 eg
 eg
 eg
@@ -1885,13 +1902,13 @@ eg
 eg
 eg
 vo
-PJ
+Uh
 eg
 eg
 eg
 eg
 eg
-jl
+QF
 eg
 eg
 eg
@@ -1906,7 +1923,7 @@ eg
 (5,1,1) = {"
 eg
 eg
-mj
+ZY
 eg
 eg
 eg
@@ -1922,7 +1939,7 @@ eg
 eg
 eg
 eg
-ZH
+rE
 eg
 eg
 eg
@@ -1942,7 +1959,7 @@ eg
 eg
 eg
 eg
-ZH
+rE
 eg
 eg
 eg
@@ -1982,7 +1999,7 @@ eg
 eg
 eg
 eg
-oT
+WQ
 eg
 eg
 eg
@@ -2013,7 +2030,7 @@ eg
 eg
 eg
 eg
-ZH
+rE
 eg
 eg
 eg
@@ -2040,7 +2057,7 @@ eg
 eg
 eg
 eg
-Gp
+wh
 eg
 eg
 eg
@@ -2056,7 +2073,7 @@ jV
 eg
 eg
 eg
-ZH
+rE
 eg
 eg
 eg
@@ -2076,7 +2093,7 @@ eg
 eg
 LD
 eg
-PJ
+Uh
 eg
 eg
 eg
@@ -2109,10 +2126,10 @@ Hr
 Hr
 eg
 eg
-Jx
-PJ
+SS
+Uh
 eg
-PJ
+Uh
 eg
 eg
 Xb
@@ -2138,20 +2155,20 @@ eg
 eg
 eg
 eg
-Jx
+SS
 eg
 eg
-IF
-PJ
+kQ
+Uh
 eg
-PJ
-CX
-PJ
+Uh
+CS
+Uh
 zL
 Zl
-PC
+nV
 eg
-yk
+vz
 eg
 eg
 eg
@@ -2168,19 +2185,19 @@ Mi
 Mi
 Hr
 eg
-PJ
-PJ
+Uh
+Uh
 eg
 eg
-PJ
-PJ
+Uh
+Uh
 iD
 eg
 Hr
 pr
 eg
 wU
-PJ
+Uh
 eg
 eg
 eg
@@ -2201,18 +2218,18 @@ nw
 Hr
 eg
 yv
-xA
-PJ
+Iz
+Uh
 gp
 eg
 eg
 Hr
 eg
 Hr
-PJ
-PJ
-PJ
-PJ
+Uh
+Uh
+Uh
+Uh
 eg
 eg
 eg
@@ -2235,23 +2252,23 @@ eg
 Hr
 jq
 Pq
-PJ
+Uh
 eg
-vr
+Wg
 Hr
 eg
 hn
-PJ
+Uh
 eg
 eg
-PJ
+Uh
 eg
-mj
-eg
-eg
+ZY
 eg
 eg
-ND
+eg
+eg
+xC
 eg
 eg
 "}
@@ -2260,23 +2277,23 @@ eg
 eg
 eg
 Hr
-EB
+Po
 gx
 Hr
 Hr
 Hr
-bh
+Yy
 fw
-PJ
-VG
+Uh
+HL
 mX
 Wb
 Hr
 Hr
 wb
-qf
+sp
 eg
-PJ
+Uh
 eg
 eg
 eg
@@ -2303,11 +2320,11 @@ jq
 Xb
 Zz
 LI
-PJ
+Uh
 zL
 zN
 zG
-PJ
+Uh
 Hr
 aT
 eg
@@ -2335,12 +2352,12 @@ xm
 kR
 rF
 Hr
-Le
-LE
+Ty
+AO
 kC
 Xb
 eg
-PJ
+Uh
 Hr
 eg
 eg
@@ -2367,8 +2384,8 @@ wi
 TU
 qM
 eK
-PJ
-cN
+Uh
+Vt
 Hr
 Hr
 eg
@@ -2379,7 +2396,7 @@ eg
 eg
 eg
 eg
-jl
+QF
 eg
 eg
 "}
@@ -2400,12 +2417,12 @@ Hr
 Hr
 gs
 eg
-PJ
+Uh
 eg
-PJ
+Uh
 eg
 eg
-PJ
+Uh
 eg
 eg
 eg
@@ -2430,7 +2447,7 @@ TZ
 Ir
 TZ
 eg
-PJ
+Uh
 eg
 tJ
 gZ
@@ -2473,7 +2490,7 @@ fy
 IT
 eg
 eg
-ND
+xC
 eg
 eg
 eg
@@ -2491,20 +2508,20 @@ uo
 dp
 IT
 TZ
-fx
+sh
 TZ
 eg
 eg
 eg
 IT
-MA
+iB
 uo
 dp
 BM
-Bv
+qN
 lY
 eg
-ND
+xC
 eg
 eg
 eg
@@ -2516,18 +2533,18 @@ eg
 eg
 eg
 Do
-lf
+Jv
 BM
 Zn
 UB
-iW
+Py
 rC
 TZ
 Kv
 TZ
-PJ
-PJ
-PJ
+Uh
+Uh
+Uh
 IT
 dp
 BM
@@ -2558,7 +2575,7 @@ TZ
 Kv
 TZ
 eg
-PJ
+Uh
 eg
 QP
 uo
@@ -2589,9 +2606,9 @@ Sd
 oL
 Kv
 CK
-PJ
-PJ
-ba
+Uh
+Uh
+ih
 IT
 dp
 zY
@@ -2599,7 +2616,7 @@ dp
 BM
 wC
 eS
-ND
+xC
 eg
 eg
 eg
@@ -2621,15 +2638,15 @@ IT
 TZ
 Kv
 TZ
-ZH
+rE
 eg
 eg
 IT
-DM
+lt
 BM
 dp
 uo
-Bv
+qN
 lY
 eg
 eg
@@ -2637,23 +2654,23 @@ eg
 eg
 eg
 eg
-ND
+xC
 "}
 (28,1,1) = {"
 eg
 eg
 eg
 Do
-ur
+Tq
 BM
 Sr
 BM
-CH
+ju
 IT
 TZ
-tb
+jC
 tJ
-mj
+ZY
 eg
 eg
 rC
@@ -2686,8 +2703,8 @@ TZ
 Kv
 pN
 eg
-mj
-PJ
+ZY
+Uh
 rC
 IT
 rC
@@ -2705,7 +2722,7 @@ eg
 "}
 (30,1,1) = {"
 eg
-jl
+QF
 eg
 IT
 IT
@@ -2717,13 +2734,13 @@ IT
 TZ
 tu
 TZ
-PJ
+Uh
 eg
 eg
 eg
-PJ
+Uh
 eg
-PJ
+Uh
 eg
 eg
 eg
@@ -2753,11 +2770,11 @@ eg
 eg
 eg
 eg
-PJ
+Uh
 eg
-PJ
+Uh
 eg
-km
+SJ
 eg
 eg
 eg
@@ -2824,7 +2841,7 @@ eg
 eg
 eg
 eg
-jl
+QF
 eg
 eg
 eg
@@ -2834,23 +2851,23 @@ eg
 (34,1,1) = {"
 eg
 eg
-jl
+QF
 sr
 oa
 yI
 uC
 QS
-jr
+Rj
 IT
 TZ
-ot
+fe
 TZ
 rC
 YJ
 BM
 fy
 uo
-Va
+Bo
 IT
 eg
 eg
@@ -2864,7 +2881,7 @@ eg
 eg
 "}
 (35,1,1) = {"
-jl
+QF
 eg
 eg
 mt
@@ -2917,7 +2934,7 @@ fE
 uo
 pF
 eg
-jl
+QF
 eg
 eg
 eg
@@ -2964,21 +2981,21 @@ eg
 eg
 eg
 BO
-of
+OF
 BM
 ne
 HN
-XQ
+tc
 rC
 TZ
 Ir
 TZ
 rC
-DF
+kM
 BM
 YJ
 BM
-Va
+Bo
 gf
 eg
 eg
@@ -3003,7 +3020,7 @@ jP
 oa
 IT
 TZ
-mU
+ui
 TZ
 rC
 fy
@@ -3020,7 +3037,7 @@ eg
 eg
 eg
 eg
-jl
+QF
 eg
 "}
 (40,1,1) = {"
@@ -3064,7 +3081,7 @@ eg
 eg
 eg
 eg
-ZH
+rE
 eg
 TZ
 Ir
@@ -3077,7 +3094,7 @@ eg
 eg
 eg
 eg
-jl
+QF
 eg
 eg
 eg
@@ -3094,12 +3111,12 @@ eg
 eg
 TZ
 TZ
-wj
+Oh
 tJ
 TZ
 TZ
 TZ
-mA
+YT
 TZ
 TZ
 TZ
@@ -3157,19 +3174,19 @@ eg
 eg
 eg
 YC
-rV
+kZ
 nJ
 dy
-et
+zM
 TZ
-gD
+cL
 Jk
-qY
+qa
 TZ
-Dr
+Gt
 np
 np
-nL
+tM
 xz
 eg
 eg
@@ -3191,7 +3208,7 @@ eg
 aV
 Dy
 Qh
-Jl
+qB
 zr
 ax
 zr
@@ -3199,7 +3216,7 @@ IG
 zr
 zp
 Vm
-dH
+BA
 uj
 iy
 Fc
@@ -3227,7 +3244,7 @@ TZ
 TZ
 TZ
 TZ
-JR
+cZ
 TZ
 TZ
 TZ
@@ -3236,7 +3253,7 @@ TZ
 go
 tJ
 eg
-ZH
+rE
 eg
 eg
 eg
@@ -3257,17 +3274,17 @@ TZ
 TZ
 TZ
 lV
-TD
-iZ
+OY
+Mw
 bT
 PV
-Hd
+pQ
 Lq
 TZ
 TZ
 tJ
 eg
-mj
+ZY
 eg
 eg
 eg
@@ -3321,11 +3338,11 @@ eg
 XU
 TZ
 Wx
-Ah
+ZU
 dU
 vg
 eJ
-gY
+TO
 PZ
 TZ
 XU
@@ -3352,13 +3369,13 @@ eg
 eg
 eg
 XU
-Mz
+VN
 tY
 jz
 jz
 jz
 yG
-Mz
+VN
 XU
 eg
 eg
@@ -3385,15 +3402,15 @@ eg
 eg
 eg
 eg
-Mz
-Hy
-Gq
-wD
-Oi
-mj
+VN
+pI
+wB
+hZ
+BX
+ZY
 eg
 eg
-ZH
+rE
 eg
 eg
 eg
