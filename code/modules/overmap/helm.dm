@@ -168,31 +168,7 @@
 
 	.["calibrating"] = calibrating
 	.["otherInfo"] = list()
-	var/list/objects = current_ship.get_nearby_overmap_objects()
-	var/dequeue_pointer = 0
-	while (dequeue_pointer++ < objects.len)
-		var/datum/overmap/ship/controlled/object = objects[dequeue_pointer]
-		if(!istype(object, /datum/overmap)) //Not an overmap object, ignore this
-			continue
-
-		var/available_dock = FALSE
-
-		//Even if its full or incompatible with us, it should still show up.
-		if(object in SSovermap.overmap_container[current_ship.x][current_ship.y])
-			available_dock = TRUE
-
-		//Detect any ships in this location we can dock to
-		if(istype(object))
-			for(var/obj/docking_port/stationary/docking_port in object.shuttle_port.docking_points)
-				if(current_ship.shuttle_port.check_dock(docking_port, silent = TRUE))
-					available_dock = TRUE
-					break
-
-		objects |= object.contents
-
-		if(!available_dock)
-			continue
-
+	for (var/datum/overmap/object as anything in current_ship.get_nearby_overmap_objects())
 		var/list/other_data = list(
 			name = object.name,
 			ref = REF(object)
@@ -206,11 +182,9 @@
 	.["heading"] = dir2text(current_ship.get_heading()) || "None"
 	.["speed"] = current_ship.get_speed()
 	.["eta"] = current_ship.get_eta()
-	.["estThrust"] = current_ship.est_thrust
+	.["est_thrust"] = current_ship.est_thrust
 	.["engineInfo"] = list()
-	.["aiControls"] = allow_ai_control
-	.["burnDirection"] = current_ship.burn_direction
-	.["burnPercentage"] = current_ship.burn_percentage
+	.["ai_controls"] = allow_ai_control
 	for(var/obj/machinery/power/shuttle/engine/E as anything in current_ship.shuttle_port.engine_list)
 		var/list/engine_data
 		if(!E.thruster_active)
@@ -238,11 +212,11 @@
 	.["shipInfo"] = list(
 		name = current_ship.name,
 		class = current_ship.source_template?.name,
-		mass = current_ship.shuttle_port.turf_count,
+		mass = current_ship.mass,
 		sensor_range = 4
 	)
 	.["canFly"] = TRUE
-	.["aiUser"] = issilicon(user)
+	.["ai_user"] = issilicon(user)
 
 /obj/machinery/computer/helm/ui_act(action, list/params, datum/tgui/ui, datum/ui_state/state)
 	. = ..()
@@ -296,7 +270,7 @@
 				if(SSshuttle.jump_mode > BS_JUMP_CALLED)
 					to_chat(usr, "<span class='warning'>Cannot dock due to bluespace jump preperations!</span>")
 					return
-				var/datum/overmap/to_act = locate(params["ship_to_act"]) in current_ship.get_nearby_overmap_objects(include_docked = TRUE)
+				var/datum/overmap/to_act = locate(params["ship_to_act"]) in current_ship.get_nearby_overmap_objects()
 				say(current_ship.Dock(to_act))
 				return
 			if("toggle_engine")
@@ -305,22 +279,11 @@
 				E.update_icon_state()
 				current_ship.refresh_engines()
 				return
-			if("change_burn_percentage")
-				var/new_percentage = clamp(text2num(params["percentage"]), 1, 100)
-				current_ship.burn_percentage = new_percentage
-				return
 			if("change_heading")
-				var/new_direction = text2num(params["dir"])
-				if(new_direction == current_ship.burn_direction)
-					current_ship.change_heading(BURN_NONE)
-					return
-				current_ship.change_heading(new_direction)
+				current_ship.burn_engines(text2num(params["dir"]))
 				return
 			if("stop")
-				if(current_ship.burn_direction == BURN_NONE)
-					current_ship.change_heading(BURN_STOP)
-					return
-				current_ship.change_heading(BURN_NONE)
+				current_ship.burn_engines()
 				return
 			if("bluespace_jump")
 				if(calibrating)
@@ -406,15 +369,12 @@
 
 /obj/machinery/computer/helm/viewscreen
 	name = "ship viewscreen"
-	icon_state = "wallconsole"
-	icon_screen = "wallconsole_navigation"
-	icon_keyboard = null
+	icon = 'icons/obj/stationobjs.dmi'
+	icon_state = "telescreen"
 	layer = SIGN_LAYER
 	density = FALSE
 	viewer = TRUE
 	unique_icon = TRUE
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/helm/viewscreen, 17)
 
 #undef JUMP_STATE_OFF
 #undef JUMP_STATE_CHARGING
