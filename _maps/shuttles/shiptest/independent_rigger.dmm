@@ -35,13 +35,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
-"aF" = (
-/obj/machinery/power/apc/auto_name/directional/east,
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/turf/open/floor/plating,
-/area/ship/maintenance/port)
 "aI" = (
 /obj/machinery/light/small/directional/south,
 /obj/effect/turf_decal/borderfloor,
@@ -79,28 +72,16 @@
 /obj/effect/spawner/lootdrop/maintenance/three,
 /turf/open/floor/plating,
 /area/ship/construction)
-"be" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/door/airlock/grunge{
+"bl" = (
+/obj/structure/grille,
+/obj/machinery/door/poddoor/shutters{
 	dir = 4;
-	name = "Atmospherics"
+	id = "riggerwindows";
+	name = "Blast Shutters"
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/ship/engineering/atmospherics)
+/obj/structure/window/plasma/reinforced/plastitanium,
+/turf/open/floor/plating,
+/area/ship/crew/canteen)
 "bx" = (
 /obj/structure/chair/office{
 	name = "Operations"
@@ -132,49 +113,6 @@
 "bC" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/crew)
-"bE" = (
-/obj/structure/sink{
-	dir = 8;
-	pixel_x = 12
-	},
-/obj/effect/turf_decal/borderfloor{
-	dir = 5
-	},
-/obj/effect/turf_decal/corner/opaque/white{
-	dir = 8
-	},
-/obj/item/storage/box/bodybags{
-	pixel_x = -7;
-	pixel_y = 4
-	},
-/obj/item/storage/box/syringes{
-	pixel_x = -6
-	},
-/obj/item/reagent_containers/glass/bottle/formaldehyde{
-	pixel_x = 8;
-	pixel_y = 8
-	},
-/obj/item/reagent_containers/glass/bottle{
-	list_reagents = list(/datum/reagent/medicine/thializid=30);
-	name = "thializid bottle";
-	pixel_x = 5
-	},
-/obj/item/reagent_containers/syringe{
-	pixel_x = 7
-	},
-/obj/structure/closet/secure_closet/wall{
-	dir = 8;
-	icon_door = "med_wall";
-	locked = 0;
-	name = "mortuary locker";
-	pixel_x = 28;
-	req_access_txt = "1"
-	},
-/obj/effect/turf_decal/corner/opaque/green{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/ship/medical)
 "bL" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
@@ -183,39 +121,35 @@
 /obj/structure/catwalk/over,
 /turf/open/floor/plating,
 /area/ship/engineering)
-"bW" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/machinery/atmospherics/pipe/simple/green/visible,
-/obj/structure/catwalk/over,
-/obj/machinery/light_switch{
-	dir = 4;
-	pixel_x = -20;
-	pixel_y = 5
-	},
-/turf/open/floor/plating,
-/area/ship/engineering/atmospherics)
-"bX" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 10
-	},
-/obj/machinery/light_switch{
-	pixel_y = 22
-	},
-/turf/open/floor/plasteel/grimy,
-/area/ship/security)
 "ci" = (
 /obj/effect/turf_decal/corner/opaque/brown/border{
 	dir = 1
 	},
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
+"cn" = (
+/obj/structure/mirror{
+	pixel_x = 25
+	},
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = 12
+	},
+/obj/machinery/light/small/directional/south,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/mirror{
+	pixel_x = 25
+	},
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = 12
+	},
+/obj/machinery/light/small/directional/south,
+/obj/machinery/airalarm/directional/south,
+/turf/open/floor/plasteel/patterned,
+/area/ship/crew)
 "cv" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel/mono,
@@ -232,6 +166,14 @@
 /obj/item/mining_scanner,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
+"cJ" = (
+/obj/docking_port/stationary{
+	dwidth = 7;
+	height = 15;
+	width = 14
+	},
+/turf/template_noop,
+/area/template_noop)
 "cR" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
@@ -239,59 +181,33 @@
 /obj/effect/landmark/start/shaft_miner,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
-"cT" = (
-/obj/structure/sink{
-	pixel_y = 20
-	},
-/obj/structure/mirror{
-	pixel_y = 32
-	},
-/obj/machinery/light/small/directional/west,
-/turf/open/floor/plasteel/patterned,
-/area/ship/crew)
 "db" = (
 /obj/effect/turf_decal/corner/opaque/yellow/diagonal,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
-"dd" = (
-/obj/structure/cable{
-	icon_state = "1-2"
+"dv" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+/obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
-/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
-/obj/item/radio/intercom/directional/east,
-/turf/open/floor/plasteel/white,
-/area/ship/crew/canteen)
-"dF" = (
-/obj/effect/turf_decal/industrial/outline/yellow,
-/obj/structure/table/reinforced,
-/obj/item/megaphone/command{
-	pixel_x = -5;
-	pixel_y = 9
+/obj/machinery/door/airlock/virology/glass{
+	dir = 4;
+	name = "Infirmary"
 	},
-/obj/item/storage/box/matches,
-/obj/item/reagent_containers/food/snacks/grown/tobacco{
-	dry = 1;
-	name = "dried tobacco leaves"
-	},
-/obj/item/reagent_containers/food/snacks/grown/tobacco{
-	dry = 1;
-	name = "dried tobacco leaves"
-	},
-/obj/item/reagent_containers/food/snacks/grown/tobacco{
-	dry = 1;
-	name = "dried tobacco leaves"
-	},
-/obj/item/reagent_containers/food/snacks/grown/tobacco{
-	dry = 1;
-	name = "dried tobacco leaves"
-	},
-/obj/item/clothing/mask/cigarette/pipe/cobpipe,
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/medical)
+"dw" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/stand_clear,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ship/cargo)
 "dJ" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/structure/closet/firecloset,
@@ -343,24 +259,48 @@
 /obj/effect/turf_decal/industrial/outline/yellow,
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
+"eL" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/closet/wall{
+	icon_door = "red_wall";
+	name = "security closet";
+	pixel_y = 28
+	},
+/obj/item/storage/backpack/security,
+/obj/item/clothing/gloves/fingerless,
+/obj/item/clothing/shoes/cowboy,
+/obj/item/clothing/under/rank/security/officer/blueshirt,
+/obj/item/clothing/glasses/hud/security/sunglasses,
+/obj/item/clothing/suit/armor/vest/duster,
+/obj/item/clothing/head/cowboy/sec,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/light/small/directional/north,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/closet/wall{
+	icon_door = "red_wall";
+	name = "security closet";
+	pixel_y = 28
+	},
+/obj/item/storage/backpack/security,
+/obj/item/clothing/gloves/fingerless,
+/obj/item/clothing/shoes/cowboy,
+/obj/item/clothing/under/rank/security/officer/blueshirt,
+/obj/item/clothing/glasses/hud/security/sunglasses,
+/obj/item/clothing/suit/armor/vest/duster,
+/obj/item/clothing/head/cowboy/sec,
+/turf/open/floor/plasteel/grimy,
+/area/ship/security)
 "eQ" = (
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
 /turf/open/floor/plating,
 /area/ship/crew/canteen)
-"eV" = (
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
-/obj/machinery/door/airlock/virology/glass{
-	dir = 4;
-	name = "Infirmary"
-	},
-/turf/open/floor/plasteel/dark,
-/area/ship/medical)
 "ff" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -397,11 +337,17 @@
 	},
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
-"fC" = (
-/obj/structure/filingcabinet/security,
-/obj/machinery/newscaster/security_unit/directional/south,
-/turf/open/floor/plasteel/grimy,
-/area/ship/security)
+"fD" = (
+/obj/structure/grille,
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "riggerwindows";
+	name = "Blast Shutters"
+	},
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/curtain,
+/turf/open/floor/plating,
+/area/ship/crew)
 "fO" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -423,31 +369,121 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
+"fS" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/airlock/public/glass{
+	dir = 4;
+	name = "Communications"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/engineering/communications)
+"fT" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/corner/opaque/red/border{
+	dir = 4
+	},
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/security)
+"fX" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/opaque/red,
+/obj/effect/turf_decal/corner/opaque/red{
+	dir = 8
+	},
+/obj/structure/closet/secure_closet/wall{
+	dir = 1;
+	icon_state = "sec_wall";
+	name = "firearms locker";
+	pixel_y = -28;
+	req_access_txt = "1"
+	},
+/obj/item/storage/belt/security,
+/obj/item/clothing/accessory/holster,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/light/small/directional/south,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/opaque/red,
+/obj/effect/turf_decal/corner/opaque/red{
+	dir = 8
+	},
+/obj/structure/closet/secure_closet/wall{
+	dir = 1;
+	icon_state = "sec_wall";
+	name = "firearms locker";
+	pixel_y = -28;
+	req_access_txt = "1"
+	},
+/obj/item/storage/belt/security,
+/obj/item/clothing/accessory/holster,
+/turf/open/floor/plasteel/dark,
+/area/ship/security)
 "gc" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
 	},
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew)
-"gg" = (
-/obj/structure/window/reinforced/spawner/east,
-/obj/machinery/sleeper,
-/turf/open/floor/plasteel/mono,
-/area/ship/medical)
-"ho" = (
-/obj/machinery/door/poddoor{
-	id = "riggs_cargo";
-	name = "Mech Bay Blast Door"
-	},
-/turf/open/floor/engine/hull/interior,
-/area/ship/cargo)
-"hw" = (
-/obj/effect/turf_decal/corner/opaque/blue/border{
+"gd" = (
+/obj/machinery/cryopod{
 	dir = 1
 	},
-/obj/item/radio/intercom/wideband/directional/east,
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/bridge)
+/obj/machinery/computer/cryopod/directional/south,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 5
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/crew)
+"gx" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/closet/secure_closet/wall{
+	icon_state = "sec_wall";
+	name = "ammunition locker";
+	pixel_y = 28;
+	req_access_txt = "1"
+	},
+/obj/item/ammo_box/c38_box,
+/obj/item/ammo_box/magazine/m45/rubbershot,
+/obj/item/ammo_box/magazine/m45/rubbershot,
+/obj/item/ammo_box/magazine/m45,
+/turf/open/floor/plasteel/dark,
+/area/ship/security)
+"gB" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
+/obj/item/radio/intercom/directional/east,
+/turf/open/floor/plasteel/white,
+/area/ship/crew/canteen)
 "hG" = (
 /turf/open/floor/plasteel/patterned,
 /area/ship/crew)
@@ -458,6 +494,31 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/turf/open/floor/plating,
+/area/ship/engineering)
+"hY" = (
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/effect/turf_decal/industrial/hatch/yellow,
+/obj/machinery/light/directional/east,
+/obj/machinery/computer/monitor{
+	dir = 8
+	},
+/obj/structure/catwalk/over,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/effect/turf_decal/industrial/hatch/yellow,
+/obj/machinery/light/directional/east,
+/obj/machinery/computer/monitor{
+	dir = 8
+	},
+/obj/structure/catwalk/over,
+/obj/machinery/airalarm/directional/east,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "ib" = (
@@ -504,6 +565,16 @@
 /obj/machinery/door/airlock/maintenance,
 /turf/open/floor/plasteel/tech,
 /area/ship/construction)
+"ij" = (
+/obj/structure/grille,
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "riggerwindows";
+	name = "Blast Shutters"
+	},
+/obj/structure/window/plasma/reinforced/plastitanium,
+/turf/open/floor/plating,
+/area/ship/engineering/atmospherics)
 "ir" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -552,16 +623,6 @@
 /obj/effect/spawner/lootdrop/maintenance/three,
 /turf/open/floor/plating,
 /area/ship/construction)
-"iQ" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/siphon/layer2{
-	dir = 8
-	},
-/obj/effect/turf_decal/industrial/warning/cee{
-	dir = 4
-	},
-/obj/machinery/light/small/directional/east,
-/turf/open/floor/plasteel/tech/techmaint,
-/area/ship/engineering)
 "iR" = (
 /obj/effect/turf_decal/borderfloor{
 	dir = 4
@@ -699,59 +760,13 @@
 	},
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical)
-"jR" = (
-/obj/machinery/door/airlock/maintenance_hatch{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/maintenance/port)
 "jS" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/mineral/ore_redemption,
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
-"jZ" = (
-/obj/machinery/mech_bay_recharge_port{
-	dir = 1
-	},
-/turf/open/floor/plasteel,
-/area/ship/cargo)
-"ke" = (
-/obj/machinery/door/airlock/public/glass{
-	dir = 4;
-	name = "Communications"
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/ship/engineering/communications)
-"kg" = (
-/obj/machinery/door/airlock/maintenance_hatch{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
+"jT" = (
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
@@ -764,40 +779,92 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/turf/open/floor/plasteel/tech,
-/area/ship/maintenance/starboard)
-"kj" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/turf/open/floor/plating,
-/area/ship/construction)
-"ko" = (
-/obj/structure/table/reinforced,
-/obj/item/paper_bin,
-/obj/item/folder/blue,
-/obj/item/stamp/captain{
-	pixel_x = -7;
-	pixel_y = 8
+/obj/machinery/door/airlock/security/glass{
+	dir = 4;
+	name = "Security";
+	req_access_txt = "1"
 	},
-/obj/item/pen/fountain/captain{
-	pixel_x = 6;
-	pixel_y = 5
-	},
-/obj/machinery/light_switch{
-	dir = 1;
-	pixel_x = 5;
-	pixel_y = -20
-	},
-/turf/open/floor/carpet/blue,
-/area/ship/bridge)
-"ks" = (
+/obj/structure/curtain/bounty,
+/turf/open/floor/plasteel/dark,
+/area/ship/security)
+"jY" = (
 /obj/structure/chair{
 	dir = 1
 	},
 /obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering/communications)
+"jZ" = (
+/obj/machinery/mech_bay_recharge_port{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/ship/cargo)
+"kj" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/turf/open/floor/plating,
+/area/ship/construction)
+"ks" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/layer4{
+	dir = 1
+	},
+/obj/machinery/advanced_airlock_controller{
+	pixel_x = -25
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 5
+	},
+/obj/effect/turf_decal/industrial/warning/cee{
+	dir = 8
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/layer4{
+	dir = 1
+	},
+/obj/machinery/advanced_airlock_controller{
+	pixel_x = -25
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 5
+	},
+/obj/machinery/light/small/directional/south,
+/obj/effect/turf_decal/industrial/warning/cee{
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ship/engineering)
+"ky" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ship/cargo)
 "kC" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/engineering)
+"kE" = (
+/obj/machinery/washing_machine,
+/obj/machinery/light_switch{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = 5
+	},
+/turf/open/floor/plasteel/patterned,
+/area/ship/crew)
+"kH" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/siphon/layer2{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning/cee{
+	dir = 4
+	},
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering)
 "kP" = (
 /obj/structure/cable{
@@ -818,6 +885,21 @@
 /obj/structure/catwalk/over,
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
+"lb" = (
+/obj/machinery/light/directional/north,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/obj/structure/chair,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/light/directional/north,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/obj/structure/sign/warning/nosmoking{
+	pixel_y = 32
+	},
+/obj/structure/chair,
+/turf/open/floor/plasteel/mono,
+/area/ship/medical)
 "lf" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/engineering/atmospherics)
@@ -856,23 +938,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel/tech,
 /area/ship/maintenance/starboard)
-"lI" = (
-/obj/machinery/newscaster/directional/south,
-/obj/machinery/light/directional/south,
-/obj/machinery/vending/coffee,
-/obj/effect/turf_decal/industrial/outline/yellow,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/machinery/newscaster{
-	dir = 1;
-	pixel_y = -32
-	},
-/obj/machinery/light/directional/south,
-/obj/machinery/vending/coffee,
-/obj/effect/turf_decal/industrial/outline/yellow,
-/turf/open/floor/plasteel/tech/techmaint,
-/area/ship/crew/office)
 "lM" = (
 /obj/machinery/atmospherics/components/binary/valve/digital{
 	dir = 4
@@ -891,6 +956,28 @@
 /obj/effect/turf_decal/corner/opaque/yellow/half,
 /turf/open/floor/plasteel,
 /area/ship/hallway/central)
+"lR" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/airlock/public/glass{
+	dir = 4;
+	name = "Communications"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/engineering/communications)
 "lT" = (
 /obj/machinery/airalarm/directional/south,
 /obj/structure/closet/crate/bin,
@@ -920,43 +1007,46 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
-"mi" = (
+"mc" = (
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/effect/turf_decal/box/corners{
+	dir = 8
+	},
+/obj/structure/closet/crate,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/turf/open/floor/plasteel/tech,
+/area/ship/cargo)
+"md" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 6
+	dir = 4
 	},
-/obj/structure/closet/secure_closet/wall{
-	icon_state = "sec_wall";
-	name = "firearms locker";
-	pixel_y = 28;
-	req_access_txt = "1"
+/turf/open/floor/plasteel/tech,
+/area/ship/maintenance/starboard)
+"mg" = (
+/obj/effect/turf_decal/kfp_small{
+	dir = 8
 	},
-/obj/item/gun/ballistic/shotgun/winchester,
-/obj/item/gun/ballistic/automatic/pistol/m1911,
-/turf/open/floor/plasteel/dark,
-/area/ship/security)
-"ms" = (
-/obj/structure/mirror{
-	pixel_x = 25
-	},
-/obj/structure/sink{
-	dir = 8;
-	pixel_x = 12
-	},
-/obj/machinery/light/small/directional/south,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/mirror{
-	pixel_x = 25
-	},
-/obj/structure/sink{
-	dir = 8;
-	pixel_x = 12
-	},
-/obj/machinery/light/small/directional/south,
-/obj/machinery/airalarm/directional/south,
-/turf/open/floor/plasteel/patterned,
-/area/ship/crew)
+/turf/open/floor/plating,
+/area/ship/construction)
 "mJ" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
@@ -987,6 +1077,19 @@
 "mY" = (
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
+"ne" = (
+/obj/effect/turf_decal/box/corners{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
+	},
+/obj/structure/reagent_dispensers/fueltank,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/cargo)
 "nm" = (
 /obj/item/multitool,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -996,41 +1099,56 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/hallway/central)
-"nx" = (
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
+"nr" = (
+/obj/machinery/computer/operating,
+/obj/effect/turf_decal/borderfloor/cee,
+/obj/item/radio/intercom/directional/north,
+/obj/machinery/light/small/directional/west,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
+/obj/machinery/computer/operating,
+/obj/item/radio/intercom/directional/north{
+	pixel_y = 22
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/door/airlock/virology/glass{
-	dir = 4;
-	name = "Infirmary"
-	},
+/obj/effect/turf_decal/borderfloor/cee,
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
-"nX" = (
-/obj/machinery/door/poddoor{
-	id = "riggs_cargo";
-	name = "Mech Bay Blast Door"
+"nu" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
 	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 10
+	},
+/obj/structure/chair/office{
+	dir = 1
+	},
+/obj/machinery/power/apc/auto_name/directional/east,
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/obj/machinery/power/shieldwallgen/atmos{
-	anchored = 1;
-	dir = 8;
-	id = "riggs_airshield";
-	locked = 1
+/turf/open/floor/plasteel/grimy,
+/area/ship/crew)
+"nL" = (
+/obj/structure/table/reinforced,
+/obj/item/paper_bin,
+/obj/item/folder/blue,
+/obj/item/stamp/captain{
+	pixel_x = -7;
+	pixel_y = 8
 	},
-/turf/open/floor/engine/hull/interior,
-/area/ship/cargo)
+/obj/item/pen/fountain/captain{
+	pixel_x = 6;
+	pixel_y = 5
+	},
+/obj/machinery/light_switch{
+	dir = 1;
+	pixel_x = 5;
+	pixel_y = -20
+	},
+/turf/open/floor/carpet/blue,
+/area/ship/bridge)
 "od" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -1039,59 +1157,22 @@
 "oh" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/hallway/central)
-"or" = (
-/obj/effect/turf_decal/industrial/outline/yellow,
-/obj/structure/table,
-/obj/item/storage/toolbox/electrical{
-	pixel_x = 3;
-	pixel_y = 7
-	},
-/obj/item/storage/toolbox/mechanical{
-	pixel_x = -2
-	},
-/obj/item/clothing/head/welding,
-/obj/machinery/firealarm/directional/south,
-/turf/open/floor/plasteel/tech/techmaint,
-/area/ship/cargo)
 "oy" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+/obj/effect/turf_decal/corner/opaque/blue/border{
 	dir = 1
 	},
-/obj/effect/turf_decal/corner/opaque/red,
-/obj/effect/turf_decal/corner/opaque/red{
+/obj/item/radio/intercom/wideband/directional/east,
+/turf/open/floor/plasteel/mono/dark,
+/area/ship/bridge)
+"oM" = (
+/obj/structure/sign/poster/contraband/random{
+	pixel_x = 32
+	},
+/obj/effect/turf_decal/kfp_small/right{
 	dir = 8
 	},
-/obj/structure/closet/secure_closet/wall{
-	dir = 1;
-	icon_state = "sec_wall";
-	name = "firearms locker";
-	pixel_y = -28;
-	req_access_txt = "1"
-	},
-/obj/item/storage/belt/security,
-/obj/item/clothing/accessory/holster,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/machinery/light/small/directional/south,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 1
-	},
-/obj/effect/turf_decal/corner/opaque/red,
-/obj/effect/turf_decal/corner/opaque/red{
-	dir = 8
-	},
-/obj/structure/closet/secure_closet/wall{
-	dir = 1;
-	icon_state = "sec_wall";
-	name = "firearms locker";
-	pixel_y = -28;
-	req_access_txt = "1"
-	},
-/obj/item/storage/belt/security,
-/obj/item/clothing/accessory/holster,
-/turf/open/floor/plasteel/dark,
-/area/ship/security)
+/turf/open/floor/plating,
+/area/ship/construction)
 "oO" = (
 /obj/structure/chair/office,
 /obj/effect/landmark/start/security_officer,
@@ -1117,75 +1198,21 @@
 /obj/effect/turf_decal/corner/opaque/yellow/diagonal,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
-"oW" = (
-/obj/machinery/power/apc/auto_name/directional/north,
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/structure/chair{
-	dir = 8
-	},
-/turf/open/floor/plating,
-/area/ship/crew/office)
 "oX" = (
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/ship/construction)
-"oY" = (
-/obj/structure/cable{
-	icon_state = "4-8"
+"pa" = (
+/obj/structure/table/optable,
+/obj/effect/turf_decal/borderfloor/cee,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
-/obj/machinery/door/airlock/public/glass{
-	dir = 4;
-	name = "Communications"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
+/obj/structure/table/optable,
+/obj/machinery/light/small/directional/north,
+/obj/effect/turf_decal/borderfloor/cee,
 /turf/open/floor/plasteel/dark,
-/area/ship/engineering/communications)
-"pg" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/door/airlock/grunge{
-	dir = 4;
-	name = "Armory";
-	req_access_txt = "1"
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/ship/engineering/atmospherics)
-"pn" = (
-/obj/structure/grille,
-/obj/machinery/door/poddoor/shutters{
-	dir = 4;
-	id = "riggerwindows";
-	name = "Blast Shutters"
-	},
-/obj/structure/window/plasma/reinforced/plastitanium,
-/turf/open/floor/plating,
-/area/ship/construction)
+/area/ship/medical)
 "pt" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/machinery/computer/helm,
@@ -1196,22 +1223,6 @@
 /obj/effect/turf_decal/corner/opaque/yellow/diagonal,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
-"px" = (
-/obj/machinery/door/poddoor{
-	id = "riggs_cargo";
-	name = "Mech Bay Blast Door"
-	},
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/machinery/power/shieldwallgen/atmos{
-	anchored = 1;
-	dir = 4;
-	id = "riggs_airshield";
-	locked = 1
-	},
-/turf/open/floor/engine/hull/interior,
-/area/ship/cargo)
 "pE" = (
 /obj/machinery/door/airlock/maintenance,
 /obj/structure/cable{
@@ -1226,6 +1237,27 @@
 /obj/machinery/atmospherics/pipe/simple/green/visible,
 /turf/open/floor/plasteel/tech,
 /area/ship/construction)
+"pL" = (
+/obj/effect/turf_decal/corner/opaque/red,
+/obj/effect/turf_decal/corner/opaque/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/corner/opaque/red{
+	dir = 8
+	},
+/obj/structure/closet/secure_closet/wall{
+	dir = 1;
+	icon_state = "sec_wall";
+	name = "firearms locker";
+	pixel_y = -28;
+	req_access_txt = "1"
+	},
+/obj/item/flashlight/seclite,
+/obj/item/reagent_containers/spray/pepper,
+/obj/item/melee/classic_baton/telescopic,
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/plasteel/dark,
+/area/ship/security)
 "pO" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
@@ -1258,23 +1290,6 @@
 	},
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew)
-"pX" = (
-/obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable,
-/obj/structure/chair{
-	dir = 1
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/machinery/light/directional/south,
-/obj/machinery/power/apc/auto_name/south,
-/obj/structure/cable,
-/obj/structure/chair{
-	dir = 1
-	},
-/turf/open/floor/plasteel/tech/techmaint,
-/area/ship/engineering/communications)
 "pY" = (
 /obj/machinery/cryopod{
 	dir = 1
@@ -1314,6 +1329,32 @@
 	},
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
+"qi" = (
+/obj/structure/sign/poster/official/random{
+	pixel_x = -32
+	},
+/obj/structure/filingcabinet/chestdrawer,
+/obj/item/radio/intercom/wideband/directional/north,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/item/radio/intercom/directional/north{
+	pixel_y = 22
+	},
+/obj/structure/sign/poster/official/random{
+	pixel_x = -32
+	},
+/obj/structure/filingcabinet/chestdrawer,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/sign/poster/official/random{
+	pixel_x = -32
+	},
+/obj/structure/filingcabinet/chestdrawer,
+/obj/item/radio/intercom/directional/north,
+/turf/open/floor/carpet/blue,
+/area/ship/engineering/communications)
 "qm" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/maintenance/starboard)
@@ -1339,6 +1380,74 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/engineering/communications)
+"qw" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
+	},
+/obj/effect/turf_decal/corner/opaque/blue/bordercorner{
+	dir = 8
+	},
+/obj/item/storage/backpack/captain,
+/obj/item/clothing/shoes/cowboy/white,
+/obj/item/clothing/under/rank/command/captain,
+/obj/item/clothing/suit/armor/vest/capcarapace/duster,
+/obj/item/clothing/glasses/sunglasses,
+/obj/item/clothing/head/caphat/cowboy,
+/obj/item/gun/ballistic/automatic/pistol/m1911,
+/obj/structure/closet/secure_closet/wall{
+	dir = 8;
+	icon_state = "solgov_wall";
+	name = "captain's closet";
+	pixel_x = 28;
+	req_access_txt = "20"
+	},
+/obj/item/ammo_box/magazine/m45,
+/obj/item/ammo_box/magazine/m45,
+/obj/item/spacecash/bundle/c1000,
+/obj/item/spacecash/bundle/c1000,
+/obj/item/spacecash/bundle/c1000,
+/obj/item/spacecash/bundle/c1000,
+/obj/item/spacecash/bundle/c1000,
+/obj/item/spacecash/bundle/c1000,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/light/directional/east,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
+	},
+/obj/effect/turf_decal/corner/opaque/blue/bordercorner{
+	dir = 8
+	},
+/obj/item/storage/backpack/captain,
+/obj/item/clothing/shoes/cowboy/white,
+/obj/item/clothing/under/rank/command/captain,
+/obj/item/clothing/suit/armor/vest/capcarapace/duster,
+/obj/item/clothing/glasses/sunglasses,
+/obj/item/clothing/head/caphat/cowboy,
+/obj/item/gun/ballistic/automatic/pistol/m1911,
+/obj/structure/closet/secure_closet/wall{
+	dir = 8;
+	icon_state = "solgov_wall";
+	name = "captain's closet";
+	pixel_x = 28;
+	req_access_txt = "20"
+	},
+/obj/item/stack/spacecash/c1000,
+/obj/item/stack/spacecash/c1000,
+/obj/item/stack/spacecash/c1000,
+/obj/item/stack/spacecash/c1000,
+/obj/item/stack/spacecash/c1000,
+/obj/item/stack/spacecash/c1000,
+/obj/item/ammo_box/magazine/m45,
+/obj/item/ammo_box/magazine/m45,
+/turf/open/floor/plasteel/mono/dark,
+/area/ship/bridge)
+"qB" = (
+/obj/structure/filingcabinet/security,
+/obj/machinery/newscaster/security_unit/directional/south,
+/turf/open/floor/plasteel/grimy,
+/area/ship/security)
 "qI" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
@@ -1359,49 +1468,28 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel/dark,
 /area/ship/maintenance/port)
-"qX" = (
+"qU" = (
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/structure/catwalk/over,
-/obj/structure/extinguisher_cabinet/directional/north{
-	pixel_x = 5
-	},
-/obj/machinery/light_switch{
-	pixel_x = -5;
-	pixel_y = 22
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
+/obj/machinery/door/airlock/grunge{
+	dir = 4;
+	name = "Atmospherics"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/obj/structure/catwalk/over,
-/obj/structure/extinguisher_cabinet/directional/north,
-/turf/open/floor/plating,
-/area/ship/engineering)
-"qZ" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 1
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/tech/techmaint,
-/area/ship/cargo)
+/turf/open/floor/plasteel/dark,
+/area/ship/engineering/atmospherics)
 "rb" = (
 /obj/item/radio/intercom/directional/east,
 /obj/item/mecha_parts/chassis/ripley,
@@ -1409,20 +1497,6 @@
 	pixel_y = -11
 	},
 /turf/open/floor/mech_bay_recharge_floor,
-/area/ship/cargo)
-"rk" = (
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/effect/turf_decal/box/corners,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 6
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "rl" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -1484,40 +1558,23 @@
 /obj/structure/catwalk/over,
 /turf/open/floor/plating,
 /area/ship/engineering)
-"rI" = (
-/obj/structure/bed,
-/obj/item/bedsheet/dorms,
-/obj/structure/curtain/bounty,
-/obj/structure/sign/poster/contraband/random{
-	pixel_x = -32
-	},
-/turf/open/floor/plasteel/grimy,
-/area/ship/crew)
 "rJ" = (
 /obj/machinery/airalarm/directional/north,
 /obj/structure/reagent_dispensers/watertank/high,
 /turf/open/floor/plating,
 /area/ship/construction)
-"rP" = (
-/obj/structure/table/reinforced,
-/obj/machinery/firealarm/directional/west,
-/obj/machinery/photocopier/faxmachine/longrange,
-/obj/machinery/light/directional/south,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+"rN" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
 	},
-/obj/structure/table/reinforced,
-/obj/machinery/firealarm/directional/west,
-/obj/machinery/photocopier/faxmachine/longrange,
-/turf/open/floor/carpet/blue,
-/area/ship/bridge)
-"rT" = (
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 6
 	},
-/obj/item/radio/intercom/directional/west,
+/obj/effect/turf_decal/number/five{
+	dir = 8
+	},
 /turf/open/floor/plating,
-/area/ship/crew/office)
+/area/ship/construction)
 "rZ" = (
 /obj/structure/reagent_dispensers/fueltank,
 /obj/effect/turf_decal/industrial/outline/yellow,
@@ -1551,6 +1608,16 @@
 	},
 /turf/open/floor/plasteel/mono,
 /area/ship/engineering/communications)
+"sk" = (
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/structure/chair{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/ship/crew/office)
 "sB" = (
 /obj/machinery/door/window/westleft{
 	name = "Armory";
@@ -1561,33 +1628,63 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
-"sE" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/light_switch{
+"sI" = (
+/obj/structure/sink{
 	dir = 8;
-	pixel_x = 20;
-	pixel_y = 5
+	pixel_x = 12
 	},
-/turf/open/floor/plasteel/grimy,
-/area/ship/crew)
+/obj/effect/turf_decal/borderfloor{
+	dir = 5
+	},
+/obj/effect/turf_decal/corner/opaque/white{
+	dir = 8
+	},
+/obj/item/storage/box/bodybags{
+	pixel_x = -7;
+	pixel_y = 4
+	},
+/obj/item/storage/box/syringes{
+	pixel_x = -6
+	},
+/obj/item/reagent_containers/glass/bottle/formaldehyde{
+	pixel_x = 8;
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/glass/bottle{
+	list_reagents = list(/datum/reagent/medicine/thializid=30);
+	name = "thializid bottle";
+	pixel_x = 5
+	},
+/obj/item/reagent_containers/syringe{
+	pixel_x = 7
+	},
+/obj/structure/closet/secure_closet/wall{
+	dir = 8;
+	icon_door = "med_wall";
+	locked = 0;
+	name = "mortuary locker";
+	pixel_x = 28;
+	req_access_txt = "1"
+	},
+/obj/effect/turf_decal/corner/opaque/green{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/medical)
 "sL" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel/mono,
 /area/ship/crew/office)
-"sN" = (
-/obj/structure/grille,
-/obj/machinery/door/poddoor/shutters{
-	dir = 4;
-	id = "riggerwindows";
-	name = "Blast Shutters"
+"sM" = (
+/obj/item/mop,
+/obj/item/storage/bag/trash{
+	pixel_x = 6
 	},
-/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/effect/turf_decal/kfp_small/left{
+	dir = 8
+	},
 /turf/open/floor/plating,
-/area/ship/crew/canteen)
+/area/ship/construction)
 "sS" = (
 /obj/machinery/power/shuttle/engine/electric{
 	dir = 1
@@ -1595,6 +1692,31 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
+"sU" = (
+/obj/machinery/newscaster/directional/south,
+/obj/machinery/light/directional/south,
+/obj/machinery/vending/coffee,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/newscaster{
+	dir = 1;
+	pixel_y = -32
+	},
+/obj/machinery/light/directional/south,
+/obj/machinery/vending/coffee,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/newscaster/directional/south,
+/obj/machinery/light/directional/south,
+/obj/machinery/vending/coffee,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ship/crew/office)
 "sV" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 8
@@ -1617,13 +1739,6 @@
 /obj/structure/chair,
 /turf/open/floor/plasteel/mono,
 /area/ship/medical)
-"ts" = (
-/obj/machinery/power/apc/auto_name/directional/west,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/turf/open/floor/plating,
-/area/ship/maintenance/starboard)
 "tx" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -1640,31 +1755,6 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew)
-"tF" = (
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/effect/turf_decal/industrial/hatch/yellow,
-/obj/machinery/light/directional/east,
-/obj/machinery/computer/monitor{
-	dir = 8
-	},
-/obj/structure/catwalk/over,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/effect/turf_decal/industrial/hatch/yellow,
-/obj/machinery/light/directional/east,
-/obj/machinery/computer/monitor{
-	dir = 8
-	},
-/obj/structure/catwalk/over,
-/obj/machinery/airalarm/directional/east,
-/turf/open/floor/plating,
-/area/ship/engineering)
 "tM" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
@@ -1685,59 +1775,39 @@
 /obj/machinery/airalarm/directional/south,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
-"tR" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 1
+"tQ" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	dir = 4
 	},
-/obj/machinery/light/small/directional/west,
-/turf/open/floor/plasteel/grimy,
-/area/ship/security)
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/engineering)
+"tS" = (
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/turf/open/floor/plating,
+/area/ship/construction)
 "tT" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/maintenance/port)
-"tY" = (
-/obj/machinery/holopad/emergency/command,
-/obj/item/storage/backpack/captain,
-/obj/item/clothing/shoes/cowboy/black,
-/obj/item/clothing/under/rank/security/detective/grey,
-/obj/item/clothing/accessory/waistcoat,
-/obj/item/clothing/suit/jacket/leather/duster/command,
-/obj/item/clothing/glasses/sunglasses,
-/obj/item/gun/ballistic/revolver/detective,
-/obj/item/clothing/head/HoS/cowboy,
-/obj/structure/closet/secure_closet/wall{
-	dir = 4;
-	icon_state = "solgov_wall";
-	name = "first mate's closet";
-	pixel_x = -28;
-	req_access_txt = "57"
-	},
-/obj/item/ammo_box/c38,
-/obj/item/ammo_box/c38,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/machinery/light/small/directional/west,
-/obj/machinery/holopad/emergency/command,
-/obj/item/storage/backpack/captain,
-/obj/item/clothing/shoes/cowboy/black,
-/obj/item/clothing/under/rank/security/detective/grey,
-/obj/item/clothing/accessory/waistcoat,
-/obj/item/clothing/suit/jacket/leather/duster/command,
-/obj/item/clothing/glasses/sunglasses,
-/obj/item/gun/ballistic/revolver/detective,
-/obj/item/clothing/head/HoS/cowboy,
-/obj/structure/closet/secure_closet/wall{
-	dir = 4;
-	icon_state = "solgov_wall";
-	name = "first mate's closet";
-	pixel_x = -28;
-	req_access_txt = "57"
-	},
-/obj/item/ammo_box/c38,
-/obj/item/ammo_box/c38,
-/turf/open/floor/carpet/blue,
-/area/ship/engineering/communications)
 "ue" = (
 /obj/machinery/power/smes/shuttle/precharged{
 	dir = 1
@@ -1801,6 +1871,26 @@
 /obj/effect/turf_decal/techfloor/hole/right,
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
+"uv" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/machinery/airalarm/directional/south,
+/obj/structure/closet/emcloset,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/apc/auto_name/west,
+/obj/machinery/airalarm/directional/south,
+/obj/structure/closet/emcloset,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ship/hallway/central)
 "uy" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1825,28 +1915,6 @@
 /obj/machinery/atmospherics/pipe/simple/yellow/visible/layer4,
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
-"uD" = (
-/obj/machinery/door/airlock/glass{
-	dir = 4;
-	name = "Canteen"
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/ship/crew/canteen)
 "uI" = (
 /obj/structure/grille,
 /obj/machinery/door/poddoor/shutters{
@@ -1859,33 +1927,24 @@
 "uN" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/maintenance/port)
-"uT" = (
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/door/airlock/security/glass{
-	dir = 4;
-	name = "Security";
-	req_access_txt = "1"
-	},
-/obj/structure/curtain/bounty,
-/turf/open/floor/plasteel/dark,
-/area/ship/security)
 "va" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
 	},
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
+"vc" = (
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/structure/cable,
+/obj/machinery/door/window/eastright{
+	name = "Surgery"
+	},
+/obj/effect/turf_decal/corner/opaque/white/mono,
+/obj/effect/turf_decal/corner/opaque/green/border{
+	dir = 6
+	},
+/turf/open/floor/plasteel/mono/white,
+/area/ship/medical)
 "ve" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -1930,21 +1989,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel/mono,
 /area/ship/engineering/communications)
-"vu" = (
-/obj/machinery/light/directional/north,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/obj/structure/chair,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/machinery/light/directional/north,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/obj/structure/sign/warning/nosmoking{
-	pixel_y = 32
-	},
-/obj/structure/chair,
-/turf/open/floor/plasteel/mono,
-/area/ship/medical)
 "vw" = (
 /obj/item/pen,
 /turf/open/floor/plasteel/grimy,
@@ -1982,6 +2026,20 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plating,
 /area/ship/construction)
+"vZ" = (
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/structure/table,
+/obj/item/storage/toolbox/electrical{
+	pixel_x = 3;
+	pixel_y = 7
+	},
+/obj/item/storage/toolbox/mechanical{
+	pixel_x = -2
+	},
+/obj/item/clothing/head/welding,
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ship/cargo)
 "wg" = (
 /obj/machinery/atmospherics/components/unary/shuttle/heater{
 	dir = 1
@@ -2023,12 +2081,43 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
+"ws" = (
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/structure/cable,
+/obj/structure/chair{
+	dir = 1
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/light/directional/south,
+/obj/machinery/power/apc/auto_name/south,
+/obj/structure/cable,
+/obj/structure/chair{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ship/engineering/communications)
 "wB" = (
 /obj/machinery/power/shuttle/engine/fueled/plasma{
 	dir = 1
 	},
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
+"wC" = (
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plating,
+/area/ship/maintenance/starboard)
+"wJ" = (
+/obj/machinery/door/poddoor{
+	id = "riggs_cargo";
+	name = "Mech Bay Blast Door"
+	},
+/turf/open/floor/engine/hull/interior,
+/area/ship/cargo)
 "wS" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -2049,6 +2138,16 @@
 /obj/item/multitool,
 /turf/open/floor/plating,
 /area/ship/engineering)
+"wT" = (
+/obj/structure/grille,
+/obj/machinery/door/poddoor/shutters{
+	dir = 8;
+	id = "riggerwindows";
+	name = "Blast Shutters"
+	},
+/obj/structure/window/plasma/reinforced/plastitanium,
+/turf/open/floor/plating,
+/area/ship/bridge)
 "wZ" = (
 /obj/item/mecha_parts/part/ripley_torso,
 /obj/effect/turf_decal/box/corners{
@@ -2064,43 +2163,19 @@
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
-"xi" = (
-/obj/machinery/light/directional/west,
-/obj/effect/turf_decal/corner/opaque/blue/border,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/machinery/button/door{
-	dir = 4;
-	id = "riggerdoors";
-	name = "Blast Door Control";
-	pixel_x = -25;
-	pixel_y = 5
-	},
-/obj/machinery/button/door{
-	dir = 4;
-	id = "riggerwindows";
-	name = "Window Lockdown";
-	pixel_x = -25;
-	pixel_y = -5
-	},
-/obj/machinery/light/directional/west,
-/obj/effect/turf_decal/corner/opaque/blue/border,
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/bridge)
 "xp" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
-"xF" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
-	dir = 8
+"xE" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 9
 	},
-/obj/effect/turf_decal/number/zero{
-	dir = 4
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 9
 	},
+/obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/ship/construction)
 "xH" = (
@@ -2130,6 +2205,30 @@
 /obj/structure/catwalk/over,
 /turf/open/floor/plating,
 /area/ship/engineering)
+"xN" = (
+/obj/effect/turf_decal/borderfloor,
+/obj/structure/table/glass,
+/obj/item/paper_bin,
+/obj/item/folder/white,
+/obj/item/pen,
+/obj/item/stamp/cmo{
+	name = "ship's doctor's rubber stamp";
+	pixel_x = 11;
+	pixel_y = 12
+	},
+/obj/effect/turf_decal/corner/opaque/green{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/opaque/green{
+	dir = 4
+	},
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -20;
+	pixel_y = 5
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/medical)
 "xO" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
@@ -2151,18 +2250,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew)
-"xV" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 1
-	},
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/obj/structure/sign/warning/incident{
-	pixel_x = 32
-	},
-/turf/open/floor/plasteel/tech/techmaint,
-/area/ship/cargo)
 "xW" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 1
@@ -2206,6 +2293,51 @@
 	},
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical)
+"ya" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/light/small/directional/east,
+/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
+/obj/machinery/light_switch{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = 10
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/extinguisher_cabinet/directional/north,
+/obj/machinery/light/small/directional/east,
+/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/light/small/directional/east,
+/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
+/turf/open/floor/plasteel/white,
+/area/ship/crew/canteen)
+"ye" = (
+/obj/structure/bed,
+/obj/item/bedsheet/dorms,
+/obj/structure/curtain/bounty,
+/obj/structure/sign/poster/contraband/random{
+	pixel_x = -32
+	},
+/turf/open/floor/plasteel/grimy,
+/area/ship/crew)
 "yo" = (
 /obj/machinery/airalarm/directional/east,
 /obj/effect/turf_decal/industrial/outline/yellow,
@@ -2291,15 +2423,6 @@
 /obj/effect/turf_decal/techfloor,
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
-"zf" = (
-/obj/machinery/power/apc/auto_name/directional/east,
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/machinery/atmospherics/components/binary/valve/digital,
-/obj/machinery/atmospherics/pipe/simple/yellow/visible/layer4,
-/turf/open/floor/plating,
-/area/ship/engineering/atmospherics)
 "zr" = (
 /obj/structure/grille,
 /obj/machinery/door/poddoor/shutters{
@@ -2332,6 +2455,18 @@
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/plating,
 /area/ship/construction)
+"zP" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
+	},
+/obj/machinery/light_switch{
+	pixel_y = 22
+	},
+/turf/open/floor/plasteel/grimy,
+/area/ship/security)
 "zS" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
 	dir = 10
@@ -2346,18 +2481,6 @@
 	},
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew)
-"zZ" = (
-/obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable,
-/obj/machinery/door/window/eastright{
-	name = "Surgery"
-	},
-/obj/effect/turf_decal/corner/opaque/white/mono,
-/obj/effect/turf_decal/corner/opaque/green/border{
-	dir = 6
-	},
-/turf/open/floor/plasteel/mono/white,
-/area/ship/medical)
 "Ad" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/machinery/atmospherics/components/binary/valve/digital/layer4,
@@ -2384,16 +2507,18 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
-"Al" = (
-/obj/structure/grille,
-/obj/machinery/door/poddoor/shutters{
-	dir = 8;
-	id = "riggerwindows";
-	name = "Blast Shutters"
+"An" = (
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
-/obj/structure/window/plasma/reinforced/plastitanium,
-/turf/open/floor/plating,
-/area/ship/bridge)
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/effect/turf_decal/corner/opaque/blue/border{
+	dir = 8
+	},
+/obj/machinery/airalarm/directional/east,
+/turf/open/floor/plasteel/dark,
+/area/ship/engineering/communications)
 "Ao" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel/patterned,
@@ -2448,37 +2573,52 @@
 /obj/structure/catwalk/over,
 /turf/open/floor/plating,
 /area/ship/engineering)
-"Bk" = (
-/obj/structure/grille,
-/obj/machinery/door/poddoor/shutters{
-	dir = 4;
-	id = "riggerwindows";
-	name = "Blast Shutters"
-	},
-/obj/structure/window/plasma/reinforced/plastitanium,
-/turf/open/floor/plating,
-/area/ship/crew)
-"BB" = (
-/obj/effect/turf_decal/industrial/warning{
+"AS" = (
+/obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
-/obj/machinery/button/door{
-	dir = 4;
-	id = "riggs_cargo";
-	name = "Blast Door Control";
-	pixel_x = -21
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/door/airlock{
+	name = "Head"
 	},
-/obj/machinery/button/shieldwallgen{
-	dir = 4;
-	id = "riggs_airshield";
-	pixel_x = -20;
-	pixel_y = 10
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
 	},
+/turf/open/floor/plasteel/dark,
+/area/ship/crew)
+"AY" = (
+/obj/structure/table,
+/obj/effect/turf_decal/corner/opaque/purple/half{
+	dir = 8
+	},
+/obj/effect/turf_decal/techfloor{
+	dir = 4
+	},
+/obj/item/paper_bin{
+	pixel_x = -10
+	},
+/obj/item/paicard,
+/obj/item/clothing/glasses/hud/diagnostic{
+	pixel_x = 6
+	},
+/obj/item/radio/intercom/directional/west,
+/turf/open/floor/plasteel/tech,
+/area/ship/hallway/central)
+"By" = (
+/obj/machinery/power/apc/auto_name/directional/east,
 /obj/structure/cable{
-	icon_state = "1-4"
+	icon_state = "0-2"
 	},
-/turf/open/floor/plasteel/tech/techmaint,
-/area/ship/cargo)
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/effect/turf_decal/corner/opaque/blue/border{
+	dir = 8
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/ship/bridge)
 "BC" = (
 /obj/machinery/light/small/directional/west,
 /obj/effect/turf_decal/industrial/hatch/yellow,
@@ -2506,21 +2646,31 @@
 /turf/open/floor/plasteel,
 /area/ship/engineering)
 "BH" = (
-/obj/structure/bed,
-/obj/item/bedsheet/dorms,
-/obj/structure/curtain/bounty,
-/turf/open/floor/plasteel/grimy,
-/area/ship/crew)
-"BQ" = (
-/obj/item/mop,
-/obj/item/storage/bag/trash{
-	pixel_x = 6
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
 	},
-/obj/effect/turf_decal/kfp_small/left{
-	dir = 8
+/obj/effect/turf_decal/industrial/stand_clear,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ship/cargo)
+"BT" = (
+/obj/structure/grille,
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "riggerwindows";
+	name = "Blast Shutters"
+	},
+/obj/machinery/atmospherics/pipe/layer_manifold{
+	dir = 4
 	},
 /turf/open/floor/plating,
-/area/ship/construction)
+/area/ship/crew)
 "BZ" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -2540,6 +2690,34 @@
 "Ce" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/crew)
+"Ci" = (
+/obj/item/radio/intercom/directional/west{
+	pixel_y = 5
+	},
+/obj/effect/turf_decal/corner/opaque/blue/border{
+	dir = 1
+	},
+/obj/machinery/button/door{
+	dir = 4;
+	id = "riggerwindows";
+	name = "Window Shutter Control";
+	pixel_x = -21;
+	pixel_y = -10
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/item/radio/intercom/directional/west,
+/obj/effect/turf_decal/corner/opaque/blue/border{
+	dir = 1
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/ship/bridge)
+"Cl" = (
+/obj/structure/window/reinforced/spawner/east,
+/obj/machinery/sleeper,
+/turf/open/floor/plasteel/mono,
+/area/ship/medical)
 "Cn" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -2550,33 +2728,6 @@
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
-"Cq" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/effect/turf_decal/corner/opaque/red/border{
-	dir = 4
-	},
-/obj/machinery/power/apc/auto_name/directional/north,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/turf/open/floor/plasteel/dark,
-/area/ship/security)
-"Ct" = (
-/obj/structure/table/optable,
-/obj/effect/turf_decal/borderfloor/cee,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/table/optable,
-/obj/machinery/light/small/directional/north,
-/obj/effect/turf_decal/borderfloor/cee,
-/turf/open/floor/plasteel/dark,
-/area/ship/medical)
 "Cw" = (
 /obj/machinery/power/shuttle/engine/fueled/plasma{
 	dir = 1
@@ -2589,21 +2740,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/engineering/communications)
-"CA" = (
-/obj/structure/table,
-/obj/machinery/light/directional/west,
-/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
-/obj/item/storage/cans/sixbeer,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/table,
-/obj/item/radio/intercom/directional/west,
-/obj/machinery/light/directional/west,
-/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
-/obj/item/storage/cans/sixbeer,
-/turf/open/floor/plasteel/white,
-/area/ship/crew/canteen)
 "CG" = (
 /obj/structure/window/reinforced,
 /obj/effect/turf_decal/industrial/outline/yellow,
@@ -2616,12 +2752,14 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew)
-"CN" = (
-/obj/effect/turf_decal/kfp_small{
-	dir = 8
-	},
-/turf/open/floor/plating,
-/area/ship/construction)
+"CO" = (
+/obj/structure/table,
+/obj/effect/spawner/lootdrop/donkpockets,
+/obj/effect/spawner/lootdrop/donkpockets,
+/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
+/obj/structure/extinguisher_cabinet/directional/north,
+/turf/open/floor/plasteel/white,
+/area/ship/crew/canteen)
 "CQ" = (
 /obj/structure/closet/crate/bin,
 /obj/effect/turf_decal/industrial/outline/yellow,
@@ -2663,6 +2801,47 @@
 /obj/machinery/power/port_gen/pacman,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
+"Dj" = (
+/obj/machinery/door/window/eastright{
+	name = "Robotics";
+	req_access_txt = "47"
+	},
+/obj/effect/turf_decal/corner/opaque/purple/border{
+	dir = 4
+	},
+/obj/effect/turf_decal/techfloor{
+	dir = 8
+	},
+/obj/structure/closet/wall{
+	icon_door = "white_wall";
+	name = "science closet";
+	pixel_y = 28
+	},
+/obj/item/storage/backpack/satchel/eng,
+/obj/item/clothing/shoes/workboots,
+/obj/item/clothing/under/rank/rnd/roboticist,
+/obj/item/clothing/suit/apron/overalls,
+/obj/item/clothing/gloves/color/black,
+/obj/item/clothing/head/welding,
+/turf/open/floor/plasteel/tech,
+/area/ship/hallway/central)
+"Dm" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/effect/turf_decal/number/zero{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/construction)
+"DD" = (
+/obj/machinery/power/apc/auto_name/directional/east,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plating,
+/area/ship/maintenance/port)
 "DE" = (
 /obj/effect/turf_decal/industrial/warning/corner{
 	dir = 1
@@ -2683,10 +2862,21 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/layer4,
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
-"DS" = (
+"DU" = (
+/obj/structure/table,
+/obj/machinery/light/directional/west,
+/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
+/obj/item/storage/cans/sixbeer,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/table,
 /obj/item/radio/intercom/directional/west,
-/turf/open/floor/plasteel/grimy,
-/area/ship/crew/office)
+/obj/machinery/light/directional/west,
+/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
+/obj/item/storage/cans/sixbeer,
+/turf/open/floor/plasteel/white,
+/area/ship/crew/canteen)
 "Ee" = (
 /obj/machinery/light/small/directional/north,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -2723,16 +2913,6 @@
 /obj/effect/landmark/start/station_engineer,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
-"Ep" = (
-/obj/machinery/cryopod{
-	dir = 1
-	},
-/obj/machinery/computer/cryopod/directional/south,
-/obj/effect/turf_decal/industrial/warning{
-	dir = 5
-	},
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/crew)
 "Er" = (
 /obj/machinery/atmospherics/components/unary/tank/toxins{
 	dir = 8
@@ -2740,6 +2920,13 @@
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
+"Eu" = (
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/item/radio/intercom/directional/west,
+/turf/open/floor/plating,
+/area/ship/crew/office)
 "EC" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
@@ -2748,6 +2935,17 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/mono,
 /area/ship/engineering/communications)
+"EN" = (
+/obj/structure/table,
+/obj/item/folder/yellow,
+/obj/item/pen,
+/obj/item/stamp/ce{
+	pixel_x = -5;
+	pixel_y = 8
+	},
+/obj/machinery/computer/helm/viewscreen/directional/south,
+/turf/open/floor/plasteel/tech,
+/area/ship/engineering)
 "ER" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -2772,42 +2970,20 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/hallway/central)
-"EW" = (
-/obj/effect/turf_decal/corner/opaque/purple{
-	dir = 8
+"EX" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 6
 	},
-/obj/effect/turf_decal/corner/opaque/purple,
-/obj/effect/turf_decal/corner/opaque/purple{
-	dir = 1
+/obj/structure/closet/secure_closet/wall{
+	icon_state = "sec_wall";
+	name = "firearms locker";
+	pixel_y = 28;
+	req_access_txt = "1"
 	},
-/obj/effect/turf_decal/techfloor/corner{
-	dir = 4
-	},
-/obj/structure/window/reinforced/spawner,
-/obj/structure/frame/machine,
-/obj/machinery/light_switch{
-	dir = 4;
-	pixel_x = -20;
-	pixel_y = 5
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/effect/turf_decal/corner/opaque/purple{
-	dir = 8
-	},
-/obj/effect/turf_decal/corner/opaque/purple,
-/obj/effect/turf_decal/corner/opaque/purple{
-	dir = 1
-	},
-/obj/effect/turf_decal/techfloor/corner{
-	dir = 4
-	},
-/obj/structure/window/reinforced/spawner,
-/obj/structure/frame/machine,
-/obj/item/radio/intercom/directional/west,
-/turf/open/floor/plasteel/tech,
-/area/ship/hallway/central)
+/obj/item/gun/ballistic/shotgun/winchester,
+/obj/item/gun/ballistic/automatic/pistol/m1911,
+/turf/open/floor/plasteel/dark,
+/area/ship/security)
 "Fe" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/southleft{
@@ -2840,43 +3016,6 @@
 	},
 /turf/open/floor/carpet/blue,
 /area/ship/engineering/communications)
-"Fl" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/structure/closet/wall{
-	icon_door = "red_wall";
-	name = "security closet";
-	pixel_y = 28
-	},
-/obj/item/storage/backpack/security,
-/obj/item/clothing/gloves/fingerless,
-/obj/item/clothing/shoes/cowboy,
-/obj/item/clothing/under/rank/security/officer/blueshirt,
-/obj/item/clothing/glasses/hud/security/sunglasses,
-/obj/item/clothing/suit/armor/vest/duster,
-/obj/item/clothing/head/cowboy/sec,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/machinery/light/small/directional/north,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/structure/closet/wall{
-	icon_door = "red_wall";
-	name = "security closet";
-	pixel_y = 28
-	},
-/obj/item/storage/backpack/security,
-/obj/item/clothing/gloves/fingerless,
-/obj/item/clothing/shoes/cowboy,
-/obj/item/clothing/under/rank/security/officer/blueshirt,
-/obj/item/clothing/glasses/hud/security/sunglasses,
-/obj/item/clothing/suit/armor/vest/duster,
-/obj/item/clothing/head/cowboy/sec,
-/turf/open/floor/plasteel/grimy,
-/area/ship/security)
 "Fp" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -2895,16 +3034,15 @@
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/plasteel,
 /area/ship/construction)
-"Fx" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 1
-	},
-/obj/effect/turf_decal/industrial/stand_clear,
+"FB" = (
+/obj/machinery/power/apc/auto_name/directional/east,
 /obj/structure/cable{
-	icon_state = "4-8"
+	icon_state = "0-8"
 	},
-/turf/open/floor/plasteel/tech/techmaint,
-/area/ship/cargo)
+/obj/machinery/atmospherics/components/binary/valve/digital,
+/obj/machinery/atmospherics/pipe/simple/yellow/visible/layer4,
+/turf/open/floor/plating,
+/area/ship/engineering/atmospherics)
 "FC" = (
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew/office)
@@ -2931,26 +3069,6 @@
 	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/crew)
-"FR" = (
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/machinery/power/apc/auto_name/directional/west,
-/obj/machinery/airalarm/directional/south,
-/obj/structure/closet/emcloset,
-/obj/effect/turf_decal/industrial/outline/yellow,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/machinery/power/apc/auto_name/west,
-/obj/machinery/airalarm/directional/south,
-/obj/structure/closet/emcloset,
-/obj/effect/turf_decal/industrial/outline/yellow,
-/turf/open/floor/plasteel/tech/techmaint,
-/area/ship/hallway/central)
 "FY" = (
 /obj/item/radio/intercom/directional/south,
 /obj/item/kirbyplants/random,
@@ -3009,19 +3127,6 @@
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
 /area/ship/engineering)
-"GH" = (
-/obj/structure/grille,
-/obj/structure/window/plasma/reinforced/plastitanium,
-/obj/machinery/door/poddoor/shutters{
-	dir = 4;
-	id = "riggerwindows";
-	name = "Blast Shutters"
-	},
-/obj/machinery/atmospherics/pipe/layer_manifold{
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/ship/crew)
 "GM" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 10
@@ -3032,6 +3137,19 @@
 /obj/machinery/atmospherics/pipe/simple/yellow/visible/layer4,
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
+"GN" = (
+/obj/machinery/door/airlock/public/glass{
+	dir = 4;
+	name = "Communications"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/engineering/communications)
 "GQ" = (
 /obj/structure/table/wood,
 /obj/item/storage/fancy/donut_box,
@@ -3132,6 +3250,14 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/crew/office)
+"HE" = (
+/obj/structure/window/reinforced/spawner,
+/obj/machinery/modular_computer/console/preset/command{
+	dir = 1
+	},
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/carpet/blue,
+/area/ship/engineering/communications)
 "HR" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
@@ -3157,6 +3283,11 @@
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
+"HX" = (
+/obj/structure/filingcabinet/employment,
+/obj/machinery/newscaster/security_unit/directional/west,
+/turf/open/floor/carpet/blue,
+/area/ship/bridge)
 "Ic" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -3174,6 +3305,22 @@
 	},
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical)
+"In" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
+	},
+/obj/machinery/computer/cargo/express,
+/obj/item/radio/intercom/directional/north,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/item/radio/intercom/wideband/directional/north,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
+	},
+/obj/machinery/computer/cargo/express,
+/turf/open/floor/carpet/blue,
+/area/ship/engineering/communications)
 "Iq" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/security)
@@ -3201,15 +3348,6 @@
 /obj/effect/turf_decal/corner/opaque/yellow/diagonal,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
-"Jd" = (
-/obj/structure/sign/poster/contraband/random{
-	pixel_x = 32
-	},
-/obj/effect/turf_decal/kfp_small/right{
-	dir = 8
-	},
-/turf/open/floor/plating,
-/area/ship/construction)
 "Je" = (
 /obj/effect/turf_decal/corner/opaque/white/mono,
 /turf/open/floor/plasteel/mono/white,
@@ -3241,20 +3379,25 @@
 /obj/machinery/computer/crew,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
-"JF" = (
-/obj/machinery/washing_machine,
-/obj/machinery/light_switch{
-	dir = 8;
-	pixel_x = 20;
-	pixel_y = 5
-	},
-/turf/open/floor/plasteel/patterned,
-/area/ship/crew)
 "JG" = (
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
 /turf/open/floor/plating,
 /area/ship/medical)
+"JR" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/effect/turf_decal/box/corners,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/cargo)
 "Kg" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -3267,273 +3410,32 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/crew/office)
-"Kj" = (
-/obj/structure/window/reinforced/spawner,
-/obj/machinery/modular_computer/console/preset/command{
-	dir = 1
-	},
-/obj/machinery/light/small/directional/west,
-/turf/open/floor/carpet/blue,
-/area/ship/engineering/communications)
-"Kr" = (
-/obj/structure/grille,
-/obj/machinery/door/poddoor/shutters{
-	dir = 4;
-	id = "riggerwindows";
-	name = "Blast Shutters"
-	},
-/obj/structure/window/plasma/reinforced/plastitanium,
-/turf/open/floor/plating,
-/area/ship/bridge)
-"KY" = (
-/obj/structure/chair/office/light,
-/obj/effect/landmark/start/medical_doctor,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
-	dir = 1
-	},
-/obj/effect/turf_decal/corner/opaque/white/mono,
-/turf/open/floor/plasteel/mono/white,
-/area/ship/medical)
-"Lf" = (
-/obj/structure/sign/poster/official/random{
-	pixel_x = -32
-	},
-/obj/structure/filingcabinet/chestdrawer,
-/obj/item/radio/intercom/wideband/directional/north,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/item/radio/intercom/directional/north{
-	pixel_y = 22
-	},
-/obj/structure/sign/poster/official/random{
-	pixel_x = -32
-	},
-/obj/structure/filingcabinet/chestdrawer,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/sign/poster/official/random{
-	pixel_x = -32
-	},
-/obj/structure/filingcabinet/chestdrawer,
-/obj/item/radio/intercom/directional/north,
-/turf/open/floor/carpet/blue,
-/area/ship/engineering/communications)
-"Lg" = (
-/obj/structure/filingcabinet/employment,
-/obj/machinery/newscaster/security_unit/directional/west,
-/turf/open/floor/carpet/blue,
-/area/ship/bridge)
-"Ll" = (
+"Ki" = (
+/obj/machinery/power/apc/auto_name/directional/east,
+/obj/effect/turf_decal/industrial/outline/yellow,
 /obj/structure/cable{
-	icon_state = "4-8"
+	icon_state = "0-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 9
-	},
-/turf/open/floor/plasteel/mono,
-/area/ship/crew/office)
-"Lo" = (
-/obj/item/reagent_containers/glass/bucket,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 8
-	},
-/turf/open/floor/plating,
-/area/ship/construction)
-"Lr" = (
-/obj/machinery/power/apc/auto_name/directional/west,
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/turf/open/floor/plating,
-/area/ship/construction)
-"Lv" = (
-/obj/item/radio/intercom/directional/west{
-	pixel_y = 5
-	},
-/obj/effect/turf_decal/corner/opaque/blue/border{
-	dir = 1
-	},
-/obj/machinery/button/door{
-	dir = 4;
-	id = "riggerwindows";
-	name = "Window Shutter Control";
-	pixel_x = -21;
-	pixel_y = -10
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/item/radio/intercom/directional/west,
-/obj/effect/turf_decal/corner/opaque/blue/border{
-	dir = 1
-	},
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/bridge)
-"Lw" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/hallway/central)
-"Ly" = (
-/turf/template_noop,
-/area/template_noop)
-"LC" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 6
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 6
-	},
-/obj/effect/turf_decal/number/five{
-	dir = 8
-	},
-/turf/open/floor/plating,
-/area/ship/construction)
-"LM" = (
-/obj/effect/turf_decal/box/corners{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 6
-	},
-/obj/structure/reagent_dispensers/fueltank,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
+/obj/machinery/suit_storage_unit/inherit/industrial,
+/obj/item/clothing/suit/space/engineer,
+/obj/item/clothing/head/helmet/space/light/engineer,
+/obj/item/clothing/mask/breath,
 /turf/open/floor/plasteel/tech,
-/area/ship/cargo)
-"Mc" = (
-/obj/structure/reagent_dispensers/watertank,
-/obj/effect/turf_decal/industrial/outline/yellow,
-/obj/item/radio/intercom/directional/north{
-	pixel_x = -10
+/area/ship/engineering)
+"Kk" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
 	},
-/obj/machinery/light_switch{
-	pixel_x = 5;
-	pixel_y = 22
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/item/radio/intercom/directional/north{
-	pixel_y = 22
-	},
-/obj/structure/reagent_dispensers/watertank,
-/obj/effect/turf_decal/industrial/outline/yellow,
-/turf/open/floor/plating,
-/area/ship/maintenance/port)
-"Md" = (
-/obj/machinery/power/terminal,
-/obj/structure/cable,
-/turf/open/floor/plating,
-/area/ship/maintenance/port)
-"Mr" = (
-/obj/machinery/computer/helm/viewscreen/directional/south,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/machinery/firealarm/directional/south,
-/obj/machinery/light/small/directional/south,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/machinery/light/small/directional/south,
-/turf/open/floor/plasteel/tech/techmaint,
-/area/ship/cargo)
-"Mu" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 10
-	},
-/obj/effect/turf_decal/corner/opaque/blue/bordercorner{
+/obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
-/obj/item/storage/backpack/captain,
-/obj/item/clothing/shoes/cowboy/white,
-/obj/item/clothing/under/rank/command/captain,
-/obj/item/clothing/suit/armor/vest/capcarapace/duster,
-/obj/item/clothing/glasses/sunglasses,
-/obj/item/clothing/head/caphat/cowboy,
-/obj/item/gun/ballistic/automatic/pistol/m1911,
-/obj/structure/closet/secure_closet/wall{
-	dir = 8;
-	icon_state = "solgov_wall";
-	name = "captain's closet";
-	pixel_x = 28;
-	req_access_txt = "20"
+/obj/machinery/door/airlock/glass{
+	dir = 4;
+	name = "Canteen"
 	},
-/obj/item/ammo_box/magazine/m45,
-/obj/item/ammo_box/magazine/m45,
-/obj/item/spacecash/bundle/c1000,
-/obj/item/spacecash/bundle/c1000,
-/obj/item/spacecash/bundle/c1000,
-/obj/item/spacecash/bundle/c1000,
-/obj/item/spacecash/bundle/c1000,
-/obj/item/spacecash/bundle/c1000,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/machinery/light/directional/east,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 10
-	},
-/obj/effect/turf_decal/corner/opaque/blue/bordercorner{
-	dir = 8
-	},
-/obj/item/storage/backpack/captain,
-/obj/item/clothing/shoes/cowboy/white,
-/obj/item/clothing/under/rank/command/captain,
-/obj/item/clothing/suit/armor/vest/capcarapace/duster,
-/obj/item/clothing/glasses/sunglasses,
-/obj/item/clothing/head/caphat/cowboy,
-/obj/item/gun/ballistic/automatic/pistol/m1911,
-/obj/structure/closet/secure_closet/wall{
-	dir = 8;
-	icon_state = "solgov_wall";
-	name = "captain's closet";
-	pixel_x = 28;
-	req_access_txt = "20"
-	},
-/obj/item/stack/spacecash/c1000,
-/obj/item/stack/spacecash/c1000,
-/obj/item/stack/spacecash/c1000,
-/obj/item/stack/spacecash/c1000,
-/obj/item/stack/spacecash/c1000,
-/obj/item/stack/spacecash/c1000,
-/obj/item/ammo_box/magazine/m45,
-/obj/item/ammo_box/magazine/m45,
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/bridge)
-"MD" = (
-/obj/machinery/computer/operating,
-/obj/effect/turf_decal/borderfloor/cee,
-/obj/item/radio/intercom/directional/north,
-/obj/machinery/light/small/directional/west,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/machinery/computer/operating,
-/obj/item/radio/intercom/directional/north{
-	pixel_y = 22
-	},
-/obj/effect/turf_decal/borderfloor/cee,
 /turf/open/floor/plasteel/dark,
-/area/ship/medical)
-"MP" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/light/small/directional/west,
-/turf/open/floor/plating,
-/area/ship/maintenance/port)
-"MR" = (
+/area/ship/crew/canteen)
+"KO" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/machinery/suit_storage_unit/inherit/industrial,
 /obj/item/clothing/suit/space/pilot,
@@ -3547,6 +3449,173 @@
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo)
+"KY" = (
+/obj/structure/chair/office/light,
+/obj/effect/landmark/start/medical_doctor,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/opaque/white/mono,
+/turf/open/floor/plasteel/mono/white,
+/area/ship/medical)
+"KZ" = (
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/item/kirbyplants/random,
+/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
+/obj/item/radio/intercom/directional/south,
+/turf/open/floor/plasteel/white,
+/area/ship/crew/canteen)
+"Ll" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 9
+	},
+/turf/open/floor/plasteel/mono,
+/area/ship/crew/office)
+"Ln" = (
+/obj/machinery/holopad/emergency/command,
+/obj/item/storage/backpack/captain,
+/obj/item/clothing/shoes/cowboy/black,
+/obj/item/clothing/under/rank/security/detective/grey,
+/obj/item/clothing/accessory/waistcoat,
+/obj/item/clothing/suit/jacket/leather/duster/command,
+/obj/item/clothing/glasses/sunglasses,
+/obj/item/gun/ballistic/revolver/detective,
+/obj/item/clothing/head/HoS/cowboy,
+/obj/structure/closet/secure_closet/wall{
+	dir = 4;
+	icon_state = "solgov_wall";
+	name = "first mate's closet";
+	pixel_x = -28;
+	req_access_txt = "57"
+	},
+/obj/item/ammo_box/c38,
+/obj/item/ammo_box/c38,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/light/small/directional/west,
+/obj/machinery/holopad/emergency/command,
+/obj/item/storage/backpack/captain,
+/obj/item/clothing/shoes/cowboy/black,
+/obj/item/clothing/under/rank/security/detective/grey,
+/obj/item/clothing/accessory/waistcoat,
+/obj/item/clothing/suit/jacket/leather/duster/command,
+/obj/item/clothing/glasses/sunglasses,
+/obj/item/gun/ballistic/revolver/detective,
+/obj/item/clothing/head/HoS/cowboy,
+/obj/structure/closet/secure_closet/wall{
+	dir = 4;
+	icon_state = "solgov_wall";
+	name = "first mate's closet";
+	pixel_x = -28;
+	req_access_txt = "57"
+	},
+/obj/item/ammo_box/c38,
+/obj/item/ammo_box/c38,
+/turf/open/floor/carpet/blue,
+/area/ship/engineering/communications)
+"Lo" = (
+/obj/item/reagent_containers/glass/bucket,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/ship/construction)
+"Lw" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/hallway/central)
+"Ly" = (
+/turf/template_noop,
+/area/template_noop)
+"LR" = (
+/obj/structure/sink{
+	pixel_y = 20
+	},
+/obj/structure/mirror{
+	pixel_y = 32
+	},
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/plasteel/patterned,
+/area/ship/crew)
+"LU" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/green/visible,
+/obj/structure/catwalk/over,
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -20;
+	pixel_y = 5
+	},
+/turf/open/floor/plating,
+/area/ship/engineering/atmospherics)
+"LV" = (
+/obj/machinery/door/airlock/glass{
+	dir = 4;
+	name = "Canteen"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/crew/canteen)
+"Md" = (
+/obj/machinery/power/terminal,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/ship/maintenance/port)
+"Mp" = (
+/obj/machinery/door/poddoor{
+	id = "riggs_cargo";
+	name = "Mech Bay Blast Door"
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/shieldwallgen/atmos{
+	anchored = 1;
+	dir = 4;
+	id = "riggs_airshield";
+	locked = 1
+	},
+/turf/open/floor/engine/hull/interior,
+/area/ship/cargo)
+"MM" = (
+/obj/item/radio/intercom/directional/west,
+/turf/open/floor/plasteel/grimy,
+/area/ship/crew/office)
+"MP" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/plating,
+/area/ship/maintenance/port)
 "MW" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -3558,14 +3627,6 @@
 	},
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
-"Nf" = (
-/obj/docking_port/stationary{
-	dwidth = 7;
-	height = 15;
-	width = 14
-	},
-/turf/template_noop,
-/area/template_noop)
 "Nh" = (
 /obj/structure/table/reinforced,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -3587,70 +3648,46 @@
 /obj/item/circuitboard/mecha/ripley/peripherals,
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
-"No" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 10
+"Ni" = (
+/obj/structure/reagent_dispensers/watertank,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/item/radio/intercom/directional/north{
+	pixel_x = -10
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 10
-	},
-/obj/structure/chair/office{
-	dir = 1
-	},
-/obj/machinery/power/apc/auto_name/directional/east,
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/turf/open/floor/plasteel/grimy,
-/area/ship/crew)
-"Nv" = (
-/obj/structure/table,
-/obj/item/folder/yellow,
-/obj/item/pen,
-/obj/item/stamp/ce{
-	pixel_x = -5;
-	pixel_y = 8
-	},
-/obj/machinery/computer/helm/viewscreen/directional/south,
-/turf/open/floor/plasteel/tech,
-/area/ship/engineering)
-"NB" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/machinery/light/small/directional/east,
-/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
 /obj/machinery/light_switch{
-	dir = 8;
-	pixel_x = 20;
-	pixel_y = 10
+	pixel_x = 5;
+	pixel_y = 22
 	},
 /obj/merge_conflict_marker{
 	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
-/obj/structure/cable{
-	icon_state = "1-2"
+/obj/item/radio/intercom/directional/north{
+	pixel_y = 22
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/structure/extinguisher_cabinet/directional/north,
-/obj/machinery/light/small/directional/east,
-/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
+/obj/structure/reagent_dispensers/watertank,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/turf/open/floor/plating,
+/area/ship/maintenance/port)
+"Nv" = (
+/obj/item/kirbyplants/random,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 10
+	},
+/obj/machinery/firealarm/directional/east,
+/obj/machinery/light/small/directional/north,
 /obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
-/obj/structure/cable{
-	icon_state = "1-2"
+/obj/item/kirbyplants/random,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 10
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/machinery/light/small/directional/east,
-/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
-/turf/open/floor/plasteel/white,
-/area/ship/crew/canteen)
+/obj/machinery/firealarm/directional/east,
+/obj/structure/sign/poster/official/obey{
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel/grimy,
+/area/ship/security)
 "NF" = (
 /obj/machinery/atmospherics/pipe/manifold/cyan/visible/layer2{
 	dir = 4
@@ -3661,31 +3698,25 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
+"NH" = (
+/obj/structure/table/reinforced,
+/obj/machinery/firealarm/directional/west,
+/obj/machinery/photocopier/faxmachine/longrange,
+/obj/machinery/light/directional/south,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/table/reinforced,
+/obj/machinery/firealarm/directional/west,
+/obj/machinery/photocopier/faxmachine/longrange,
+/turf/open/floor/carpet/blue,
+/area/ship/bridge)
 "NO" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
-"NT" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 6
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/structure/closet/secure_closet/wall{
-	icon_state = "sec_wall";
-	name = "ammunition locker";
-	pixel_y = 28;
-	req_access_txt = "1"
-	},
-/obj/item/ammo_box/c38_box,
-/obj/item/ammo_box/magazine/m45/rubbershot,
-/obj/item/ammo_box/magazine/m45/rubbershot,
-/obj/item/ammo_box/magazine/m45,
-/turf/open/floor/plasteel/dark,
-/area/ship/security)
 "NU" = (
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	dir = 4
@@ -3699,36 +3730,6 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
-"Og" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
-	dir = 4
-	},
-/obj/machinery/computer/cargo/express,
-/obj/item/radio/intercom/directional/north,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/item/radio/intercom/wideband/directional/north,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
-	dir = 4
-	},
-/obj/machinery/computer/cargo/express,
-/turf/open/floor/carpet/blue,
-/area/ship/engineering/communications)
-"Op" = (
-/obj/machinery/power/apc/auto_name/directional/east,
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 10
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/effect/turf_decal/corner/opaque/blue/border{
-	dir = 8
-	},
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/bridge)
 "Or" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 1;
@@ -3739,38 +3740,12 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/bridge)
-"Ot" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/effect/turf_decal/corner/opaque/blue/border{
-	dir = 8
-	},
-/obj/machinery/light_switch{
-	dir = 8;
-	pixel_x = 20;
-	pixel_y = 5
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/airalarm/directional/east,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/effect/turf_decal/corner/opaque/blue/border{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/ship/engineering/communications)
+"Os" = (
+/obj/structure/bed,
+/obj/item/bedsheet/dorms,
+/obj/structure/curtain/bounty,
+/turf/open/floor/plasteel/grimy,
+/area/ship/crew)
 "OG" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -3780,19 +3755,6 @@
 /obj/effect/spawner/lootdrop/maintenance/three,
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
-"OI" = (
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
-/obj/machinery/door/airlock/glass{
-	dir = 4;
-	name = "Canteen"
-	},
-/turf/open/floor/plasteel/dark,
-/area/ship/crew/canteen)
 "OK" = (
 /obj/structure/sign/poster/contraband/random{
 	pixel_x = -32
@@ -3826,30 +3788,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
-"Pc" = (
-/obj/effect/turf_decal/borderfloor,
-/obj/structure/table/glass,
-/obj/item/paper_bin,
-/obj/item/folder/white,
-/obj/item/pen,
-/obj/item/stamp/cmo{
-	name = "ship's doctor's rubber stamp";
-	pixel_x = 11;
-	pixel_y = 12
-	},
-/obj/effect/turf_decal/corner/opaque/green{
-	dir = 1
-	},
-/obj/effect/turf_decal/corner/opaque/green{
-	dir = 4
-	},
-/obj/machinery/light_switch{
-	dir = 4;
-	pixel_x = -20;
-	pixel_y = 5
-	},
-/turf/open/floor/plasteel/dark,
-/area/ship/medical)
 "Pd" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
@@ -3857,6 +3795,27 @@
 /obj/effect/turf_decal/corner/opaque/blue/border,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/bridge)
+"Pf" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/maintenance/port)
 "Pg" = (
 /obj/effect/turf_decal/corner/opaque/blue/bordercorner{
 	dir = 8
@@ -3878,29 +3837,6 @@
 	},
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical)
-"Pn" = (
-/obj/machinery/atmospherics/pipe/simple/green/visible{
-	dir = 4
-	},
-/obj/structure/grille,
-/obj/machinery/door/poddoor/shutters{
-	dir = 4;
-	id = "riggerwindows";
-	name = "Blast Shutters"
-	},
-/obj/structure/window/plasma/reinforced/plastitanium,
-/turf/open/floor/plating,
-/area/ship/construction)
-"Pv" = (
-/obj/structure/grille,
-/obj/machinery/door/poddoor/shutters{
-	dir = 4;
-	id = "riggerwindows";
-	name = "Blast Shutters"
-	},
-/obj/structure/window/plasma/reinforced/plastitanium,
-/turf/open/floor/plating,
-/area/ship/engineering/atmospherics)
 "Pw" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/crew/canteen)
@@ -3916,33 +3852,44 @@
 /obj/effect/turf_decal/corner/opaque/yellow/diagonal,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
-"PG" = (
-/obj/machinery/door/firedoor/border_only{
+"PS" = (
+/obj/structure/curtain,
+/obj/machinery/shower{
+	dir = 4
+	},
+/obj/structure/window/reinforced/tinted/frosted{
 	dir = 1
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/machinery/door/airlock{
-	name = "Head"
+/obj/machinery/door/window/survival_pod{
+	dir = 4
 	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
+/obj/item/soap,
+/obj/machinery/airalarm/directional/south,
+/turf/open/floor/plasteel/patterned/brushed,
 /area/ship/crew)
-"PJ" = (
-/obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/item/kirbyplants/random,
-/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
-/obj/item/radio/intercom/directional/south,
-/turf/open/floor/plasteel/white,
-/area/ship/crew/canteen)
 "PV" = (
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
+"Qc" = (
+/obj/structure/frame/computer{
+	anchored = 1;
+	dir = 8
+	},
+/obj/item/radio/intercom/directional/south,
+/obj/machinery/airalarm/directional/east,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/sign/poster/contraband/random{
+	pixel_x = 32
+	},
+/obj/structure/frame/computer{
+	anchored = 1;
+	dir = 8
+	},
+/obj/item/radio/intercom/directional/south,
+/turf/open/floor/plating,
+/area/ship/engineering)
 "Qe" = (
 /obj/machinery/power/smes/shuttle/precharged{
 	dir = 1
@@ -3964,33 +3911,73 @@
 	},
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
+"Qj" = (
+/obj/machinery/atmospherics/pipe/simple/green/visible{
+	dir = 4
+	},
+/obj/structure/grille,
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "riggerwindows";
+	name = "Blast Shutters"
+	},
+/obj/structure/window/plasma/reinforced/plastitanium,
+/turf/open/floor/plating,
+/area/ship/construction)
 "Qv" = (
 /obj/structure/closet/crate,
 /obj/item/circuitboard/computer/rdconsole,
 /obj/effect/spawner/lootdrop/maintenance/three,
 /turf/open/floor/plasteel,
 /area/ship/construction)
-"QR" = (
-/obj/machinery/door/airlock/maintenance_hatch{
+"QC" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 4
 	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/door/firedoor/border_only{
+/obj/effect/turf_decal/corner/opaque/blue/border{
 	dir = 8
 	},
-/obj/machinery/door/firedoor/border_only{
+/obj/machinery/light_switch{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = 5
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/airalarm/directional/east,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
+/obj/effect/turf_decal/corner/opaque/blue/border{
+	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
+/turf/open/floor/plasteel/dark,
+/area/ship/engineering/communications)
+"QI" = (
+/obj/machinery/door/poddoor{
+	id = "riggs_cargo";
+	name = "Mech Bay Blast Door"
 	},
-/turf/open/floor/plasteel/tech,
-/area/ship/engineering)
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/shieldwallgen/atmos{
+	anchored = 1;
+	dir = 8;
+	id = "riggs_airshield";
+	locked = 1
+	},
+/turf/open/floor/engine/hull/interior,
+/area/ship/cargo)
 "QT" = (
 /obj/item/mecha_parts/part/ripley_right_leg{
 	pixel_x = 5;
@@ -4004,6 +3991,27 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
+/area/ship/cargo)
+"Rb" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/machinery/button/door{
+	dir = 4;
+	id = "riggs_cargo";
+	name = "Blast Door Control";
+	pixel_x = -21
+	},
+/obj/machinery/button/shieldwallgen{
+	dir = 4;
+	id = "riggs_airshield";
+	pixel_x = -20;
+	pixel_y = 10
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo)
 "Re" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on{
@@ -4020,19 +4028,6 @@
 /obj/structure/window/plasma/reinforced/plastitanium,
 /turf/open/floor/plating,
 /area/ship/bridge)
-"RI" = (
-/obj/machinery/power/apc/auto_name/directional/west,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/effect/turf_decal/box/corners{
-	dir = 8
-	},
-/obj/structure/closet/crate,
-/obj/item/stack/sheet/glass/fifty,
-/obj/item/stack/sheet/metal/fifty,
-/turf/open/floor/plasteel/tech,
-/area/ship/cargo)
 "RO" = (
 /obj/machinery/airalarm/directional/east,
 /obj/machinery/atmospherics/pipe/simple/green/visible{
@@ -4041,16 +4036,6 @@
 /obj/machinery/atmospherics/pipe/simple/yellow/visible/layer4,
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
-"RQ" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 9
-	},
-/obj/effect/spawner/lootdrop/maintenance,
-/turf/open/floor/plating,
-/area/ship/construction)
 "RW" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
@@ -4060,27 +4045,6 @@
 "Sh" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/maintenance/starboard)
-"Sn" = (
-/obj/effect/turf_decal/corner/opaque/red,
-/obj/effect/turf_decal/corner/opaque/red{
-	dir = 4
-	},
-/obj/effect/turf_decal/corner/opaque/red{
-	dir = 8
-	},
-/obj/structure/closet/secure_closet/wall{
-	dir = 1;
-	icon_state = "sec_wall";
-	name = "firearms locker";
-	pixel_y = -28;
-	req_access_txt = "1"
-	},
-/obj/item/flashlight/seclite,
-/obj/item/reagent_containers/spray/pepper,
-/obj/item/melee/classic_baton/telescopic,
-/obj/machinery/light/small/directional/east,
-/turf/open/floor/plasteel/dark,
-/area/ship/security)
 "Su" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/structure/window/reinforced,
@@ -4088,7 +4052,19 @@
 /obj/item/clothing/suit/space/hardsuit/mining/independent,
 /turf/open/floor/plating,
 /area/ship/engineering)
-"SH" = (
+"SC" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/sign/warning/incident{
+	pixel_x = 32
+	},
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ship/cargo)
+"SM" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/item/radio/intercom/directional/north{
@@ -4108,6 +4084,30 @@
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
+"SN" = (
+/obj/machinery/light/directional/west,
+/obj/effect/turf_decal/corner/opaque/blue/border,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/button/door{
+	dir = 4;
+	id = "riggerdoors";
+	name = "Blast Door Control";
+	pixel_x = -25;
+	pixel_y = 5
+	},
+/obj/machinery/button/door{
+	dir = 4;
+	id = "riggerwindows";
+	name = "Window Lockdown";
+	pixel_x = -25;
+	pixel_y = -5
+	},
+/obj/machinery/light/directional/west,
+/obj/effect/turf_decal/corner/opaque/blue/border,
+/turf/open/floor/plasteel/mono/dark,
+/area/ship/bridge)
 "Tk" = (
 /obj/item/reagent_containers/food/snacks/canned/beans{
 	pixel_x = -5;
@@ -4147,39 +4147,6 @@
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
-"Tm" = (
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
-/obj/machinery/door/airlock/public/glass{
-	dir = 4;
-	name = "Communications"
-	},
-/turf/open/floor/plasteel/dark,
-/area/ship/engineering/communications)
-"Tn" = (
-/obj/structure/frame/computer{
-	anchored = 1;
-	dir = 8
-	},
-/obj/item/radio/intercom/directional/south,
-/obj/machinery/airalarm/directional/east,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/sign/poster/contraband/random{
-	pixel_x = 32
-	},
-/obj/structure/frame/computer{
-	anchored = 1;
-	dir = 8
-	},
-/obj/item/radio/intercom/directional/south,
-/turf/open/floor/plating,
-/area/ship/engineering)
 "Tq" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/engineering)
@@ -4191,24 +4158,6 @@
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/hallway/central)
-"TM" = (
-/obj/structure/table,
-/obj/effect/turf_decal/corner/opaque/purple/half{
-	dir = 8
-	},
-/obj/effect/turf_decal/techfloor{
-	dir = 4
-	},
-/obj/item/paper_bin{
-	pixel_x = -10
-	},
-/obj/item/paicard,
-/obj/item/clothing/glasses/hud/diagnostic{
-	pixel_x = 6
-	},
-/obj/item/radio/intercom/directional/west,
-/turf/open/floor/plasteel/tech,
-/area/ship/hallway/central)
 "TO" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
@@ -4216,6 +4165,16 @@
 /obj/effect/turf_decal/corner/opaque/yellow/diagonal,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
+"TQ" = (
+/obj/structure/grille,
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "riggerwindows";
+	name = "Blast Shutters"
+	},
+/obj/structure/window/plasma/reinforced/plastitanium,
+/turf/open/floor/plating,
+/area/ship/bridge)
 "TR" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -4243,14 +4202,6 @@
 /obj/structure/catwalk/over,
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
-"Ua" = (
-/obj/structure/table,
-/obj/effect/spawner/lootdrop/donkpockets,
-/obj/effect/spawner/lootdrop/donkpockets,
-/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
-/obj/structure/extinguisher_cabinet/directional/north,
-/turf/open/floor/plasteel/white,
-/area/ship/crew/canteen)
 "Ug" = (
 /turf/open/floor/plating,
 /area/ship/construction)
@@ -4264,20 +4215,15 @@
 /obj/machinery/firealarm/directional/east,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
-"Uo" = (
-/obj/structure/curtain,
-/obj/machinery/shower{
-	dir = 4
+"Ul" = (
+/obj/structure/grille,
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "riggerwindows";
+	name = "Blast Shutters"
 	},
-/obj/structure/window/reinforced/tinted/frosted{
-	dir = 1
-	},
-/obj/machinery/door/window/survival_pod{
-	dir = 4
-	},
-/obj/item/soap,
-/obj/machinery/airalarm/directional/south,
-/turf/open/floor/plasteel/patterned/brushed,
+/obj/structure/window/plasma/reinforced/plastitanium,
+/turf/open/floor/plating,
 /area/ship/crew)
 "Us" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -4301,19 +4247,6 @@
 "UA" = (
 /turf/open/floor/plasteel/mono,
 /area/ship/crew/office)
-"UJ" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 1
-	},
-/obj/effect/turf_decal/industrial/stand_clear,
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/turf/open/floor/plasteel/tech/techmaint,
-/area/ship/cargo)
 "UL" = (
 /obj/machinery/door/airlock/external,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
@@ -4329,6 +4262,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/hallway/central)
+"UY" = (
+/obj/structure/table,
+/obj/machinery/newscaster/directional/west,
+/obj/item/storage/box/cups,
+/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
+/turf/open/floor/plasteel/white,
+/area/ship/crew/canteen)
 "Va" = (
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
@@ -4338,24 +4278,11 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
-"Vl" = (
-/obj/item/kirbyplants/random,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 10
+"Vj" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 1
 	},
-/obj/machinery/firealarm/directional/east,
-/obj/machinery/light/small/directional/north,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/item/kirbyplants/random,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 10
-	},
-/obj/machinery/firealarm/directional/east,
-/obj/structure/sign/poster/official/obey{
-	pixel_y = 32
-	},
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plasteel/grimy,
 /area/ship/security)
 "Vn" = (
@@ -4386,6 +4313,55 @@
 /obj/structure/catwalk/over,
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
+"Vu" = (
+/obj/machinery/computer/helm/viewscreen/directional/south,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/firealarm/directional/south,
+/obj/machinery/light/small/directional/south,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ship/cargo)
+"VA" = (
+/obj/effect/turf_decal/corner/opaque/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/corner/opaque/purple,
+/obj/effect/turf_decal/corner/opaque/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/techfloor/corner{
+	dir = 4
+	},
+/obj/structure/window/reinforced/spawner,
+/obj/structure/frame/machine,
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -20;
+	pixel_y = 5
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/effect/turf_decal/corner/opaque/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/corner/opaque/purple,
+/obj/effect/turf_decal/corner/opaque/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/techfloor/corner{
+	dir = 4
+	},
+/obj/structure/window/reinforced/spawner,
+/obj/structure/frame/machine,
+/obj/item/radio/intercom/directional/west,
+/turf/open/floor/plasteel/tech,
+/area/ship/hallway/central)
 "VF" = (
 /obj/machinery/firealarm/directional/south,
 /obj/structure/closet/emcloset,
@@ -4411,7 +4387,7 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
-"VS" = (
+"VW" = (
 /obj/structure/grille,
 /obj/machinery/door/poddoor/shutters{
 	dir = 4;
@@ -4419,9 +4395,8 @@
 	name = "Blast Shutters"
 	},
 /obj/structure/window/plasma/reinforced/plastitanium,
-/obj/structure/curtain,
 /turf/open/floor/plating,
-/area/ship/crew)
+/area/ship/construction)
 "Wm" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
@@ -4432,25 +4407,6 @@
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo)
-"Wq" = (
-/obj/structure/table,
-/obj/machinery/newscaster/directional/west,
-/obj/item/storage/box/cups,
-/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
-/turf/open/floor/plasteel/white,
-/area/ship/crew/canteen)
-"WA" = (
-/obj/machinery/power/apc/auto_name/directional/east,
-/obj/effect/turf_decal/industrial/outline/yellow,
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/clothing/suit/space/engineer,
-/obj/item/clothing/head/helmet/space/light/engineer,
-/obj/item/clothing/mask/breath,
-/turf/open/floor/plasteel/tech,
-/area/ship/engineering)
 "WE" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/cargo)
@@ -4543,6 +4499,36 @@
 /obj/machinery/firealarm/directional/east,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/crew/office)
+"XA" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/item/radio/intercom/directional/west,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/effect/turf_decal/number/two{
+	dir = 8
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/item/radio/intercom/directional/west,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/item/radio/intercom/directional/west,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/effect/turf_decal/number/two{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/ship/construction)
 "XD" = (
 /obj/structure/chair/office,
 /obj/effect/landmark/start/captain,
@@ -4554,18 +4540,6 @@
 	},
 /turf/open/floor/carpet/blue,
 /area/ship/bridge)
-"XF" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/effect/turf_decal/corner/opaque/blue/border{
-	dir = 8
-	},
-/obj/machinery/airalarm/directional/east,
-/turf/open/floor/plasteel/dark,
-/area/ship/engineering/communications)
 "XK" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -4583,6 +4557,33 @@
 "XM" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/crew/office)
+"XN" = (
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/structure/table/reinforced,
+/obj/item/megaphone/command{
+	pixel_x = -5;
+	pixel_y = 9
+	},
+/obj/item/storage/box/matches,
+/obj/item/reagent_containers/food/snacks/grown/tobacco{
+	dry = 1;
+	name = "dried tobacco leaves"
+	},
+/obj/item/reagent_containers/food/snacks/grown/tobacco{
+	dry = 1;
+	name = "dried tobacco leaves"
+	},
+/obj/item/reagent_containers/food/snacks/grown/tobacco{
+	dry = 1;
+	name = "dried tobacco leaves"
+	},
+/obj/item/reagent_containers/food/snacks/grown/tobacco{
+	dry = 1;
+	name = "dried tobacco leaves"
+	},
+/obj/item/clothing/mask/cigarette/pipe/cobpipe,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
 "XU" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 4
@@ -4603,6 +4604,82 @@
 /obj/structure/catwalk/over,
 /turf/open/floor/plating,
 /area/ship/engineering)
+"XZ" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/door/airlock/virology/glass{
+	dir = 4;
+	name = "Infirmary"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/medical)
+"Ya" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/catwalk/over,
+/obj/structure/extinguisher_cabinet/directional/north{
+	pixel_x = 5
+	},
+/obj/machinery/light_switch{
+	pixel_x = -5;
+	pixel_y = 22
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/catwalk/over,
+/obj/structure/extinguisher_cabinet/directional/north,
+/turf/open/floor/plating,
+/area/ship/engineering)
+"Yb" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/grunge{
+	dir = 4;
+	name = "Armory";
+	req_access_txt = "1"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/engineering/atmospherics)
 "Yc" = (
 /obj/machinery/airalarm/directional/north,
 /obj/structure/cable{
@@ -4616,37 +4693,6 @@
 	},
 /obj/structure/catwalk/over,
 /turf/open/floor/plating,
-/area/ship/engineering)
-"Yy" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/layer4{
-	dir = 1
-	},
-/obj/machinery/advanced_airlock_controller{
-	pixel_x = -25
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 5
-	},
-/obj/effect/turf_decal/industrial/warning/cee{
-	dir = 8
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/layer4{
-	dir = 1
-	},
-/obj/machinery/advanced_airlock_controller{
-	pixel_x = -25
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 5
-	},
-/obj/machinery/light/small/directional/south,
-/obj/effect/turf_decal/industrial/warning/cee{
-	dir = 8
-	},
-/turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering)
 "YG" = (
 /obj/machinery/door/airlock/mining/glass{
@@ -4699,37 +4745,6 @@
 /obj/structure/catwalk/over,
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
-"Zr" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/item/radio/intercom/directional/west,
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
-	dir = 8
-	},
-/obj/effect/turf_decal/number/two{
-	dir = 8
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/item/radio/intercom/directional/west,
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
-	dir = 8
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/item/radio/intercom/directional/west,
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
-	dir = 8
-	},
-/obj/effect/turf_decal/number/two{
-	dir = 8
-	},
-/turf/open/floor/plating,
-/area/ship/construction)
 "Zs" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -4738,30 +4753,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo)
-"Zw" = (
-/obj/machinery/door/window/eastright{
-	name = "Robotics";
-	req_access_txt = "47"
-	},
-/obj/effect/turf_decal/corner/opaque/purple/border{
-	dir = 4
-	},
-/obj/effect/turf_decal/techfloor{
-	dir = 8
-	},
-/obj/structure/closet/wall{
-	icon_door = "white_wall";
-	name = "science closet";
-	pixel_y = 28
-	},
-/obj/item/storage/backpack/satchel/eng,
-/obj/item/clothing/shoes/workboots,
-/obj/item/clothing/under/rank/rnd/roboticist,
-/obj/item/clothing/suit/apron/overalls,
-/obj/item/clothing/gloves/color/black,
-/obj/item/clothing/head/welding,
-/turf/open/floor/plasteel/tech,
-/area/ship/hallway/central)
 "ZA" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
@@ -4794,6 +4785,19 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
+"ZN" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/light_switch{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = 5
+	},
+/turf/open/floor/plasteel/grimy,
+/area/ship/crew)
 "ZW" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -4857,19 +4861,19 @@ Ce
 Ce
 bC
 Ce
-Bk
-Bk
+Ul
+Ul
 Ce
-Bk
+Ul
 Ce
 bC
 Pw
-sN
-sN
+bl
+bl
 Pw
 Pw
-sN
-sN
+bl
+bl
 Pw
 uN
 tT
@@ -4888,11 +4892,11 @@ Ly
 Ce
 bC
 FO
-Uo
+PS
 Ce
-rI
-BH
-BH
+ye
+Os
+Os
 te
 gc
 pY
@@ -4900,8 +4904,8 @@ Ce
 iG
 db
 pv
-CA
-Wq
+DU
+UY
 WO
 db
 OK
@@ -4920,27 +4924,27 @@ Ly
 Ly
 Ce
 bC
-cT
+LR
 Ao
 qI
-PG
+AS
 od
 CL
 rl
 tE
 RW
-Ep
+gd
 Ce
-Ua
+CO
 Cc
 PF
 PF
 FJ
 Ei
 TO
-PJ
+KZ
 tT
-Mc
+Ni
 xO
 fx
 Gf
@@ -4954,19 +4958,19 @@ Ly
 Ly
 Ce
 bC
-JF
+kE
 hG
-ms
+cn
 Ce
 Hg
 pP
 zV
-No
-sE
+nu
+ZN
 pT
 xR
-NB
-dd
+ya
+gB
 Uj
 IV
 IV
@@ -4989,27 +4993,27 @@ Ce
 bC
 bC
 Ce
-VS
+fD
 Ce
 bC
 Ce
-Bk
-Bk
+Ul
+Ul
 Ce
 Ce
-GH
+BT
 bC
 Pw
 Pw
 Pw
 eQ
-OI
-uD
+Kk
+LV
 eQ
 Pw
 uN
 ER
-aF
+DD
 yo
 Er
 uN
@@ -5034,15 +5038,15 @@ Ly
 sb
 XM
 VG
-DS
-rT
+MM
+Eu
 Hz
 sL
 Ll
 zu
 lT
 tT
-jR
+Pf
 uN
 uN
 tT
@@ -5074,7 +5078,7 @@ XU
 UA
 BZ
 fn
-lI
+sU
 tT
 jm
 tT
@@ -5101,7 +5105,7 @@ Ly
 Ly
 vm
 XM
-oW
+sk
 GY
 mQ
 Kg
@@ -5128,8 +5132,8 @@ Ly
 Ly
 Ly
 Ly
-Kr
-Al
+TQ
+wT
 qd
 qd
 qd
@@ -5139,8 +5143,8 @@ iD
 iD
 iD
 js
-ke
-Tm
+GN
+fS
 js
 iD
 uN
@@ -5164,19 +5168,19 @@ Ly
 Ly
 Rz
 pt
-Lv
-xi
-Lg
-rP
+Ci
+SN
+HX
+NH
 qd
-Lf
-tY
-Kj
+qi
+Ln
+HE
 Cz
 vt
 wk
 sV
-ks
+jY
 tT
 He
 tT
@@ -5197,22 +5201,22 @@ Ly
 Ly
 Ly
 Rz
-dF
+XN
 Or
 Pd
 XD
-ko
+nL
 qd
-Og
+In
 bx
 Fe
 Gw
 EK
 lp
 jl
-pX
+ws
 Tq
-QR
+tQ
 kC
 kC
 Tq
@@ -5232,13 +5236,13 @@ Ly
 Ly
 Rz
 JE
-hw
-Mu
-Op
+oy
+qw
+By
 zt
 lY
-Ot
-XF
+QC
+An
 uy
 qu
 sj
@@ -5264,8 +5268,8 @@ Ly
 Ly
 Ly
 Ly
-Kr
-Kr
+TQ
+TQ
 qd
 qd
 qd
@@ -5275,8 +5279,8 @@ iD
 iD
 iD
 js
-ke
-oY
+GN
+lR
 js
 iD
 kC
@@ -5306,13 +5310,13 @@ Ly
 vm
 oh
 uq
-TM
-EW
+AY
+VA
 UW
 Xg
 Ht
 ES
-FR
+uv
 Tq
 WH
 IB
@@ -5408,7 +5412,7 @@ iC
 iC
 WE
 WE
-Zw
+Dj
 vN
 UW
 cv
@@ -5436,10 +5440,10 @@ Ly
 Ly
 Ly
 Ly
-px
-BB
+Mp
+Rb
 Tk
-RI
+mc
 Xe
 jS
 ci
@@ -5455,7 +5459,7 @@ iA
 Az
 Ic
 UL
-Yy
+ks
 uI
 "}
 (19,1,1) = {"
@@ -5470,10 +5474,10 @@ Ly
 Ly
 Ly
 Ly
-ho
-UJ
-LM
-rk
+wJ
+BH
+ne
+JR
 Zs
 YG
 qe
@@ -5489,7 +5493,7 @@ Em
 jG
 wo
 Va
-iQ
+kH
 BG
 "}
 (20,1,1) = {"
@@ -5504,24 +5508,24 @@ Ly
 Ly
 Ly
 Ly
-ho
-qZ
+wJ
+ky
 pO
 Wm
-Mr
+Vu
 WE
 JG
-nx
-eV
+XZ
+dv
 yp
-uT
+jT
 Iq
 Iq
 kC
 ZZ
 hI
 yq
-Nv
+EN
 kC
 Tq
 Tq
@@ -5537,25 +5541,25 @@ Ly
 Ly
 Ly
 Ly
-Nf
-ho
-qZ
+cJ
+wJ
+ky
 Hy
 wZ
-MR
+KO
 iC
 PB
 ve
 Id
 As
-bX
-tR
+zP
+Vj
 aJ
 Tq
-qX
-WA
-tF
-Tn
+Ya
+Ki
+hY
+Qc
 kC
 Tq
 Ly
@@ -5572,21 +5576,21 @@ Ly
 Ly
 Ly
 Ly
-ho
-Fx
+wJ
+dw
 QT
 ib
-or
+vZ
 iC
-vu
+lb
 jL
 Pg
 As
-Fl
+eL
 oO
 az
 Tq
-QR
+tQ
 kC
 kC
 Tq
@@ -5606,8 +5610,8 @@ Ly
 Ly
 Ly
 Ly
-nX
-xV
+QI
+SC
 Ji
 rb
 jZ
@@ -5616,9 +5620,9 @@ tr
 rm
 xX
 As
-Vl
+Nv
 xJ
-fC
+qB
 qm
 ZY
 qm
@@ -5646,9 +5650,9 @@ iC
 iC
 WE
 WE
-gg
+Cl
 Us
-zZ
+vc
 yp
 Iq
 sB
@@ -5679,13 +5683,13 @@ Ly
 Ly
 vm
 As
-MD
+nr
 Za
 Ax
 Je
-Pc
+xN
 ON
-mi
+EX
 HR
 qm
 XK
@@ -5713,14 +5717,14 @@ Ly
 Ly
 tM
 zr
-Ct
+pa
 WV
 Ai
 KY
 aI
 ON
-NT
-oy
+gx
+fX
 qm
 ZY
 qm
@@ -5748,15 +5752,15 @@ Ly
 NU
 As
 ZI
-bE
+sI
 id
 iR
 Pa
 ON
-Cq
-Sn
+fT
+pL
 qm
-kg
+md
 Sh
 Sh
 qm
@@ -5771,27 +5775,27 @@ aT
 OR
 OR
 aT
-pn
+VW
 aT
 OR
 aT
-pn
-pn
+VW
+VW
 aT
 aT
-Pn
+Qj
 OR
 ZE
 ZE
-be
+qU
 ZE
 ZE
 lf
-pg
+Yb
 ZE
 Sh
 es
-ts
+wC
 eK
 HW
 Sh
@@ -5809,13 +5813,13 @@ oX
 zF
 aT
 Fs
-LC
-xF
-Zr
-Lr
+rN
+Dm
+XA
+tS
 jI
 pE
-bW
+LU
 kP
 vo
 Fp
@@ -5843,7 +5847,7 @@ kj
 Ap
 ie
 vW
-RQ
+xE
 Lo
 yJ
 Ug
@@ -5858,7 +5862,7 @@ bB
 wp
 xg
 qm
-SH
+SM
 va
 ff
 zS
@@ -5877,16 +5881,16 @@ Ug
 bc
 aT
 rJ
-BQ
-CN
-Jd
+sM
+mg
+oM
 iU
 VF
 aT
 Hl
 Ad
 RO
-zf
+FB
 GT
 fQ
 NF
@@ -5911,18 +5915,18 @@ aT
 aT
 OR
 aT
-pn
-pn
+VW
+VW
 aT
-pn
+VW
 aT
 OR
 ZE
-Pv
+ij
 ZE
 ZE
 ZE
-Pv
+ij
 ZE
 ZE
 Sh

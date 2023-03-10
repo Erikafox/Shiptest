@@ -60,8 +60,28 @@
 /obj/structure/window/reinforced/spawner/west,
 /turf/open/floor/plating,
 /area/ship/storage)
+"k" = (
+/obj/structure/chair{
+	dir = 4
+	},
+/obj/structure/window/reinforced/spawner/west,
+/obj/structure/window/reinforced/spawner/east,
+/obj/machinery/light/directional/north,
+/turf/open/floor/plating,
+/area/ship/storage)
 "l" = (
 /obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/ship/storage)
+"m" = (
+/obj/structure/window/reinforced/spawner/west,
+/obj/item/radio/intercom/wideband/directional/north,
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/effect/mob_spawn/human/corpse{
+	outfit = /datum/outfit/job/security
+	},
 /turf/open/floor/plating,
 /area/ship/storage)
 "n" = (
@@ -73,6 +93,18 @@
 "o" = (
 /obj/structure/cable{
 	icon_state = "1-2"
+	},
+/turf/open/floor/plating,
+/area/ship/storage)
+"p" = (
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/port_gen/pacman,
+/obj/machinery/light/small/directional/east,
+/obj/item/stack/sheet/mineral/plasma/five,
+/obj/machinery/power/terminal{
+	dir = 1
 	},
 /turf/open/floor/plating,
 /area/ship/storage)
@@ -186,6 +218,15 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/ship/storage)
+"G" = (
+/obj/structure/chair{
+	dir = 4
+	},
+/obj/structure/window/reinforced/spawner/west,
+/obj/structure/window/reinforced/spawner/east,
+/obj/machinery/light/directional/south,
+/turf/open/floor/plating,
+/area/ship/storage)
 "H" = (
 /obj/structure/window/reinforced/spawner/west,
 /obj/structure/fluff/oldturret,
@@ -206,12 +247,9 @@
 /turf/closed/wall/rust,
 /area/ship/storage)
 "N" = (
-/obj/structure/chair{
+/obj/machinery/door/airlock/maintenance_hatch{
 	dir = 4
 	},
-/obj/structure/window/reinforced/spawner/west,
-/obj/structure/window/reinforced/spawner/east,
-/obj/machinery/light/directional/south,
 /turf/open/floor/plating,
 /area/ship/storage)
 "O" = (
@@ -221,36 +259,7 @@
 /obj/machinery/computer/cryopod/directional/north,
 /turf/open/floor/plating,
 /area/ship/storage)
-"Q" = (
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/machinery/power/port_gen/pacman,
-/obj/machinery/light/small/directional/east,
-/obj/item/stack/sheet/mineral/plasma/five,
-/obj/machinery/power/terminal{
-	dir = 1
-	},
-/turf/open/floor/plating,
-/area/ship/storage)
-"R" = (
-/obj/structure/window/reinforced/spawner/west,
-/obj/item/radio/intercom/wideband/directional/north,
-/obj/structure/chair/comfy/shuttle{
-	dir = 4
-	},
-/obj/effect/mob_spawn/human/corpse{
-	outfit = /datum/outfit/job/security
-	},
-/turf/open/floor/plating,
-/area/ship/storage)
-"T" = (
-/obj/machinery/door/airlock/maintenance_hatch{
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/ship/storage)
-"W" = (
+"S" = (
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -266,15 +275,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/storage)
-"Y" = (
-/obj/structure/chair{
-	dir = 4
-	},
-/obj/structure/window/reinforced/spawner/west,
-/obj/structure/window/reinforced/spawner/east,
-/obj/machinery/light/directional/north,
-/turf/open/floor/plating,
-/area/ship/storage)
 
 (1,1,1) = {"
 a
@@ -286,7 +286,7 @@ b
 "}
 (2,1,1) = {"
 a
-W
+S
 o
 u
 C
@@ -295,7 +295,7 @@ b
 (3,1,1) = {"
 a
 g
-Q
+p
 v
 D
 b
@@ -304,7 +304,7 @@ b
 b
 b
 K
-T
+N
 b
 a
 "}
@@ -334,10 +334,10 @@ c
 "}
 (8,1,1) = {"
 b
-Y
+k
 r
 l
-N
+G
 b
 "}
 (9,1,1) = {"
@@ -350,7 +350,7 @@ J
 "}
 (10,1,1) = {"
 a
-R
+m
 s
 A
 H

@@ -137,10 +137,6 @@
 /obj/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/ship/engineering)
-"hh" = (
-/obj/machinery/holopad,
-/turf/open/floor/mineral/titanium/purple,
-/area/ship/crew)
 "iy" = (
 /obj/machinery/light/directional/east,
 /obj/machinery/suit_storage_unit/standard_unit,
@@ -221,6 +217,10 @@
 /obj/structure/fans/tiny,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/mineral/titanium/white,
+/area/ship/crew)
+"nV" = (
+/obj/machinery/holopad,
+/turf/open/floor/mineral/titanium/purple,
 /area/ship/crew)
 "oa" = (
 /obj/structure/cable{
@@ -588,17 +588,6 @@
 "Ea" = (
 /turf/open/floor/mineral/titanium,
 /area/ship/crew)
-"Eg" = (
-/obj/machinery/light/directional/east,
-/obj/structure/window/reinforced/survival_pod{
-	dir = 1
-	},
-/obj/machinery/cryopod,
-/obj/machinery/computer/cryopod{
-	pixel_x = 32
-	},
-/turf/open/floor/mineral/titanium/purple,
-/area/ship/crew)
 "Ej" = (
 /obj/structure/ore_box,
 /turf/open/floor/mineral/titanium/white,
@@ -922,6 +911,17 @@
 	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/ship/engineering)
+"Zc" = (
+/obj/machinery/light/directional/east,
+/obj/structure/window/reinforced/survival_pod{
+	dir = 1
+	},
+/obj/machinery/cryopod,
+/obj/machinery/computer/cryopod/directional/north{
+	pixel_x = 32
+	},
+/turf/open/floor/mineral/titanium/purple,
+/area/ship/crew)
 "Zr" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1146,7 +1146,7 @@ TW
 qL
 wV
 po
-hh
+nV
 RI
 ET
 IZ
@@ -1158,7 +1158,7 @@ pD
 Ej
 iy
 wV
-Eg
+Zc
 Jy
 fH
 IN

@@ -28,6 +28,11 @@
 "ah" = (
 /turf/open/floor/plating,
 /area/ruin/space/djstation)
+"ai" = (
+/obj/machinery/telecomms/relay/preset/ruskie,
+/obj/machinery/light/directional/north,
+/turf/open/floor/plating,
+/area/ruin/space/djstation)
 "aj" = (
 /obj/machinery/power/terminal,
 /turf/open/floor/plating,
@@ -60,6 +65,17 @@
 /area/ruin/space/djstation)
 "au" = (
 /obj/structure/closet/emcloset,
+/obj/effect/turf_decal/corner/opaque/white{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/opaque/white{
+	dir = 2
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/djstation)
+"av" = (
+/obj/machinery/vending/snack,
+/obj/machinery/light/small/directional/north,
 /obj/effect/turf_decal/corner/opaque/white{
 	dir = 1
 	},
@@ -164,6 +180,14 @@
 	},
 /turf/open/floor/plasteel,
 /area/ruin/space/djstation)
+"aN" = (
+/obj/machinery/light/small/directional/south,
+/obj/effect/turf_decal/corner/transparent/bar,
+/obj/effect/turf_decal/corner/transparent/bar{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/djstation)
 "aO" = (
 /obj/structure/chair{
 	dir = 1
@@ -197,6 +221,10 @@
 	},
 /turf/open/floor/plasteel/grimy,
 /area/ruin/space/djstation)
+"aU" = (
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/plasteel/grimy,
+/area/ruin/space/djstation)
 "aV" = (
 /obj/structure/closet,
 /turf/open/floor/plasteel/grimy,
@@ -210,6 +238,16 @@
 	name = "Washroom"
 	},
 /turf/open/floor/plasteel/freezer,
+/area/ruin/space/djstation)
+"aY" = (
+/obj/machinery/light/directional/east,
+/obj/effect/turf_decal/corner/opaque/white{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/opaque/white{
+	dir = 2
+	},
+/turf/open/floor/plasteel,
 /area/ruin/space/djstation)
 "aZ" = (
 /obj/structure/disposalpipe/segment,
@@ -258,6 +296,15 @@
 	},
 /turf/open/floor/plasteel,
 /area/ruin/space/djstation)
+"be" = (
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = -12;
+	pixel_y = 2
+	},
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/plasteel/freezer,
+/area/ruin/space/djstation)
 "bf" = (
 /obj/structure/toilet{
 	pixel_y = 8
@@ -305,37 +352,6 @@
 /obj/structure/disposaloutlet,
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
-"dt" = (
-/obj/machinery/door/airlock/public/glass{
-	name = "Rest Room";
-	dir = 8
-	},
-/obj/effect/turf_decal/corner/opaque/white{
-	dir = 1
-	},
-/obj/effect/turf_decal/corner/opaque/white{
-	dir = 2
-	},
-/turf/open/floor/plasteel,
-/area/ruin/space/djstation)
-"eC" = (
-/obj/machinery/light/directional/east,
-/obj/effect/turf_decal/corner/opaque/white{
-	dir = 1
-	},
-/obj/effect/turf_decal/corner/opaque/white{
-	dir = 2
-	},
-/turf/open/floor/plasteel,
-/area/ruin/space/djstation)
-"fd" = (
-/obj/machinery/light/small/directional/south,
-/obj/effect/turf_decal/corner/transparent/bar,
-/obj/effect/turf_decal/corner/transparent/bar{
-	dir = 1
-	},
-/turf/open/floor/plasteel,
-/area/ruin/space/djstation)
 "hc" = (
 /obj/machinery/power/smes/magical{
 	desc = "A high-capacity superconducting magnetic energy storage (SMES) unit.";
@@ -346,7 +362,20 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/space/djstation)
-"hN" = (
+"lf" = (
+/obj/machinery/door/airlock/public/glass{
+	name = "Kitchen";
+	dir = 8
+	},
+/obj/effect/turf_decal/corner/opaque/white{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/opaque/white{
+	dir = 2
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/djstation)
+"mY" = (
 /obj/structure/table,
 /obj/effect/turf_decal/corner/opaque/white{
 	dir = 1
@@ -356,98 +385,6 @@
 	},
 /obj/item/radio/intercom/table{
 	freerange = 1
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/table,
-/obj/item/radio/intercom/directional/east{
-	broadcasting = 1;
-	freerange = 1;
-	listening = 0;
-	name = "Pirate Radio Broadcast Channel"
-	},
-/obj/effect/turf_decal/corner/opaque/white{
-	dir = 1
-	},
-/obj/effect/turf_decal/corner/opaque/white{
-	dir = 2
-	},
-/turf/open/floor/plasteel,
-/area/ruin/space/djstation)
-"io" = (
-/obj/structure/sink{
-	dir = 4;
-	pixel_x = -12;
-	pixel_y = 2
-	},
-/obj/machinery/light/small/directional/south,
-/turf/open/floor/plasteel/freezer,
-/area/ruin/space/djstation)
-"jD" = (
-/obj/structure/table,
-/obj/effect/turf_decal/corner/opaque/white{
-	dir = 1
-	},
-/obj/effect/turf_decal/corner/opaque/white{
-	dir = 2
-	},
-/obj/item/paper/fluff/ruins/djstation,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/table,
-/obj/item/radio/intercom/directional/east{
-	freerange = 1;
-	name = "Pirate Radio Listening Channel"
-	},
-/obj/effect/turf_decal/corner/opaque/white{
-	dir = 1
-	},
-/obj/effect/turf_decal/corner/opaque/white{
-	dir = 2
-	},
-/turf/open/floor/plasteel,
-/area/ruin/space/djstation)
-"mB" = (
-/obj/machinery/vending/snack,
-/obj/machinery/light/small/directional/north,
-/obj/effect/turf_decal/corner/opaque/white{
-	dir = 1
-	},
-/obj/effect/turf_decal/corner/opaque/white{
-	dir = 2
-	},
-/turf/open/floor/plasteel,
-/area/ruin/space/djstation)
-"nb" = (
-/obj/structure/table,
-/obj/effect/turf_decal/corner/opaque/white{
-	dir = 1
-	},
-/obj/effect/turf_decal/corner/opaque/white{
-	dir = 2
-	},
-/obj/item/radio/intercom/table{
-	dir = 8;
-	freerange = 1
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/table,
-/obj/item/radio/intercom/directional/east{
-	freerange = 1;
-	name = "Pirate Radio Listening Channel"
-	},
-/obj/effect/turf_decal/corner/opaque/white{
-	dir = 1
-	},
-/obj/effect/turf_decal/corner/opaque/white{
-	dir = 2
 	},
 /turf/open/floor/plasteel,
 /area/ruin/space/djstation)
@@ -460,18 +397,6 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plating,
-/area/ruin/space/djstation)
-"pm" = (
-/obj/machinery/newscaster/directional/north{
-	pixel_y = 32
-	},
-/obj/effect/turf_decal/corner/opaque/white{
-	dir = 1
-	},
-/obj/effect/turf_decal/corner/opaque/white{
-	dir = 2
-	},
-/turf/open/floor/plasteel,
 /area/ruin/space/djstation)
 "uK" = (
 /obj/machinery/power/apc{
@@ -504,13 +429,9 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/space/djstation)
-"Jp" = (
-/obj/machinery/light/small/directional/south,
-/turf/open/floor/plasteel/grimy,
-/area/ruin/space/djstation)
-"QD" = (
+"JP" = (
 /obj/machinery/door/airlock/public/glass{
-	name = "Kitchen";
+	name = "Rest Room";
 	dir = 8
 	},
 /obj/effect/turf_decal/corner/opaque/white{
@@ -521,12 +442,35 @@
 	},
 /turf/open/floor/plasteel,
 /area/ruin/space/djstation)
-"TI" = (
-/obj/machinery/telecomms/relay/preset/ruskie,
-/obj/machinery/light/directional/north,
-/turf/open/floor/plating,
+"Lt" = (
+/obj/structure/table,
+/obj/effect/turf_decal/corner/opaque/white{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/opaque/white{
+	dir = 2
+	},
+/obj/item/radio/intercom/table{
+	dir = 8;
+	freerange = 1
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/table,
+/obj/item/radio/intercom/directional/east{
+	freerange = 1;
+	name = "Pirate Radio Listening Channel"
+	},
+/obj/effect/turf_decal/corner/opaque/white{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/opaque/white{
+	dir = 2
+	},
+/turf/open/floor/plasteel,
 /area/ruin/space/djstation)
-"YA" = (
+"MS" = (
 /obj/structure/table,
 /obj/effect/turf_decal/corner/opaque/white{
 	dir = 1
@@ -536,6 +480,59 @@
 	},
 /obj/item/radio/intercom/table{
 	freerange = 1
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/table,
+/obj/item/radio/intercom/directional/east{
+	broadcasting = 1;
+	freerange = 1;
+	listening = 0;
+	name = "Pirate Radio Broadcast Channel"
+	},
+/obj/effect/turf_decal/corner/opaque/white{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/opaque/white{
+	dir = 2
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/djstation)
+"No" = (
+/obj/structure/table,
+/obj/effect/turf_decal/corner/opaque/white{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/opaque/white{
+	dir = 2
+	},
+/obj/item/paper/fluff/ruins/djstation,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/table,
+/obj/item/radio/intercom/directional/east{
+	freerange = 1;
+	name = "Pirate Radio Listening Channel"
+	},
+/obj/effect/turf_decal/corner/opaque/white{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/opaque/white{
+	dir = 2
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/djstation)
+"Xq" = (
+/obj/machinery/newscaster/directional/north{
+	pixel_y = 32
+	},
+/obj/effect/turf_decal/corner/opaque/white{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/opaque/white{
+	dir = 2
 	},
 /turf/open/floor/plasteel,
 /area/ruin/space/djstation)
@@ -607,7 +604,7 @@ aa
 af
 aA
 aA
-fd
+aN
 af
 ae
 ae
@@ -660,7 +657,7 @@ aA
 aA
 aX
 ba
-io
+be
 af
 aa
 aa
@@ -681,7 +678,7 @@ af
 af
 af
 ag
-QD
+lf
 ag
 af
 af
@@ -729,9 +726,9 @@ ah
 ah
 nM
 af
-mB
+av
 aw
-nb
+Lt
 aP
 aw
 bb
@@ -747,7 +744,7 @@ ac
 ac
 ac
 af
-TI
+ai
 ah
 aj
 hc
@@ -757,7 +754,7 @@ at
 aw
 aw
 aI
-hN
+MS
 aw
 aw
 aw
@@ -781,8 +778,8 @@ ah
 af
 ax
 aw
-jD
-YA
+No
+mY
 aw
 bc
 bh
@@ -804,11 +801,11 @@ ah
 ah
 as
 af
-pm
+Xq
 aw
 aw
 aw
-eC
+aY
 bd
 aw
 bi
@@ -831,7 +828,7 @@ af
 af
 af
 ag
-dt
+JP
 ag
 af
 af
@@ -907,7 +904,7 @@ aa
 af
 aD
 aK
-Jp
+aU
 af
 ae
 ae

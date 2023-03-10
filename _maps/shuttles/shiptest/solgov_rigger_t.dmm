@@ -104,6 +104,14 @@
 /obj/effect/turf_decal/industrial/outline/yellow,
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
+"bS" = (
+/obj/structure/chair{
+	dir = 4
+	},
+/obj/machinery/newscaster/directional/south,
+/obj/machinery/light/directional/south,
+/turf/open/floor/carpet/nanoweave,
+/area/ship/security)
 "bU" = (
 /obj/structure/sink{
 	pixel_y = 20
@@ -113,6 +121,17 @@
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/crew)
+"bV" = (
+/obj/machinery/airalarm/directional/west,
+/obj/structure/table,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/item/circuitboard/mecha/pod{
+	pixel_x = -8;
+	pixel_y = -7
+	},
+/obj/item/stack/cable_coil/blue,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ship/cargo)
 "bX" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 1;
@@ -1412,6 +1431,18 @@
 /obj/item/clothing/accessory/waistcoat,
 /turf/open/floor/carpet/nanoweave/purple,
 /area/ship/crew/canteen)
+"to" = (
+/obj/machinery/newscaster/directional/south,
+/obj/machinery/light/directional/east,
+/obj/structure/closet/secure_closet/lieutenant{
+	name = "signal officer's locker";
+	req_access_txt = "90"
+	},
+/obj/item/radio/headset/solgov/alt,
+/obj/item/pet_carrier,
+/obj/item/taperecorder,
+/turf/open/floor/wood,
+/area/ship/crew/solgov)
 "tq" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -1438,21 +1469,18 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /turf/open/floor/wood,
 /area/ship/crew)
-"tL" = (
-/obj/machinery/newscaster{
-	dir = 1;
-	pixel_y = -32
+"tF" = (
+/obj/structure/table/reinforced,
+/obj/item/paper_bin{
+	pixel_x = 10
 	},
-/obj/machinery/light/directional/east,
-/obj/structure/closet/secure_closet/lieutenant{
-	name = "signal officer's locker";
-	req_access_txt = "90"
+/obj/structure/railing,
+/obj/item/spacepod_key/sec,
+/obj/machinery/recharger{
+	pixel_x = -4
 	},
-/obj/item/radio/headset/solgov/alt,
-/obj/item/pet_carrier,
-/obj/item/taperecorder,
-/turf/open/floor/wood,
-/area/ship/crew/solgov)
+/turf/open/floor/carpet/nanoweave,
+/area/ship/bridge)
 "ue" = (
 /obj/machinery/power/smes/shuttle/precharged{
 	dir = 1
@@ -1838,17 +1866,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
-"yi" = (
-/obj/machinery/airalarm/directional/west,
-/obj/structure/table,
-/obj/effect/turf_decal/industrial/outline/yellow,
-/obj/item/circuitboard/mecha/pod{
-	pixel_x = -8;
-	pixel_y = -7
-	},
-/obj/item/stack/cable_coil/blue,
-/turf/open/floor/plasteel/tech/techmaint,
-/area/ship/cargo)
 "yp" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/crew/solgov)
@@ -2225,6 +2242,15 @@
 	},
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
+"Dd" = (
+/obj/machinery/cryopod{
+	dir = 1
+	},
+/obj/machinery/computer/cryopod/directional/north{
+	pixel_y = -25
+	},
+/turf/open/floor/wood,
+/area/ship/crew)
 "Dm" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
@@ -2240,15 +2266,6 @@
 /obj/effect/landmark/start/assistant,
 /turf/open/floor/carpet/nanoweave/purple,
 /area/ship/crew/canteen)
-"Dr" = (
-/obj/machinery/cryopod{
-	dir = 1
-	},
-/obj/machinery/computer/cryopod{
-	pixel_y = -25
-	},
-/turf/open/floor/wood,
-/area/ship/crew)
 "Ds" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -2465,17 +2482,6 @@
 /obj/item/stack/spacecash/c1000,
 /turf/open/floor/carpet/nanoweave/blue,
 /area/ship/bridge)
-"Fo" = (
-/obj/structure/chair{
-	dir = 4
-	},
-/obj/machinery/newscaster{
-	dir = 1;
-	pixel_y = -32
-	},
-/obj/machinery/light/directional/south,
-/turf/open/floor/carpet/nanoweave,
-/area/ship/security)
 "Fp" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -3481,18 +3487,6 @@
 /obj/machinery/power/port_gen/pacman,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
-"RH" = (
-/obj/structure/table/reinforced,
-/obj/item/paper_bin{
-	pixel_x = 10
-	},
-/obj/structure/railing,
-/obj/item/spacepod_key/sec,
-/obj/machinery/recharger{
-	pixel_x = -4
-	},
-/turf/open/floor/carpet/nanoweave,
-/area/ship/bridge)
 "RO" = (
 /obj/machinery/airalarm/directional/east,
 /obj/machinery/atmospherics/pipe/simple/green/visible{
@@ -4264,7 +4258,7 @@ CL
 rl
 tE
 RW
-Dr
+Dd
 bC
 SU
 Cf
@@ -4409,7 +4403,7 @@ Kr
 dl
 TG
 eg
-Fo
+bS
 uN
 jm
 WU
@@ -4502,7 +4496,7 @@ qR
 jP
 ou
 IT
-RH
+tF
 bO
 TC
 Tt
@@ -4775,7 +4769,7 @@ sT
 NW
 QU
 Xa
-yi
+bV
 YG
 Qq
 FV
@@ -4953,7 +4947,7 @@ mn
 yp
 kL
 xJ
-tL
+to
 Sh
 hl
 LO
