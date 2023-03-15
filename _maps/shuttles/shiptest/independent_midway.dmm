@@ -651,6 +651,17 @@
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
+"kR" = (
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/chair/sofa,
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/wood/yew,
+/area/ship/crew)
 "kU" = (
 /obj/structure/railing,
 /turf/open/floor/plasteel/stairs{
@@ -1081,6 +1092,17 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
+"rS" = (
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/corner/opaque/brown{
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/cargo)
 "se" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -1139,23 +1161,6 @@
 /obj/structure/flora/grass/jungle,
 /turf/open/floor/plating,
 /area/ship/engineering)
-"td" = (
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/machinery/power/apc/auto_name/south{
-	pixel_y = -25
-	},
-/obj/machinery/atmospherics/pipe/simple/green{
-	dir = 9
-	},
-/obj/effect/turf_decal/corner/opaque/orange{
-	dir = 10
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/tech/techmaint,
-/area/ship/engineering/atmospherics)
 "te" = (
 /obj/machinery/atmospherics/pipe/layer_manifold,
 /turf/closed/wall/mineral/titanium,
@@ -1239,13 +1244,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/cargo)
-"wT" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/atmospherics/pipe/simple/green{
-	dir = 1
-	},
-/turf/open/floor/plasteel/tech/techmaint,
-/area/ship/engineering/atmospherics)
 "xa" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/cable{
@@ -1291,19 +1289,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/flora/grass/jungle/b,
-/turf/open/floor/plasteel/tech,
-/area/ship/cargo)
-"xX" = (
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/machinery/power/apc/auto_name/south{
-	pixel_y = -25
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/turf_decal/corner/opaque/brown{
-	dir = 8
-	},
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "ya" = (
@@ -1375,6 +1360,20 @@
 	icon = 'icons/obj/stairs.dmi'
 	},
 /area/ship/engineering)
+"zu" = (
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/effect/turf_decal/corner/opaque/bottlegreen{
+	dir = 5
+	},
+/obj/effect/turf_decal/corner/opaque/bottlegreen{
+	dir = 8
+	},
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/plasteel/white,
+/area/ship/medical)
 "zv" = (
 /obj/effect/spawner/structure/window/shuttle,
 /obj/machinery/door/poddoor{
@@ -1762,6 +1761,29 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
 /turf/open/floor/engine/o2,
 /area/ship/engineering/atmospherics)
+"GX" = (
+/obj/structure/table,
+/obj/item/storage/belt/medical,
+/obj/item/reagent_containers/syringe,
+/obj/item/reagent_containers/glass/bottle{
+	list_reagents = list(/datum/reagent/medicine/thializid = 30);
+	name = "thializid bottle"
+	},
+/obj/item/reagent_containers/glass/bottle/formaldehyde{
+	pixel_x = 5;
+	pixel_y = 8
+	},
+/obj/machinery/door/window/eastleft{
+	dir = 8
+	},
+/obj/effect/turf_decal/corner/opaque/bottlegreen{
+	dir = 10
+	},
+/obj/effect/turf_decal/corner/opaque/bottlegreen{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/ship/medical)
 "GY" = (
 /obj/structure/curtain/cloth/grey,
 /obj/effect/turf_decal/siding/wood{
@@ -1873,19 +1895,21 @@
 /obj/structure/flora/junglebush/large,
 /turf/open/floor/engine,
 /area/ship/engineering)
-"IZ" = (
+"IV" = (
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/machinery/power/apc/auto_name/west{
-	pixel_x = -25
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/machinery/atmospherics/pipe/simple/green{
+	dir = 9
+	},
+/obj/effect/turf_decal/corner/opaque/orange{
+	dir = 10
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/turf_decal/number/zero{
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/ship/engineering)
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ship/engineering/atmospherics)
 "Jg" = (
 /obj/machinery/door/poddoor{
 	dir = 4;
@@ -1977,21 +2001,6 @@
 /obj/machinery/atmospherics/pipe/layer_manifold,
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/cargo)
-"Lg" = (
-/obj/structure/table,
-/obj/structure/cable,
-/obj/machinery/power/apc/auto_name/west{
-	pixel_x = -25
-	},
-/obj/machinery/cell_charger,
-/obj/item/stock_parts/cell/high/plus,
-/obj/machinery/airalarm/directional/south,
-/obj/effect/turf_decal/spline/fancy/transparent/neutral{
-	color = "#2257AF";
-	dir = 10
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/bridge)
 "Lv" = (
 /obj/effect/decal/cleanable/blood,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
@@ -2052,6 +2061,19 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
+"MV" = (
+/obj/structure/table,
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/machinery/cell_charger,
+/obj/item/stock_parts/cell/high/plus,
+/obj/machinery/airalarm/directional/south,
+/obj/effect/turf_decal/spline/fancy/transparent/neutral{
+	color = "#2257AF";
+	dir = 10
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
 "MX" = (
 /obj/effect/turf_decal/spline/fancy/transparent/neutral{
 	color = "#2257AF";
@@ -2098,22 +2120,6 @@
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
-"Nu" = (
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/machinery/power/apc/auto_name/north{
-	pixel_y = 25
-	},
-/obj/effect/turf_decal/corner/opaque/bottlegreen{
-	dir = 5
-	},
-/obj/effect/turf_decal/corner/opaque/bottlegreen{
-	dir = 8
-	},
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/plasteel/white,
-/area/ship/medical)
 "Nx" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/dim/directional/south,
@@ -2194,29 +2200,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/yew,
 /area/ship/crew)
-"Ot" = (
-/obj/structure/table,
-/obj/item/storage/belt/medical,
-/obj/item/reagent_containers/syringe,
-/obj/item/reagent_containers/glass/bottle{
-	list_reagents = list(/datum/reagent/medicine/thializid = 30);
-	name = "thializid bottle"
-	},
-/obj/item/reagent_containers/glass/bottle/formaldehyde{
-	pixel_x = 5;
-	pixel_y = 8
-	},
-/obj/machinery/door/window/eastleft{
-	dir = 8
-	},
-/obj/effect/turf_decal/corner/opaque/bottlegreen{
-	dir = 10
-	},
-/obj/effect/turf_decal/corner/opaque/bottlegreen{
-	dir = 4
-	},
-/turf/open/floor/plasteel/white,
-/area/ship/medical)
 "Ow" = (
 /obj/structure/sign/poster/contraband/eat,
 /turf/closed/wall/mineral/titanium,
@@ -2571,6 +2554,24 @@
 /obj/structure/spacevine,
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
+"RW" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/simple/green{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ship/engineering/atmospherics)
+"Sk" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/number/zero{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/engineering)
 "Ss" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -2890,19 +2891,6 @@
 "VE" = (
 /obj/structure/sign/donk,
 /turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/crew)
-"VN" = (
-/obj/machinery/power/apc/auto_name/north{
-	pixel_y = 25
-	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/structure/chair/sofa,
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/turf/open/floor/wood/yew,
 /area/ship/crew)
 "VP" = (
 /obj/effect/turf_decal/techfloor/orange{
@@ -3315,7 +3303,7 @@ TC
 bA
 PR
 EE
-IZ
+Sk
 TG
 OR
 XG
@@ -3453,7 +3441,7 @@ Om
 Um
 Zn
 jb
-VN
+kR
 Vv
 Ta
 OA
@@ -3489,7 +3477,7 @@ ly
 JJ
 cr
 Er
-td
+IV
 CS
 UE
 IC
@@ -3511,7 +3499,7 @@ gA
 nJ
 KS
 dz
-wT
+RW
 JI
 OW
 gb
@@ -3742,7 +3730,7 @@ pm
 yw
 Qt
 lb
-xX
+rS
 pv
 wA
 XN
@@ -3752,7 +3740,7 @@ nH
 cJ
 Ry
 Lc
-Nu
+zu
 Zz
 Vh
 lm
@@ -3778,7 +3766,7 @@ OZ
 RH
 ZN
 fV
-Ot
+GX
 Ry
 Zn
 "}
@@ -3864,7 +3852,7 @@ rC
 Zx
 ri
 CG
-Lg
+MV
 OV
 Mw
 Zn
