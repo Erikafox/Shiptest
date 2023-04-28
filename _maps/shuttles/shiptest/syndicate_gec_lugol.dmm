@@ -47,6 +47,83 @@
 	icon_state = "elevatorshaft"
 	},
 /area/ship/crew/dorm)
+"ap" = (
+/obj/effect/decal/fakelattice,
+/obj/machinery/light/small/directional/south{
+	bulb_colour = "#84A9FF";
+	bulb_power = 1;
+	bulb_vacuum_colour = "#FF3232";
+	desc = "These lights are conventionally banned from most ships due to the harmful radiation emitted from them. The GEC contractor who designed this ship did not care.";
+	name = "blue-violet light"
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/effect/decal/fakelattice,
+/obj/machinery/light/small/directional/south{
+	name = "blue-violet light";
+	desc = "These lights are conventionally banned from most ships due to the harmful radiation emitted from them. The GEC contractor who designed this ship did not care.";
+	bulb_power = 1;
+	bulb_colour = "#84A9FF";
+	bulb_vacuum_colour = "#FF3232"
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/effect/decal/fakelattice,
+/obj/machinery/light/small/directional/south{
+	bulb_colour = "#84A9FF";
+	bulb_power = 1;
+	bulb_vacuum_colour = "#FF3232";
+	desc = "These lights are conventionally banned from most ships due to the harmful radiation emitted from them. The GEC contractor who designed this ship did not care.";
+	name = "blue-violet light"
+	},
+/turf/open/floor/plating{
+	color = "#8D8B8B";
+	icon_state = "elevatorshaft"
+	},
+/area/ship/crew/dorm)
+"aw" = (
+/obj/effect/turf_decal/corner/transparent/bar/diagonal,
+/obj/structure/chair{
+	dir = 4
+	},
+/obj/machinery/camera/autoname{
+	dir = 2;
+	network = list("GEC")
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/newscaster/directional/north,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/effect/turf_decal/corner/transparent/bar/diagonal,
+/obj/structure/chair{
+	dir = 4
+	},
+/obj/machinery/camera/autoname{
+	dir = 2;
+	network = list("GEC")
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/newscaster/directional/north{
+	pixel_y = 30
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/effect/turf_decal/corner/transparent/bar/diagonal,
+/obj/structure/chair{
+	dir = 4
+	},
+/obj/machinery/camera/autoname{
+	dir = 2;
+	network = list("GEC")
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/newscaster/directional/north,
+/turf/open/floor/plasteel,
+/area/ship/crew/canteen)
 "aE" = (
 /obj/effect/turf_decal/steeldecal/steel_decals_central2,
 /obj/effect/turf_decal/steeldecal/steel_decals_central2{
@@ -157,6 +234,15 @@
 /obj/effect/turf_decal/arrows,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
+"bm" = (
+/obj/docking_port/stationary{
+	dwidth = 3;
+	width = 7;
+	height = 15;
+	dir = 2
+	},
+/turf/template_noop,
+/area/template_noop)
 "bs" = (
 /obj/structure/table,
 /obj/item/flashlight/lamp{
@@ -348,6 +434,12 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/atmospherics)
+"dd" = (
+/obj/effect/turf_decal/corner/transparent/bar/diagonal,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/landmark/observer_start,
+/turf/open/floor/plasteel,
+/area/ship/crew/canteen)
 "de" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -377,51 +469,6 @@
 /obj/machinery/power/supermatter_crystal/shard,
 /turf/open/floor/plating/airless,
 /area/ship/construction)
-"dk" = (
-/obj/structure/table/reinforced,
-/obj/item/documents{
-	desc = "Upon closer inspection, this is just an egg salad recipe.";
-	icon_state = "docs_part";
-	layer = 3;
-	pixel_x = 3;
-	pixel_y = 3
-	},
-/obj/item/folder{
-	pixel_y = 2
-	},
-/obj/item/folder/red{
-	pixel_y = 4
-	},
-/obj/item/stamp/syndicate{
-	pixel_x = 1;
-	pixel_y = 6
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/table/reinforced,
-/obj/structure/railing{
-	dir = 9
-	},
-/obj/item/documents{
-	desc = "Upon closer inspection, this is just an egg salad recipe.";
-	icon_state = "docs_part";
-	layer = 3;
-	pixel_x = 3;
-	pixel_y = 3
-	},
-/obj/item/folder{
-	pixel_y = 2
-	},
-/obj/item/folder/red{
-	pixel_y = 4
-	},
-/obj/item/stamp/syndicate{
-	pixel_x = 1;
-	pixel_y = 6
-	},
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/bridge)
 "dn" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/oxygen_output,
 /turf/open/floor/engine/o2,
@@ -501,41 +548,6 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/atmospherics)
-"eq" = (
-/obj/effect/turf_decal/steeldecal/steel_decals10{
-	dir = 9
-	},
-/obj/effect/turf_decal/steeldecal/steel_decals10{
-	dir = 10
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/computer/cryopod/directional/north,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/effect/turf_decal/steeldecal/steel_decals10{
-	dir = 9
-	},
-/obj/effect/turf_decal/steeldecal/steel_decals10{
-	dir = 10
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/computer/cryopod/directional/north{
-	pixel_y = 27
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/effect/turf_decal/steeldecal/steel_decals10{
-	dir = 9
-	},
-/obj/effect/turf_decal/steeldecal/steel_decals10{
-	dir = 10
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/computer/cryopod/directional/north,
-/turf/open/floor/plasteel/dark,
-/area/ship/crew/dorm)
 "eB" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -722,15 +734,6 @@
 "fN" = (
 /turf/open/floor/engine/airless,
 /area/ship/engineering/atmospherics)
-"fO" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
-	dir = 8
-	},
-/obj/structure/railing{
-	dir = 6
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/bridge)
 "fW" = (
 /obj/item/holosign_creator/engineering,
 /obj/item/clothing/under/syndicate/gec,
@@ -760,12 +763,6 @@
 /obj/effect/turf_decal/industrial/warning,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
-"gc" = (
-/obj/structure/filingcabinet/chestdrawer{
-	pixel_x = -3
-	},
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/bridge)
 "gi" = (
 /obj/effect/turf_decal/industrial/caution{
 	pixel_y = -15
@@ -865,51 +862,6 @@
 	},
 /turf/open/floor/carpet/red,
 /area/ship/bridge)
-"hk" = (
-/obj/structure/catwalk/over/plated_catwalk/white{
-	color = "#4c535b"
-	},
-/obj/machinery/atmospherics/components/binary/pump/on{
-	desc = "A pump that moves gas by pressure. This one pumps gas from the ship's waste loop into the filtering section";
-	dir = 8;
-	name = "Waste to Filtering"
-	},
-/obj/machinery/atmospherics/pipe/simple/green/visible/layer2{
-	dir = 6
-	},
-/obj/machinery/light/dim/directional/north,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/catwalk/over/plated_catwalk/white{
-	color = "#4c535b"
-	},
-/obj/machinery/atmospherics/components/binary/pump/on{
-	dir = 8;
-	name = "Waste to Filtering";
-	desc = "A pump that moves gas by pressure. This one pumps gas from the ship's waste loop into the filtering section"
-	},
-/obj/machinery/atmospherics/pipe/simple/green/visible/layer2{
-	dir = 6
-	},
-/obj/machinery/light/dim/directional/north,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/catwalk/over/plated_catwalk/white{
-	color = "#4c535b"
-	},
-/obj/machinery/atmospherics/components/binary/pump/on{
-	desc = "A pump that moves gas by pressure. This one pumps gas from the ship's waste loop into the filtering section";
-	dir = 8;
-	name = "Waste to Filtering"
-	},
-/obj/machinery/atmospherics/pipe/simple/green/visible/layer2{
-	dir = 6
-	},
-/obj/machinery/light/dim/directional/north,
-/turf/open/floor/plating,
-/area/ship/engineering/atmospherics)
 "hm" = (
 /obj/machinery/computer/cargo/express,
 /obj/structure/sign/syndicate{
@@ -1043,12 +995,6 @@
 "ia" = (
 /turf/open/floor/plasteel/tech/airless,
 /area/ship/construction)
-"id" = (
-/obj/effect/turf_decal/corner/transparent/bar/diagonal,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/landmark/observer_start,
-/turf/open/floor/plasteel,
-/area/ship/crew/canteen)
 "is" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/catwalk/over/plated_catwalk/white{
@@ -1091,60 +1037,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
-"iP" = (
-/obj/effect/turf_decal/corner/transparent/bar/diagonal,
-/obj/effect/turf_decal/steeldecal/steel_decals_central2{
-	dir = 4;
-	pixel_x = -2;
-	pixel_y = 2
-	},
-/obj/effect/turf_decal/steeldecal/steel_decals10{
-	dir = 1
-	},
-/obj/structure/table,
-/obj/effect/turf_decal/spline/fancy/opaque/black{
-	dir = 1
-	},
-/obj/machinery/recharger,
-/obj/machinery/light/small/directional/west,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/effect/turf_decal/corner/transparent/bar/diagonal,
-/obj/effect/turf_decal/steeldecal/steel_decals_central2{
-	pixel_y = 2;
-	dir = 4;
-	pixel_x = -2
-	},
-/obj/effect/turf_decal/steeldecal/steel_decals10{
-	dir = 1
-	},
-/obj/structure/table,
-/obj/effect/turf_decal/spline/fancy/opaque/black{
-	dir = 1
-	},
-/obj/machinery/recharger,
-/obj/machinery/light/small/directional/west,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/effect/turf_decal/corner/transparent/bar/diagonal,
-/obj/effect/turf_decal/steeldecal/steel_decals_central2{
-	dir = 4;
-	pixel_x = -2;
-	pixel_y = 2
-	},
-/obj/effect/turf_decal/steeldecal/steel_decals10{
-	dir = 1
-	},
-/obj/structure/table,
-/obj/effect/turf_decal/spline/fancy/opaque/black{
-	dir = 1
-	},
-/obj/machinery/recharger,
-/obj/machinery/light/small/directional/west,
-/turf/open/floor/plasteel/dark,
-/area/ship/bridge)
 "iQ" = (
 /obj/machinery/advanced_airlock_controller{
 	pixel_y = -30
@@ -1272,6 +1164,17 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
+"jx" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/holopad/emergency/command,
+/obj/structure/railing/corner,
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
 "jN" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/catwalk/over/plated_catwalk/white{
@@ -1412,6 +1315,35 @@
 	},
 /turf/open/floor/plating/airless,
 /area/ship/construction)
+"lv" = (
+/obj/structure/railing/corner{
+	color = "#808080";
+	dir = 1;
+	pixel_x = -2;
+	pixel_y = 2
+	},
+/obj/item/kirbyplants{
+	icon_state = "plant-14";
+	pixel_y = 5
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/railing/corner{
+	color = "#808080";
+	dir = 1;
+	pixel_x = -2;
+	pixel_y = 2
+	},
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/obj/item/kirbyplants{
+	icon_state = "plant-14";
+	pixel_y = 5
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/bridge)
 "lx" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer{
 	dir = 4;
@@ -1575,6 +1507,28 @@
 	},
 /turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/engineering/atmospherics)
+"mJ" = (
+/obj/effect/turf_decal/corner/transparent/solgovgold{
+	dir = 9
+	},
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/yellow/visible,
+/obj/structure/extinguisher_cabinet/directional/west,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/effect/turf_decal/corner/transparent/solgovgold{
+	dir = 9
+	},
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/yellow/visible,
+/obj/structure/extinguisher_cabinet/directional/north,
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/engineering/atmospherics)
 "mO" = (
 /obj/machinery/power/port_gen/pacman/super,
 /obj/structure/cable{
@@ -1641,6 +1595,23 @@
 	icon_state = "elevatorshaft"
 	},
 /area/ship/engineering)
+"ny" = (
+/obj/structure/tank_dispenser,
+/obj/structure/railing{
+	dir = 6
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/tank_dispenser,
+/obj/machinery/button/door{
+	id = "atmoswindow";
+	name = "Window Shutters";
+	pixel_x = 5;
+	pixel_y = 27
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/engineering/atmospherics)
 "nz" = (
 /obj/machinery/atmospherics/components/unary/passive_vent/layer2{
 	dir = 4
@@ -1935,64 +1906,18 @@
 /area/ship/engineering/atmospherics)
 "pH" = (
 /obj/effect/turf_decal/corner/transparent/solgovgold{
-	dir = 9
+	dir = 6
 	},
-/obj/effect/turf_decal/industrial/traffic{
-	dir = 8
-	},
-/obj/item/storage/toolbox/syndicate,
-/obj/item/storage/belt/utility/full/engi,
-/obj/item/clothing/glasses/welding,
-/obj/item/clothing/under/syndicate/gec/atmos_tech,
-/obj/item/clothing/suit/toggle/hazard,
-/obj/item/holosign_creator/atmos,
-/obj/item/extinguisher/advanced,
-/obj/item/clothing/glasses/meson/engine,
-/obj/item/pipe_dispenser,
-/obj/item/analyzer,
-/obj/item/clothing/mask/gas/atmos,
-/obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/clothing/suit/fire/atmos,
-/obj/item/clothing/head/hardhat/atmos,
-/obj/structure/closet/secure_closet/atmospherics{
-	name = "Atmospheric Technician's Locker";
-	populate = 0
-	},
-/obj/machinery/button/door{
-	id = "atmoswindow";
-	name = "Window Shutters";
-	pixel_x = 24;
-	pixel_y = 22
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /obj/merge_conflict_marker{
 	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
 /obj/effect/turf_decal/corner/transparent/solgovgold{
-	dir = 9
+	dir = 6
 	},
-/obj/effect/turf_decal/industrial/traffic{
-	dir = 8
-	},
-/obj/item/storage/toolbox/syndicate,
-/obj/item/storage/belt/utility/full/engi,
-/obj/item/clothing/glasses/welding,
-/obj/item/clothing/under/syndicate/gec/atmos_tech,
-/obj/item/clothing/suit/toggle/hazard,
-/obj/item/holosign_creator/atmos,
-/obj/item/extinguisher/advanced,
-/obj/item/clothing/glasses/meson/engine,
-/obj/item/pipe_dispenser,
-/obj/item/analyzer,
-/obj/item/clothing/mask/gas/atmos,
-/obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/clothing/suit/fire/atmos,
-/obj/item/clothing/head/hardhat/atmos,
-/obj/structure/closet/secure_closet/atmospherics{
-	name = "Atmospheric Technician's Locker";
-	populate = 0
-	},
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/engineering/atmospherics)
+/obj/structure/extinguisher_cabinet/directional/north,
+/turf/open/floor/plasteel/tech,
+/area/ship/hallway/central)
 "pJ" = (
 /obj/machinery/portable_atmospherics/canister/nitrogen,
 /turf/open/floor/plating/airless,
@@ -2141,23 +2066,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
-"qF" = (
-/obj/machinery/firealarm/directional/north,
-/obj/structure/filingcabinet{
-	pixel_x = 7
-	},
-/obj/structure/railing{
-	dir = 4
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/machinery/firealarm/directional/north,
-/obj/structure/filingcabinet{
-	pixel_x = 7
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/bridge)
 "qH" = (
 /obj/machinery/atmospherics/pipe/manifold/yellow/visible{
 	dir = 8
@@ -2168,30 +2076,28 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/atmospherics)
-"qK" = (
-/obj/structure/table/reinforced,
-/obj/item/radio/intercom/wideband/table{
-	dir = 1
+"qJ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/canvas/nineteenXnineteen{
+	desc = "The heart and soul of every good project leader. Plan your engineering projects with this canvas.";
+	name = "Concept Board"
 	},
+/obj/structure/easel{
+	anchored = 1
+	},
+/obj/structure/railing,
 /obj/merge_conflict_marker{
 	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
-/obj/structure/table/reinforced,
-/obj/item/radio/intercom/wideband/directional/north,
-/obj/structure/railing{
-	dir = 9
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/canvas/nineteenXnineteen{
+	desc = "The heart and soul of every good project leader. Plan your engineering projects with this canvas.";
+	name = "Concept Board"
 	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+/obj/structure/easel{
+	anchored = 1
 	},
-/obj/structure/table/reinforced,
-/obj/structure/railing{
-	dir = 9
-	},
-/obj/item/radio/intercom/wideband/table{
-	dir = 1
-	},
-/turf/open/floor/plasteel/tech/grid,
+/turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "qM" = (
 /obj/machinery/atmospherics/components/unary/shuttle/heater{
@@ -2275,6 +2181,23 @@
 /obj/machinery/firealarm/directional/south,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
+"rq" = (
+/obj/machinery/firealarm/directional/north,
+/obj/structure/filingcabinet{
+	pixel_x = 7
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/firealarm/directional/north,
+/obj/structure/filingcabinet{
+	pixel_x = 7
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
 "ru" = (
 /obj/machinery/atmospherics/pipe/simple/purple/hidden{
 	dir = 5
@@ -2380,6 +2303,51 @@
 /obj/machinery/firealarm/directional/south,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/crew/canteen)
+"sp" = (
+/obj/structure/catwalk/over/plated_catwalk/white{
+	color = "#4c535b"
+	},
+/obj/machinery/atmospherics/components/binary/pump/on{
+	desc = "A pump that moves gas by pressure. This one pumps gas from the ship's waste loop into the filtering section";
+	dir = 8;
+	name = "Waste to Filtering"
+	},
+/obj/machinery/atmospherics/pipe/simple/green/visible/layer2{
+	dir = 6
+	},
+/obj/machinery/light/dim/directional/north,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/catwalk/over/plated_catwalk/white{
+	color = "#4c535b"
+	},
+/obj/machinery/atmospherics/components/binary/pump/on{
+	dir = 8;
+	name = "Waste to Filtering";
+	desc = "A pump that moves gas by pressure. This one pumps gas from the ship's waste loop into the filtering section"
+	},
+/obj/machinery/atmospherics/pipe/simple/green/visible/layer2{
+	dir = 6
+	},
+/obj/machinery/light/dim/directional/north,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/catwalk/over/plated_catwalk/white{
+	color = "#4c535b"
+	},
+/obj/machinery/atmospherics/components/binary/pump/on{
+	desc = "A pump that moves gas by pressure. This one pumps gas from the ship's waste loop into the filtering section";
+	dir = 8;
+	name = "Waste to Filtering"
+	},
+/obj/machinery/atmospherics/pipe/simple/green/visible/layer2{
+	dir = 6
+	},
+/obj/machinery/light/dim/directional/north,
+/turf/open/floor/plating,
+/area/ship/engineering/atmospherics)
 "st" = (
 /obj/effect/turf_decal/corner/transparent/solgovgold{
 	dir = 5
@@ -2742,6 +2710,42 @@
 "vk" = (
 /turf/open/floor/engine/plasma,
 /area/ship/engineering/atmospherics)
+"vr" = (
+/obj/structure/table,
+/obj/structure/bedsheetbin,
+/obj/machinery/light/small/directional/west{
+	bulb_colour = "#84A9FF";
+	bulb_power = 1;
+	bulb_vacuum_colour = "#FF3232";
+	desc = "These lights are conventionally banned from most ships due to the harmful radiation emitted from them. The GEC contractor who designed this ship did not care.";
+	name = "blue-violet light"
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/table,
+/obj/structure/bedsheetbin,
+/obj/machinery/light/small/directional/west{
+	bulb_vacuum_colour = "#FF3232";
+	name = "blue-violet light";
+	desc = "These lights are conventionally banned from most ships due to the harmful radiation emitted from them. The GEC contractor who designed this ship did not care.";
+	bulb_power = 1;
+	bulb_colour = "#84A9FF"
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/table,
+/obj/structure/bedsheetbin,
+/obj/machinery/light/small/directional/west{
+	bulb_colour = "#84A9FF";
+	bulb_power = 1;
+	bulb_vacuum_colour = "#FF3232";
+	desc = "These lights are conventionally banned from most ships due to the harmful radiation emitted from them. The GEC contractor who designed this ship did not care.";
+	name = "blue-violet light"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/crew/dorm)
 "vv" = (
 /obj/effect/turf_decal/techfloor,
 /obj/effect/turf_decal/steeldecal/steel_decals10{
@@ -2773,47 +2777,19 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
-"vJ" = (
-/obj/effect/turf_decal/corner/transparent/bar/diagonal,
-/obj/structure/chair{
-	dir = 4
+"vN" = (
+/obj/structure/catwalk/over/plated_catwalk/white{
+	color = "#4c535b"
 	},
-/obj/machinery/camera/autoname{
-	dir = 2;
-	network = list("GEC")
+/obj/machinery/button/door{
+	dir = 8;
+	id = "airmixchamber";
+	name = "Air Mix Drain";
+	pixel_x = 27;
+	pixel_y = -5
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/newscaster/directional/north,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/effect/turf_decal/corner/transparent/bar/diagonal,
-/obj/structure/chair{
-	dir = 4
-	},
-/obj/machinery/camera/autoname{
-	dir = 2;
-	network = list("GEC")
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/newscaster/directional/north{
-	pixel_y = 30
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/effect/turf_decal/corner/transparent/bar/diagonal,
-/obj/structure/chair{
-	dir = 4
-	},
-/obj/machinery/camera/autoname{
-	dir = 2;
-	network = list("GEC")
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/newscaster/directional/north,
-/turf/open/floor/plasteel,
-/area/ship/crew/canteen)
+/turf/open/floor/plating/airless,
+/area/ship/construction)
 "vU" = (
 /obj/machinery/atmospherics/components/binary/valve/layer2{
 	dir = 4
@@ -3046,15 +3022,6 @@
 "xJ" = (
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering/atmospherics)
-"xN" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 4
-	},
-/obj/structure/catwalk/over/plated_catwalk/white{
-	color = "#4c535b"
-	},
-/turf/open/floor/plating,
-/area/ship/bridge)
 "xP" = (
 /turf/open/floor/engine/n2,
 /area/ship/engineering/atmospherics)
@@ -3130,75 +3097,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/atmospherics)
-"yJ" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/railing{
-	dir = 4
-	},
-/obj/structure/railing{
-	dir = 8
-	},
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/obj/stairs.dmi'
-	},
-/area/ship/bridge)
-"yO" = (
-/obj/structure/table/reinforced,
-/obj/machinery/button/door{
-	id = "gec_cargo";
-	name = "Cargo Blast Doors";
-	pixel_x = -5;
-	pixel_y = 5
-	},
-/obj/machinery/button/shieldwallgen{
-	id = "gec_cargo_shield";
-	name = "Cargo Holoshield";
-	pixel_x = 6;
-	pixel_y = 3
-	},
-/obj/machinery/light/small/directional/north,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/table/reinforced,
-/obj/machinery/button/door{
-	pixel_x = -5;
-	pixel_y = 5;
-	id = "gec_cargo";
-	name = "Cargo Blast Doors"
-	},
-/obj/machinery/button/shieldwallgen{
-	pixel_x = 6;
-	pixel_y = 3;
-	id = "gec_cargo_shield";
-	name = "Cargo Holoshield"
-	},
-/obj/machinery/light/small/directional/north,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/table/reinforced,
-/obj/machinery/button/door{
-	id = "gec_cargo";
-	name = "Cargo Blast Doors";
-	pixel_x = -5;
-	pixel_y = 5
-	},
-/obj/machinery/button/shieldwallgen{
-	id = "gec_cargo_shield";
-	name = "Cargo Holoshield";
-	pixel_x = 6;
-	pixel_y = 3
-	},
-/obj/machinery/light/small/directional/north,
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/cargo)
 "yT" = (
 /obj/effect/turf_decal/corner/transparent/solgovgold{
 	dir = 9
@@ -3334,42 +3232,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/dorm)
-"Ay" = (
-/obj/structure/table,
-/obj/structure/bedsheetbin,
-/obj/machinery/light/small/directional/west{
-	bulb_colour = "#84A9FF";
-	bulb_power = 1;
-	bulb_vacuum_colour = "#FF3232";
-	desc = "These lights are conventionally banned from most ships due to the harmful radiation emitted from them. The GEC contractor who designed this ship did not care.";
-	name = "blue-violet light"
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/table,
-/obj/structure/bedsheetbin,
-/obj/machinery/light/small/directional/west{
-	bulb_vacuum_colour = "#FF3232";
-	name = "blue-violet light";
-	desc = "These lights are conventionally banned from most ships due to the harmful radiation emitted from them. The GEC contractor who designed this ship did not care.";
-	bulb_power = 1;
-	bulb_colour = "#84A9FF"
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/table,
-/obj/structure/bedsheetbin,
-/obj/machinery/light/small/directional/west{
-	bulb_colour = "#84A9FF";
-	bulb_power = 1;
-	bulb_vacuum_colour = "#FF3232";
-	desc = "These lights are conventionally banned from most ships due to the harmful radiation emitted from them. The GEC contractor who designed this ship did not care.";
-	name = "blue-violet light"
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/crew/dorm)
 "Az" = (
 /obj/effect/turf_decal/steeldecal/steel_decals10{
 	dir = 4
@@ -3413,6 +3275,60 @@
 /obj/effect/turf_decal/steeldecal/steel_decals_central2,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
+"AC" = (
+/obj/effect/turf_decal/corner/transparent/bar/diagonal,
+/obj/effect/turf_decal/steeldecal/steel_decals_central2{
+	dir = 4;
+	pixel_x = -2;
+	pixel_y = 2
+	},
+/obj/effect/turf_decal/steeldecal/steel_decals10{
+	dir = 1
+	},
+/obj/structure/table,
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 1
+	},
+/obj/machinery/recharger,
+/obj/machinery/light/small/directional/west,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/effect/turf_decal/corner/transparent/bar/diagonal,
+/obj/effect/turf_decal/steeldecal/steel_decals_central2{
+	pixel_y = 2;
+	dir = 4;
+	pixel_x = -2
+	},
+/obj/effect/turf_decal/steeldecal/steel_decals10{
+	dir = 1
+	},
+/obj/structure/table,
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 1
+	},
+/obj/machinery/recharger,
+/obj/machinery/light/small/directional/west,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/effect/turf_decal/corner/transparent/bar/diagonal,
+/obj/effect/turf_decal/steeldecal/steel_decals_central2{
+	dir = 4;
+	pixel_x = -2;
+	pixel_y = 2
+	},
+/obj/effect/turf_decal/steeldecal/steel_decals10{
+	dir = 1
+	},
+/obj/structure/table,
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 1
+	},
+/obj/machinery/recharger,
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
 "AE" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/visible{
 	dir = 9
@@ -3434,23 +3350,6 @@
 	layer = 2.8
 	},
 /obj/structure/railing,
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/engineering/atmospherics)
-"AY" = (
-/obj/structure/tank_dispenser,
-/obj/structure/railing{
-	dir = 6
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/tank_dispenser,
-/obj/machinery/button/door{
-	id = "atmoswindow";
-	name = "Window Shutters";
-	pixel_x = 5;
-	pixel_y = 27
-	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/atmospherics)
 "Bf" = (
@@ -3496,6 +3395,31 @@
 	icon_state = "elevatorshaft"
 	},
 /area/ship/engineering)
+"Bt" = (
+/obj/structure/table/reinforced,
+/obj/item/radio/intercom/wideband/table{
+	dir = 1
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/table/reinforced,
+/obj/item/radio/intercom/wideband/directional/north,
+/obj/structure/railing{
+	dir = 9
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/table/reinforced,
+/obj/structure/railing{
+	dir = 9
+	},
+/obj/item/radio/intercom/wideband/table{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/bridge)
 "Bw" = (
 /obj/effect/turf_decal/corner/transparent/solgovgold{
 	dir = 10
@@ -3521,16 +3445,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/atmospherics)
-"BC" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 8
-	},
-/obj/item/storage/secure/safe/intel{
-	dir = 8;
-	pixel_x = -32
-	},
-/turf/open/floor/carpet/red,
-/area/ship/bridge)
 "BG" = (
 /obj/effect/turf_decal/corner/transparent/solgovgold{
 	dir = 9
@@ -3547,17 +3461,6 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/atmospherics)
-"BP" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 10
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 8
-	},
-/obj/machinery/holopad/emergency/command,
-/obj/structure/railing/corner,
-/turf/open/floor/plasteel/tech,
-/area/ship/bridge)
 "BR" = (
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
@@ -3657,29 +3560,6 @@
 /obj/machinery/light/dim/directional/east,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
-"Cy" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/item/canvas/nineteenXnineteen{
-	desc = "The heart and soul of every good project leader. Plan your engineering projects with this canvas.";
-	name = "Concept Board"
-	},
-/obj/structure/easel{
-	anchored = 1
-	},
-/obj/structure/railing,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/item/canvas/nineteenXnineteen{
-	desc = "The heart and soul of every good project leader. Plan your engineering projects with this canvas.";
-	name = "Concept Board"
-	},
-/obj/structure/easel{
-	anchored = 1
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/bridge)
 "CA" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible/layer2{
 	dir = 4
@@ -3692,6 +3572,16 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/atmospherics)
+"CB" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 1
+	},
+/obj/structure/railing{
+	dir = 6
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
 "CF" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -3796,42 +3686,6 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plating,
-/area/ship/hallway/central)
-"DV" = (
-/obj/effect/turf_decal/corner/transparent/solgovgold{
-	dir = 9
-	},
-/obj/effect/turf_decal/industrial/traffic{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/yellow/visible,
-/obj/structure/extinguisher_cabinet/directional/west,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/effect/turf_decal/corner/transparent/solgovgold{
-	dir = 9
-	},
-/obj/effect/turf_decal/industrial/traffic{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/yellow/visible,
-/obj/structure/extinguisher_cabinet/directional/north,
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/engineering/atmospherics)
-"Eb" = (
-/obj/effect/turf_decal/corner/transparent/solgovgold{
-	dir = 6
-	},
-/obj/structure/extinguisher_cabinet/directional/west,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/effect/turf_decal/corner/transparent/solgovgold{
-	dir = 6
-	},
-/obj/structure/extinguisher_cabinet/directional/north,
-/turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
 "El" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -4108,6 +3962,57 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/dorm)
+"Gj" = (
+/obj/structure/table/reinforced,
+/obj/machinery/button/door{
+	id = "gec_cargo";
+	name = "Cargo Blast Doors";
+	pixel_x = -5;
+	pixel_y = 5
+	},
+/obj/machinery/button/shieldwallgen{
+	id = "gec_cargo_shield";
+	name = "Cargo Holoshield";
+	pixel_x = 6;
+	pixel_y = 3
+	},
+/obj/machinery/light/small/directional/north,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/table/reinforced,
+/obj/machinery/button/door{
+	pixel_x = -5;
+	pixel_y = 5;
+	id = "gec_cargo";
+	name = "Cargo Blast Doors"
+	},
+/obj/machinery/button/shieldwallgen{
+	pixel_x = 6;
+	pixel_y = 3;
+	id = "gec_cargo_shield";
+	name = "Cargo Holoshield"
+	},
+/obj/machinery/light/small/directional/north,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/table/reinforced,
+/obj/machinery/button/door{
+	id = "gec_cargo";
+	name = "Cargo Blast Doors";
+	pixel_x = -5;
+	pixel_y = 5
+	},
+/obj/machinery/button/shieldwallgen{
+	id = "gec_cargo_shield";
+	name = "Cargo Holoshield";
+	pixel_x = 6;
+	pixel_y = 3
+	},
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/cargo)
 "Gr" = (
 /obj/effect/turf_decal/corner/transparent/bar/diagonal,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -4137,6 +4042,12 @@
 	},
 /turf/open/floor/plasteel/tech/airless,
 /area/ship/construction)
+"GQ" = (
+/obj/structure/filingcabinet/chestdrawer{
+	pixel_x = -3
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/bridge)
 "GS" = (
 /obj/effect/turf_decal/corner/transparent/solgovgold{
 	dir = 10
@@ -4292,48 +4203,6 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
-"In" = (
-/obj/structure/catwalk/over/plated_catwalk/white{
-	color = "#4c535b"
-	},
-/obj/machinery/light/small/directional/east,
-/obj/machinery/button/door{
-	dir = 8;
-	id = "airmixchamber";
-	name = "Air Mix Drain";
-	pixel_x = 22;
-	pixel_y = -8
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/catwalk/over/plated_catwalk/white{
-	color = "#4c535b"
-	},
-/obj/machinery/light/small/directional/east,
-/obj/machinery/button/door{
-	name = "Air Mix Drain";
-	pixel_x = 27;
-	pixel_y = -5;
-	dir = 8;
-	id = "airmixchamber"
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/catwalk/over/plated_catwalk/white{
-	color = "#4c535b"
-	},
-/obj/machinery/light/small/directional/east,
-/obj/machinery/button/door{
-	dir = 8;
-	id = "airmixchamber";
-	name = "Air Mix Drain";
-	pixel_x = 27;
-	pixel_y = -5
-	},
-/turf/open/floor/plating,
-/area/ship/engineering/atmospherics)
 "Io" = (
 /obj/effect/turf_decal/corner/transparent/solgovgold{
 	dir = 5
@@ -4431,6 +4300,66 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/atmospherics)
+"IO" = (
+/obj/effect/turf_decal/corner/transparent/solgovgold{
+	dir = 9
+	},
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 8
+	},
+/obj/item/storage/toolbox/syndicate,
+/obj/item/storage/belt/utility/full/engi,
+/obj/item/clothing/glasses/welding,
+/obj/item/clothing/under/syndicate/gec/atmos_tech,
+/obj/item/clothing/suit/toggle/hazard,
+/obj/item/holosign_creator/atmos,
+/obj/item/extinguisher/advanced,
+/obj/item/clothing/glasses/meson/engine,
+/obj/item/pipe_dispenser,
+/obj/item/analyzer,
+/obj/item/clothing/mask/gas/atmos,
+/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/clothing/suit/fire/atmos,
+/obj/item/clothing/head/hardhat/atmos,
+/obj/structure/closet/secure_closet/atmospherics{
+	name = "Atmospheric Technician's Locker";
+	populate = 0
+	},
+/obj/machinery/button/door{
+	id = "atmoswindow";
+	name = "Window Shutters";
+	pixel_x = 24;
+	pixel_y = 22
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/effect/turf_decal/corner/transparent/solgovgold{
+	dir = 9
+	},
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 8
+	},
+/obj/item/storage/toolbox/syndicate,
+/obj/item/storage/belt/utility/full/engi,
+/obj/item/clothing/glasses/welding,
+/obj/item/clothing/under/syndicate/gec/atmos_tech,
+/obj/item/clothing/suit/toggle/hazard,
+/obj/item/holosign_creator/atmos,
+/obj/item/extinguisher/advanced,
+/obj/item/clothing/glasses/meson/engine,
+/obj/item/pipe_dispenser,
+/obj/item/analyzer,
+/obj/item/clothing/mask/gas/atmos,
+/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/clothing/suit/fire/atmos,
+/obj/item/clothing/head/hardhat/atmos,
+/obj/structure/closet/secure_closet/atmospherics{
+	name = "Atmospheric Technician's Locker";
+	populate = 0
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/engineering/atmospherics)
 "IQ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -4519,42 +4448,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
-"JD" = (
-/obj/effect/decal/fakelattice,
-/obj/machinery/light/small/directional/south{
-	bulb_colour = "#84A9FF";
-	bulb_power = 1;
-	bulb_vacuum_colour = "#FF3232";
-	desc = "These lights are conventionally banned from most ships due to the harmful radiation emitted from them. The GEC contractor who designed this ship did not care.";
-	name = "blue-violet light"
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/effect/decal/fakelattice,
-/obj/machinery/light/small/directional/south{
-	name = "blue-violet light";
-	desc = "These lights are conventionally banned from most ships due to the harmful radiation emitted from them. The GEC contractor who designed this ship did not care.";
-	bulb_power = 1;
-	bulb_colour = "#84A9FF";
-	bulb_vacuum_colour = "#FF3232"
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/effect/decal/fakelattice,
-/obj/machinery/light/small/directional/south{
-	bulb_colour = "#84A9FF";
-	bulb_power = 1;
-	bulb_vacuum_colour = "#FF3232";
-	desc = "These lights are conventionally banned from most ships due to the harmful radiation emitted from them. The GEC contractor who designed this ship did not care.";
-	name = "blue-violet light"
-	},
-/turf/open/floor/plating{
-	color = "#8D8B8B";
-	icon_state = "elevatorshaft"
-	},
-/area/ship/crew/dorm)
 "JG" = (
 /obj/effect/turf_decal/atmos/nitrogen,
 /turf/open/floor/engine/n2,
@@ -4684,66 +4577,6 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
-"KG" = (
-/obj/machinery/atmospherics/pipe/simple/cyan/visible/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/yellow/visible{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/purple/visible/layer4{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/meter/atmos/layer4{
-	desc = "It measures Plasma to Engines.";
-	name = "Plasma to Engines"
-	},
-/obj/structure/extinguisher_cabinet/directional/south,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/machinery/atmospherics/pipe/simple/cyan/visible/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/yellow/visible{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/purple/visible/layer4{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/extinguisher_cabinet/directional/north,
-/obj/machinery/meter/atmos/layer4{
-	name = "Plasma to Engines";
-	desc = "It measures Plasma to Engines."
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/machinery/atmospherics/pipe/simple/cyan/visible/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/yellow/visible{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/purple/visible/layer4{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/extinguisher_cabinet/directional/north,
-/obj/machinery/meter/atmos/layer4{
-	desc = "It measures Plasma to Engines.";
-	name = "Plasma to Engines"
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/engineering/atmospherics)
 "KM" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	dir = 4;
@@ -4887,15 +4720,6 @@
 /obj/item/stock_parts/cell/high,
 /turf/open/floor/plating/airless,
 /area/ship/construction)
-"Lr" = (
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "bridge_shutters";
-	dir = 4
-	},
-/obj/structure/window/plasma/reinforced/plastitanium,
-/obj/structure/grille,
-/turf/open/floor/plating,
-/area/ship/bridge)
 "Ls" = (
 /obj/structure/catwalk/over/plated_catwalk/white{
 	color = "#4c535b"
@@ -5041,6 +4865,15 @@
 "Md" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/construction)
+"Mg" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/structure/catwalk/over/plated_catwalk/white{
+	color = "#4c535b"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
 "Mh" = (
 /obj/effect/decal/cleanable/blood/old{
 	color = "#808080"
@@ -5136,6 +4969,48 @@
 /obj/structure/table,
 /turf/open/floor/plating,
 /area/ship/crew/canteen)
+"MB" = (
+/obj/structure/catwalk/over/plated_catwalk/white{
+	color = "#4c535b"
+	},
+/obj/machinery/light/small/directional/east,
+/obj/machinery/button/door{
+	dir = 8;
+	id = "airmixchamber";
+	name = "Air Mix Drain";
+	pixel_x = 22;
+	pixel_y = -8
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/catwalk/over/plated_catwalk/white{
+	color = "#4c535b"
+	},
+/obj/machinery/light/small/directional/east,
+/obj/machinery/button/door{
+	name = "Air Mix Drain";
+	pixel_x = 27;
+	pixel_y = -5;
+	dir = 8;
+	id = "airmixchamber"
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/catwalk/over/plated_catwalk/white{
+	color = "#4c535b"
+	},
+/obj/machinery/light/small/directional/east,
+/obj/machinery/button/door{
+	dir = 8;
+	id = "airmixchamber";
+	name = "Air Mix Drain";
+	pixel_x = 27;
+	pixel_y = -5
+	},
+/turf/open/floor/plating,
+/area/ship/engineering/atmospherics)
 "MC" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/atmos/oxygen_input,
 /turf/open/floor/engine/o2,
@@ -5259,34 +5134,6 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/engineering/atmospherics)
-"NA" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/components/unary/portables_connector/visible{
-	dir = 1
-	},
-/obj/machinery/portable_atmospherics/pump,
-/obj/structure/extinguisher_cabinet/directional/west,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/components/unary/portables_connector/visible{
-	dir = 1
-	},
-/obj/machinery/portable_atmospherics/pump,
-/obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/atmospherics)
 "NE" = (
@@ -5441,27 +5288,55 @@
 	icon_state = "elevatorshaft"
 	},
 /area/ship/engineering)
+"Pj" = (
+/obj/structure/table/reinforced,
+/obj/item/documents{
+	desc = "Upon closer inspection, this is just an egg salad recipe.";
+	icon_state = "docs_part";
+	layer = 3;
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/folder{
+	pixel_y = 2
+	},
+/obj/item/folder/red{
+	pixel_y = 4
+	},
+/obj/item/stamp/syndicate{
+	pixel_x = 1;
+	pixel_y = 6
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/table/reinforced,
+/obj/structure/railing{
+	dir = 9
+	},
+/obj/item/documents{
+	desc = "Upon closer inspection, this is just an egg salad recipe.";
+	icon_state = "docs_part";
+	layer = 3;
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/folder{
+	pixel_y = 2
+	},
+/obj/item/folder/red{
+	pixel_y = 4
+	},
+/obj/item/stamp/syndicate{
+	pixel_x = 1;
+	pixel_y = 6
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/bridge)
 "Pk" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/toxin_output,
 /turf/open/floor/engine/plasma,
 /area/ship/engineering/atmospherics)
-"Pm" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/catwalk/over/plated_catwalk/white{
-	color = "#4c535b"
-	},
-/obj/structure/railing/corner,
-/obj/structure/railing/corner{
-	dir = 8
-	},
-/turf/open/floor/plating,
-/area/ship/bridge)
 "Pt" = (
 /turf/open/floor/plasteel/stairs{
 	dir = 4;
@@ -5491,6 +5366,51 @@
 /obj/effect/turf_decal/number/zero,
 /turf/open/floor/plating/airless,
 /area/ship/construction)
+"PJ" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 1
+	},
+/obj/machinery/portable_atmospherics/pump,
+/obj/structure/extinguisher_cabinet/directional/west,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 1
+	},
+/obj/machinery/portable_atmospherics/pump,
+/obj/structure/extinguisher_cabinet/directional/north,
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/engineering/atmospherics)
+"PL" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/catwalk/over/plated_catwalk/white{
+	color = "#4c535b"
+	},
+/obj/structure/railing/corner,
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
 "PR" = (
 /obj/machinery/door/airlock/hatch{
 	dir = 4;
@@ -5535,6 +5455,34 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/dorm)
+"Qb" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 8
+	},
+/obj/item/storage/secure/safe/intel{
+	dir = 8;
+	pixel_x = -32
+	},
+/turf/open/floor/carpet/red,
+/area/ship/bridge)
+"Qc" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/plasteel/stairs{
+	icon = 'icons/obj/stairs.dmi'
+	},
+/area/ship/bridge)
 "Qd" = (
 /obj/effect/turf_decal/corner/transparent/solgovgold{
 	dir = 5
@@ -5722,15 +5670,6 @@
 /obj/machinery/air_sensor/atmos/nitrogen_tank,
 /turf/open/floor/engine/n2,
 /area/ship/engineering/atmospherics)
-"Se" = (
-/obj/docking_port/stationary{
-	dwidth = 3;
-	width = 7;
-	height = 15;
-	dir = 2
-	},
-/turf/template_noop,
-/area/template_noop)
 "Si" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
@@ -5772,16 +5711,66 @@
 /obj/effect/turf_decal/industrial/warning,
 /turf/open/floor/plating/airless,
 /area/ship/construction)
-"Sr" = (
-/obj/structure/chair/comfy/shuttle{
+"Su" = (
+/obj/machinery/atmospherics/pipe/simple/cyan/visible/layer2{
 	dir = 4
 	},
-/obj/machinery/airalarm/directional/north,
-/obj/structure/catwalk/over/plated_catwalk/white{
-	color = "#4c535b"
+/obj/machinery/atmospherics/pipe/simple/yellow/visible{
+	dir = 4
 	},
-/turf/open/floor/plating,
-/area/ship/bridge)
+/obj/machinery/atmospherics/pipe/simple/purple/visible/layer4{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/meter/atmos/layer4{
+	desc = "It measures Plasma to Engines.";
+	name = "Plasma to Engines"
+	},
+/obj/structure/extinguisher_cabinet/directional/south,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/atmospherics/pipe/simple/cyan/visible/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/yellow/visible{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/purple/visible/layer4{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/extinguisher_cabinet/directional/north,
+/obj/machinery/meter/atmos/layer4{
+	name = "Plasma to Engines";
+	desc = "It measures Plasma to Engines."
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/atmospherics/pipe/simple/cyan/visible/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/yellow/visible{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/purple/visible/layer4{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/extinguisher_cabinet/directional/north,
+/obj/machinery/meter/atmos/layer4{
+	desc = "It measures Plasma to Engines.";
+	name = "Plasma to Engines"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/engineering/atmospherics)
 "Sx" = (
 /obj/structure/catwalk/over/plated_catwalk/white{
 	color = "#4c535b"
@@ -6125,6 +6114,15 @@
 /obj/machinery/atmospherics/pipe/manifold/yellow/visible,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/atmospherics)
+"Vh" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "bridge_shutters";
+	dir = 4
+	},
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/grille,
+/turf/open/floor/plating,
+/area/ship/bridge)
 "Vj" = (
 /obj/effect/turf_decal/corner/transparent/solgovgold{
 	dir = 6
@@ -6162,35 +6160,6 @@
 /obj/machinery/light/dim/directional/south,
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
-"Vw" = (
-/obj/structure/railing/corner{
-	color = "#808080";
-	dir = 1;
-	pixel_x = -2;
-	pixel_y = 2
-	},
-/obj/item/kirbyplants{
-	icon_state = "plant-14";
-	pixel_y = 5
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/railing/corner{
-	color = "#808080";
-	dir = 1;
-	pixel_x = -2;
-	pixel_y = 2
-	},
-/obj/structure/railing/corner{
-	dir = 1
-	},
-/obj/item/kirbyplants{
-	icon_state = "plant-14";
-	pixel_y = 5
-	},
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/bridge)
 "Vy" = (
 /obj/machinery/air_sensor/atmos/oxygen_tank,
 /turf/open/floor/engine/o2,
@@ -6205,6 +6174,15 @@
 "VL" = (
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
+"VZ" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 8
+	},
+/obj/structure/railing{
+	dir = 6
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
 "Wa" = (
 /obj/effect/turf_decal/corner/transparent/solgovgold{
 	dir = 10
@@ -6371,16 +6349,6 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/atmospherics)
-"XJ" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 1
-	},
-/obj/structure/railing{
-	dir = 6
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/bridge)
 "XN" = (
 /obj/machinery/cell_charger,
 /obj/structure/table,
@@ -6486,6 +6454,16 @@
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/plating,
 /area/ship/crew/canteen)
+"YU" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/machinery/airalarm/directional/north,
+/obj/structure/catwalk/over/plated_catwalk/white{
+	color = "#4c535b"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
 "Zm" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -6545,6 +6523,41 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/atmospherics)
+"Zv" = (
+/obj/effect/turf_decal/steeldecal/steel_decals10{
+	dir = 9
+	},
+/obj/effect/turf_decal/steeldecal/steel_decals10{
+	dir = 10
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/computer/cryopod/directional/north,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/effect/turf_decal/steeldecal/steel_decals10{
+	dir = 9
+	},
+/obj/effect/turf_decal/steeldecal/steel_decals10{
+	dir = 10
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/computer/cryopod/directional/north{
+	pixel_y = 27
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/effect/turf_decal/steeldecal/steel_decals10{
+	dir = 9
+	},
+/obj/effect/turf_decal/steeldecal/steel_decals10{
+	dir = 10
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/computer/cryopod/directional/north,
+/turf/open/floor/plasteel/dark,
+/area/ship/crew/dorm)
 "ZJ" = (
 /obj/effect/turf_decal/corner/transparent/solgovgold{
 	dir = 5
@@ -6570,19 +6583,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
-"ZS" = (
-/obj/structure/catwalk/over/plated_catwalk/white{
-	color = "#4c535b"
-	},
-/obj/machinery/button/door{
-	dir = 8;
-	id = "airmixchamber";
-	name = "Air Mix Drain";
-	pixel_x = 27;
-	pixel_y = -5
-	},
-/turf/open/floor/plating/airless,
-/area/ship/construction)
 "ZW" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -6706,7 +6706,7 @@ is
 gI
 tx
 tx
-Ay
+vr
 TZ
 Zn
 tx
@@ -6771,7 +6771,7 @@ fW
 xj
 uc
 tx
-eq
+Zv
 Mh
 rp
 tx
@@ -6823,7 +6823,7 @@ NH
 TE
 Ij
 sU
-KG
+Su
 Qs
 Qs
 hJ
@@ -6839,7 +6839,7 @@ uc
 tx
 NT
 QL
-JD
+ap
 tx
 pv
 JW
@@ -6931,7 +6931,7 @@ LM
 So
 WS
 Bf
-Eb
+pH
 SH
 Kq
 XC
@@ -7077,7 +7077,7 @@ Nn
 YB
 Sn
 rD
-Se
+bm
 kD
 "}
 (15,1,1) = {"
@@ -7105,7 +7105,7 @@ oA
 cA
 iZ
 Wv
-yO
+Gj
 vf
 cj
 Si
@@ -7123,7 +7123,7 @@ sU
 IN
 Yj
 GS
-NA
+PJ
 Qs
 qE
 iG
@@ -7158,7 +7158,7 @@ Yj
 GS
 jl
 Qs
-vJ
+aw
 bC
 Ts
 aY
@@ -7193,7 +7193,7 @@ iU
 Qs
 WK
 Lo
-id
+dd
 sf
 xh
 lL
@@ -7217,7 +7217,7 @@ Qs
 Qs
 Qs
 Qs
-hk
+sp
 ZJ
 qH
 Vf
@@ -7238,10 +7238,10 @@ cA
 gN
 wq
 MV
-BC
+Qb
 Ud
 fy
-iP
+AC
 My
 wq
 "}
@@ -7313,7 +7313,7 @@ wq
 "}
 (22,1,1) = {"
 Qs
-pH
+IO
 MG
 AI
 jp
@@ -7346,7 +7346,7 @@ wq
 "}
 (23,1,1) = {"
 Qs
-AY
+ny
 Pt
 Qs
 Qs
@@ -7371,8 +7371,8 @@ Io
 Fe
 rA
 Oe
-Cy
-gc
+qJ
+GQ
 El
 jZ
 wq
@@ -7381,7 +7381,7 @@ wq
 DI
 MG
 BG
-DV
+mJ
 Ag
 Ie
 AE
@@ -7404,8 +7404,8 @@ rL
 jh
 kl
 TO
-Pm
-yJ
+PL
+Qc
 Mp
 JM
 wq
@@ -7436,16 +7436,16 @@ cA
 Uc
 Fe
 KV
-BP
-XJ
-qK
+jx
+CB
+Bt
 eB
 rm
 wq
 "}
 (26,1,1) = {"
 DI
-In
+MB
 ZR
 pF
 iM
@@ -7468,10 +7468,10 @@ by
 Rn
 Uc
 wq
-qF
-fO
-dk
-Vw
+rq
+VZ
+Pj
+lv
 eB
 yp
 On
@@ -7501,9 +7501,9 @@ NE
 bj
 NE
 NE
-Sr
+YU
 dt
-xN
+Mg
 dt
 ZZ
 wQ
@@ -7540,7 +7540,7 @@ cZ
 Es
 On
 KM
-Lr
+Vh
 "}
 (29,1,1) = {"
 kD
@@ -7571,7 +7571,7 @@ wq
 wq
 KM
 KM
-KM
+On
 kD
 kD
 "}
@@ -7613,7 +7613,7 @@ kD
 kD
 Mb
 rg
-ZS
+vN
 ia
 GF
 vU
