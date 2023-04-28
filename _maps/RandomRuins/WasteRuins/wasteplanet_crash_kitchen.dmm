@@ -15,12 +15,29 @@
 /obj/machinery/door/poddoor/shutters,
 /turf/open/floor/plasteel,
 /area/ruin/unpowered)
+"aH" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/airlock/public/glass{
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/unpowered)
 "br" = (
 /obj/structure/sign/donk{
 	pixel_y = 32
 	},
 /turf/open/floor/carpet/nanoweave/purple,
 /area/ruin/unpowered)
+"bv" = (
+/turf/open/floor/plating{
+	icon_state = "platingdmg1"
+	},
+/area/overmap_encounter/planetoid/wasteplanet/explored)
 "cl" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
@@ -39,19 +56,7 @@
 	},
 /turf/open/floor/eighties,
 /area/ruin/unpowered)
-"fX" = (
-/obj/structure/chair{
-	dir = 8
-	},
-/obj/structure/extinguisher_cabinet/directional/south,
-/turf/open/floor/carpet/nanoweave/purple,
-/area/ruin/unpowered)
 "ga" = (
-/turf/open/floor/wood,
-/area/ruin/unpowered)
-"ge" = (
-/obj/structure/chair/comfy/teal,
-/obj/machinery/airalarm/directional/north,
 /turf/open/floor/wood,
 /area/ruin/unpowered)
 "gg" = (
@@ -59,30 +64,33 @@
 	icon_state = "platingdmg2"
 	},
 /area/ruin/unpowered)
+"gh" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 9
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/layer4{
+	dir = 8
+	},
+/obj/item/oar,
+/obj/machinery/advanced_airlock_controller{
+	pixel_y = -24
+	},
+/obj/structure/closet/emcloset/wall{
+	pixel_x = 28;
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/unpowered)
 "gO" = (
 /obj/structure/table,
 /turf/open/floor/carpet/nanoweave/purple,
 /area/ruin/unpowered)
-"hr" = (
-/obj/machinery/door/airlock/public/glass{
+"gS" = (
+/obj/structure/chair{
 	dir = 4
 	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/turf/open/floor/plasteel/tech/grid,
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/carpet/nanoweave/purple,
 /area/ruin/unpowered)
 "im" = (
 /obj/structure/curtain/bounty,
@@ -91,12 +99,6 @@
 "iH" = (
 /turf/template_noop,
 /area/template_noop)
-"iJ" = (
-/mob/living/simple_animal/hostile/hivebot/rapid,
-/turf/open/floor/plating{
-	icon_state = "platingdmg2"
-	},
-/area/overmap_encounter/planetoid/wasteplanet/explored)
 "ju" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -112,6 +114,11 @@
 	icon_state = "platingdmg1"
 	},
 /area/ruin/unpowered)
+"kb" = (
+/turf/open/floor/plating{
+	icon_state = "panelscorched"
+	},
+/area/overmap_encounter/planetoid/wasteplanet/explored)
 "lN" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/food/condiment/saltshaker{
@@ -134,9 +141,6 @@
 /obj/machinery/door/poddoor/shutters,
 /turf/open/floor/plasteel,
 /area/ruin/unpowered)
-"lV" = (
-/turf/open/floor/plating/asteroid/wasteplanet,
-/area/overmap_encounter/planetoid/wasteplanet/explored)
 "me" = (
 /obj/structure/table,
 /obj/structure/frame/machine,
@@ -145,23 +149,6 @@
 /turf/open/floor/plating{
 	icon_state = "platingdmg2"
 	},
-/area/ruin/unpowered)
-"oD" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 9
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/layer4{
-	dir = 8
-	},
-/obj/item/oar,
-/obj/machinery/advanced_airlock_controller{
-	pixel_y = -24
-	},
-/obj/structure/closet/emcloset/wall{
-	pixel_x = 28;
-	dir = 8
-	},
-/turf/open/floor/plasteel/tech,
 /area/ruin/unpowered)
 "pa" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
@@ -196,10 +183,28 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
-"ta" = (
-/obj/effect/decal/fakelattice,
-/turf/open/floor/plating/asteroid/wasteplanet,
-/area/overmap_encounter/planetoid/wasteplanet/explored)
+"tm" = (
+/obj/structure/table,
+/obj/machinery/reagentgrinder{
+	pixel_x = -2;
+	pixel_y = 2
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_x = 6;
+	pixel_y = 6
+	},
+/obj/machinery/firealarm/directional/west,
+/obj/effect/turf_decal/corner/opaque/white{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/opaque/white{
+	dir = 2
+	},
+/obj/effect/turf_decal/corner/transparent/bar/diagonal{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/ruin/unpowered)
 "tI" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -214,14 +219,18 @@
 	},
 /turf/open/floor/wood,
 /area/ruin/unpowered)
-"vu" = (
-/obj/machinery/light/small/directional/east,
-/obj/machinery/door/window/westright,
-/obj/structure/window/reinforced/spawner,
-/obj/machinery/atmospherics/components/binary/pump/layer2,
-/turf/open/floor/plating{
-	icon_state = "platingdmg1"
+"vc" = (
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
+/obj/machinery/light/directional/south,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/turf/open/floor/carpet/nanoweave/purple,
 /area/ruin/unpowered)
 "wG" = (
 /obj/structure/girder,
@@ -287,27 +296,21 @@
 	icon_state = "panelscorched"
 	},
 /area/ruin/unpowered)
-"Do" = (
-/obj/structure/table,
-/obj/machinery/reagentgrinder{
-	pixel_x = -2;
-	pixel_y = 2
+"CG" = (
+/obj/structure/girder,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
-/obj/item/reagent_containers/glass/beaker/large{
-	pixel_x = 6;
-	pixel_y = 6
+/obj/structure/extinguisher_cabinet/directional/north,
+/obj/structure/girder,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
-/obj/machinery/firealarm/directional/west,
-/obj/effect/turf_decal/corner/opaque/white{
-	dir = 1
+/obj/structure/girder,
+/turf/open/floor/plating{
+	icon_state = "panelscorched"
 	},
-/obj/effect/turf_decal/corner/opaque/white{
-	dir = 2
-	},
-/obj/effect/turf_decal/corner/transparent/bar/diagonal{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "DF" = (
 /obj/machinery/door/window/westleft,
@@ -320,36 +323,17 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/ruin/unpowered)
-"DV" = (
-/obj/structure/cable{
-	icon_state = "4-8"
+"Eg" = (
+/mob/living/simple_animal/hostile/hivebot/rapid,
+/turf/open/floor/plating{
+	icon_state = "platingdmg2"
 	},
-/obj/machinery/light/directional/south,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/turf/open/floor/carpet/nanoweave/purple,
-/area/ruin/unpowered)
+/area/overmap_encounter/planetoid/wasteplanet/explored)
 "Fq" = (
 /obj/item/electronics/apc,
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
-/area/ruin/unpowered)
-"Ho" = (
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
-/obj/machinery/door/airlock/public/glass{
-	dir = 4
-	},
-/turf/open/floor/plasteel/tech/grid,
 /area/ruin/unpowered)
 "Hv" = (
 /obj/structure/table,
@@ -365,11 +349,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/ruin/unpowered)
-"HD" = (
-/turf/open/floor/plating{
-	icon_state = "panelscorched"
-	},
-/area/overmap_encounter/planetoid/wasteplanet/explored)
 "HV" = (
 /obj/structure/curtain,
 /obj/machinery/shower{
@@ -398,6 +377,27 @@
 "KR" = (
 /turf/open/floor/plating,
 /area/ruin/unpowered)
+"Ly" = (
+/obj/machinery/door/airlock/public/glass{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/unpowered)
 "Lz" = (
 /obj/item/ammo_casing/spent{
 	dir = 1;
@@ -417,18 +417,19 @@
 /obj/structure/grille,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
+"MI" = (
+/turf/open/floor/plating/asteroid/wasteplanet,
+/area/overmap_encounter/planetoid/wasteplanet/explored)
 "Nb" = (
 /obj/structure/girder,
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
 	},
 /area/ruin/unpowered)
-"PW" = (
-/obj/structure/chair{
-	dir = 4
-	},
-/obj/machinery/firealarm/directional/south,
-/turf/open/floor/carpet/nanoweave/purple,
+"QS" = (
+/obj/structure/chair/comfy/teal,
+/obj/machinery/airalarm/directional/north,
+/turf/open/floor/wood,
 /area/ruin/unpowered)
 "Rt" = (
 /obj/effect/spawner/structure/window/shuttle,
@@ -447,11 +448,15 @@
 	icon_state = "panelscorched"
 	},
 /area/ruin/unpowered)
-"SJ" = (
+"Sh" = (
+/obj/machinery/light/small/directional/east,
+/obj/machinery/door/window/westright,
+/obj/structure/window/reinforced/spawner,
+/obj/machinery/atmospherics/components/binary/pump/layer2,
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
-/area/overmap_encounter/planetoid/wasteplanet/explored)
+/area/ruin/unpowered)
 "Te" = (
 /obj/structure/table,
 /obj/machinery/microwave,
@@ -466,6 +471,17 @@
 	},
 /turf/open/floor/plasteel,
 /area/ruin/unpowered)
+"TT" = (
+/obj/structure/chair{
+	dir = 8
+	},
+/obj/structure/extinguisher_cabinet/directional/south,
+/turf/open/floor/carpet/nanoweave/purple,
+/area/ruin/unpowered)
+"Uu" = (
+/obj/effect/decal/fakelattice,
+/turf/open/floor/plating/asteroid/wasteplanet,
+/area/overmap_encounter/planetoid/wasteplanet/explored)
 "UA" = (
 /obj/machinery/gibber,
 /obj/effect/turf_decal/corner/opaque/white{
@@ -534,51 +550,39 @@
 /mob/living/simple_animal/hostile/hivebot/rapid,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
-"ZQ" = (
-/obj/structure/girder,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/extinguisher_cabinet/directional/north,
-/obj/structure/girder,
-/turf/open/floor/plating{
-	icon_state = "panelscorched"
-	},
-/area/ruin/unpowered)
 
 (1,1,1) = {"
-lV
+MI
 iH
-lV
-ta
-ta
-ta
-iJ
-SJ
-HD
-ta
-ta
-lV
+MI
+Uu
+Uu
+Uu
+Eg
+bv
+kb
+Uu
+Uu
+MI
 iH
-lV
+MI
 iH
 iH
 "}
 (2,1,1) = {"
 yE
 VG
-vu
-oD
+Sh
+gh
 pa
-Ho
-hr
+aH
+Ly
 pa
 pa
 Nb
 dr
 dr
-ta
+Uu
 iH
 iH
 iH
@@ -597,27 +601,27 @@ tI
 Ka
 fE
 KR
-ta
-lV
+Uu
+MI
 iH
 "}
 (4,1,1) = {"
 Nb
 UA
-Do
+tm
 Te
 xh
 sQ
 jX
-PW
+gS
 dr
-ge
+QS
 cl
 im
 gg
 sQ
-ta
-lV
+Uu
+MI
 "}
 (5,1,1) = {"
 Rt
@@ -634,8 +638,8 @@ ga
 Al
 jX
 KR
-ta
-ta
+Uu
+Uu
 "}
 (6,1,1) = {"
 Rt
@@ -645,15 +649,15 @@ Lz
 aq
 sQ
 jX
-fX
+TT
 pa
 HV
 DF
 pa
 sQ
-ta
+Uu
 iH
-lV
+MI
 "}
 (7,1,1) = {"
 Mi
@@ -662,14 +666,14 @@ KR
 Vy
 dr
 br
-DV
-ZQ
+vc
+CG
 pa
 Nb
 pa
 pa
-ta
-lV
+Uu
+MI
 iH
 iH
 "}
@@ -684,25 +688,25 @@ jX
 jX
 sQ
 Nb
-ta
-lV
-lV
+Uu
+MI
+MI
 iH
 iH
 iH
 "}
 (9,1,1) = {"
-lV
-lV
-ta
-ta
+MI
+MI
+Uu
+Uu
 sQ
 KR
 sI
 sQ
-ta
-ta
-lV
+Uu
+Uu
+MI
 iH
 iH
 iH
@@ -712,15 +716,15 @@ iH
 (10,1,1) = {"
 iH
 iH
-lV
+MI
 iH
-lV
-ta
-ta
-ta
-lV
+MI
+Uu
+Uu
+Uu
+MI
 iH
-lV
+MI
 iH
 iH
 iH
@@ -733,9 +737,9 @@ iH
 iH
 iH
 iH
-lV
-ta
-lV
+MI
+Uu
+MI
 iH
 iH
 iH

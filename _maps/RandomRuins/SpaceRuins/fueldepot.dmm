@@ -16,6 +16,13 @@
 	icon_state = "platingdmg3"
 	},
 /area/ruin/unpowered)
+"aX" = (
+/obj/structure/fluff/broken_flooring{
+	dir = 2;
+	icon_state = "plating"
+	},
+/turf/open/space,
+/area/ruin/unpowered)
 "bm" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/stack/cable_coil/cut/red,
@@ -24,9 +31,35 @@
 	icon_state = "platingdmg1"
 	},
 /area/ruin/unpowered)
-"bw" = (
+"br" = (
+/obj/structure/door_assembly/door_assembly_grunge{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/simple/orange{
+	dir = 8
+	},
+/turf/open/floor/plating/airless,
+/area/ruin/unpowered)
+"bx" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/lattice,
 /turf/open/space,
-/area/template_noop)
+/area/ruin/unpowered)
+"bC" = (
+/obj/machinery/portable_atmospherics/canister/toxins,
+/turf/template_noop,
+/area/ruin/unpowered)
+"bD" = (
+/obj/structure/fluff/broken_flooring{
+	icon_state = "singular"
+	},
+/obj/structure/fluff/broken_flooring{
+	dir = 8;
+	icon_state = "plating"
+	},
+/turf/template_noop,
+/area/ruin/unpowered)
 "bG" = (
 /obj/effect/decal/cleanable/oil/streak,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -60,46 +93,27 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
-"bT" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/turf/open/space,
-/area/ruin/unpowered)
 "bV" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/engine/hull,
 /area/ruin/unpowered)
+"bW" = (
+/obj/item/stack/sheet/mineral/plastitanium,
+/turf/open/space,
+/area/ruin/unpowered)
+"cg" = (
+/obj/item/roller,
+/turf/open/space,
+/area/ruin/unpowered)
 "cr" = (
 /obj/structure/girder/displaced,
 /turf/template_noop,
 /area/template_noop)
-"cJ" = (
-/obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/orange,
+"dA" = (
+/obj/structure/lattice,
+/obj/item/stack/rods,
 /turf/open/space,
-/area/ruin/unpowered)
-"cX" = (
-/obj/structure/fluff/broken_flooring{
-	dir = 4;
-	icon_state = "plating"
-	},
-/turf/open/space,
-/area/ruin/unpowered)
-"cZ" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/space,
-/area/ruin/unpowered)
-"dh" = (
-/obj/structure/grille,
-/obj/machinery/door/poddoor/shutters{
-	id = "pirateshutters";
-	name = "Blast Shutters";
-	dir = 4
-	},
-/obj/structure/window/plasma/reinforced/plastitanium,
-/turf/open/floor/plating,
 /area/ruin/unpowered)
 "dN" = (
 /obj/structure/railing,
@@ -108,48 +122,9 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
-"dX" = (
-/obj/effect/turf_decal/industrial/warning/cee{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/closet/wall{
-	name = "suit locker";
-	pixel_x = -28;
-	dir = 4
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/effect/turf_decal/industrial/warning/cee{
-	dir = 1
-	},
-/obj/machinery/light/small/directional/west,
-/obj/structure/closet/wall{
-	name = "suit locker";
-	pixel_x = -32
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/unpowered)
 "eg" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/engine/hull,
-/area/ruin/unpowered)
-"er" = (
-/obj/effect/turf_decal/corner/transparent/neutral/full,
-/obj/structure/railing,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/cable{
-	icon_state = "4-6"
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/light/small/directional/north,
-/turf/open/floor/pod/light,
-/area/ruin/unpowered)
-"eu" = (
-/obj/effect/gibspawner/human,
-/turf/open/space,
 /area/ruin/unpowered)
 "eD" = (
 /obj/item/shard,
@@ -166,21 +141,22 @@
 /obj/item/stack/sheet/mineral/plastitanium,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
-"eV" = (
-/obj/machinery/power/apc/auto_name/directional/east,
-/obj/machinery/atmospherics/components/binary/pump/layer2,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating,
+"fi" = (
+/obj/structure/fluff/broken_flooring{
+	dir = 4;
+	icon_state = "pile"
+	},
+/turf/open/space,
+/area/ruin/unpowered)
+"fu" = (
+/obj/structure/door_assembly/door_assembly_mhatch,
+/turf/open/space,
 /area/ruin/unpowered)
 "gj" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/gibspawner/human,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/light,
-/area/ruin/unpowered)
-"gk" = (
-/obj/structure/girder/displaced,
-/turf/template_noop,
 /area/ruin/unpowered)
 "gp" = (
 /obj/effect/turf_decal/industrial/warning{
@@ -197,14 +173,6 @@
 "gq" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/closed/wall/mineral/plastitanium,
-/area/ruin/unpowered)
-"gu" = (
-/obj/structure/lattice,
-/obj/structure/fluff/broken_flooring{
-	dir = 8;
-	icon_state = "plating"
-	},
-/turf/open/space,
 /area/ruin/unpowered)
 "gM" = (
 /obj/structure/cable{
@@ -227,6 +195,10 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
+"hq" = (
+/obj/structure/girder/displaced,
+/turf/open/space,
+/area/ruin/unpowered)
 "hv" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /turf/open/floor/plating/airless,
@@ -240,9 +212,42 @@
 "hO" = (
 /turf/closed/wall/material,
 /area/ruin/unpowered)
-"hP" = (
-/obj/item/chair/plastic,
-/turf/open/space,
+"hY" = (
+/obj/effect/turf_decal/industrial/warning/cee{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/wall{
+	name = "suit locker";
+	pixel_x = -28;
+	dir = 4
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/effect/turf_decal/industrial/warning/cee{
+	dir = 1
+	},
+/obj/machinery/light/small/directional/west,
+/obj/structure/closet/wall{
+	name = "suit locker";
+	pixel_x = -32
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/effect/turf_decal/industrial/warning/cee{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/wall{
+	name = "suit locker";
+	pixel_x = -28;
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
 /area/ruin/unpowered)
 "io" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
@@ -270,15 +275,6 @@
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
-/area/ruin/unpowered)
-"jc" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/space,
-/area/template_noop)
-"jg" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/structure/lattice,
-/turf/open/space,
 /area/ruin/unpowered)
 "ji" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -325,7 +321,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
-"ko" = (
+"ku" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
@@ -341,10 +337,6 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/unpowered)
-"kI" = (
-/obj/item/stack/sheet/mineral/plastitanium,
-/turf/open/space,
-/area/ruin/unpowered)
 "kT" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -354,11 +346,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/stack/cable_coil/cut/red,
 /turf/open/floor/pod/light,
-/area/ruin/unpowered)
-"kV" = (
-/obj/structure/lattice,
-/obj/structure/girder/displaced,
-/turf/open/space,
 /area/ruin/unpowered)
 "lm" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
@@ -379,6 +366,10 @@
 	icon_state = "platingdmg3"
 	},
 /area/ruin/unpowered)
+"lE" = (
+/obj/item/chair/plastic,
+/turf/open/space,
+/area/ruin/unpowered)
 "lS" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -393,22 +384,23 @@
 	icon_state = "platingdmg3"
 	},
 /area/ruin/unpowered)
-"mf" = (
-/obj/structure/door_assembly/door_assembly_grunge{
+"mD" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/door_assembly/door_assembly_mhatch{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/atmospherics/pipe/simple/orange{
-	dir = 8
-	},
-/turf/open/floor/plating/airless,
+/turf/open/floor/pod/dark,
 /area/ruin/unpowered)
-"mH" = (
-/obj/structure/fluff/broken_flooring{
-	dir = 1;
-	icon_state = "plating"
-	},
-/turf/open/space,
+"mG" = (
+/obj/structure/girder/displaced,
+/turf/template_noop,
 /area/ruin/unpowered)
 "mK" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -425,12 +417,36 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/light,
 /area/ruin/unpowered)
+"nq" = (
+/obj/machinery/door/airlock/hatch{
+	name = "External Access Hatch";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/pod/light,
+/area/ruin/unpowered)
+"nw" = (
+/obj/structure/lattice,
+/obj/structure/girder/displaced,
+/turf/open/space,
+/area/ruin/unpowered)
 "nz" = (
 /obj/structure/grille,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
+/area/ruin/unpowered)
+"nB" = (
+/obj/item/shard,
+/turf/open/space,
 /area/ruin/unpowered)
 "nI" = (
 /obj/structure/girder/displaced,
@@ -440,10 +456,10 @@
 	icon_state = "platingdmg1"
 	},
 /area/ruin/unpowered)
-"nU" = (
-/obj/structure/door_assembly/door_assembly_mhatch,
+"nL" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/space,
-/area/ruin/unpowered)
+/area/template_noop)
 "oc" = (
 /turf/open/floor/engine/hull,
 /area/ruin/unpowered)
@@ -459,11 +475,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/stack/cable_coil/cut/yellow,
 /turf/open/floor/plating,
-/area/ruin/unpowered)
-"oS" = (
-/obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/manifold4w/orange,
-/turf/open/space,
 /area/ruin/unpowered)
 "pv" = (
 /obj/effect/turf_decal/industrial/warning{
@@ -491,18 +502,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
-"qq" = (
-/obj/structure/lattice,
-/obj/item/stack/rods,
-/turf/open/space,
-/area/ruin/unpowered)
 "qy" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/item/rack_parts,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/light,
 /area/ruin/unpowered)
-"qL" = (
+"qO" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 1
 	},
@@ -541,6 +547,10 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/light,
 /area/ruin/unpowered)
+"rB" = (
+/obj/structure/door_assembly/door_assembly_hatch,
+/turf/open/space,
+/area/ruin/unpowered)
 "rM" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/machinery/power/port_gen/pacman/super,
@@ -557,6 +567,19 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/light,
 /area/ruin/unpowered)
+"sc" = (
+/obj/item/shard,
+/obj/structure/lattice,
+/obj/structure/fluff/broken_flooring{
+	dir = 8;
+	icon_state = "plating"
+	},
+/turf/open/space,
+/area/ruin/unpowered)
+"se" = (
+/obj/item/stack/rods,
+/turf/open/space,
+/area/ruin/unpowered)
 "sg" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -565,45 +588,17 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/light,
 /area/ruin/unpowered)
-"sI" = (
-/obj/structure/lattice,
-/turf/template_noop,
-/area/ruin/unpowered)
+"sp" = (
+/obj/structure/fluff/broken_flooring{
+	dir = 8;
+	icon_state = "plating"
+	},
+/turf/open/space,
+/area/template_noop)
 "sU" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/stairs,
-/area/ruin/unpowered)
-"tf" = (
-/obj/effect/turf_decal/corner/transparent/neutral/full,
-/obj/structure/railing,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/cable{
-	icon_state = "6-8"
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/light/small/directional/north,
-/turf/open/floor/pod/light,
-/area/ruin/unpowered)
-"th" = (
-/obj/structure/fluff/broken_flooring{
-	dir = 2;
-	icon_state = "plating"
-	},
-/turf/open/space,
-/area/ruin/unpowered)
-"tq" = (
-/obj/structure/lattice,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/item/stack/cable_coil/cut/red,
-/turf/open/space,
-/area/ruin/unpowered)
-"tt" = (
-/obj/structure/lattice,
-/turf/open/space,
 /area/ruin/unpowered)
 "tG" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -635,21 +630,6 @@
 	},
 /turf/open/floor/plating/airless,
 /area/ruin/unpowered)
-"ud" = (
-/obj/machinery/door/airlock/hatch{
-	name = "External Access Hatch";
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/pod/light,
-/area/ruin/unpowered)
 "uk" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/closed/wall/rust,
@@ -659,13 +639,6 @@
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/plastitanium,
-/area/ruin/unpowered)
-"ux" = (
-/obj/structure/fluff/broken_flooring{
-	dir = 4;
-	icon_state = "singular"
-	},
-/turf/open/space,
 /area/ruin/unpowered)
 "uJ" = (
 /obj/effect/turf_decal/corner/transparent/neutral/full,
@@ -687,8 +660,14 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/light,
 /area/ruin/unpowered)
-"vi" = (
-/obj/item/stack/rods,
+"vj" = (
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 1
+	},
+/turf/open/space,
+/area/ruin/unpowered)
+"vp" = (
+/obj/structure/catwalk,
 /turf/open/space,
 /area/ruin/unpowered)
 "vs" = (
@@ -709,6 +688,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/unpowered)
+"vJ" = (
+/obj/machinery/power/apc/auto_name/directional/east,
+/obj/machinery/atmospherics/components/binary/pump/layer2,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/ruin/unpowered)
 "vR" = (
 /obj/machinery/light/small/directional/west,
 /obj/effect/decal/cleanable/oil/streak,
@@ -718,9 +703,15 @@
 	icon_state = "platingdmg2"
 	},
 /area/ruin/unpowered)
-"vS" = (
-/obj/item/shard,
-/turf/open/space,
+"vU" = (
+/obj/structure/grille,
+/obj/machinery/door/poddoor/shutters{
+	id = "pirateshutters";
+	name = "Blast Shutters";
+	dir = 4
+	},
+/obj/structure/window/plasma/reinforced/plastitanium,
+/turf/open/floor/plating,
 /area/ruin/unpowered)
 "vV" = (
 /obj/structure/grille/broken,
@@ -749,9 +740,18 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/unpowered)
-"wk" = (
-/obj/structure/catwalk,
-/turf/open/space,
+"wu" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 6
+	},
+/obj/structure/table_frame,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/wall{
+	name = "armory locker";
+	pixel_x = 28;
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
 /area/ruin/unpowered)
 "wx" = (
 /obj/effect/turf_decal/corner/transparent/neutral/full,
@@ -760,6 +760,10 @@
 /obj/structure/frame/computer,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/light,
+/area/ruin/unpowered)
+"wy" = (
+/obj/structure/lattice,
+/turf/open/space,
 /area/ruin/unpowered)
 "wF" = (
 /obj/effect/turf_decal/corner/transparent/neutral/full,
@@ -797,32 +801,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
-"ys" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 5
-	},
-/obj/structure/closet/wall{
-	name = "armory locker";
-	pixel_x = 28;
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/item/gun/ballistic/shotgun/lethal,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 5
-	},
-/obj/machinery/light/small/directional/east,
-/obj/structure/closet/wall{
-	name = "armory locker";
-	pixel_x = 32
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/item/gun/ballistic/shotgun/lethal,
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/unpowered)
 "yw" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -835,10 +813,29 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/unpowered)
-"yU" = (
+"yS" = (
+/obj/effect/turf_decal/corner/transparent/neutral/full,
+/obj/structure/railing,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable{
+	icon_state = "6-8"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/pod/light,
+/area/ruin/unpowered)
+"zr" = (
 /obj/structure/lattice,
+/obj/structure/fluff/broken_flooring{
+	icon_state = "pile";
+	pixel_x = 11;
+	pixel_y = 1
+	},
 /turf/open/space,
-/area/template_noop)
+/area/ruin/unpowered)
 "zt" = (
 /obj/effect/decal/cleanable/oil/streak,
 /obj/machinery/light/small/broken/directional/east,
@@ -855,6 +852,24 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/stack/cable_coil/cut/red,
 /turf/open/floor/pod/light,
+/area/ruin/unpowered)
+"zW" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-6"
+	},
+/obj/structure/closet/wall{
+	name = "suit locker";
+	pixel_x = -28;
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/mineral/plastitanium,
 /area/ruin/unpowered)
 "AC" = (
 /obj/structure/railing,
@@ -896,6 +911,23 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/airless,
 /area/ruin/unpowered)
+"BB" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/oil,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/reagent_containers/food/drinks/bottle/rum,
+/obj/structure/closet/wall{
+	name = "armory locker";
+	pixel_x = 28;
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/unpowered)
+"BE" = (
+/turf/open/space,
+/area/template_noop)
 "BG" = (
 /obj/structure/railing,
 /obj/effect/turf_decal/corner/transparent/neutral/full,
@@ -917,32 +949,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/light,
 /area/ruin/unpowered)
-"Cv" = (
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 1
-	},
-/turf/open/space,
-/area/ruin/unpowered)
 "CA" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/components/unary/portables_connector{
 	dir = 4
 	},
 /turf/open/floor/plating/airless,
-/area/ruin/unpowered)
-"CO" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/oil,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/item/reagent_containers/food/drinks/bottle/rum,
-/obj/structure/closet/wall{
-	name = "armory locker";
-	pixel_x = 28;
-	dir = 8
-	},
-/turf/open/floor/mineral/plastitanium,
 /area/ruin/unpowered)
 "Dl" = (
 /obj/structure/window/reinforced,
@@ -971,6 +983,22 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
+"Du" = (
+/obj/structure/lattice,
+/turf/open/space,
+/area/template_noop)
+"DE" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/space,
+/area/ruin/unpowered)
+"DK" = (
+/obj/structure/fluff/broken_flooring{
+	dir = 1;
+	icon_state = "plating"
+	},
+/turf/open/space,
+/area/ruin/unpowered)
 "DS" = (
 /turf/closed/wall/rust,
 /area/ruin/unpowered)
@@ -986,33 +1014,10 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/engine/hull,
 /area/ruin/unpowered)
-"Ep" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 8
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-6"
-	},
-/obj/structure/closet/wall{
-	name = "suit locker";
-	pixel_x = -28;
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/unpowered)
 "Ew" = (
 /obj/structure/girder/displaced,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
-/area/ruin/unpowered)
-"EQ" = (
-/obj/structure/lattice,
-/obj/structure/catwalk,
-/turf/open/space,
 /area/ruin/unpowered)
 "Fc" = (
 /obj/effect/turf_decal/industrial/warning{
@@ -1021,25 +1026,10 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/unpowered)
-"Fj" = (
-/obj/machinery/portable_atmospherics/canister/toxins,
-/turf/template_noop,
-/area/ruin/unpowered)
 "FA" = (
 /obj/effect/decal/cleanable/oil/streak,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/airless,
-/area/ruin/unpowered)
-"FU" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/atmospherics/pipe/simple/orange{
-	dir = 8
-	},
-/obj/structure/door_assembly/door_assembly_mhatch{
-	dir = 4
-	},
 /turf/open/floor/plating/airless,
 /area/ruin/unpowered)
 "FW" = (
@@ -1055,19 +1045,18 @@
 	icon_state = "platingdmg1"
 	},
 /area/ruin/unpowered)
-"GQ" = (
-/obj/structure/lattice,
-/obj/structure/fluff/broken_flooring{
-	dir = 4;
-	icon_state = "singular"
+"Gc" = (
+/obj/structure/door_assembly/door_assembly_hatch{
+	dir = 4
 	},
-/turf/open/space,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating{
+	broken = 1;
+	icon_state = "platingdmg1"
+	},
 /area/ruin/unpowered)
-"GU" = (
-/obj/structure/fluff/broken_flooring{
-	dir = 4;
-	icon_state = "pile"
-	},
+"Gt" = (
+/obj/effect/gibspawner/human,
 /turf/open/space,
 /area/ruin/unpowered)
 "Hl" = (
@@ -1078,24 +1067,9 @@
 	},
 /turf/open/floor/plating/airless,
 /area/ruin/unpowered)
-"HA" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
-/obj/structure/door_assembly/door_assembly_mhatch{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating{
-	broken = 1;
-	icon_state = "platingdmg1"
-	},
+"Hs" = (
+/obj/structure/lattice,
+/turf/template_noop,
 /area/ruin/unpowered)
 "HE" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
@@ -1121,6 +1095,11 @@
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/plastitanium,
+/area/ruin/unpowered)
+"Ii" = (
+/obj/structure/lattice,
+/obj/item/rack_parts,
+/turf/open/space,
 /area/ruin/unpowered)
 "Iv" = (
 /obj/effect/turf_decal/industrial/warning{
@@ -1149,6 +1128,24 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/airless,
 /area/ruin/unpowered)
+"Jc" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/simple/orange{
+	dir = 8
+	},
+/obj/structure/door_assembly/door_assembly_mhatch{
+	dir = 4
+	},
+/turf/open/floor/plating/airless,
+/area/ruin/unpowered)
+"Jf" = (
+/obj/structure/fluff/broken_flooring{
+	dir = 4;
+	icon_state = "singular"
+	},
+/turf/open/space,
+/area/ruin/unpowered)
 "Jj" = (
 /obj/machinery/portable_atmospherics/canister/toxins,
 /obj/effect/turf_decal/industrial/outline/yellow,
@@ -1156,23 +1153,27 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/airless,
 /area/ruin/unpowered)
-"JO" = (
-/obj/item/stack/cable_coil/cut/red,
-/turf/open/space,
-/area/ruin/unpowered)
-"JQ" = (
-/obj/structure/lattice,
-/obj/item/rack_parts,
-/turf/open/space,
-/area/ruin/unpowered)
-"Kr" = (
-/obj/structure/door_assembly/door_assembly_hatch,
+"Jn" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/manifold4w/orange,
 /turf/open/space,
 /area/ruin/unpowered)
 "Kw" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/airless,
+/area/ruin/unpowered)
+"Kx" = (
+/obj/structure/lattice,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/item/stack/cable_coil/cut/red,
+/turf/open/space,
+/area/ruin/unpowered)
+"KF" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/turf/open/space,
 /area/ruin/unpowered)
 "KJ" = (
 /obj/structure/cable{
@@ -1184,13 +1185,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/light,
-/area/ruin/unpowered)
-"KL" = (
-/obj/structure/fluff/broken_flooring{
-	dir = 8;
-	icon_state = "plating"
-	},
-/turf/open/space,
 /area/ruin/unpowered)
 "KO" = (
 /obj/structure/cable{
@@ -1213,15 +1207,16 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/unpowered)
-"LA" = (
-/obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/orange{
-	dir = 8
-	},
+"LK" = (
+/obj/item/stack/cable_coil/cut/red,
 /turf/open/space,
 /area/ruin/unpowered)
-"LE" = (
-/obj/structure/girder/displaced,
+"LP" = (
+/obj/structure/lattice,
+/obj/structure/fluff/broken_flooring{
+	dir = 4;
+	icon_state = "singular"
+	},
 /turf/open/space,
 /area/ruin/unpowered)
 "LT" = (
@@ -1239,13 +1234,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
-"MJ" = (
-/obj/structure/fluff/broken_flooring{
-	dir = 8;
-	icon_state = "plating"
-	},
-/turf/open/space,
-/area/template_noop)
 "MM" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 4
@@ -1256,6 +1244,16 @@
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
+/area/ruin/unpowered)
+"MQ" = (
+/obj/structure/catwalk,
+/obj/structure/lattice,
+/turf/open/space,
+/area/ruin/unpowered)
+"Ne" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/orange,
+/turf/open/space,
 /area/ruin/unpowered)
 "Nt" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
@@ -1299,10 +1297,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/light,
 /area/ruin/unpowered)
-"Ov" = (
-/obj/item/roller,
-/turf/open/space,
-/area/ruin/unpowered)
 "OW" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 4
@@ -1311,19 +1305,9 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/light,
 /area/ruin/unpowered)
-"Pm" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/door_assembly/door_assembly_mhatch{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/pod/dark,
+"Pg" = (
+/obj/machinery/portable_atmospherics/canister/toxins,
+/turf/open/space,
 /area/ruin/unpowered)
 "Pq" = (
 /obj/effect/turf_decal/industrial/warning,
@@ -1339,6 +1323,14 @@
 /obj/effect/turf_decal/industrial/warning,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/plastitanium,
+/area/ruin/unpowered)
+"Qp" = (
+/obj/structure/lattice,
+/obj/structure/fluff/broken_flooring{
+	dir = 8;
+	icon_state = "plating"
+	},
+/turf/open/space,
 /area/ruin/unpowered)
 "Qy" = (
 /obj/structure/fluff/broken_flooring{
@@ -1364,6 +1356,13 @@
 /obj/item/stack/cable_coil/cut/red,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/unpowered)
+"Rk" = (
+/obj/structure/fluff/broken_flooring{
+	dir = 8;
+	icon_state = "plating"
+	},
+/turf/open/space,
+/area/ruin/unpowered)
 "Rt" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -1378,19 +1377,6 @@
 /area/ruin/unpowered)
 "Ry" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ruin/unpowered)
-"RL" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 6
-	},
-/obj/structure/table_frame,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/closet/wall{
-	name = "armory locker";
-	pixel_x = 28;
-	dir = 8
-	},
-/turf/open/floor/mineral/plastitanium,
 /area/ruin/unpowered)
 "RP" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -1419,6 +1405,24 @@
 	icon_state = "platingdmg3"
 	},
 /area/ruin/unpowered)
+"Sx" = (
+/obj/effect/turf_decal/corner/transparent/neutral/full,
+/obj/structure/railing,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable{
+	icon_state = "4-6"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/pod/light,
+/area/ruin/unpowered)
+"SG" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/orange{
+	dir = 8
+	},
+/turf/open/space,
+/area/ruin/unpowered)
 "SL" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1428,15 +1432,9 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/engine/hull/interior,
 /area/ruin/unpowered)
-"Tw" = (
-/obj/structure/door_assembly/door_assembly_hatch{
-	dir = 4
-	},
+"Tp" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating{
-	broken = 1;
-	icon_state = "platingdmg1"
-	},
+/turf/open/space,
 /area/ruin/unpowered)
 "Ty" = (
 /obj/effect/turf_decal/corner/transparent/neutral/full,
@@ -1490,6 +1488,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/unpowered)
+"UY" = (
+/obj/item/wrench,
+/turf/open/space,
+/area/ruin/unpowered)
+"Vb" = (
+/turf/open/space,
+/area/ruin/unpowered)
 "Vm" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/template_noop,
@@ -1502,11 +1507,6 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/plastitanium,
-/area/ruin/unpowered)
-"VI" = (
-/obj/structure/catwalk,
-/obj/structure/lattice,
-/turf/open/space,
 /area/ruin/unpowered)
 "VP" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1551,20 +1551,71 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/unpowered)
-"WU" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/space,
-/area/ruin/unpowered)
-"Xw" = (
+"WN" = (
 /obj/structure/fluff/broken_flooring{
-	icon_state = "singular"
-	},
-/obj/structure/fluff/broken_flooring{
-	dir = 8;
+	dir = 4;
 	icon_state = "plating"
 	},
-/turf/template_noop,
+/turf/open/space,
+/area/ruin/unpowered)
+"Xb" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 5
+	},
+/obj/structure/closet/wall{
+	name = "armory locker";
+	pixel_x = 28;
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/gun/ballistic/shotgun/lethal,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 5
+	},
+/obj/machinery/light/small/directional/east,
+/obj/structure/closet/wall{
+	name = "armory locker";
+	pixel_x = 32
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/gun/ballistic/shotgun/lethal,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 5
+	},
+/obj/structure/closet/wall{
+	name = "armory locker";
+	pixel_x = 28;
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/gun/ballistic/shotgun/lethal,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/unpowered)
+"Xp" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/structure/door_assembly/door_assembly_mhatch{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating{
+	broken = 1;
+	icon_state = "platingdmg1"
+	},
 /area/ruin/unpowered)
 "XE" = (
 /obj/structure/grille,
@@ -1590,9 +1641,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
-"YA" = (
-/obj/item/wrench,
-/turf/open/space,
+"Yj" = (
+/obj/structure/fluff/broken_flooring{
+	dir = 4;
+	icon_state = "plating"
+	},
+/turf/template_noop,
 /area/ruin/unpowered)
 "YK" = (
 /obj/structure/cable,
@@ -1609,10 +1663,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/light,
 /area/ruin/unpowered)
-"YW" = (
-/obj/machinery/portable_atmospherics/canister/toxins,
-/turf/open/space,
-/area/ruin/unpowered)
 "YX" = (
 /obj/effect/decal/cleanable/oil,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1621,13 +1671,6 @@
 	icon_state = "platingdmg1"
 	},
 /area/ruin/unpowered)
-"Zs" = (
-/obj/structure/fluff/broken_flooring{
-	dir = 4;
-	icon_state = "plating"
-	},
-/turf/template_noop,
-/area/ruin/unpowered)
 "ZA" = (
 /obj/structure/cable/yellow,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1635,6 +1678,11 @@
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
+/area/ruin/unpowered)
+"ZM" = (
+/obj/structure/lattice,
+/obj/structure/catwalk,
+/turf/open/space,
 /area/ruin/unpowered)
 "ZO" = (
 /turf/template_noop,
@@ -1646,27 +1694,6 @@
 /obj/effect/decal/cleanable/oil,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/light,
-/area/ruin/unpowered)
-"ZS" = (
-/turf/open/space,
-/area/ruin/unpowered)
-"ZT" = (
-/obj/item/shard,
-/obj/structure/lattice,
-/obj/structure/fluff/broken_flooring{
-	dir = 8;
-	icon_state = "plating"
-	},
-/turf/open/space,
-/area/ruin/unpowered)
-"ZV" = (
-/obj/structure/lattice,
-/obj/structure/fluff/broken_flooring{
-	icon_state = "pile";
-	pixel_x = 11;
-	pixel_y = 1
-	},
-/turf/open/space,
 /area/ruin/unpowered)
 
 (1,1,1) = {"
@@ -1701,7 +1728,7 @@ ZO
 ZO
 ZO
 ZO
-LE
+hq
 ZO
 ZO
 ZO
@@ -1754,8 +1781,8 @@ ZO
 ZO
 ZO
 ZO
-tt
-tt
+wy
+wy
 ZO
 ZO
 ZO
@@ -1858,11 +1885,11 @@ ZO
 ZO
 ZO
 ZO
-cX
+WN
 ZO
 ZO
 ZO
-LE
+hq
 ZO
 ZO
 ZO
@@ -1908,7 +1935,7 @@ ZO
 ZO
 ZO
 ZO
-Fj
+bC
 ZO
 ZO
 ZO
@@ -1962,10 +1989,10 @@ ZO
 ZO
 ZO
 ZO
-vi
-tt
-tt
-ZV
+se
+wy
+wy
+zr
 RX
 jy
 uk
@@ -2009,15 +2036,15 @@ ZO
 ZO
 ZO
 ZO
-tt
-WU
+wy
+DE
 ZO
 ZO
 ZO
-tt
+wy
 ZO
 ZO
-tt
+wy
 mK
 YX
 tJ
@@ -2061,16 +2088,16 @@ ZO
 ZO
 ZO
 ZO
-GQ
-KL
+LP
+Rk
 ZO
 ZO
 ZO
 ZO
 ZO
-YW
-bw
-jc
+Pg
+BE
+nL
 RX
 RX
 hO
@@ -2116,14 +2143,14 @@ ZO
 ZO
 ZO
 ZO
-tt
+wy
 ZO
 ZO
 ZO
 ZO
-tt
-tt
-tt
+wy
+wy
+wy
 jy
 DS
 ZO
@@ -2170,11 +2197,11 @@ ZO
 ZO
 ZO
 ZO
-tt
+wy
 ZO
 ZO
 ZO
-tt
+wy
 ZO
 ZO
 ZO
@@ -2204,7 +2231,7 @@ ZO
 ZO
 hO
 hO
-FU
+Jc
 DS
 DS
 ZO
@@ -2227,9 +2254,9 @@ ZO
 ZO
 ZO
 ZO
-YW
+Pg
 DS
-KL
+Rk
 ZO
 ZO
 ZO
@@ -2254,13 +2281,11 @@ ZO
 ZO
 ZO
 ZO
-tt
+wy
 ZO
-LA
+SG
 ZO
-tt
-ZO
-ZO
+wy
 ZO
 ZO
 ZO
@@ -2269,7 +2294,9 @@ ZO
 ZO
 ZO
 ZO
-vi
+ZO
+ZO
+se
 ZO
 ZO
 ZO
@@ -2280,7 +2307,7 @@ ZO
 mK
 ZO
 ZO
-kV
+nw
 ZO
 ZO
 ZO
@@ -2306,29 +2333,29 @@ ZO
 ZO
 ZO
 ZO
-tt
+wy
 ZO
-wk
-tt
-ZO
-ZO
-ZO
-ZO
-ZO
-tt
+vp
+wy
 ZO
 ZO
 ZO
 ZO
 ZO
-ZO
-tt
-cJ
-wk
-tt
+wy
 ZO
 ZO
-cX
+ZO
+ZO
+ZO
+ZO
+wy
+Ne
+vp
+wy
+ZO
+ZO
+WN
 HL
 ZO
 ZO
@@ -2348,7 +2375,7 @@ ZO
 (14,1,1) = {"
 ZO
 ZO
-tt
+wy
 ZO
 ZO
 ZO
@@ -2357,31 +2384,31 @@ ZO
 ZO
 ZO
 ZO
-tt
+wy
 ZO
-wk
+vp
 ZO
-tt
-ZO
-ZO
-ZO
-ZO
-tt
+wy
 ZO
 ZO
 ZO
 ZO
-ZO
-tt
-wk
-tt
+wy
 ZO
 ZO
 ZO
 ZO
 ZO
-gk
-tt
+wy
+vp
+wy
+ZO
+ZO
+ZO
+ZO
+ZO
+mG
+wy
 ZO
 ZO
 ZO
@@ -2409,16 +2436,16 @@ ZO
 ZO
 ZO
 ZO
-tt
+wy
 ZO
-wk
+vp
 ZO
-tt
-ZO
-ZO
+wy
 ZO
 ZO
-tt
+ZO
+ZO
+wy
 ZO
 ZO
 ZO
@@ -2455,26 +2482,26 @@ ZO
 ZO
 ZO
 ZO
-tt
-tt
-tt
-tt
-tt
-tt
-tt
-tt
-wk
-tt
-tt
-tt
-tt
-tt
-tt
+wy
+wy
+wy
+wy
+wy
+wy
+wy
+wy
+vp
+wy
+wy
+wy
+wy
+wy
+wy
 ZO
 ZO
 ZO
-tt
-tt
+wy
+wy
 ZO
 ZO
 ZO
@@ -2513,27 +2540,27 @@ ZO
 ZO
 ZO
 ZO
-tt
+wy
 ZO
-LA
+SG
 ZO
-tt
-ZO
-ZO
+wy
 ZO
 ZO
 ZO
 ZO
-tt
+ZO
+ZO
+wy
 ZO
 ZO
 ZO
 ZO
-vi
+se
 ZO
 ZO
 ZO
-tt
+wy
 ZO
 ZO
 ZO
@@ -2558,23 +2585,23 @@ ZO
 ZO
 ZO
 ZO
-tt
-tt
-wk
-wk
-cJ
-cJ
-cJ
-cJ
-cJ
-oS
-cJ
-cJ
-cJ
-wk
-VI
-tt
-tt
+wy
+wy
+vp
+vp
+Ne
+Ne
+Ne
+Ne
+Ne
+Jn
+Ne
+Ne
+Ne
+vp
+MQ
+wy
+wy
 ZO
 ZO
 ZO
@@ -2601,7 +2628,7 @@ ZO
 ZO
 ZO
 ZO
-vS
+nB
 ZO
 ZO
 "}
@@ -2609,7 +2636,7 @@ ZO
 ZO
 ZO
 ZO
-tt
+wy
 ZO
 ZO
 ZO
@@ -2617,11 +2644,11 @@ ZO
 ZO
 ZO
 ZO
-tt
+wy
 ZO
-wk
+vp
 ZO
-tt
+wy
 ZO
 ZO
 ZO
@@ -2668,12 +2695,12 @@ ZO
 ZO
 ZO
 ZO
-tt
-tt
+wy
+wy
 ZO
 ZO
-tt
-tt
+wy
+wy
 ZO
 ZO
 ZO
@@ -2705,7 +2732,7 @@ Ra
 Ra
 BX
 ZO
-vi
+se
 ZO
 ZO
 "}
@@ -2738,7 +2765,7 @@ ZO
 ZO
 ZO
 ZO
-vi
+se
 ZO
 ZO
 ZO
@@ -2751,7 +2778,7 @@ ZO
 Ra
 Ry
 iT
-eV
+vJ
 Nt
 FW
 Dt
@@ -2759,10 +2786,10 @@ eD
 mK
 ZO
 ZO
-Cv
+vj
 "}
 (22,1,1) = {"
-tt
+wy
 ZO
 ZO
 ZO
@@ -2772,18 +2799,18 @@ ZO
 ZO
 ZO
 ZO
-tt
+wy
 ZO
 ZO
-tt
+wy
 ZO
-tt
+wy
 ZO
 ZO
 Qy
 ZO
 ZO
-sI
+Hs
 bV
 ZO
 ZO
@@ -2797,14 +2824,14 @@ ZO
 ZO
 ZO
 ZO
-bT
+KF
 ZO
 ZO
 ZO
 Ra
 Ra
 Ry
-HA
+Xp
 kl
 gN
 Dl
@@ -2827,15 +2854,11 @@ ZO
 ZO
 ZO
 ZO
-tt
+wy
 ZO
 ZO
 ZO
-tt
-ZO
-ZO
-ZO
-ZO
+wy
 ZO
 ZO
 ZO
@@ -2844,13 +2867,17 @@ ZO
 ZO
 ZO
 ZO
-kI
+ZO
+ZO
+ZO
+ZO
+bW
 ZO
 ZO
 ZO
 ZO
 ZO
-nU
+fu
 ZO
 ZO
 ZO
@@ -2876,10 +2903,10 @@ ZO
 ZO
 ZO
 ZO
-tt
+wy
 ZO
-vS
-tt
+nB
+wy
 ZO
 ZO
 Ra
@@ -2888,7 +2915,7 @@ mK
 ZO
 ZO
 Ra
-Tw
+Gc
 mK
 ZO
 ZO
@@ -2908,7 +2935,7 @@ ZO
 ZO
 ZO
 ZO
-cX
+WN
 Ra
 ZO
 ZO
@@ -2931,7 +2958,7 @@ ZO
 ZO
 ZO
 ZO
-tt
+wy
 ZO
 ZO
 Uy
@@ -2947,7 +2974,7 @@ vV
 mK
 ZO
 ZO
-qq
+dA
 TC
 Ra
 Ra
@@ -2957,9 +2984,9 @@ Ry
 Ra
 Ra
 ZO
-kI
-LE
-JO
+bW
+hq
+LK
 ZO
 ZO
 ZO
@@ -2996,9 +3023,9 @@ OW
 Ry
 pM
 RX
-Xw
+bD
 ZO
-Ov
+cg
 ZO
 Ra
 mX
@@ -3012,7 +3039,7 @@ Ra
 ZO
 ZO
 ZO
-ux
+Jf
 ZO
 ZO
 ZO
@@ -3030,28 +3057,28 @@ ZO
 ZO
 ZO
 ZO
-vi
+se
 ZO
 ZO
 mK
 AD
 aW
-dh
+vU
 Ra
 Ry
-er
-dX
-Ep
+Sx
+hY
+zW
 ut
 Ry
-ud
+nq
 Ry
 mK
 ZO
 ZO
 ZO
 ZO
-eu
+Gt
 Ra
 AC
 aH
@@ -3098,13 +3125,13 @@ XJ
 qZ
 zE
 Uu
-jg
-JQ
+bx
+Ii
 ZO
 ZO
 ZO
 ZO
-tq
+Kx
 BG
 Cc
 yE
@@ -3150,12 +3177,12 @@ bK
 Qh
 VX
 XR
-eu
-qL
-tt
-th
+Gt
+qO
+wy
+aX
 ZO
-Kr
+rB
 ZO
 dN
 HE
@@ -3188,27 +3215,27 @@ ZO
 ZO
 ZO
 ZO
-tt
+wy
 nz
 XE
 gq
 ls
 Ra
 Ry
-tf
-ys
-CO
-RL
+yS
+Xb
+BB
+wu
 Ry
 ZQ
 HL
 ZO
 ZO
 ZO
-cZ
+Tp
 ZO
 ZO
-GU
+fi
 jl
 rt
 HQ
@@ -3240,10 +3267,10 @@ ZO
 ZO
 ZO
 ZO
-EQ
+ZM
 ZO
 ZO
-tt
+wy
 ZO
 Ra
 Ry
@@ -3254,12 +3281,12 @@ Qh
 nI
 VP
 rO
-ux
-JO
+Jf
+LK
 ZO
 ZO
 ZO
-mH
+DK
 Lc
 bN
 yw
@@ -3292,9 +3319,9 @@ ZO
 ZO
 ZO
 ZO
-wk
+vp
 ZO
-tt
+wy
 ZO
 ZO
 ZO
@@ -3306,17 +3333,17 @@ ZO
 RX
 Ew
 El
-KL
-eu
-hP
-ZS
-tt
+Rk
+Gt
+lE
+Vb
+wy
 mK
 Mf
 Ra
 Lc
 Ry
-Pm
+mD
 Ry
 Ra
 Ra
@@ -3342,11 +3369,11 @@ ZO
 ZO
 ZO
 ZO
-tt
+wy
 ZO
-LA
+SG
 ZO
-tt
+wy
 ZO
 ZO
 ZO
@@ -3396,15 +3423,15 @@ ZO
 ZO
 DS
 DS
-mf
+br
 hO
 DS
 ZO
 ZO
-vS
+nB
 ZO
 oc
-gu
+Qp
 ZO
 ZO
 ZO
@@ -3421,11 +3448,11 @@ ZO
 Mf
 Ra
 Ry
-ko
+ku
 Ry
 Ra
 Ra
-tt
+wy
 ZO
 ZO
 ZO
@@ -3456,12 +3483,12 @@ ZO
 ZO
 ZO
 ZO
-tt
+wy
 ZO
 ZO
 ZO
 ZO
-kI
+bW
 ZO
 ZO
 ZO
@@ -3479,7 +3506,7 @@ LT
 bJ
 ZO
 ZO
-LE
+hq
 ZO
 ZO
 ZO
@@ -3501,16 +3528,16 @@ DS
 AX
 xy
 jy
-tt
+wy
 mK
 jy
 wN
-vi
+se
 ZO
 ZO
 ZO
 ZO
-tt
+wy
 ZO
 ZO
 ZO
@@ -3527,7 +3554,7 @@ io
 oP
 jy
 mK
-ZT
+sc
 ZO
 ZO
 ZO
@@ -3551,14 +3578,14 @@ ZO
 hO
 AX
 RX
-MJ
+sp
 ZO
-tt
+wy
 ZO
-Zs
+Yj
 RX
 ZO
-LE
+hq
 ZO
 ZO
 ZO
@@ -3585,7 +3612,7 @@ ZO
 ZO
 ZO
 ZO
-LE
+hq
 ZO
 ZO
 ZO
@@ -3604,10 +3631,10 @@ hO
 tJ
 lq
 QV
-tt
-tt
+wy
+wy
 ZO
-Fj
+bC
 hO
 ZO
 ZO
@@ -3630,8 +3657,8 @@ ZO
 ZO
 ZO
 ZO
-LE
-tt
+hq
+wy
 ZO
 ZO
 ZO
@@ -3658,33 +3685,33 @@ jy
 Vm
 ZO
 ZO
-tt
+wy
 ZO
-tt
-LE
-ZO
-ZO
+wy
+hq
 ZO
 ZO
 ZO
 ZO
 ZO
-vi
+ZO
+ZO
+se
 ZO
 ZO
 ZO
 ZO
-LE
+hq
 ZO
 ZO
 ZO
 ZO
 ZO
-YA
+UY
 ZO
 ZO
 ZO
-vS
+nB
 ZO
 ZO
 ZO
@@ -3706,17 +3733,17 @@ ZO
 ZO
 DS
 hO
-yU
+Du
 RX
 ZO
 ZO
-tt
+wy
 ZO
 ZO
 ZO
 ZO
 ZO
-vi
+se
 ZO
 ZO
 ZO
@@ -3735,7 +3762,7 @@ ZO
 ZO
 ZO
 ZO
-vi
+se
 ZO
 ZO
 ZO
@@ -3757,23 +3784,23 @@ ZO
 ZO
 ZO
 ZO
-cX
+WN
 RX
 mK
 jy
-th
+aX
 ZO
 ZO
 ZO
-ux
-tt
+Jf
+wy
 ZO
 ZO
 ZO
 ZO
 ZO
 eg
-tt
+wy
 bV
 Ra
 ZO
@@ -3813,8 +3840,8 @@ ZO
 DS
 ZO
 DS
-ZS
-vi
+Vb
+se
 ZO
 ZO
 ZO
@@ -3863,17 +3890,17 @@ ZO
 ZO
 ZO
 ZO
-tt
+wy
 ZO
 ZO
 ZO
 ZO
-LE
+hq
 ZO
 ZO
 ZO
 ZO
-YW
+Pg
 ZO
 ZO
 ZO
@@ -3979,7 +4006,7 @@ ZO
 ZO
 ZO
 ZO
-LE
+hq
 ZO
 ZO
 ZO
@@ -4177,7 +4204,7 @@ ZO
 ZO
 ZO
 ZO
-Fj
+bC
 ZO
 ZO
 ZO

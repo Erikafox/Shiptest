@@ -3,6 +3,10 @@
 /mob/living/simple_animal/hostile/carp,
 /turf/open/space,
 /area/template_noop)
+"ak" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/mono/white,
+/area/ruin/space/has_grav/crazylab/crew)
 "ao" = (
 /obj/structure/lattice,
 /turf/open/space,
@@ -23,16 +27,6 @@
 /obj/effect/decal/remains/human,
 /turf/open/floor/plating/asteroid/airless,
 /area/ruin/space/has_grav/crazylab/outside)
-"aM" = (
-/obj/structure/window/plasma/reinforced/plastitanium,
-/obj/structure/grille,
-/obj/structure/grille,
-/obj/machinery/door/poddoor{
-	id = 98;
-	dir = 4
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/crazylab/chem)
 "aT" = (
 /mob/living/simple_animal/hostile/carp,
 /obj/effect/decal/cleanable/dirt,
@@ -42,26 +36,18 @@
 /turf/closed/wall/mineral/titanium,
 /area/ruin/space/has_grav/crazylab/outside)
 "aX" = (
-/obj/structure/table/glass,
-/obj/item/storage/bag/chemistry,
-/obj/machinery/airalarm/directional/north,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+/obj/structure/table/reinforced,
+/obj/machinery/button/door{
+	id = 128;
+	name = "EVA Shutters";
+	pixel_y = 5
 	},
-/obj/structure/table/glass,
-/obj/item/storage/bag/chemistry,
-/obj/machinery/light/directional/north,
-/obj/machinery/airalarm/directional/north,
-/turf/open/floor/plasteel/tech/grid,
-/area/ruin/space/has_grav/crazylab/chem)
-"aZ" = (
-/obj/structure/grille,
-/obj/structure/window/plasma/reinforced/plastitanium,
-/obj/machinery/door/poddoor{
-	id = 64
+/obj/effect/turf_decal/industrial/warning/dust{
+	dir = 6
 	},
+/obj/machinery/light/small/broken/directional/south,
 /turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/crazylab/crew)
+/area/ruin/space/has_grav/crazylab/airlock)
 "bc" = (
 /obj/machinery/door/airlock/public,
 /obj/structure/fans/tiny,
@@ -70,43 +56,15 @@
 "bh" = (
 /turf/closed/wall/mineral/titanium,
 /area/ruin/space/has_grav/crazylab/watchpost)
-"bn" = (
-/obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable,
-/obj/machinery/light/directional/east,
-/obj/machinery/button/door{
-	dir = 8;
-	id = 32;
-	name = "Rec Room Shutters";
-	pixel_x = 30
+"bl" = (
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/grille,
+/obj/machinery/door/poddoor{
+	id = 98;
+	dir = 4
 	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/machinery/power/apc/auto_name/south,
-/obj/structure/cable,
-/obj/machinery/light/directional/east,
-/obj/machinery/button/door{
-	dir = 8;
-	id = 32;
-	name = "Rec Room Shutters";
-	pixel_x = 30
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable,
-/obj/machinery/light/directional/east,
-/obj/machinery/button/door{
-	dir = 8;
-	id = 32;
-	name = "Rec Room Shutters";
-	pixel_x = 30
-	},
-/turf/open/floor/plasteel/grimy,
-/area/ruin/space/has_grav/crazylab/gamble)
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/crazylab/chem)
 "bw" = (
 /obj/structure/flora/rock,
 /turf/open/floor/plating/asteroid/airless,
@@ -136,14 +94,15 @@
 /obj/structure/sign/poster/retro/smile,
 /turf/closed/wall/mineral/titanium,
 /area/ruin/space/has_grav/crazylab/watchpost)
-"bX" = (
-/obj/machinery/disposal/bin,
-/obj/machinery/power/apc/auto_name/directional/west,
-/obj/structure/cable{
-	icon_state = "0-4"
+"bV" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
 	},
-/turf/open/floor/plasteel/tech/grid,
-/area/ruin/space/has_grav/crazylab/chem)
+/obj/machinery/light/directional/east,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/grimy,
+/area/ruin/space/has_grav/crazylab/bar)
 "cd" = (
 /obj/machinery/power/smes,
 /obj/structure/cable{
@@ -160,15 +119,21 @@
 /obj/item/stack/sheet/mineral/plasma/fifty,
 /turf/open/floor/mineral/titanium,
 /area/ruin/space/has_grav/crazylab/watchpost)
-"ch" = (
-/obj/structure/table/reinforced,
-/obj/machinery/recharger,
-/obj/machinery/light/small/directional/north,
-/turf/open/floor/mineral/titanium,
-/area/ruin/space/has_grav/crazylab/watchpost)
 "ck" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/crew)
+"cl" = (
+/obj/machinery/door/airlock/hatch{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/crazylab/bar)
 "cn" = (
 /obj/structure/mirror,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
@@ -200,11 +165,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/mineral/titanium,
 /area/ruin/space/has_grav/crazylab/outside)
-"cR" = (
-/obj/machinery/light/small/directional/south,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/mineral/titanium,
-/area/ruin/space/has_grav/crazylab/watchpost)
 "dd" = (
 /mob/living/simple_animal/hostile/nanotrasen/ranged,
 /turf/open/floor/mineral/titanium,
@@ -224,6 +184,11 @@
 /obj/item/gun/energy/laser,
 /turf/open/floor/mineral/titanium,
 /area/ruin/space/has_grav/crazylab/watchpost)
+"dy" = (
+/obj/effect/turf_decal/trimline/transparent/neutral/line,
+/obj/machinery/light/directional/south,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/crazylab/crew)
 "dG" = (
 /obj/structure/sign/poster/retro/nanotrasen_logo_70s,
 /turf/closed/wall/mineral/titanium,
@@ -251,26 +216,12 @@
 	},
 /turf/open/floor/plasteel/grimy,
 /area/ruin/space/has_grav/crazylab/crew)
-"dS" = (
-/obj/structure/cable,
-/obj/machinery/power/apc/auto_name/directional/south,
-/obj/machinery/computer/camera_advanced{
-	dir = 1
-	},
-/turf/open/floor/mineral/titanium,
-/area/ruin/space/has_grav/crazylab/watchpost)
 "ed" = (
-/obj/machinery/door/airlock/hatch{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 8
-	},
-/turf/open/floor/plasteel/grimy,
-/area/ruin/space/has_grav/crazylab/gamble)
+/obj/machinery/door/airlock/hatch,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/turf/open/floor/plasteel/mono/white,
+/area/ruin/space/has_grav/crazylab/crew)
 "ee" = (
 /obj/structure/bookcase/random/reference,
 /turf/open/floor/plasteel/grimy,
@@ -288,10 +239,6 @@
 	short_desc = "You are a chemist in an illegal laboratory."
 	},
 /turf/open/floor/plasteel/grimy,
-/area/ruin/space/has_grav/crazylab/crew)
-"es" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/mono/white,
 /area/ruin/space/has_grav/crazylab/crew)
 "et" = (
 /obj/effect/mob_spawn/human/syndicate/battlecruiser/assault{
@@ -344,17 +291,6 @@
 /obj/item/pen/red,
 /turf/open/floor/mineral/titanium,
 /area/ruin/space/has_grav/crazylab/watchpost)
-"fj" = (
-/obj/structure/table/wood/reinforced,
-/obj/item/storage/bag/tray,
-/obj/item/kitchen/knife,
-/obj/item/kitchen/rollingpin,
-/obj/machinery/power/apc/auto_name/directional/north,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/turf/open/floor/plasteel/mono/white,
-/area/ruin/space/has_grav/crazylab/bar)
 "fv" = (
 /obj/structure/table/reinforced,
 /obj/item/circuitboard/machine/chem_heater{
@@ -367,6 +303,14 @@
 	},
 /turf/open/floor/mineral/titanium,
 /area/ruin/space/has_grav/crazylab/watchpost)
+"fG" = (
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/grimy,
+/area/ruin/space/has_grav/crazylab/crew)
 "fI" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/firstaid/advanced{
@@ -381,6 +325,11 @@
 "fY" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/space/has_grav/crazylab/gamble)
+"gy" = (
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/grille,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/crazylab/bar)
 "gK" = (
 /obj/structure/sign/poster/contraband/xenofauna_parasite,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
@@ -426,26 +375,6 @@
 /obj/structure/sign/warning/nosmoking,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/space/has_grav/crazylab/chem)
-"hG" = (
-/obj/structure/table/glass,
-/obj/item/stock_parts/micro_laser{
-	pixel_x = 1;
-	pixel_y = 7
-	},
-/obj/item/stock_parts/manipulator{
-	pixel_x = 5;
-	pixel_y = 10
-	},
-/obj/item/stock_parts/scanning_module{
-	pixel_x = 8
-	},
-/obj/item/stock_parts/capacitor,
-/obj/item/lighter{
-	pixel_x = -7
-	},
-/obj/machinery/light/directional/north,
-/turf/open/floor/plasteel/tech/grid,
-/area/ruin/space/has_grav/crazylab/chem)
 "if" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/remains/human,
@@ -480,18 +409,47 @@
 /turf/open/floor/plasteel/grimy,
 /area/ruin/space/has_grav/crazylab/gamble)
 "ij" = (
-/obj/effect/turf_decal/techfloor{
-	dir = 1
+/obj/machinery/holopad/emergency/bar,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
 	},
-/obj/machinery/vending/coffee,
-/obj/machinery/light/broken/directional/north,
-/turf/open/floor/plasteel/grimy,
-/area/ruin/space/has_grav/crazylab/gamble)
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/structure/extinguisher_cabinet/directional/north,
+/turf/open/floor/plasteel/mono/white,
+/area/ruin/space/has_grav/crazylab/bar)
 "is" = (
 /obj/structure/sign/poster/contraband/masked_men,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/space/has_grav/crazylab/gamble)
-"jq" = (
+"iL" = (
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/grille,
+/obj/machinery/door/poddoor{
+	id = 18
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/crazylab/bar)
+"iP" = (
+/obj/structure/toilet,
+/obj/item/soap/syndie,
+/obj/machinery/light/small/broken/directional/north,
+/turf/open/floor/plasteel/mono/white,
+/area/ruin/space/has_grav/crazylab/crew)
+"jB" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/grimy,
+/area/ruin/space/has_grav/crazylab/crew)
+"jG" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/turf/open/floor/plasteel/grimy,
+/area/ruin/space/has_grav/crazylab/crew)
+"jL" = (
 /obj/machinery/light/directional/south,
 /obj/effect/mob_spawn/human/syndicate/battlecruiser/assault{
 	assignedrole = "Unlicensed Chemist";
@@ -506,35 +464,11 @@
 	},
 /turf/open/floor/plasteel/grimy,
 /area/ruin/space/has_grav/crazylab/crew)
-"jv" = (
-/obj/machinery/door/airlock/hatch{
-	dir = 4
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/crazylab/armory)
-"jB" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/grimy,
-/area/ruin/space/has_grav/crazylab/crew)
-"jG" = (
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/turf/open/floor/plasteel/grimy,
-/area/ruin/space/has_grav/crazylab/crew)
 "jO" = (
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/turf/open/floor/plasteel/grimy,
-/area/ruin/space/has_grav/crazylab/crew)
-"jX" = (
-/obj/structure/chair/comfy/beige{
-	dir = 1
-	},
-/obj/machinery/light/broken/directional/south,
 /turf/open/floor/plasteel/grimy,
 /area/ruin/space/has_grav/crazylab/crew)
 "kg" = (
@@ -612,11 +546,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel/grimy,
 /area/ruin/space/has_grav/crazylab/crew)
-"mc" = (
-/obj/structure/closet/secure_closet/chemical/heisenberg,
-/obj/machinery/firealarm/directional/north,
-/turf/open/floor/plasteel/tech/grid,
-/area/ruin/space/has_grav/crazylab/chem)
 "me" = (
 /obj/structure/table/glass,
 /obj/item/hand_labeler{
@@ -656,10 +585,8 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/grimy,
 /area/ruin/space/has_grav/crazylab/gamble)
-"mx" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 9
-	},
+"mD" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel/mono/white,
 /area/ruin/space/has_grav/crazylab/crew)
 "mT" = (
@@ -718,6 +645,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/crew)
+"ns" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 1
+	},
+/obj/machinery/vending/cigarette/syndicate,
+/obj/structure/extinguisher_cabinet/directional/north,
+/turf/open/floor/plasteel/grimy,
+/area/ruin/space/has_grav/crazylab/gamble)
 "nt" = (
 /obj/effect/turf_decal/trimline/transparent/neutral/line{
 	dir = 1
@@ -736,27 +671,11 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/crew)
-"nx" = (
+"ny" = (
 /obj/structure/grille,
-/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/window/plasma/reinforced/plastitanium,
 /obj/machinery/door/poddoor{
-	id = 32
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/crazylab/gamble)
-"nC" = (
-/obj/effect/turf_decal/trimline/transparent/neutral/line{
-	dir = 1
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/light/directional/north,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 8
+	id = 64
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/crew)
@@ -824,6 +743,23 @@
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/crew)
+"ok" = (
+/obj/effect/turf_decal/trimline/transparent/neutral/line,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/light/broken/directional/south,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 9
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/crazylab/airlock)
 "ol" = (
 /obj/effect/turf_decal/trimline/transparent/neutral/line{
 	dir = 1
@@ -873,21 +809,35 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/crew)
-"oC" = (
-/obj/machinery/door/airlock/hatch{
-	dir = 4
+"oy" = (
+/obj/structure/table/glass,
+/obj/item/paper_bin/carbon{
+	pixel_y = 3
 	},
-/obj/structure/cable{
-	icon_state = "4-8"
+/obj/machinery/light/directional/south,
+/obj/machinery/firealarm/directional/north,
+/obj/structure/extinguisher_cabinet/directional/east,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
+/obj/structure/table/glass,
+/obj/item/paper_bin/carbon{
+	pixel_y = 3
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 8
+/obj/machinery/light/directional/south,
+/obj/machinery/firealarm/directional/north,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
-/obj/machinery/door/firedoor/heavy,
-/turf/open/floor/mineral/plastitanium,
+/obj/structure/table/glass,
+/obj/item/paper_bin/carbon{
+	pixel_y = 3
+	},
+/obj/machinery/light/directional/south,
+/obj/machinery/firealarm/directional/north,
+/obj/structure/extinguisher_cabinet/directional/east,
+/turf/open/floor/plasteel/tech/grid,
 /area/ruin/space/has_grav/crazylab/chem)
 "oG" = (
 /obj/effect/turf_decal/techfloor/orange{
@@ -929,12 +879,6 @@
 	},
 /turf/open/floor/mineral/titanium/white,
 /area/ruin/space/has_grav/crazylab/chem)
-"oP" = (
-/obj/machinery/door/airlock/hatch,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/turf/open/floor/plasteel/mono/white,
-/area/ruin/space/has_grav/crazylab/crew)
 "oQ" = (
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 1
@@ -966,6 +910,23 @@
 	},
 /turf/open/floor/mineral/titanium/white,
 /area/ruin/space/has_grav/crazylab/chem)
+"oX" = (
+/obj/structure/table/wood/reinforced,
+/obj/item/storage/box/ingredients/wildcard{
+	pixel_y = 13
+	},
+/obj/item/storage/box/ingredients/wildcard{
+	pixel_x = -8
+	},
+/obj/item/storage/box/ingredients/wildcard{
+	pixel_x = 8
+	},
+/obj/machinery/light/directional/north,
+/obj/machinery/camera/all{
+	dir = 1
+	},
+/turf/open/floor/plasteel/mono/white,
+/area/ruin/space/has_grav/crazylab/bar)
 "oY" = (
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 4
@@ -981,10 +942,22 @@
 	},
 /turf/open/floor/mineral/titanium/white,
 /area/ruin/space/has_grav/crazylab/chem)
-"pl" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/mono/white,
-/area/ruin/space/has_grav/crazylab/crew)
+"pa" = (
+/obj/machinery/door/airlock/hatch{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/turf/open/floor/plasteel/grimy,
+/area/ruin/space/has_grav/crazylab/gamble)
+"pb" = (
+/obj/structure/extinguisher_cabinet/directional/north,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/space/has_grav/crazylab/armory)
 "px" = (
 /obj/structure/chair/wood{
 	dir = 4
@@ -1043,6 +1016,15 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/crew)
+"qg" = (
+/obj/structure/rack,
+/obj/item/melee/baseball_bat/ablative,
+/obj/item/kitchen/knife/combat{
+	pixel_y = 9
+	},
+/obj/machinery/light/broken/directional/east,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/crazylab/armory)
 "qi" = (
 /obj/effect/turf_decal/trimline/transparent/neutral/line,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -1079,6 +1061,14 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/crew)
+"qw" = (
+/obj/machinery/disposal/bin,
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/space/has_grav/crazylab/chem)
 "qy" = (
 /obj/effect/turf_decal/trimline/transparent/neutral/corner{
 	dir = 8
@@ -1102,36 +1092,15 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/crew)
-"rp" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/crazylab/airlock)
-"rq" = (
-/obj/machinery/light/broken/directional/east,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
-/turf/open/floor/plasteel/mono/white,
-/area/ruin/space/has_grav/crazylab/crew)
-"rt" = (
-/obj/effect/turf_decal/trimline/transparent/neutral/line,
-/obj/machinery/light/directional/south,
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/crazylab/crew)
-"ry" = (
-/obj/structure/toilet,
-/obj/item/soap/syndie,
-/obj/machinery/light/small/broken/directional/north,
-/turf/open/floor/plasteel/mono/white,
-/area/ruin/space/has_grav/crazylab/crew)
-"rC" = (
-/obj/structure/window/plasma/reinforced/plastitanium,
+"rI" = (
 /obj/structure/grille,
+/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
 /obj/machinery/door/poddoor{
-	id = 18
+	id = 32;
+	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/crazylab/bar)
+/area/ruin/space/has_grav/crazylab/gamble)
 "rS" = (
 /obj/effect/turf_decal/trimline/transparent/neutral/line,
 /obj/structure/cable{
@@ -1212,6 +1181,16 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/space/has_grav/crazylab/chem)
+"sI" = (
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/grille,
+/obj/structure/grille,
+/obj/machinery/door/poddoor{
+	id = 98;
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/crazylab/chem)
 "sV" = (
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 8
@@ -1242,14 +1221,10 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/asteroid/airless,
 /area/ruin/space/has_grav/crazylab/outside)
-"tj" = (
-/obj/effect/turf_decal/techfloor{
-	dir = 8
-	},
-/obj/machinery/vending/snack/green,
-/obj/machinery/light/broken/directional/west,
-/turf/open/floor/plasteel/grimy,
-/area/ruin/space/has_grav/crazylab/gamble)
+"tl" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/mono/white,
+/area/ruin/space/has_grav/crazylab/crew)
 "tn" = (
 /obj/structure/table/wood/poker,
 /obj/item/toy/cards/deck/kotahi{
@@ -1287,35 +1262,29 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/grimy,
 /area/ruin/space/has_grav/crazylab/gamble)
-"tL" = (
-/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
-/obj/structure/grille,
-/obj/machinery/door/poddoor{
-	id = 98
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/crazylab/chem)
-"ue" = (
-/obj/machinery/holopad/emergency/bar,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 8
-	},
-/obj/structure/extinguisher_cabinet/directional/north,
-/turf/open/floor/plasteel/mono/white,
-/area/ruin/space/has_grav/crazylab/bar)
 "ug" = (
 /obj/machinery/camera/all{
 	dir = 8
 	},
 /turf/open/floor/plasteel/grimy,
 /area/ruin/space/has_grav/crazylab/gamble)
+"ui" = (
+/obj/machinery/light/small/directional/south,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/mineral/titanium,
+/area/ruin/space/has_grav/crazylab/watchpost)
 "uo" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/bar)
+"us" = (
+/mob/living/simple_animal/hostile/poison/giant_spider/nurse,
+/obj/effect/decal/cleanable/blood/drip,
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/crazylab/hydro)
 "ut" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 8
@@ -1330,6 +1299,12 @@
 /obj/machinery/door/airlock/hatch,
 /turf/open/floor/plasteel/grimy,
 /area/ruin/space/has_grav/crazylab/bar)
+"uv" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 9
+	},
+/turf/open/floor/plasteel/mono/white,
+/area/ruin/space/has_grav/crazylab/crew)
 "uC" = (
 /obj/machinery/disposal/bin,
 /obj/effect/turf_decal/trimline/transparent/neutral/line{
@@ -1348,6 +1323,17 @@
 	dir = 6
 	},
 /turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/crazylab/crew)
+"ve" = (
+/obj/machinery/shower{
+	dir = 4
+	},
+/obj/structure/curtain,
+/obj/structure/window/reinforced{
+	dir = 9
+	},
+/obj/structure/window/reinforced,
+/turf/open/floor/plasteel/mono/white,
 /area/ruin/space/has_grav/crazylab/crew)
 "vi" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
@@ -1368,16 +1354,6 @@
 "vD" = (
 /obj/structure/sign/warning/chemdiamond,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ruin/space/has_grav/crazylab/chem)
-"vJ" = (
-/obj/structure/closet/crate/radiation{
-	opened = 1
-	},
-/obj/item/stack/sheet/mineral/plasma/fifty,
-/obj/item/stack/sheet/mineral/silver/fifty,
-/obj/machinery/light/broken/directional/south,
-/obj/item/stack/sheet/mineral/uranium/twenty,
-/turf/open/floor/plasteel/tech/grid,
 /area/ruin/space/has_grav/crazylab/chem)
 "vK" = (
 /obj/structure/table/glass,
@@ -1441,15 +1417,23 @@
 /obj/structure/fluff/fokoff_sign,
 /turf/open/floor/plating/asteroid/airless,
 /area/ruin/space/has_grav/crazylab/outside)
-"wl" = (
-/obj/machinery/door/airlock/hatch{
-	dir = 8
+"we" = (
+/obj/machinery/power/apc/auto_name/directional/east,
+/obj/structure/cable,
+/obj/structure/lattice/catwalk,
+/turf/open/space,
+/area/ruin/space/has_grav/crazylab/bomb)
+"wj" = (
+/obj/machinery/suit_storage_unit/independent/mining/eva,
+/obj/effect/turf_decal/industrial/warning/dust{
+	dir = 10
 	},
+/obj/machinery/power/apc/auto_name/directional/west,
 /obj/structure/cable{
-	icon_state = "4-8"
+	icon_state = "0-4"
 	},
-/turf/open/floor/plasteel/grimy,
-/area/ruin/space/has_grav/crazylab/gamble)
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/crazylab/airlock)
 "wm" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 8
@@ -1457,15 +1441,6 @@
 /obj/machinery/vending/cola/starkist,
 /turf/open/floor/plasteel/grimy,
 /area/ruin/space/has_grav/crazylab/gamble)
-"wn" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 5
-	},
-/obj/machinery/airalarm/directional/south,
-/turf/open/floor/plasteel/mono/white,
-/area/ruin/space/has_grav/crazylab/crew)
 "ws" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/grimy,
@@ -1503,6 +1478,13 @@
 	},
 /turf/open/floor/carpet/red,
 /area/ruin/space/has_grav/crazylab/bar)
+"xm" = (
+/obj/machinery/door/airlock/hatch{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/heavy,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/crazylab/chem)
 "xp" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
@@ -1570,6 +1552,13 @@
 /obj/structure/sign/poster/contraband/gec,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/space/has_grav/crazylab/engi)
+"ym" = (
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/crazylab/armory)
 "yu" = (
 /obj/structure/closet/crate{
 	opened = 1
@@ -1610,6 +1599,42 @@
 /obj/structure/sign/poster/contraband/fun_police,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/space/has_grav/crazylab/gamble)
+"yQ" = (
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/structure/cable,
+/obj/machinery/light/directional/east,
+/obj/machinery/button/door{
+	dir = 8;
+	id = 32;
+	name = "Rec Room Shutters";
+	pixel_x = 30
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/power/apc/auto_name/south,
+/obj/structure/cable,
+/obj/machinery/light/directional/east,
+/obj/machinery/button/door{
+	dir = 8;
+	id = 32;
+	name = "Rec Room Shutters";
+	pixel_x = 30
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/structure/cable,
+/obj/machinery/light/directional/east,
+/obj/machinery/button/door{
+	dir = 8;
+	id = 32;
+	name = "Rec Room Shutters";
+	pixel_x = 30
+	},
+/turf/open/floor/plasteel/grimy,
+/area/ruin/space/has_grav/crazylab/gamble)
 "yR" = (
 /obj/machinery/airalarm/directional/south,
 /turf/open/floor/plasteel/grimy,
@@ -1642,6 +1667,35 @@
 	},
 /turf/open/floor/carpet/red,
 /area/ruin/space/has_grav/crazylab/bar)
+"zn" = (
+/obj/structure/spider/cocoon,
+/obj/structure/spider/stickyweb,
+/obj/machinery/light/broken/directional/west,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/crazylab/hydro)
+"zq" = (
+/obj/structure/table/wood/reinforced,
+/obj/item/storage/bag/tray,
+/obj/item/kitchen/knife,
+/obj/item/kitchen/rollingpin,
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plasteel/mono/white,
+/area/ruin/space/has_grav/crazylab/bar)
+"zs" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/obj/machinery/light/broken/directional/south,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/grimy,
+/area/ruin/space/has_grav/crazylab/bar)
+"zu" = (
+/obj/machinery/light/directional/south,
+/turf/open/floor/plating/asteroid/snow/temperatre,
+/area/ruin/space/has_grav/crazylab/bar)
 "zw" = (
 /obj/structure/chair/stool/bar{
 	dir = 8
@@ -1651,15 +1705,11 @@
 	},
 /turf/open/floor/carpet/red,
 /area/ruin/space/has_grav/crazylab/bar)
-"zy" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/obj/machinery/light/directional/east,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/grimy,
-/area/ruin/space/has_grav/crazylab/bar)
+"zB" = (
+/obj/structure/closet/secure_closet/chemical/heisenberg,
+/obj/machinery/firealarm/directional/north,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/space/has_grav/crazylab/chem)
 "zC" = (
 /obj/structure/flora/rock/icy,
 /turf/open/floor/plating/asteroid/snow/temperatre,
@@ -1667,17 +1717,6 @@
 "zF" = (
 /turf/open/floor/plating/asteroid/snow/temperatre,
 /area/ruin/space/has_grav/crazylab/bar)
-"zG" = (
-/obj/structure/rack,
-/obj/item/storage/toolbox/emergency,
-/obj/item/clothing/head/hardhat,
-/obj/item/storage/box/lights/mixed,
-/obj/effect/turf_decal/trimline/opaque/orange/filled/warning{
-	dir = 9
-	},
-/obj/machinery/light/broken/directional/west,
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/crazylab/engi)
 "zJ" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1704,17 +1743,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/engi)
-"zV" = (
-/obj/machinery/shower{
-	dir = 4
-	},
-/obj/structure/curtain,
-/obj/structure/window/reinforced{
-	dir = 9
-	},
-/obj/structure/window/reinforced,
-/turf/open/floor/plasteel/mono/white,
-/area/ruin/space/has_grav/crazylab/crew)
 "zW" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1777,23 +1805,6 @@
 /obj/structure/sign/poster/contraband/eat,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/space/has_grav/crazylab/gamble)
-"AR" = (
-/obj/structure/table/wood/reinforced,
-/obj/item/storage/box/ingredients/wildcard{
-	pixel_y = 13
-	},
-/obj/item/storage/box/ingredients/wildcard{
-	pixel_x = -8
-	},
-/obj/item/storage/box/ingredients/wildcard{
-	pixel_x = 8
-	},
-/obj/machinery/light/directional/north,
-/obj/machinery/camera/all{
-	dir = 1
-	},
-/turf/open/floor/plasteel/mono/white,
-/area/ruin/space/has_grav/crazylab/bar)
 "AT" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
 /obj/item/reagent_containers/food/condiment/enzyme,
@@ -1874,19 +1885,27 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/engi)
+"BA" = (
+/obj/effect/turf_decal/trimline/transparent/neutral/line{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light/directional/north,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/crazylab/crew)
 "BC" = (
 /obj/structure/table/reinforced,
 /obj/machinery/cell_charger,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/engi)
-"BE" = (
-/obj/structure/window/plasma/reinforced/plastitanium,
-/obj/structure/grille,
-/obj/machinery/door/poddoor{
-	id = 98
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/crazylab/chem)
 "BL" = (
 /obj/structure/table/reinforced,
 /obj/item/wrench,
@@ -1903,15 +1922,6 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/crazylab/engi)
-"BR" = (
-/obj/structure/closet/crate/radiation,
-/obj/effect/turf_decal/trimline/opaque/orange/filled/warning{
-	dir = 4
-	},
-/obj/machinery/light/directional/east,
-/obj/item/stack/sheet/mineral/uranium/fifty,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/engi)
 "BW" = (
@@ -1956,19 +1966,19 @@
 /obj/effect/decal/remains/human,
 /turf/open/floor/plating/asteroid/airless,
 /area/ruin/space/has_grav/crazylab/outside)
+"Cj" = (
+/obj/structure/closet/crate/radiation,
+/obj/effect/turf_decal/trimline/opaque/orange/filled/warning{
+	dir = 4
+	},
+/obj/machinery/light/directional/east,
+/obj/item/stack/sheet/mineral/uranium/fifty,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/crazylab/engi)
 "Ck" = (
 /obj/effect/turf_decal/number/four,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/space/has_grav/crazylab/bar)
-"Cl" = (
-/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
-/obj/structure/grille,
-/obj/machinery/door/poddoor{
-	id = 128;
-	dir = 4
-	},
-/turf/open/space,
-/area/ruin/space/has_grav/crazylab/airlock)
 "Cn" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/grimy,
@@ -1982,6 +1992,14 @@
 	},
 /turf/open/floor/plasteel/grimy,
 /area/ruin/space/has_grav/crazylab/bar)
+"CH" = (
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/grille,
+/obj/machinery/door/poddoor{
+	id = 98
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/crazylab/chem)
 "CL" = (
 /obj/structure/sink/kitchen{
 	pixel_y = 14
@@ -2041,15 +2059,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/engi)
-"DG" = (
-/obj/structure/grille,
-/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
-/obj/machinery/door/poddoor{
-	id = 32;
-	dir = 4
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/crazylab/gamble)
 "DI" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -2104,31 +2113,17 @@
 /obj/machinery/airalarm/directional/south,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/engi)
-"Ej" = (
-/obj/structure/grille,
-/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
-/obj/machinery/door/poddoor{
-	id = 32;
-	dir = 8
+"ED" = (
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/crazylab/gamble)
-"Ep" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 10
+/obj/structure/extinguisher_cabinet/directional/north,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 6
-	},
-/turf/open/floor/plasteel/mono/white,
-/area/ruin/space/has_grav/crazylab/crew)
-"Eu" = (
-/obj/structure/sink{
-	pixel_y = 18
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/mono/white,
-/area/ruin/space/has_grav/crazylab/crew)
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/space/has_grav/crazylab/bar)
 "EG" = (
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 8
@@ -2159,39 +2154,20 @@
 	},
 /turf/open/floor/mineral/titanium/white,
 /area/ruin/space/has_grav/crazylab/chem)
-"EZ" = (
-/obj/machinery/door/airlock/hatch{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/decal/cleanable/blood/footprints{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+"Fg" = (
+/obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 8
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/crazylab/armory)
+/obj/machinery/vending/snack/green,
+/obj/machinery/light/broken/directional/west,
+/turf/open/floor/plasteel/grimy,
+/area/ruin/space/has_grav/crazylab/gamble)
 "Fo" = (
 /obj/effect/turf_decal/number/zero,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/space/has_grav/crazylab/bar)
 "Fr" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ruin/space/has_grav/crazylab/hydro)
-"Fs" = (
-/mob/living/simple_animal/hostile/poison/giant_spider/nurse,
-/obj/effect/decal/cleanable/blood/drip,
-/obj/machinery/power/apc/auto_name/directional/north,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/hydro)
 "Fu" = (
 /obj/effect/turf_decal/siding/wood,
@@ -2228,6 +2204,34 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/red,
 /area/ruin/space/has_grav/crazylab/bar)
+"FP" = (
+/obj/structure/table/glass,
+/obj/item/storage/bag/chemistry,
+/obj/machinery/airalarm/directional/north,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/table/glass,
+/obj/item/storage/bag/chemistry,
+/obj/machinery/light/directional/north,
+/obj/machinery/airalarm/directional/north,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/table/glass,
+/obj/item/storage/bag/chemistry,
+/obj/machinery/airalarm/directional/north,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/space/has_grav/crazylab/chem)
+"FQ" = (
+/obj/structure/grille,
+/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
+/obj/machinery/door/poddoor{
+	id = 32
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/crazylab/gamble)
 "FR" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
@@ -2242,10 +2246,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/airalarm/directional/south,
 /turf/open/floor/plasteel/grimy,
-/area/ruin/space/has_grav/crazylab/bar)
-"FV" = (
-/obj/machinery/light/directional/south,
-/turf/open/floor/plating/asteroid/snow/temperatre,
 /area/ruin/space/has_grav/crazylab/bar)
 "Ga" = (
 /obj/machinery/power/port_gen/pacman/super,
@@ -2292,6 +2292,35 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/mineral/titanium/white,
 /area/ruin/space/has_grav/crazylab/chem)
+"Gx" = (
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/extinguisher_cabinet/directional/north,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/space/has_grav/crazylab/chem)
+"Gz" = (
+/obj/machinery/door/airlock/hatch{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/crazylab/armory)
 "GJ" = (
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 6
@@ -2313,11 +2342,6 @@
 	},
 /turf/open/floor/carpet/red,
 /area/ruin/space/has_grav/crazylab/bar)
-"GQ" = (
-/obj/structure/salvageable/seed,
-/obj/structure/spider/stickyweb,
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/crazylab/hydro)
 "GS" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
@@ -2361,6 +2385,14 @@
 "GV" = (
 /turf/open/space,
 /area/template_noop)
+"GX" = (
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/machinery/computer/camera_advanced{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/space/has_grav/crazylab/watchpost)
 "Hc" = (
 /obj/structure/chair/stool/bar{
 	dir = 1
@@ -2374,6 +2406,12 @@
 	},
 /turf/open/floor/carpet/red,
 /area/ruin/space/has_grav/crazylab/bar)
+"Hi" = (
+/obj/structure/spider/stickyweb,
+/obj/effect/decal/cleanable/blood/gibs/old,
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/crazylab/hydro)
 "Hq" = (
 /obj/structure/chair/stool/bar{
 	dir = 1
@@ -2398,6 +2436,26 @@
 	},
 /turf/open/floor/plasteel/grimy,
 /area/ruin/space/has_grav/crazylab/bar)
+"HH" = (
+/obj/structure/table/glass,
+/obj/item/stock_parts/micro_laser{
+	pixel_x = 1;
+	pixel_y = 7
+	},
+/obj/item/stock_parts/manipulator{
+	pixel_x = 5;
+	pixel_y = 10
+	},
+/obj/item/stock_parts/scanning_module{
+	pixel_x = 8
+	},
+/obj/item/stock_parts/capacitor,
+/obj/item/lighter{
+	pixel_x = -7
+	},
+/obj/machinery/light/directional/north,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/space/has_grav/crazylab/chem)
 "HI" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 1
@@ -2413,10 +2471,14 @@
 "HL" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/space/has_grav/crazylab/armory)
-"Ic" = (
-/obj/structure/extinguisher_cabinet/directional/north,
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ruin/space/has_grav/crazylab/armory)
+"HZ" = (
+/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/grille,
+/obj/machinery/door/poddoor{
+	id = 98
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/crazylab/chem)
 "Ie" = (
 /obj/effect/turf_decal/number/four,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
@@ -2491,14 +2553,6 @@
 	},
 /turf/open/floor/plasteel/grimy,
 /area/ruin/space/has_grav/crazylab/bar)
-"IU" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/obj/machinery/light/broken/directional/south,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/grimy,
-/area/ruin/space/has_grav/crazylab/bar)
 "Jj" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -2548,6 +2602,15 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/armory)
+"JD" = (
+/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/grille,
+/obj/machinery/door/poddoor{
+	id = 128;
+	dir = 4
+	},
+/turf/open/space,
+/area/ruin/space/has_grav/crazylab/airlock)
 "JZ" = (
 /obj/machinery/camera/all,
 /obj/effect/decal/cleanable/blood/drip,
@@ -2561,19 +2624,17 @@
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/armory)
+"Kn" = (
+/obj/structure/table/reinforced,
+/obj/machinery/recharger,
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/mineral/titanium,
+/area/ruin/space/has_grav/crazylab/watchpost)
 "Ks" = (
 /obj/effect/turf_decal/trimline/transparent/neutral/line{
 	dir = 9
 	},
 /obj/effect/decal/cleanable/blood/drip,
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/crazylab/airlock)
-"Kt" = (
-/obj/effect/turf_decal/trimline/transparent/neutral/line{
-	dir = 1
-	},
-/obj/machinery/light/broken/directional/north,
-/obj/effect/decal/cleanable/blood/footprints,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/airlock)
 "Kz" = (
@@ -2724,6 +2785,22 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/crazylab/armory)
+"Ln" = (
+/obj/machinery/door/airlock/hatch{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/heavy,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/crazylab/chem)
 "Lu" = (
 /obj/effect/turf_decal/trimline/transparent/neutral/line{
 	dir = 8
@@ -2816,23 +2893,15 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/airlock)
-"LM" = (
-/obj/effect/turf_decal/trimline/transparent/neutral/line,
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/obj/machinery/light/broken/directional/south,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
+"LN" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 8
+	dir = 5
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 9
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/crazylab/airlock)
+/obj/machinery/airalarm/directional/south,
+/turf/open/floor/plasteel/mono/white,
+/area/ruin/space/has_grav/crazylab/crew)
 "LP" = (
 /obj/effect/turf_decal/trimline/transparent/neutral/line{
 	dir = 6
@@ -2880,6 +2949,29 @@
 	},
 /turf/open/floor/plating/asteroid/airless,
 /area/ruin/space/has_grav/crazylab/outside)
+"Mo" = (
+/obj/structure/table/glass,
+/obj/item/razor{
+	pixel_x = -9;
+	pixel_y = 1
+	},
+/obj/item/skub{
+	pixel_x = 7;
+	pixel_y = 10
+	},
+/obj/item/lipstick,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/storage/firstaid/regular{
+	pixel_x = -5;
+	pixel_y = 8
+	},
+/turf/open/floor/plasteel/mono/white,
+/area/ruin/space/has_grav/crazylab/crew)
+"Mp" = (
+/obj/machinery/autolathe,
+/obj/structure/extinguisher_cabinet/directional/south,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/space/has_grav/crazylab/chem)
 "Mz" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/open/floor/plating/grass,
@@ -2891,15 +2983,16 @@
 /obj/structure/flora/grass/brown,
 /turf/open/floor/plating/grass,
 /area/ruin/space/has_grav/crazylab/bar)
-"ML" = (
-/obj/structure/flora/ausbushes/lavendergrass,
-/obj/machinery/light/directional/east,
-/turf/open/floor/plating/grass,
-/area/ruin/space/has_grav/crazylab/bar)
-"MN" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/turf/open/floor/plasteel/mono/white,
-/area/ruin/space/has_grav/crazylab/crew)
+"MM" = (
+/obj/structure/closet/crate/radiation{
+	opened = 1
+	},
+/obj/item/stack/sheet/mineral/plasma/fifty,
+/obj/item/stack/sheet/mineral/silver/fifty,
+/obj/machinery/light/broken/directional/south,
+/obj/item/stack/sheet/mineral/uranium/twenty,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/space/has_grav/crazylab/chem)
 "MV" = (
 /obj/structure/closet/secure_closet/security{
 	req_access = null
@@ -2920,6 +3013,24 @@
 /obj/item/gun/syringe,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/crazylab/armory)
+"Nt" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 6
+	},
+/turf/open/floor/plasteel/mono/white,
+/area/ruin/space/has_grav/crazylab/crew)
+"Nx" = (
+/obj/structure/grille,
+/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
+/obj/machinery/door/poddoor{
+	id = 32;
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/crazylab/gamble)
 "NA" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/syringe{
@@ -2939,6 +3050,17 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/crazylab/armory)
+"NM" = (
+/obj/machinery/shower{
+	dir = 4
+	},
+/obj/structure/curtain,
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 9
+	},
+/turf/open/floor/plasteel/mono/white,
+/area/ruin/space/has_grav/crazylab/crew)
 "NO" = (
 /obj/structure/closet/secure_closet/security{
 	req_access = null
@@ -2991,6 +3113,11 @@
 	},
 /turf/open/space,
 /area/ruin/space/has_grav/crazylab/bomb)
+"Oz" = (
+/obj/machinery/light/broken/directional/east,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/turf/open/floor/plasteel/mono/white,
+/area/ruin/space/has_grav/crazylab/crew)
 "OA" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/cable{
@@ -3063,24 +3190,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/armory)
-"Pt" = (
-/obj/structure/rack,
-/obj/item/melee/baseball_bat/ablative,
-/obj/item/kitchen/knife/combat{
-	pixel_y = 9
-	},
-/obj/machinery/light/broken/directional/east,
-/turf/open/floor/mineral/plastitanium/red,
-/area/ruin/space/has_grav/crazylab/armory)
-"Pw" = (
-/obj/structure/window/plasma/reinforced/plastitanium,
-/obj/structure/grille,
-/obj/machinery/door/poddoor{
-	id = 98;
-	dir = 4
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/crazylab/chem)
 "Px" = (
 /obj/structure/sign/poster/contraband/syndicate_recruitment,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
@@ -3089,26 +3198,11 @@
 /obj/structure/sign/poster/contraband/red_rum,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/space/has_grav/crazylab/airlock)
-"PJ" = (
-/obj/machinery/suit_storage_unit/independent/mining/eva,
-/obj/effect/turf_decal/industrial/warning/dust{
-	dir = 9
-	},
-/obj/machinery/light/small/directional/north,
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/crazylab/airlock)
-"PO" = (
-/obj/machinery/door/airlock/hatch{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/heavy,
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/crazylab/chem)
-"PP" = (
-/obj/machinery/autolathe,
-/obj/structure/extinguisher_cabinet/directional/south,
-/turf/open/floor/plasteel/tech/grid,
-/area/ruin/space/has_grav/crazylab/chem)
+"PS" = (
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/machinery/light/directional/east,
+/turf/open/floor/plating/grass,
+/area/ruin/space/has_grav/crazylab/bar)
 "PT" = (
 /obj/effect/turf_decal/industrial/warning/dust{
 	dir = 1
@@ -3119,6 +3213,33 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/airlock)
+"Qc" = (
+/obj/machinery/suit_storage_unit/independent/mining/eva,
+/obj/effect/turf_decal/industrial/warning/dust{
+	dir = 9
+	},
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/crazylab/airlock)
+"Qf" = (
+/obj/effect/turf_decal/trimline/transparent/neutral/line{
+	dir = 1
+	},
+/obj/machinery/light/broken/directional/north,
+/obj/effect/decal/cleanable/blood/footprints,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/crazylab/airlock)
+"Qg" = (
+/obj/structure/rack,
+/obj/item/storage/toolbox/emergency,
+/obj/item/clothing/head/hardhat,
+/obj/item/storage/box/lights/mixed,
+/obj/effect/turf_decal/trimline/opaque/orange/filled/warning{
+	dir = 9
+	},
+/obj/machinery/light/broken/directional/west,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/crazylab/engi)
 "Qk" = (
 /obj/effect/turf_decal/industrial/warning/dust{
 	dir = 1
@@ -3154,6 +3275,13 @@
 /obj/machinery/door/airlock/hatch{
 	dir = 4
 	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---",
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/machinery/door/airlock/hatch{
+	dir = 4
+	},
 /turf/open/floor/plasteel/mono/white,
 /area/ruin/space/has_grav/crazylab/crew)
 "QB" = (
@@ -3161,15 +3289,6 @@
 /obj/structure/window/plasma/reinforced/plastitanium,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/bar)
-"QF" = (
-/obj/structure/rack,
-/obj/item/melee/baseball_bat/ablative,
-/obj/item/kitchen/knife/combat{
-	pixel_y = 6
-	},
-/obj/machinery/light/directional/west,
-/turf/open/floor/mineral/plastitanium/red,
-/area/ruin/space/has_grav/crazylab/armory)
 "QJ" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -3203,14 +3322,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/armory)
-"Rh" = (
-/obj/effect/turf_decal/techfloor{
-	dir = 1
-	},
-/obj/machinery/vending/cigarette/syndicate,
-/obj/structure/extinguisher_cabinet/directional/north,
-/turf/open/floor/plasteel/grimy,
-/area/ruin/space/has_grav/crazylab/gamble)
 "Rj" = (
 /obj/effect/turf_decal/industrial/warning/dust/corner{
 	dir = 8
@@ -3231,19 +3342,6 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/crazylab/airlock)
-"Ry" = (
-/obj/structure/table/reinforced,
-/obj/machinery/button/door{
-	id = 128;
-	name = "EVA Shutters";
-	pixel_y = 5
-	},
-/obj/effect/turf_decal/industrial/warning/dust{
-	dir = 6
-	},
-/obj/machinery/light/small/broken/directional/south,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/airlock)
 "RQ" = (
@@ -3276,6 +3374,15 @@
 /obj/structure/spider/stickyweb,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/hydro)
+"So" = (
+/obj/structure/rack,
+/obj/item/melee/baseball_bat/ablative,
+/obj/item/kitchen/knife/combat{
+	pixel_y = 6
+	},
+/obj/machinery/light/directional/west,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/crazylab/armory)
 "Sp" = (
 /obj/structure/table/reinforced,
 /obj/structure/spider/stickyweb,
@@ -3292,26 +3399,15 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/crazylab/armory)
-"SE" = (
-/obj/structure/window/plasma/reinforced/plastitanium,
-/obj/structure/grille,
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/crazylab/bar)
 "SJ" = (
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/armory)
-"SN" = (
+"ST" = (
 /obj/machinery/door/airlock/hatch{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 8
-	},
 /turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/crazylab/bar)
+/area/ruin/space/has_grav/crazylab/armory)
 "SV" = (
 /obj/structure/chair/office,
 /turf/open/floor/mineral/plastitanium/red,
@@ -3337,6 +3433,14 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/airlock)
+"Th" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 1
+	},
+/obj/machinery/vending/coffee,
+/obj/machinery/light/broken/directional/north,
+/turf/open/floor/plasteel/grimy,
+/area/ruin/space/has_grav/crazylab/gamble)
 "TA" = (
 /obj/effect/turf_decal/industrial/warning/dust{
 	dir = 6
@@ -3350,12 +3454,10 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/airlock)
 "TE" = (
-/obj/machinery/power/apc/auto_name/directional/north,
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
+/obj/structure/salvageable/seed,
+/obj/structure/spider/stickyweb,
 /turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/crazylab/armory)
+/area/ruin/space/has_grav/crazylab/hydro)
 "TJ" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/space/has_grav/crazylab/bar)
@@ -3368,12 +3470,6 @@
 "TW" = (
 /obj/structure/sign/poster/contraband/rip_badger,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ruin/space/has_grav/crazylab/hydro)
-"Ua" = (
-/obj/structure/spider/cocoon,
-/obj/structure/spider/stickyweb,
-/obj/machinery/light/broken/directional/west,
-/turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/hydro)
 "Uy" = (
 /obj/structure/spider/stickyweb,
@@ -3435,13 +3531,6 @@
 /obj/machinery/door/airlock/external/glass,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/crazylab/airlock)
-"Vj" = (
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/extinguisher_cabinet/directional/north,
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ruin/space/has_grav/crazylab/bar)
 "Vr" = (
 /obj/machinery/hydroponics/constructable,
 /obj/structure/spider/stickyweb,
@@ -3524,12 +3613,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/hydro)
-"Wz" = (
-/obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable{
-	icon_state = "0-8"
+"WC" = (
+/obj/structure/chair/comfy/beige{
+	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/broken/directional/south,
 /turf/open/floor/plasteel/grimy,
 /area/ruin/space/has_grav/crazylab/crew)
 "WD" = (
@@ -3539,49 +3627,21 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/hydro)
-"WG" = (
-/obj/structure/spider/stickyweb,
-/obj/effect/decal/cleanable/blood/gibs/old,
-/obj/machinery/light/small/directional/east,
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/crazylab/hydro)
 "WH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/crazylab/airlock)
-"WJ" = (
-/obj/machinery/shower{
-	dir = 4
-	},
-/obj/structure/curtain,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 9
-	},
-/turf/open/floor/plasteel/mono/white,
-/area/ruin/space/has_grav/crazylab/crew)
 "WM" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/crazylab/airlock)
-"WX" = (
-/obj/structure/table/glass,
-/obj/item/razor{
-	pixel_x = -9;
-	pixel_y = 1
+"WT" = (
+/obj/structure/sink{
+	pixel_y = 18
 	},
-/obj/item/skub{
-	pixel_x = 7;
-	pixel_y = 10
-	},
-/obj/item/lipstick,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/storage/firstaid/regular{
-	pixel_x = -5;
-	pixel_y = 8
-	},
 /turf/open/floor/plasteel/mono/white,
 /area/ruin/space/has_grav/crazylab/crew)
 "WZ" = (
@@ -3596,6 +3656,15 @@
 /obj/effect/decal/remains/human,
 /turf/open/floor/plating/asteroid/airless,
 /area/ruin/space/has_grav/crazylab/bomb)
+"XD" = (
+/obj/machinery/door/airlock/hatch{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/grimy,
+/area/ruin/space/has_grav/crazylab/gamble)
 "XJ" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/blood/gibs/core,
@@ -3632,25 +3701,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/asteroid/airless,
 /area/ruin/space/has_grav/crazylab/bomb)
-"Yh" = (
-/obj/structure/table/glass,
-/obj/item/paper_bin/carbon{
-	pixel_y = 3
-	},
-/obj/machinery/light/directional/south,
-/obj/machinery/firealarm/directional/north,
-/obj/structure/extinguisher_cabinet/directional/east,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/table/glass,
-/obj/item/paper_bin/carbon{
-	pixel_y = 3
-	},
-/obj/machinery/light/directional/south,
-/obj/machinery/firealarm/directional/north,
-/turf/open/floor/plasteel/tech/grid,
-/area/ruin/space/has_grav/crazylab/chem)
 "Yj" = (
 /turf/open/floor/plating/foam,
 /area/ruin/space/has_grav/crazylab/bomb)
@@ -3662,12 +3712,6 @@
 /obj/effect/turf_decal/number/zero,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/space/has_grav/crazylab/hydro)
-"Yp" = (
-/obj/machinery/power/apc/auto_name/directional/east,
-/obj/structure/cable,
-/obj/structure/lattice/catwalk,
-/turf/open/space,
-/area/ruin/space/has_grav/crazylab/bomb)
 "Yw" = (
 /obj/effect/turf_decal/number/seven,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
@@ -3714,18 +3758,11 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/asteroid/lowpressure,
 /area/ruin/space/has_grav/crazylab/bomb)
-"Zp" = (
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/extinguisher_cabinet/directional/north,
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ruin/space/has_grav/crazylab/chem)
 "Zs" = (
 /obj/effect/decal/cleanable/ash/large,
 /turf/open/floor/plating/foam,
 /area/ruin/space/has_grav/crazylab/bomb)
-"Zu" = (
+"Zw" = (
 /obj/structure/grille,
 /obj/structure/grille,
 /obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
@@ -3738,14 +3775,9 @@
 /obj/structure/flora/rock/pile,
 /turf/open/floor/plating/asteroid/airless,
 /area/ruin/space/has_grav/crazylab/bomb)
-"ZH" = (
-/obj/machinery/suit_storage_unit/independent/mining/eva,
-/obj/effect/turf_decal/industrial/warning/dust{
-	dir = 10
-	},
-/obj/machinery/power/apc/auto_name/directional/west,
+"ZB" = (
 /obj/structure/cable{
-	icon_state = "0-4"
+	icon_state = "4-8"
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/crazylab/airlock)
@@ -3834,7 +3866,7 @@ ao
 au
 bc
 bR
-cR
+ui
 bh
 bh
 at
@@ -3911,7 +3943,7 @@ at
 bh
 cd
 dh
-dS
+GX
 bh
 at
 at
@@ -3985,7 +4017,7 @@ GV
 GV
 at
 bh
-ch
+Kn
 dr
 fI
 bh
@@ -4332,8 +4364,8 @@ GV
 GV
 ao
 ao
-DG
-nx
+rI
+FQ
 fY
 fY
 fY
@@ -4369,10 +4401,10 @@ GV
 GV
 ao
 ao
-Ej
-nx
+Nx
+FQ
 ih
-tj
+Fg
 wm
 yI
 fY
@@ -4406,8 +4438,8 @@ GV
 GV
 ao
 ao
-DG
-nx
+rI
+FQ
 ih
 mu
 kB
@@ -4443,8 +4475,8 @@ GV
 GV
 GV
 ao
-DG
-nx
+rI
+FQ
 ih
 mu
 px
@@ -4481,7 +4513,7 @@ GV
 GV
 GV
 bQ
-Zu
+Zw
 ih
 ky
 mT
@@ -4520,7 +4552,7 @@ GV
 GV
 at
 fY
-ij
+Th
 kB
 mV
 pE
@@ -4558,15 +4590,15 @@ GV
 at
 at
 fY
-Rh
+ns
 kJ
 ng
 pG
 tF
-bn
+yQ
 fY
-Vj
-ue
+ED
+ij
 FE
 GU
 IR
@@ -4603,11 +4635,11 @@ pJ
 ug
 fY
 TJ
-AR
+oX
 CW
 Bg
 Hc
-IU
+zs
 TJ
 Mz
 uo
@@ -4636,22 +4668,22 @@ dI
 dI
 dI
 fY
-wl
-ed
+XD
+pa
 fY
 TJ
-fj
+zq
 AT
 CY
 Bg
 Hq
 Jj
-rC
+iL
 MB
 OX
 QB
 Sm
-Ua
+zn
 Vr
 Fr
 Se
@@ -4671,8 +4703,8 @@ GV
 at
 dI
 dI
-WJ
-zV
+NM
+ve
 dI
 no
 pU
@@ -4684,11 +4716,11 @@ Dd
 Bg
 Hc
 Jr
-rC
+iL
 MG
 Pd
 QB
-GQ
+TE
 Uy
 Uy
 Vr
@@ -4708,9 +4740,9 @@ GV
 GV
 at
 cn
-Eu
-MN
-wn
+WT
+mD
+LN
 dI
 nq
 qi
@@ -4723,7 +4755,7 @@ FK
 HG
 Jt
 TJ
-ML
+PS
 uo
 TJ
 Sp
@@ -4746,10 +4778,10 @@ GV
 GV
 ao
 dI
-WX
-pl
-Ep
-oP
+Mo
+ak
+Nt
+ed
 nt
 qm
 ut
@@ -4784,28 +4816,28 @@ GV
 GV
 ao
 cn
-Eu
-rq
-mx
+WT
+Oz
+uv
 dI
-nC
+BA
 qt
 uu
 xq
-zy
+bV
 Bo
 Bo
 FU
 TJ
-SN
+cl
 TJ
 MV
 Pe
-QF
+So
 NO
 HL
 Fr
-Fs
+us
 XO
 Yw
 at
@@ -4831,8 +4863,8 @@ qv
 ck
 xx
 TJ
-SE
-SE
+gy
+gy
 TJ
 TJ
 JB
@@ -4861,8 +4893,8 @@ GV
 ao
 ao
 dI
-ry
-es
+iP
+tl
 lc
 ob
 qy
@@ -4871,7 +4903,7 @@ TJ
 zC
 Bt
 zF
-FV
+zu
 TJ
 JZ
 KY
@@ -4881,7 +4913,7 @@ QO
 SJ
 UN
 Fr
-WG
+Hi
 Fr
 Fr
 at
@@ -4911,7 +4943,7 @@ Bw
 Dn
 uo
 HL
-TE
+ym
 Lb
 NA
 Pk
@@ -4938,7 +4970,7 @@ ao
 ck
 dI
 dO
-jq
+jL
 lA
 od
 ra
@@ -4948,7 +4980,7 @@ TJ
 TJ
 TJ
 TJ
-Ic
+pb
 Ke
 Lc
 NC
@@ -4982,7 +5014,7 @@ oe
 rh
 ck
 xH
-zG
+Qg
 By
 Dp
 vi
@@ -4990,7 +5022,7 @@ HL
 Kg
 Li
 NO
-Pt
+qg
 Rd
 MV
 HL
@@ -5011,13 +5043,13 @@ GV
 GV
 GV
 ao
-aZ
+ny
 eh
 gV
 jG
 lN
 ol
-rt
+dy
 vi
 xO
 zJ
@@ -5025,8 +5057,8 @@ Bz
 DI
 Ga
 Ie
-jv
-EZ
+ST
+Gz
 HL
 Px
 HL
@@ -5049,7 +5081,7 @@ GV
 GV
 GV
 ao
-aZ
+ny
 et
 hf
 jO
@@ -5090,7 +5122,7 @@ ao
 dI
 eA
 hg
-Wz
+fG
 dI
 oo
 rW
@@ -5101,7 +5133,7 @@ BL
 DN
 Go
 Im
-Kt
+Qf
 Lw
 NU
 Ok
@@ -5128,10 +5160,10 @@ ao
 dI
 dI
 hl
-jX
+WC
 dI
-oC
-PO
+Ln
+xm
 vi
 yj
 zW
@@ -5173,15 +5205,15 @@ sd
 vD
 yk
 zX
-BR
+Cj
 Ef
 vi
 Ok
 KB
 LB
 Ok
-PJ
-ZH
+Qc
+wj
 Ok
 Ok
 VM
@@ -5205,10 +5237,10 @@ at
 at
 hy
 hy
-mc
+zB
 oJ
 sx
-vJ
+MM
 hy
 Ad
 hy
@@ -5242,16 +5274,16 @@ GV
 GV
 at
 hy
-hG
+HH
 me
 oQ
 sC
 vK
 yu
 Ae
-bX
-PP
-Zp
+qw
+Mp
+Gx
 Ok
 KF
 LE
@@ -5280,7 +5312,7 @@ GV
 GV
 at
 hy
-aX
+FP
 mi
 oW
 sH
@@ -5292,10 +5324,10 @@ EG
 Gv
 Iv
 KJ
-LM
+ok
 Ok
 Qn
-Ry
+aX
 Ok
 Ok
 VM
@@ -5317,7 +5349,7 @@ GV
 GV
 GV
 eE
-tL
+HZ
 kx
 mj
 oY
@@ -5332,8 +5364,8 @@ IA
 KL
 LP
 Ok
-Cl
-Cl
+JD
+JD
 It
 US
 VE
@@ -5355,8 +5387,8 @@ GV
 GV
 GV
 ao
-Pw
-BE
+bl
+CH
 mm
 me
 sY
@@ -5394,19 +5426,19 @@ GV
 GV
 ao
 ao
-Pw
-BE
+bl
+CH
 kg
 td
 kx
 mm
 kg
 td
-Yh
+oy
 hy
 Ok
 at
-rp
+ZB
 ao
 ao
 GV
@@ -5433,12 +5465,12 @@ GV
 GV
 ao
 ao
-aM
-Pw
-Pw
-Pw
-Pw
-Pw
+sI
+bl
+bl
+bl
+bl
+bl
 vD
 hy
 hy
@@ -5980,7 +6012,7 @@ GV
 GV
 GV
 Mb
-Yp
+we
 RQ
 ao
 TM
