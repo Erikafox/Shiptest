@@ -221,21 +221,66 @@
 	id = /obj/item/card/id
 	glasses = /obj/item/clothing/glasses/hud/health
 
-/obj/effect/mob_spawn/human/corpse/solgov/sonnensoldner
-	name = "SolGov Sonnensoldner"
-	id_job = "SolGov Sonnensoldner"
-	outfit = /datum/outfit/solgov/sonnensoldner
+/obj/effect/mob_spawn/human/corpse/solgov/infantry
+	name = "SolGov Infantryman"
+	id_job = "SolGov Infantryman"
+	outfit = /datum/outfit/solgov/infantrymancorpse
 	id_access_list = list(ACCESS_SOLGOV)
+	hairstyle = "Buzzcut"
+	facial_hairstyle = "Shaved"
 
-/datum/outfit/solgov/sonnensoldner
-	name = "SolGov Sonnensoldner"
+/datum/outfit/solgov/infantrymancorpse
+	name = "SGV Infantry Corpse"
 	uniform = /obj/item/clothing/under/solgov
 	suit = /obj/item/clothing/suit/armor/vest/bulletproof/solgov
 	shoes = /obj/item/clothing/shoes/jackboots
-	gloves = /obj/item/clothing/gloves/color/black
+	gloves = /obj/item/clothing/gloves/color/grey
 	ears = /obj/item/radio/headset
 	suit_store = null
-	head = /obj/item/clothing/head/solgov/sonnensoldner
+	mask = /obj/item/clothing/mask/gas/sechailer/swat
+	head = /obj/item/clothing/head/helmet/solgov
 	back = /obj/item/storage/backpack
 	id = /obj/item/card/id/solgov
 	backpack_contents = null
+
+/obj/effect/mob_spawn/human/corpse/solgov/officer
+	name = "SolGov Officer"
+	id_job = "SolGov Officer"
+	outfit = /datum/outfit/solgov/officercorpse
+	id_access_list = list(ACCESS_SOLGOV)
+	hairstyle = "Buzzcut"
+	facial_hairstyle = "Shaved"
+
+/datum/outfit/solgov/officercorpse
+	name = "SGV Officer Corpse"
+	uniform = /obj/item/clothing/under/solgov
+	suit = /obj/item/clothing/suit/armor/vest/bulletproof/solgov
+	shoes = /obj/item/clothing/shoes/combat
+	gloves = /obj/item/clothing/gloves/combat
+	ears = /obj/item/radio/headset/solgov/alt
+	suit_store = null
+	mask = /obj/item/clothing/mask/gas/sechailer/swat
+	head = /obj/item/clothing/head/helmet/solgov
+	back = /obj/item/storage/backpack
+	id = /obj/item/card/id/solgov/commander
+	backpack_contents = null
+
+
+//some inteq corpses for the boys in brown
+
+/obj/effect/mob_spawn/human/corpse/inteq/enforcer
+	id_job = "Enforcer"
+	outfit = /datum/outfit/inteq/enforcer
+
+/datum/outfit/inteq/enforcer
+
+	name = "IRMG Enforcer Corpse"
+	head = /obj/item/clothing/head/helmet/inteq
+	suit = /obj/item/clothing/suit/armor/vest/alt
+	belt = /obj/item/storage/belt/security/webbing/inteq
+	mask = /obj/item/clothing/mask/gas/sechailer/inteq
+	uniform = /obj/item/clothing/under/syndicate/inteq
+	shoes = /obj/item/clothing/shoes/combat
+	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
+	gloves = /obj/item/clothing/gloves/combat
+	backpack_contents = list(/obj/item/melee/baton/loaded=1, /obj/item/ammo_box/magazine/co9mm=1, /obj/item/pda/security)
