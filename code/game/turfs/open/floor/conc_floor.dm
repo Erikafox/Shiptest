@@ -278,9 +278,3 @@
 	shape_types = list(
 		/turf/open/floor/concrete/pavement,
 	)
-
-
-/turf/open/floor/concrete/pavement/wasteplanet
-	initial_gas_mix = WASTEPLANET_DEFAULT_ATMOS
-	planetary_atmos = TRUE
-	baseturfs = /turf/open/floor/plating/asteroid/wasteplanet
