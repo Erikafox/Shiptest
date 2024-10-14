@@ -1,13 +1,13 @@
-
-/**********************Asteroid**************************/
-
-/turf/open/floor/plating/asteroid //floor piece
+///root of all planetary tiles
+/turf/open/floor/planetary
+	name = "planetary tile"
+	desc = "if you see this please tell a coder as soon as possible."
 	gender = PLURAL
-	name = "asteroid sand"
-	baseturfs = /turf/open/floor/plating/asteroid
+	//our baseturf is ourself
+	baseturfs = /turf/open/floor/planetary
 	icon = 'icons/turf/floors.dmi'
-	icon_state = "asteroid"
-	icon_plating = "asteroid"
+	icon_state = "grey"
+	icon_plating = "grey"
 	postdig_icon_change = TRUE
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
@@ -15,19 +15,32 @@
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	attachment_holes = FALSE
 	/// the icon name to be used: for example, asteroid1 - asteroid12 in the icon file
-	base_icon_state  = "asteroid"
+	base_icon_state  = "grey"
 	/// Base turf type to be created by the tunnel
-	var/turf_type = /turf/open/floor/plating/asteroid // is this unused?
+	var/turf_type = /turf/open/floor/planetary
 	/// Probability floor has a different icon state
-	var/floor_variance = 20
+	var/floor_variance = 0
 	/// The max amount of unique icons, plus one
-	var/max_icon_states = 12
-	/// Itemstack to drop when dug by a shovel
-	var/obj/item/stack/digResult = /obj/item/stack/ore/glass
-	/// Whether the turf has been dug or not
-	var/dug
+	var/max_icon_states = 0
 
-/turf/open/floor/plating/asteroid/Initialize(mapload, inherited_virtual_z)
+	///our starting gas mix. Set this or you will be plasma'd
+	initial_gas_mix = DEFAULT_ATMOS_DETECTOR
+
+	/// Whether the turf has been dug or not
+	var/dug = TRUE
+
+	///how much we get from digging
+	var/dig_amount
+
+	///what we get from digging
+	var/digResult = /obj/item/stack/ore/glass
+
+	///can we be burnt
+	var/can_burn = FALSE
+	///can we be crushed
+	var/can_crush = FALSE // please crush me
+
+/turf/open/floor/planetary/Initialize(mapload, inherited_virtual_z)
 	var/proper_name = name
 	. = ..()
 	name = proper_name
@@ -36,8 +49,8 @@
 		icon_state = "[base_icon_state][rand(0,max_icon_states)]"
 
 /// Drops itemstack when dug and changes icon
-/turf/open/floor/plating/asteroid/proc/getDug()
-	new digResult(src, 5)
+/turf/open/floor/planetary/proc/get_dug(scrape)
+	new digResult(src, dig_amount)
 	if(postdig_icon_change)
 		if(!postdig_icon)
 			icon_plating = "[base_icon_state]_dug"
@@ -45,31 +58,35 @@
 	dug = TRUE
 
 /// If the user can dig the turf
-/turf/open/floor/plating/asteroid/proc/can_dig(mob/user)
-	if(!dug)
+/turf/open/floor/planetary/proc/can_dig(mob/user)
+	if(diggable & !dug)
 		return TRUE
 	if(user)
-		to_chat(user, "<span class='warning'>You can't dig here!</span>")
+		to_chat(user, span_warning("You can't dig here!"))
 
-/turf/open/floor/plating/asteroid/try_replace_tile(obj/item/stack/tile/T, mob/user, params)
+/turf/open/floor/planetary/crush()
+	if(can_break)
+		. = ..()
 	return
 
-/turf/open/floor/plating/asteroid/burn_tile()
+/turf/open/floor/planetary/burn_tile()
+	if(can_burn)
+		. = ..()
 	return
 
-/turf/open/floor/plating/asteroid/MakeSlippery(wet_setting, min_wet_time, wet_time_to_add, max_wet_time, permanent)
+/turf/open/floor/planetary/try_replace_tile(obj/item/stack/tile/T, mob/user, params)
 	return
 
-/turf/open/floor/plating/asteroid/MakeDry()
+/turf/open/floor/planetary/MakeSlippery(wet_setting, min_wet_time, wet_time_to_add, max_wet_time, permanent)
 	return
 
-/turf/open/floor/plating/asteroid/crush()
+/turf/open/floor/planetary/MakeDry()
 	return
 
-/turf/open/floor/plating/asteroid/attackby(obj/item/W, mob/user, params)
+/turf/open/floor/planetary/attackby(obj/item/W, mob/user, params)
 	. = ..()
 	if(!.)
-		if(W.tool_behaviour == TOOL_SHOVEL || W.tool_behaviour == TOOL_MINING)
+		if(W.tool_behaviour == TOOL_SHOVEL)
 			if(!can_dig(user))
 				return TRUE
 
@@ -81,7 +98,7 @@
 			if(W.use_tool(src, user, 40, volume=50))
 				if(!can_dig(user))
 					return TRUE
-				getDug()
+				get_dug()
 				SSblackbox.record_feedback("tally", "pick_used_mining", 1, W.type)
 				return TRUE
 
@@ -112,19 +129,6 @@
 				to_chat(user, "<span class='notice'>You place burial mound on [src].</span>")
 			return
 
-/turf/open/floor/plating/asteroid/ex_act(severity, target)
+/turf/open/floor/planetary/ex_act(severity, target)
 	. = SEND_SIGNAL(src, COMSIG_ATOM_EX_ACT, severity, target)
 	contents_explosion(severity, target)
-
-/turf/open/floor/plating/asteroid/lowpressure
-	initial_gas_mix = OPENTURF_LOW_PRESSURE
-	baseturfs = /turf/open/floor/plating/asteroid/lowpressure
-	turf_type = /turf/open/floor/plating/asteroid/lowpressure
-
-/turf/open/floor/plating/asteroid/airless
-	initial_gas_mix = AIRLESS_ATMOS
-	baseturfs = /turf/open/floor/plating/asteroid/airless
-	turf_type = /turf/open/floor/plating/asteroid/airless
-
-/turf/open/floor/plating/asteroid/ship
-	baseturfs = /turf/open/floor/plating

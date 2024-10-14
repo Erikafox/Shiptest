@@ -22,7 +22,7 @@
 	restricted_chance = 50
 
 	minimum_pressure = HAZARD_LOW_PRESSURE + 10
-	maximum_pressure = LAVALAND_EQUIPMENT_EFFECT_PRESSURE - 1
+	maximum_pressure = LOW_PRESSURE_EQUIPMENT_PRESSURE - 1
 
 	minimum_temp = 180
 	maximum_temp = 180

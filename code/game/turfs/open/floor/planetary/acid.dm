@@ -1,8 +1,8 @@
-/turf/open/water/acid
+/turf/open/floor/planetary/acid
 	name = "acid lake"
 	desc = "A lake of acid."
 	icon_state = "acid"
-	baseturfs = /turf/open/water/acid
+	baseturfs = /turf/open/floor/planetary/acid
 	slowdown = 2
 
 	light_range = 2
@@ -16,55 +16,62 @@
 	clawfootstep = FOOTSTEP_LAVA
 	heavyfootstep = FOOTSTEP_LAVA
 
-	reagent_to_extract = /datum/reagent/toxin/acid
-	extracted_reagent_visible_name = "acid"
+	///extractable liquid reagents should be converted to a component/element
+	var/reagent_to_extract = /datum/reagent/toxin/acid
+	var/extracted_reagent_visible_name = "acid"
 
-/turf/open/water/acid/CanAllowThrough(atom/movable/passing_atom, turf/target)
+/turf/open/floor/planetary/water/examine(mob/user)
+	. = ..()
+	if(reagent_to_extract)
+		. += span_notice("You could probably scoop some of the [extracted_reagent_visible_name] if you had a beaker...")
+
+
+/turf/open/floor/planetary/acid/CanAllowThrough(atom/movable/passing_atom, turf/target)
 	if(ishostile(passing_atom))
 		return FALSE
 	return ..()
 
-/turf/open/water/acid/ex_act(severity, target)
+/turf/open/floor/planetary/acid/ex_act(severity, target)
 	contents_explosion(severity, target)
 
-/turf/open/water/acid/Melt()
+/turf/open/floor/planetary/acid/Melt()
 	to_be_destroyed = FALSE
 	return src
 
-/turf/open/water/acid/acid_act(acidpwr, acid_volume)
+/turf/open/floor/planetary/acid/acid_act(acidpwr, acid_volume)
 	return
 
-/turf/open/water/acid/MakeDry(wet_setting = TURF_WET_WATER)
+/turf/open/floor/planetary/acid/MakeDry(wet_setting = TURF_WET_WATER)
 	return
 
-/turf/open/water/acid/airless
+/turf/open/floor/planetary/acid/airless
 	initial_gas_mix = AIRLESS_ATMOS
 
-/turf/open/water/acid/Entered(atom/movable/AM)
+/turf/open/floor/planetary/acid/Entered(atom/movable/AM)
 	. = ..()
 	if(melt_stuff(AM))
 		START_PROCESSING(SSobj, src)
 
-/turf/open/water/acid/hitby(atom/movable/AM, skipcatch, hitpush, blocked, datum/thrownthing/throwingdatum)
+/turf/open/floor/planetary/acid/hitby(atom/movable/AM, skipcatch, hitpush, blocked, datum/thrownthing/throwingdatum)
 	if(melt_stuff(AM))
 		START_PROCESSING(SSobj, src)
 
-/turf/open/water/acid/process()
+/turf/open/floor/planetary/acid/process()
 	if(!melt_stuff())
 		STOP_PROCESSING(SSobj, src)
 
-/turf/open/water/acid/singularity_act()
+/turf/open/floor/planetary/acid/singularity_act()
 	return
 
-/turf/open/water/acid/singularity_pull(S, current_size)
+/turf/open/floor/planetary/acid/singularity_pull(S, current_size)
 	return
 
-/turf/open/water/acid/get_smooth_underlay_icon(mutable_appearance/underlay_appearance, turf/asking_turf, adjacency_dir)
+/turf/open/floor/planetary/acid/get_smooth_underlay_icon(mutable_appearance/underlay_appearance, turf/asking_turf, adjacency_dir)
 	underlay_appearance.icon = 'icons/turf/floors.dmi'
 	underlay_appearance.icon_state = "basalt"
 	return TRUE
 
-/turf/open/water/acid/attackby(obj/item/_item, mob/user, params)
+/turf/open/floor/planetary/acid/attackby(obj/item/_item, mob/user, params)
 	..()
 	if(istype(_item, /obj/item/stack/rods))
 		var/obj/item/stack/rods/R = _item
@@ -80,7 +87,7 @@
 			to_chat(user, span_warning("You need one rod to build a lattice."))
 		return
 
-/turf/open/water/acid/proc/is_safe_to_cross()
+/turf/open/floor/planetary/acid/proc/is_safe_to_cross()
 	//if anything matching this typecache is found in the lava, we don't burn things
 	var/static/list/acid_safeties_typecache = typecacheof(list(/obj/structure/catwalk, /obj/structure/stone_tile, /obj/structure/lattice/))
 	var/list/found_safeties = typecache_filter_list(contents, acid_safeties_typecache)
@@ -90,7 +97,7 @@
 	return LAZYLEN(found_safeties)
 
 
-/turf/open/water/acid/proc/melt_stuff(thing_to_melt)
+/turf/open/floor/planetary/acid/proc/melt_stuff(thing_to_melt)
 	if(is_safe_to_cross())
 		return FALSE
 	. = FALSE
@@ -142,7 +149,3 @@
 			L.adjustFireLoss(20)
 			if(L) //mobs turning into object corpses could get deleted here.
 				L.acid_act(50, 100)
-
-/turf/open/water/acid/whitesands
-	planetary_atmos = TRUE
-	initial_gas_mix = WHITESANDS_ATMOS

@@ -19,7 +19,7 @@
 	restricted_chance = 50
 
 	minimum_pressure = WARNING_LOW_PRESSURE + 10
-	maximum_pressure = LAVALAND_EQUIPMENT_EFFECT_PRESSURE - 1
+	maximum_pressure = LOW_PRESSURE_EQUIPMENT_PRESSURE - 1
 
 	// temperature range USED to be 100-140 C. this was bad, because
 	// fires start at 100C; occasionally, there would be a perma-plasmafire, too tiny to notice.
@@ -48,7 +48,7 @@
 	restricted_chance = 50
 
 	minimum_pressure = HAZARD_LOW_PRESSURE + 10
-	maximum_pressure = LAVALAND_EQUIPMENT_EFFECT_PRESSURE - 1
+	maximum_pressure = LOW_PRESSURE_EQUIPMENT_PRESSURE - 1
 
 	minimum_temp = 180
 	maximum_temp = 180
