@@ -1,96 +1,46 @@
-/turf/open/floor/plating/asteroid/snow
+/* baseturf */
+
+/turf/open/floor/planetary/icemoon
 	gender = PLURAL
-	name = "snow"
-	desc = "Looks cold."
+	name = "icy rock"
+	desc = "The coarse rock that covers the surface."
 	icon = 'icons/turf/snow.dmi'
-	baseturfs = /turf/open/floor/plating/asteroid/icerock
-	icon_state = "snow"
-	icon_plating = "snow"
-	initial_gas_mix = ICEMOON_DEFAULT_ATMOS
-	slowdown = 1.5
-	base_icon_state = "snow"
+	icon_state = "icemoon_ground_coarse1"
+	icon_plating = "icemoon_ground_coarse1"
+	base_icon_state = "icemoon_ground_coarse"
 	flags_1 = NONE
+	footstep = FOOTSTEP_ICE
+	barefootstep = FOOTSTEP_ICE
+	clawfootstep = FOOTSTEP_ICE
 	planetary_atmos = TRUE
-	footstep = FOOTSTEP_SNOW
-	barefootstep = FOOTSTEP_SNOW
-	clawfootstep = FOOTSTEP_SNOW
+	broken_states = list("icemoon_ground_cracked")
+	burnt_states = list("icemoon_ground_smooth")
 	bullet_sizzle = TRUE
 	bullet_bounce_sound = null
 	digResult = /obj/item/stack/sheet/mineral/snow
-	// footprint vars
-	var/entered_dirs
-	var/exited_dirs
+	floor_variance = 100
+	max_icon_states = 7
+	diggable = FALSE
 
-/turf/open/floor/plating/asteroid/snow/Entered(atom/movable/AM)
-	. = ..()
-	if(!iscarbon(AM) || (AM.movement_type & (FLYING|VENTCRAWLING|FLOATING|PHASING)))
-		return
-	if(!(entered_dirs & AM.dir))
-		entered_dirs |= AM.dir
-		update_appearance()
+	baseturfs = /turf/open/floor/planetary/icemoon
+	light_color = ICEMOON_LIGHTING
+	initial_gas_mix = ICEMOON_DEFAULT_ATMOS
 
-/turf/open/floor/plating/asteroid/snow/Exited(atom/movable/AM)
-	. = ..()
-	if(!iscarbon(AM) || (AM.movement_type & (FLYING|VENTCRAWLING|FLOATING|PHASING)))
-		return
-	if(!(exited_dirs & AM.dir))
-		exited_dirs |= AM.dir
-		update_appearance()
+/turf/open/floor/planetary/icemoon/lit
+	baseturfs = /turf/open/floor/planetary/icemoonlit
+	light_power = 1
+	light_range = 2
 
-// adapted version of footprints' update_icon code
-/turf/open/floor/plating/asteroid/snow/update_overlays()
-	. = ..()
-	for(var/Ddir in GLOB.cardinals)
-		if(entered_dirs & Ddir)
-			var/image/print = GLOB.bloody_footprints_cache["entered-conc-[Ddir]"]
-			if(!print)
-				print = image('icons/effects/footprints.dmi', "ice1", layer = TURF_DECAL_LAYER, dir = Ddir)
-				GLOB.bloody_footprints_cache["entered-conc-[Ddir]"] = print
-			. += print
-		if(exited_dirs & Ddir)
-			var/image/print = GLOB.bloody_footprints_cache["exited-conc-[Ddir]"]
-			if(!print)
-				print = image('icons/effects/footprints.dmi', "ice2", layer = TURF_DECAL_LAYER, dir = Ddir)
-				GLOB.bloody_footprints_cache["exited-conc-[Ddir]"] = print
-			. += print
+/* snow */
 
-// pretty much ripped wholesale from footprints' version of this proc
-/turf/open/floor/plating/asteroid/snow/setDir(newdir)
-	if(dir == newdir)
-		return ..()
+/turf/open/floor/planetary/snow/iceplanet
+	baseturfs = /turf/open/floor/planetary/icemoon/icerock
+	planetary_atmos = ICEMOON_DEFAULT_ATMOS
 
-	var/ang_change = dir2angle(newdir) - dir2angle(dir)
-	var/old_entered_dirs = entered_dirs
-	var/old_exited_dirs = exited_dirs
-	entered_dirs = 0
-	exited_dirs = 0
-
-	for(var/Ddir in GLOB.cardinals)
-		var/NDir = angle2dir_cardinal(dir2angle(Ddir) + ang_change)
-		if(old_entered_dirs & Ddir)
-			entered_dirs |= NDir
-		if(old_exited_dirs & Ddir)
-			exited_dirs |= NDir
-
-	update_appearance()
-	return ..()
-
-/turf/open/floor/plating/asteroid/snow/getDug()
-	. = ..()
-	ScrapeAway()
-
-/turf/open/floor/plating/asteroid/snow/burn_tile()
-	ScrapeAway()
-	return TRUE
-
-/turf/open/floor/plating/asteroid/snow/ex_act(severity, target)
-	. = ..()
-	ScrapeAway()
-
-/turf/open/floor/plating/asteroid/snow/lit
+/turf/open/floor/planetary/snow/iceplanet/lit
 	light_range = 2
 	light_power = 1
-	baseturfs = /turf/open/floor/plating/asteroid/icerock/lit
+	baseturfs = /turf/open/floor/planetary/snow/iceplanet/lit
 
 /turf/open/floor/plating/asteroid/snow/lit/whitesands
 	baseturfs = /turf/open/floor/plating/asteroid/whitesands/lit

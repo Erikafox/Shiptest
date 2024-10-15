@@ -1,15 +1,13 @@
-/turf/open/floor/planetary/asteroid
+/* sand */
+
+/turf/open/floor/planetary/sand/asteroid
 	name = "asteroid sand"
 
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "asteroid"
 	icon_plating = "asteroid"
 	postdig_icon_change = TRUE
-	footstep = FOOTSTEP_SAND
-	barefootstep = FOOTSTEP_SAND
-	clawfootstep = FOOTSTEP_SAND
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	attachment_holes = FALSE
 	base_icon_state  = "asteroid"
 	turf_type = /turf/open/floor/planetary/asteroid
 	floor_variance = 20
@@ -20,6 +18,8 @@
 
 	initial_gas_mix = AIRLESS_ATMOS
 	baseturfs = /turf/open/floor/planetary/asteroid
+
+/* Ice */
 
 /turf/open/floor/planetary/ice/asteroid
 	diggable = TRUE

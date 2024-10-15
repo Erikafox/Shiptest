@@ -14,18 +14,21 @@
 	. = ..()
 	icon_state = "[base_icon_state]"
 
-/turf/open/floor/planetary/sand/beach/lit
-	light_range = 2
-	light_power = 0.80
-
 /turf/open/floor/planetary/sand/beach/dense
 	icon_state = "light_sand"
 	planetary_atmos = TRUE
 	base_icon_state = "light_sand"
+	baseturfs = /turf/open/floor/planetary/sand/beach/dense
+
+/turf/open/floor/planetary/sand/beach/lit
+	light_range = 2
+	light_power = 0.80
+	baseturfs = /turf/open/floor/planetary/sand/beach/lit
 
 /turf/open/floor/planetary/sand/beach/dense/lit
 	light_range = 2
 	light_power = 0.80
+	baseturfs = /turf/open/floor/planetary/sand/beach/dense/lit
 
 /* Dirt */
 
@@ -38,14 +41,17 @@
 
 /turf/open/floor/planetary/dirt/beach/dark
 	icon_state = "greenerdirt"
+	baseturfs = /turf/open/floor/planetary/sand/beach/dense
 
 /turf/open/floor/planetary/dirt/beach/lit
 	light_range = 2
 	light_power = 0.80
+	baseturfs = /turf/open/floor/planetary/sand/beach/lit
 
 /turf/open/floor/planetary/dirt/beach/dark/lit
 	light_range = 2
 	light_power = 0.80
+	baseturfs = /turf/open/floor/planetary/sand/beach/dense/lit
 
 /* Grass */
 
@@ -60,11 +66,14 @@
 	icon_state = "junglegrass"
 	base_icon_state = "junglegrass"
 	smooth_icon = 'icons/turf/floors/junglegrass.dmi'
+	baseturfs = /turf/open/floor/planetary/dirt/beach/dark
 
 /turf/open/floor/planetary/grass/beach/lit
 	light_range = 2
 	light_power = 0.80
+	baseturfs = /turf/open/floor/planetary/dirt/beach/lit
 
 /turf/open/floor/planetary/grass/beach/dark/lit
 	light_range = 2
 	light_power = 0.80
+		baseturfs = /turf/open/floor/planetary/dirt/beach/dark/lit
