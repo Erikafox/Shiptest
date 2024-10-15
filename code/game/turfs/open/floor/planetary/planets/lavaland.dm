@@ -30,8 +30,6 @@
 		if("basalt5", "basalt9")
 			B.set_light(1.4, 0.6, LIGHT_COLOR_LAVA) //barely anything!
 
-///////Surface. The surface is warm, but survivable without a suit. Internals are required. The floors break to chasms, which drop you into the underground.
-
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
 	planetary_atmos = TRUE
