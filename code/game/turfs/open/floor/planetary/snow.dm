@@ -15,7 +15,7 @@
 	bullet_sizzle = TRUE
 	bullet_bounce_sound = null
 	digResult = /obj/item/stack/sheet/mineral/snow
-	can_dig = FALSE
+	can_dig = TRUE
 	can_scrape = TRUE
 	floor_variants = TRUE
 

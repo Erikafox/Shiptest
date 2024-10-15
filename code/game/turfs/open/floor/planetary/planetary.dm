@@ -13,7 +13,6 @@
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	attachment_holes = FALSE
 	/// the icon name to be used: for example, asteroid1 - asteroid12 in the icon file
 	base_icon_state  = "grey"
 	/// Base turf type to be created by the tunnel

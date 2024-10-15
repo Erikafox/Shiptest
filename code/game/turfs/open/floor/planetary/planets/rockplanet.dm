@@ -125,3 +125,7 @@
 
 /turf/open/floor/engine/hull/reinforced/rockplanet
 	initial_gas_mix = ROCKPLANET_DEFAULT_ATMOS
+
+/turf/open/floor/plating/asteroid/snow/lit/rockplanet
+	baseturfs = /turf/open/floor/plating/asteroid/rockplanet/lit
+	initial_gas_mix = ROCKPLANET_DEFAULT_ATMOS
