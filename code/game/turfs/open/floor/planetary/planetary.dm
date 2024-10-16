@@ -3,7 +3,7 @@
 	name = "planetary tile"
 	desc = "if you see this please tell a coder as soon as possible."
 	gender = PLURAL
-	//our baseturf is ourself
+	//our baseturf is usually ourself
 	baseturfs = /turf/open/floor/planetary
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "grey"

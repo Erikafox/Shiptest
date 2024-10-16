@@ -1,6 +1,8 @@
-/turf/open/floor/plating/asteroid/basalt
+/* Basalt */
+
+/turf/open/floor/planetary/volcanic
 	name = "volcanic floor"
-	baseturfs = /turf/open/floor/plating/asteroid/basalt
+	baseturfs = /turf/open/floor/planetary/volcanic
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "basalt"
 	icon_plating = "basalt"
@@ -8,7 +10,10 @@
 	floor_variance = 15
 	digResult = /obj/item/stack/ore/glass/basalt
 
-/turf/open/floor/plating/asteroid/basalt/lava_land_surface/lit
+	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
+	planetary_atmos = TRUE
+
+/turf/open/floor/planetary/volcanic/lit
 	light_range = 2
 	light_power = 0.6
 	light_color = LIGHT_COLOR_FIRE
@@ -31,8 +36,7 @@
 			B.set_light(1.4, 0.6, LIGHT_COLOR_LAVA) //barely anything!
 
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface
-	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
-	planetary_atmos = TRUE
+
 	baseturfs = /turf/open/lava/smooth/lava_land_surface
 
 /turf/open/floor/plating/asteroid/basalt/purple
@@ -47,6 +51,8 @@
 	light_power = 0.6
 	light_color = LIGHT_COLOR_FIRE
 
+/* Sand */
+
 /turf/open/floor/plating/asteroid/purple
 	name = "ashen sand"
 	desc = "Sand, tinted by the chemicals in the atmosphere to an uncanny shade of purple."
@@ -60,6 +66,8 @@
 	light_range = 2
 	light_power = 0.3
 	light_color = LIGHT_COLOR_FIRE
+
+/* Grass */
 
 /turf/open/floor/plating/grass/lava
 	name = "ungodly grass"
@@ -85,6 +93,8 @@
 	baseturfs = /turf/open/floor/plating/grass/lava/purple
 	icon = 'icons/turf/floors/lava_grass_purple.dmi'
 	smooth_icon = 'icons/turf/floors/lava_grass_purple.dmi'
+
+/* Non-planetary turfs */
 
 /turf/open/floor/concrete/pavement/lava
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
