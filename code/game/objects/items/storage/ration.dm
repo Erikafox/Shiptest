@@ -53,7 +53,7 @@
 
 /obj/item/storage/ration/vegan_chili
 	name = "vegan chili with beans ration"
-	desc = "A complete meal package containing a hearty vegan chili with beans, complemented by vegetable crackers, savory cornbread, flavorful pizza crackers, and more. A perfect choice for plant-based nourishment."
+	desc = "A complete meal package composed a hearty vegan chili with beans, complemented by vegetable crackers, savory cornbread, flavorful pizza crackers, and more. A perfect choice for plant-based nourishment."
 	emblem_icon_state = "emblem_vegan_chili"
 /obj/item/storage/ration/vegan_chili/PopulateContents()
 	var/static/items_inside = list(
@@ -383,7 +383,7 @@
 
 /obj/item/storage/ration/crayons
 	name = "military grade crayon ration"
-	desc = "Proven to increase kill count by atleast 1."
+	desc = "Proven to increase kill count by at least 1."
 	emblem_icon_state = "emblem_crayons"
 /obj/item/storage/ration/crayons/PopulateContents()
 	var/static/items_inside = list(
