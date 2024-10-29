@@ -1,6 +1,6 @@
 /obj/item/storage/ration
-	name = "empty ration pack"
-	desc = "standerd issue ration"
+	name = "\improper ration pack"
+	desc = "standard issue ration"
 	icon = 'icons/obj/food/ration.dmi'
 	icon_state = "ration_package"
 	item_state = "syringe_kit"
@@ -38,14 +38,18 @@
 	to_chat(user, "<span class='notice'>You tear open \the [src].</span>")
 	playsound(user.loc, 'sound/effects/rip3.ogg', 50)
 	SEND_SIGNAL(src, COMSIG_TRY_STORAGE_SET_LOCKSTATE, FALSE)
+	icon_state = "[icon_state]_open"
 	desc += "\nIt's been opened. Let's get this out onto a tray."
 
 /obj/item/storage/ration/attack_self(mob/user)
 	var/locked = SEND_SIGNAL(src, COMSIG_IS_STORAGE_LOCKED)
 	if(locked)
 		open_ration(user)
-		icon_state = "[icon_state]_open"
 	return ..()
+
+/obj/item/storage/ration/empty/Initialize(mapload)
+	. = ..()
+	open_ration()
 
 /obj/item/storage/ration/vegan_chili
 	name = "vegan chili with beans ration"
