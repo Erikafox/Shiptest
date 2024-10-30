@@ -15,7 +15,7 @@
 	density = TRUE
 	use_power = IDLE_POWER_USE
 	idle_power_usage = IDLE_DRAW_MINIMAL
-	long_range_link = TRUE
+	long_range_link = FALSE
 	netspeed = 40
 	circuit = /obj/item/circuitboard/machine/telecomms/hub
 
