@@ -3,13 +3,16 @@ GLOBAL_LIST_EMPTY(GPS_list)
 ///GPS component. Atoms that have this show up on gps. Pretty simple stuff.
 /datum/component/gps
 	var/gpstag = "COM0"
-	var/tracking = TRUE
+	var/broadcasting = TRUE
+	var/recieving = TRUE
 	var/emped = FALSE
 
-/datum/component/gps/Initialize(_gpstag = "COM0")
+/datum/component/gps/Initialize(_gpstag = "COM0", _broadcasting=TRUE, _tracking=TRUE)
 	if(!isatom(parent))
 		return COMPONENT_INCOMPATIBLE
 	gpstag = _gpstag
+	broadcasting = _broadcasting
+	tracking = _tracking
 	GLOB.GPS_list += src
 
 /datum/component/gps/Destroy()
@@ -19,7 +22,6 @@ GLOBAL_LIST_EMPTY(GPS_list)
 ///GPS component subtype. Only gps/item's can be used to open the UI.
 /datum/component/gps/item
 	var/updating = TRUE //Automatic updating of GPS list. Can be set to manual by user.
-	var/global_mode = TRUE //If disabled, only GPS signals of the same Z level are shown
 
 /datum/component/gps/item/Initialize(_gpstag = "COM0", emp_proof = FALSE)
 	. = ..()
@@ -72,21 +74,23 @@ GLOBAL_LIST_EMPTY(GPS_list)
 	toggletracking(user)
 
 ///Toggles the tracking for the gps
-/datum/component/gps/item/proc/toggletracking(mob/user)
+/datum/component/gps/item/proc/toggle_gps(mob/user)
 	if(!user.canUseTopic(parent, BE_CLOSE))
 		return //user not valid to use gps
 	if(emped)
 		to_chat(user, "<span class='warning'>It's busted!</span>")
 		return
 	var/atom/A = parent
-	if(tracking)
+	if(recieving)
 		A.cut_overlay("working")
 		to_chat(user, "<span class='notice'>[parent] is no longer tracking, or visible to other GPS devices.</span>")
-		tracking = FALSE
+		recieving = FALSE
+		broadcasting = FALSE
 	else
 		A.add_overlay("working")
 		to_chat(user, "<span class='notice'>[parent] is now tracking, and visible to other GPS devices.</span>")
-		tracking = TRUE
+		recieving = TRUE
+		broadcasting = TRUE
 
 /datum/component/gps/item/ui_interact(mob/user, datum/tgui/ui)
 	if(emped)
@@ -103,8 +107,7 @@ GLOBAL_LIST_EMPTY(GPS_list)
 	data["power"] = tracking
 	data["tag"] = gpstag
 	data["updating"] = updating
-	data["globalmode"] = global_mode
-	if(!tracking || emped) //Do not bother scanning if the GPS is off or EMPed
+	if(!recieving || emped) //Do not bother scanning if the GPS is not recieving
 		return data
 
 	var/turf/curr = get_turf(parent)
@@ -120,10 +123,10 @@ GLOBAL_LIST_EMPTY(GPS_list)
 	data["signals"] = list()
 
 	for(var/datum/component/gps/G as anything in GLOB.GPS_list)
-		if(G.emped || !G.tracking || G == src)
+		if(G.emped || !G.broadcasting || G == src)
 			continue
 		var/turf/pos = get_turf(G.parent)
-		if(!pos || !global_mode && pos.virtual_z != curr.virtual_z)
+		if(!pos || pos.virtual_z != curr.virtual_z)
 			continue
 		var/list/signal = list()
 		var/datum/virtual_level/other_vlevel = pos.get_virtual_level()
@@ -162,7 +165,4 @@ GLOBAL_LIST_EMPTY(GPS_list)
 			. = TRUE
 		if("updating")
 			updating = !updating
-			. = TRUE
-		if("globalmode")
-			global_mode = !global_mode
 			. = TRUE

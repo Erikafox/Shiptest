@@ -1,3 +1,52 @@
+/datum/wires/gps
+	holder_type = /obj/item/gps
+	proper_name = "GPS"
+
+/datum/wires/autolathe/New(atom/holder)
+	wires = list(
+		WIRE_POWER, WIRE_TX,
+		WIRE_RX,
+	)
+	..()
+
+/datum/wires/gps/interactable(mob/user)
+	var/obj/item/gps/our_gps = holder
+	if(our_gps.panel_open)
+		return TRUE
+
+/datum/wires/gps/get_status()
+	var/obj/item/gps/our_gps = holder
+	var/list/status = list()
+	status += "The red light is [A.disabled ? "on" : "off"]."
+	status += "The blue light is [A.hacked ? "on" : "off"]."
+	return status
+
+/datum/wires/gps/on_pulse(wire)
+	var/obj/item/gps/our_gps = holder
+	switch(wire)
+		if(WIRE_POWER)
+			A.toggle(!A.hacked)
+			addtimer(CALLBACK(A, TYPE_PROC_REF(/obj/machinery/autolathe, reset), wire), 60)
+		if(WIRE_TX)
+			A.shocked = !A.shocked
+			addtimer(CALLBACK(A, TYPE_PROC_REF(/obj/machinery/autolathe, reset), wire), 60)
+		if(WIRE_RX)
+			A.disabled = !A.disabled
+			addtimer(CALLBACK(A, TYPE_PROC_REF(/obj/machinery/autolathe, reset), wire), 60)
+
+/datum/wires/gps/on_cut(wire, mend)
+	var/obj/machinery/autolathe/A = holder
+	switch(wire)
+		if(WIRE_HACK)
+			A.adjust_hacked(!mend)
+		if(WIRE_SHOCK)
+			A.shocked = !mend
+		if(WIRE_DISABLE)
+			A.disabled = !mend
+		if(WIRE_ZAP)
+			A.shock(usr, 50)
+
+
 
 /obj/item/gps
 	name = "global positioning system"
@@ -8,10 +57,16 @@
 	slot_flags = ITEM_SLOT_BELT
 	obj_flags = UNIQUE_RENAME
 	var/gpstag
+	var/panel_open = FALSE
 
 /obj/item/gps/Initialize()
 	. = ..()
 	AddComponent(/datum/component/gps/item, gpstag)
+
+/obj/item/gps/screwdriver_act(mob/living/user, obj/item/I)
+	. = ..()
+	panel_open = !panel_open
+	to_chat(user, span_notice("You open [src]'s wire panel"))
 
 /obj/item/gps/science
 	icon_state = "gps-s"
