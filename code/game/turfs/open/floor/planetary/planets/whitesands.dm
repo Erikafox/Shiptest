@@ -1,6 +1,25 @@
-///sand (but not like the other sand that's also called sand)
+/* Basalt */
 
-/turf/open/floor/plating/asteroid/whitesands
+/turf/open/floor/planetary/sand_world
+	baseturfs = /turf/open/floor/planetary/sand_world
+	icon_state = "whitesands_basalt0"
+	icon_plating = "whitesands_basalt0"
+	dug = TRUE
+	light_color = COLOR_SANDPLANET_LIGHT
+	initial_gas_mix = WHITESANDS_ATMOS
+	planetary_atmos = TRUE
+
+/turf/open/floor/planetary/sand_world/Initialize(mapload, inherited_virtual_z)
+	. = ..()
+	icon_state = "whitesands_basalt[rand(0,1)]"
+
+/turf/open/floor/planetary/sand_world/lit
+	light_range = 2
+	light_power = 0.6
+
+///sand
+
+/turf/open/floor/planetary/sand/sand_world
 	name = "salted sand"
 	baseturfs = /turf/open/floor/plating/asteroid/whitesands
 	icon = 'icons/turf/floors//ws_floors.dmi'
@@ -25,9 +44,6 @@
 	base_icon_state = WHITESANDS_DRIED_ENV
 	digResult = /obj/item/stack/ore/glass/whitesands
 
-/turf/open/floor/plating/asteroid/whitesands/remove_air(amount)
-	return return_air()
-
 /turf/open/floor/plating/asteroid/whitesands/dried/lit
 	light_range = 2
 	light_power = 0.6
@@ -35,24 +51,12 @@
 
 ///basalt
 
-/turf/open/floor/plating/asteroid/basalt/whitesands
-	initial_gas_mix = WHITESANDS_ATMOS
-	planetary_atmos = TRUE
-	baseturfs = /turf/open/floor/plating/asteroid/whitesands/dried
-	icon_state = "whitesands_basalt0"
-	icon_plating = "whitesands_basalt0"
-	dug = TRUE
-	light_color = COLOR_SANDPLANET_LIGHT
-
-/turf/open/floor/plating/asteroid/basalt/whitesands/Initialize(mapload, inherited_virtual_z)
-	. = ..()
-	icon_state = "whitesands_basalt[rand(0,1)]"
 
 ///grass
 
 /turf/open/floor/plating/asteroid/whitesands/grass
 	name = "purple grass"
-	desc = "The few known flora on Whitesands are in a purplish color."
+	desc = "The few known flora on sand worlds are in a purplish color."
 	icon = 'icons/turf/floors/lava_grass_purple.dmi' //PLACEHOLDER ICON, YELL AT LOCAL MOTH WOMAN
 	icon_state = "grass-0"
 	base_icon_state = "grass"

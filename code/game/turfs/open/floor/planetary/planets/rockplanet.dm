@@ -25,7 +25,6 @@
 	icon_state = "dry_cracked0"
 	base_icon_state = "dry_cracked"
 
-
 /turf/open/floor/planetary/sand/rockplanet/cracked/lit
 	light_range = 2
 	light_power = 0.6
@@ -70,6 +69,9 @@
 	light_color = COLOR_ROCKPLANET_LIGHT
 	name = "pond"
 
+
+/* Non-Planetary Tiles */
+
 ///plating
 
 /turf/open/floor/plating/rockplanet
@@ -91,8 +93,7 @@
 	light_range = 2
 	light_power = 0.6
 
-
-///floor tiles
+//plasteel
 
 /turf/open/floor/plasteel/stairs/rockplanet
 	initial_gas_mix = ROCKPLANET_DEFAULT_ATMOS

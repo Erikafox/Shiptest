@@ -1,25 +1,25 @@
 ///base turf
 
-/turf/open/floor/plating/asteroid/wasteplanet
+/turf/open/floor/planetary/wasteplanet
 	name = "dry rock"
 	icon_state = "wasteplanet0"
 	base_icon_state = "wasteplanet"
-	turf_type = /turf/open/floor/plating/asteroid/wasteplanet
+	turf_type = /turf/open/floor/planetary/wasteplanet
 	floor_variance = 45
 	initial_gas_mix = WASTEPLANET_DEFAULT_ATMOS
 	planetary_atmos = TRUE
-	baseturfs = /turf/open/floor/plating/asteroid/wasteplanet
+	baseturfs = /turf/open/floor/planetary/wasteplanet
 	digResult = /obj/item/stack/ore/glass/wasteplanet
 	light_color = COLOR_WASTEPLANET_LIGHT
 
-/turf/open/floor/plating/asteroid/wasteplanet/lit
+/turf/open/floor/planetary/wasteplanet/lit
 	light_range = 2
 	light_power = 0.2
 
 ///plating turfs
 
 /turf/open/floor/plating/wasteplanet
-	baseturfs = /turf/open/floor/plating/asteroid/wasteplanet
+	baseturfs = /turf/open/floor/planetary/wasteplanet
 	initial_gas_mix = WASTEPLANET_DEFAULT_ATMOS
 	light_color = COLOR_WASTEPLANET_LIGHT
 
@@ -49,7 +49,7 @@
 	initial_gas_mix = WASTEPLANET_DEFAULT_ATMOS
 	light_color = COLOR_WASTEPLANET_LIGHT
 	planetary_atmos = TRUE
-	baseturfs = /turf/open/floor/plating/asteroid/wasteplanet
+	baseturfs = /turf/open/floor/planetary/wasteplanet
 
 /turf/open/floor/concrete/wasteplanet/Initialize()
 	. = ..()
@@ -69,7 +69,7 @@
 	initial_gas_mix = WASTEPLANET_DEFAULT_ATMOS
 	light_color = COLOR_WASTEPLANET_LIGHT
 	planetary_atmos = TRUE
-	baseturfs = /turf/open/floor/plating/asteroid/wasteplanet
+	baseturfs = /turf/open/floor/planetary/wasteplanet
 
 /turf/open/floor/concrete/reinforced/wasteplanet/MakeSlippery(wet_setting, min_wet_time, wet_time_to_add, max_wet_time, permanent)
 	return
@@ -78,13 +78,13 @@
 	initial_gas_mix = WASTEPLANET_DEFAULT_ATMOS
 	light_color = COLOR_WASTEPLANET_LIGHT
 	planetary_atmos = TRUE
-	baseturfs = /turf/open/floor/plating/asteroid/wasteplanet
+	baseturfs = /turf/open/floor/planetary/wasteplanet
 
 /turf/open/floor/concrete/pavement/wasteplanet/MakeSlippery(wet_setting, min_wet_time, wet_time_to_add, max_wet_time, permanent)
 	return
 
 /turf/open/floor/plasteel/wasteplanet
-	baseturfs = /turf/open/floor/plating/wasteplanet
+	baseturfs = /turf/open/floor/planetary/wasteplanet
 	initial_gas_mix = WASTEPLANET_DEFAULT_ATMOS
 	light_color = COLOR_WASTEPLANET_LIGHT
 
@@ -92,7 +92,7 @@
 	return
 
 /turf/open/floor/plasteel/dark/wasteplanet
-	baseturfs = /turf/open/floor/plating/wasteplanet
+	baseturfs = /turf/open/floor/planetary/wasteplanet
 	initial_gas_mix = WASTEPLANET_DEFAULT_ATMOS
 	light_color = COLOR_WASTEPLANET_LIGHT
 
@@ -125,7 +125,7 @@
 	light_color = COLOR_WASTEPLANET_LIGHT
 
 /turf/open/water/tar/waste
-	baseturfs = /turf/open/floor/plating/asteroid/wasteplanet
+	baseturfs = /turf/open/floor/planetary/wasteplanet
 	planetary_atmos = TRUE
 	initial_gas_mix = WASTEPLANET_DEFAULT_ATMOS
 	light_color = COLOR_WASTEPLANET_LIGHT
@@ -136,22 +136,22 @@
 
 ///biological-ish turfs
 
-/turf/open/floor/plating/grass/wasteplanet
+/turf/open/floor/planetary/grass/wasteplanet
 	icon_state = "junglegrass"
 	initial_gas_mix = WASTEPLANET_DEFAULT_ATMOS
 	planetary_atmos = TRUE
 	light_color = COLOR_WASTEPLANET_LIGHT
 
-/turf/open/floor/plating/dirt/old/waste
+/turf/open/floor/planetary/dirt/old/waste
 	initial_gas_mix = WASTEPLANET_DEFAULT_ATMOS
 	planetary_atmos = TRUE
 	light_color = COLOR_WASTEPLANET_LIGHT
 
-/turf/open/floor/plating/grass/wasteplanet/lit
+/turf/open/floor/planetary/grass/wasteplanet/lit
 	light_range = 2
 	light_power = 0.2
 
-/turf/open/floor/plating/dirt/old/waste/lit
+/turf/open/floor/planetary/dirt/old/waste/lit
 	light_range = 2
 	light_power = 0.2
 
@@ -160,7 +160,7 @@
 /turf/open/floor/concrete/wasteplanet
 	initial_gas_mix = WASTEPLANET_DEFAULT_ATMOS
 	planetary_atmos = TRUE
-	baseturfs = /turf/open/floor/plating/asteroid/wasteplanet
+	baseturfs = /turf/open/floor/planetary/wasteplanet
 	light_color = COLOR_WASTEPLANET_LIGHT
 
 /turf/open/floor/concrete/wasteplanet/Initialize()
@@ -180,7 +180,7 @@
 /turf/open/floor/concrete/reinforced/wasteplanet
 	initial_gas_mix = WASTEPLANET_DEFAULT_ATMOS
 	planetary_atmos = TRUE
-	baseturfs = /turf/open/floor/plating/asteroid/wasteplanet
+	baseturfs = /turf/open/floor/planetary/wasteplanet
 	light_color = COLOR_WASTEPLANET_LIGHT
 
 /turf/open/floor/concrete/reinforced/wasteplanet/MakeSlippery(wet_setting, min_wet_time, wet_time_to_add, max_wet_time, permanent)
@@ -189,7 +189,7 @@
 /turf/open/floor/concrete/pavement/wasteplanet
 	initial_gas_mix = WASTEPLANET_DEFAULT_ATMOS
 	planetary_atmos = TRUE
-	baseturfs = /turf/open/floor/plating/asteroid/wasteplanet
+	baseturfs = /turf/open/floor/planetary/wasteplanet
 	light_color = COLOR_WASTEPLANET_LIGHT
 
 /turf/open/floor/concrete/pavement/wasteplanet/MakeSlippery(wet_setting, min_wet_time, wet_time_to_add, max_wet_time, permanent)
@@ -199,34 +199,29 @@
 
 ///Biological Turfs
 
-/turf/open/floor/plating/grass/wasteplanet
+/turf/open/floor/planetary/grass/wasteplanet
 	icon_state = "junglegrass"
 	initial_gas_mix = WASTEPLANET_DEFAULT_ATMOS
 	planetary_atmos = TRUE
 	light_color = COLOR_WASTEPLANET_LIGHT
 
-/turf/open/floor/plating/dirt/old/waste
+/turf/open/floor/planetary/dirt/old/waste
 	initial_gas_mix = WASTEPLANET_DEFAULT_ATMOS
 	planetary_atmos = TRUE
-	baseturfs = /turf/open/floor/plating/asteroid/wasteplanet
+	baseturfs = /turf/open/floor/planetary/wasteplanet
 	light_color = COLOR_WASTEPLANET_LIGHT
-
-
-
-
-
 
 //open turfs then open lits.
 
-/turf/open/floor/plating/wasteplanet/lit
+/turf/open/floor/planetary/wasteplanet/lit
 	light_range = 2
 	light_power = 0.2
 
-/turf/open/floor/plating/wasteplanet/rust/lit
+/turf/open/floor/planetary/wasteplanet/rust/lit
 	light_range = 2
 	light_power = 0.2
 
-/turf/open/floor/plating/asteroid/wasteplanet/lit
+/turf/open/floor/planetary/wasteplanet/lit
 	light_range = 2
 	light_power = 0.2
 
@@ -249,12 +244,12 @@
 	light_power = 0.2
 	light_color = COLOR_WASTEPLANET_LIGHT
 
-/turf/open/floor/plating/dirt/old/waste/lit
+/turf/open/floor/planetary/dirt/old/waste/lit
 	light_range = 2
 	light_power = 0.2
 	light_color = COLOR_WASTEPLANET_LIGHT
 
-/turf/open/floor/plating/grass/wasteplanet/lit
+/turf/open/floor/planetary/grass/wasteplanet/lit
 	light_range = 2
 	light_power = 0.2
 	light_color = COLOR_WASTEPLANET_LIGHT
@@ -268,7 +263,7 @@
 /turf/closed/wall/r_wall/wasteplanet
 	max_integrity = 800
 	integrity = 800
-	baseturfs = /turf/open/floor/plating/wasteplanet
+	baseturfs = /turf/open/floor/planetary/wasteplanet
 
 /turf/closed/wall/r_wall/wasteplanet/Initialize(mapload, inherited_virtual_z)
 	. = ..()
@@ -279,7 +274,7 @@
 /turf/closed/wall/r_wall/rust/wasteplanet
 	max_integrity = 600
 	integrity = 600
-	baseturfs = /turf/open/floor/plating/wasteplanet/rust
+	baseturfs = /turf/open/floor/planetary/wasteplanet/rust
 
 /turf/closed/wall/r_wall/rust/wasteplanet/Initialize(mapload, inherited_virtual_z)
 	. = ..()
@@ -289,7 +284,7 @@
 /turf/closed/wall/wasteplanet
 	max_integrity = 200
 	integrity = 200
-	baseturfs = /turf/open/floor/plating/wasteplanet
+	baseturfs = /turf/open/floor/planetary/wasteplanet
 
 /turf/closed/wall/wasteplanet/Initialize(mapload, inherited_virtual_z)
 	. = ..()
@@ -299,7 +294,7 @@
 /turf/closed/wall/rust/wasteplanet
 	max_integrity = 100
 	integrity = 100
-	baseturfs = /turf/open/floor/plating/wasteplanet/rust
+	baseturfs = /turf/open/floor/planetary/wasteplanet/rust
 
 /turf/closed/wall/rust/wasteplanet/Initialize(mapload, inherited_virtual_z)
 	. = ..()

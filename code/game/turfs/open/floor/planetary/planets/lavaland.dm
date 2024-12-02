@@ -14,20 +14,20 @@
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
 	planetary_atmos = TRUE
 
-/turf/open/floor/planetary/volcanic/lit
-	light_range = 2
-	light_power = 0.6
-
 /turf/open/floor/planetary/volcanic/Initialize(mapload, inherited_virtual_z)
 	. = ..()
 	set_basalt_light(src)
 
-/proc/set_basalt_light(turf/open/floor/B)
+/turf/open/floor/planetary/volcanic/proc/set_basalt_light(turf/open/floor/B)
 	switch(B.icon_state)
 		if("basalt1", "basalt2", "basalt3")
 			B.set_light(2, 0.6, COLOR_LAVAPLANET_LIGHT) //more light
 		if("basalt5", "basalt9")
 			B.set_light(1.4, 0.6, COLOR_LAVAPLANET_LIGHT) //barely anything!
+
+/turf/open/floor/planetary/volcanic/lit
+	light_range = 2
+	light_power = 0.6
 
 /turf/open/floor/planetary/volcanic/purple
 	icon = 'icons/turf/lavaland_purple.dmi'
@@ -46,8 +46,7 @@
 	name = "ashen sand"
 	desc = "Sand, tinted by the chemicals in the atmosphere to an uncanny shade of purple."
 	icon = 'icons/turf/lavaland_purple.dmi'
-	baseturfs = /turf/open/floor/planetary/purple
-	turf_type = /turf/open/floor/planetary/basalt/purple
+	baseturfs = /turf/open/floor/planetary/volcanic
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
 	planetary_atmos = TRUE
 	light_color = COLOR_LAVAPLANET_LIGHT
@@ -61,7 +60,7 @@
 /turf/open/floor/planetary/grass/lava
 	name = "ungodly grass"
 	desc = "Common grass, tinged to unnatural colours by chemicals in the atmosphere."
-	baseturfs = /turf/open/floor/plating/grass/lava
+	baseturfs = /turf/open/floor/planetary/sand/volcanic
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
 	icon_state = "grass-255"
 	base_icon_state = "grass"
