@@ -114,9 +114,6 @@
 	planetary_atmos = TRUE
 	light_color = COLOR_WASTEPLANET_LIGHT
 
-
-
-
 ///liquids
 
 /turf/open/water/waste
@@ -194,8 +191,6 @@
 
 /turf/open/floor/concrete/pavement/wasteplanet/MakeSlippery(wet_setting, min_wet_time, wet_time_to_add, max_wet_time, permanent)
 	return
-
-
 
 ///Biological Turfs
 
