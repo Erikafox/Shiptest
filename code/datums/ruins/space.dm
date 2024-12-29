@@ -6,13 +6,6 @@
 	allow_duplicates = FALSE
 	ruin_type = RUINTYPE_SPACE
 
-/datum/map_template/ruin/space/corporate_mining
-	id = "corporate_mining"
-	suffix = "corporate_mining.dmm"
-	name = "Corporate Mining Module"
-	description = "An old and rusty mining facility, with big ore potential."
-	ruin_tags = list(RUIN_TAG_NO_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_SHELTER)
-
 /datum/map_template/ruin/space/onehalf
 	id = "onehalf"
 	suffix = "onehalf.dmm"
