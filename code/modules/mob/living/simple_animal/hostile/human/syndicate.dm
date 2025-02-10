@@ -13,7 +13,7 @@
 	speak_chance = 0
 	stat_attack = HARD_CRIT
 	loot = list(/obj/effect/mob_spawn/human/corpse/syndicatesoldier, /obj/item/clothing/neck/dogtag/ramzi)
-	atmos_requirements = list("min_oxy" = 5, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 1, "min_co2" = 0, "max_co2" = 5, "min_n2" = 0, "max_n2" = 0)
+	atmos_requirements = NORMAL_ATMOS_REQS
 	maxbodytemp = 400
 	unsuitable_atmos_damage = 15
 	faction = list(FACTION_ANTAG_SYNDICATE)
@@ -70,7 +70,7 @@
 	minbodytemp = 0
 	maxbodytemp = 1000
 	speed = 1
-	projectile_deflect_chance = 50
+	projectile_deflect_chance = 0
 	armor_base = /obj/item/clothing/suit/space/hardsuit/syndi/ramzi
 
 /mob/living/simple_animal/hostile/human/syndicate/melee/space/Initialize()
@@ -86,7 +86,7 @@
 	name = "Ramzi Clique Stormtrooper"
 	maxHealth = 250
 	health = 250
-	projectile_deflect_chance = 50
+	projectile_deflect_chance = 0
 	armor_base = /obj/item/clothing/suit/space/hardsuit/syndi
 
 /mob/living/simple_animal/hostile/human/syndicate/melee/sword
@@ -128,7 +128,7 @@
 	minbodytemp = 0
 	maxbodytemp = 1000
 	speed = 1
-	projectile_deflect_chance = 50
+	projectile_deflect_chance = 25
 	armor_base = /obj/item/clothing/suit/space/hardsuit/syndi/ramzi
 
 /mob/living/simple_animal/hostile/human/syndicate/melee/sword/space/Initialize()
