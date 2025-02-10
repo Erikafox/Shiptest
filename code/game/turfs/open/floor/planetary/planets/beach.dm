@@ -76,4 +76,4 @@
 /turf/open/floor/planetary/grass/beach/dark/lit
 	light_range = 2
 	light_power = 0.80
-		baseturfs = /turf/open/floor/planetary/dirt/beach/dark/lit
+	baseturfs = /turf/open/floor/planetary/dirt/beach/dark/lit
