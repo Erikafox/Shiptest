@@ -271,10 +271,10 @@
 
 /obj/item/storage/belt/medical/webbing/combat/PopulateContents()
 	. = ..()
-	new /obj/item/reagent_containers/hypospray/medipen/stimpack/traitor(src)
-	new /obj/item/reagent_containers/hypospray/medipen/stimpack/traitor(src)
-	new /obj/item/reagent_containers/medigel/silver_sulf(src)
-	new /obj/item/reagent_containers/medigel/styptic(src)
+	new /obj/item/reagent_containers/hypospray/medipen/stimpack(src)
+	new /obj/item/reagent_containers/hypospray/medipen/stimpack(src)
+	new /obj/item/reagent_containers/medigel/hadrakine(src)
+	new /obj/item/reagent_containers/medigel/quardexane(src)
 	new /obj/item/stack/medical/gauze/twelve(src)
 	new /obj/item/stack/medical/splint(src)
 
@@ -527,7 +527,7 @@
 	STR.max_items = 6
 	STR.max_w_class = WEIGHT_CLASS_SMALL
 	STR.set_holdable(list(
-		/obj/item/reagent_containers/food/snacks,
+		/obj/item/food,
 		/obj/item/reagent_containers/food/drinks
 		))
 
@@ -535,13 +535,13 @@
 	var/rig_snacks
 	while(contents.len <= amount)
 		rig_snacks = pick(list(
-		/obj/item/reagent_containers/food/snacks/candy,
+		/obj/item/food/candy,
 		/obj/item/reagent_containers/food/drinks/dry_ramen,
-		/obj/item/reagent_containers/food/snacks/chips,
-		/obj/item/reagent_containers/food/snacks/sosjerky,
-		/obj/item/reagent_containers/food/snacks/syndicake,
-		/obj/item/reagent_containers/food/snacks/spacetwinkie,
-		/obj/item/reagent_containers/food/snacks/cheesiehonkers,
+		/obj/item/food/chips,
+		/obj/item/food/sosjerky,
+		/obj/item/food/syndicake,
+		/obj/item/food/spacetwinkie,
+		/obj/item/food/cheesiehonkers,
 		/obj/item/food/nachos,
 		/obj/item/food/cheesynachos,
 		/obj/item/food/cubannachos,

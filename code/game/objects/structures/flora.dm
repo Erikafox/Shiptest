@@ -835,7 +835,6 @@
 		/datum/reagent/toxin/acid/fluacid = -0.4,
 		/datum/reagent/toxin/plantbgone = -0.5,
 		/datum/reagent/napalm = -0.6,
-		/datum/reagent/hellwater = -1,
 		/datum/reagent/liquidgibs = -0.2,
 		/datum/reagent/consumable/ethanol/demonsblood = -0.8,
 		/datum/reagent/medicine/soulus = -0.2
@@ -898,7 +897,7 @@
 			else if (isliving(user))
 				var/mob/living/L = user
 				L.Immobilize(100, TRUE)
-				L.adjust_jitter(50)
+				L.set_timed_status_effect(100 SECONDS, /datum/status_effect/jitter, only_if_higher = TRUE)
 				L.adjustToxLoss(66)
 		return 1
 	else ..()
@@ -959,7 +958,7 @@
 		var/luck = rand(1, 100)
 		if(karma > 100)
 			if(luck > 90)
-				L.reagents.add_reagent(/datum/reagent/medicine/omnizine, 5)
+				L.reagents.add_reagent(/datum/reagent/medicine/panacea, 5)
 			else if (luck > 50)
 				SEND_SIGNAL(L, COMSIG_ADD_MOOD_EVENT, "treekarma", /datum/mood_event/better_tree, name)
 			else if (luck > 25)
@@ -1032,7 +1031,6 @@
 		/datum/reagent/toxin/acid/fluacid = -0.4,
 		/datum/reagent/toxin/plantbgone = -0.5,
 		/datum/reagent/napalm = -0.6,
-		/datum/reagent/hellwater = -1,
 		/datum/reagent/liquidgibs = -0.2,
 		/datum/reagent/consumable/ethanol/demonsblood = -0.8,
 		/datum/reagent/medicine/soulus = -0.2
