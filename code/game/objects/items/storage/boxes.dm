@@ -158,9 +158,13 @@
 /obj/item/storage/box/survival/clip
 	internal_type = /obj/item/tank/internals/emergency_oxygen/engi //clip actually cares about their personnel
 
-/obj/item/storage/box/survival/clip/balaclava
-	mask_type = /obj/item/clothing/mask/balaclava
+/obj/item/storage/box/survival/clip/minutemen
+	mask_type = /obj/item/clothing/mask/balaclava/combat
 	internal_type = /obj/item/tank/internals/emergency_oxygen/double
+
+/obj/item/storage/box/survival/pgf
+	mask_type = /obj/item/clothing/mask/breath/pgfmask
+	internal_type = /obj/item/tank/internals/emergency_oxygen/engi
 
 /obj/item/storage/box/survival/inteq
 	mask_type = /obj/item/clothing/mask/balaclava/inteq
@@ -1477,3 +1481,12 @@
 		)
 	generate_items_inside(items_inside,src)
 
+/obj/item/storage/box/plasticware
+	name = "plasticware box"
+	desc = "Contains plastic forks, spoons and knives for eating food (and other things)."
+
+/obj/item/storage/box/plasticware/PopulateContents()
+	for(var/i in 1 to 3)
+		new /obj/item/kitchen/fork/plastic(src)
+		new /obj/item/kitchen/spoon/plastic(src)
+		new /obj/item/melee/knife/plastic(src)
