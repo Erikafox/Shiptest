@@ -55,7 +55,7 @@
 	var/mob/living/carbon/victim = M
 
 	if(prob(5))
-		var/obj/item/bodypart/open_sore = pick(victim.bodyparts)
+		var/obj/item/bodypart/open_sore = victim.get_random_bodypart()
 		if(IS_ORGANIC_LIMB(open_sore))
 			open_sore.force_wound_upwards(/datum/wound/slash/moderate)
 		M.emote("gasps")
@@ -306,7 +306,7 @@
 		M.adjust_bodytemperature(-reac_volume * TEMPERATURE_DAMAGE_COEFFICIENT * 0.5, 200)
 		M.adjust_fire_stacks(-reac_volume / 2)
 		if(reac_volume >= metabolization_rate)
-			M.ExtinguishMob()
+			M.extinguish_mob()
 
 	if(method == INJECT)
 		M.adjustFireLoss(-2*reac_volume, 0)
