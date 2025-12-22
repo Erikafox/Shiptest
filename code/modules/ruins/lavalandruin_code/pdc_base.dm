@@ -1,5 +1,4 @@
-
-/obj/structure/orbital_cannon/full
+/obj/structure/orbital_cannon
 	name = "Defunct Orbital Cannon"
 	desc = ""
 	icon = 'icons/obj/structures/orbital_gun/orbital_gun.dmi'
