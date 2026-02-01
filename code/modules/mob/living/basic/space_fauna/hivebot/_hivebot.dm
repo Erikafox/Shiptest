@@ -33,7 +33,7 @@
 
 	armor = list("melee" = 25, "bullet" = 10, "laser" = 25, "energy" = 10, "bomb" = 0, "bio" = 0, "rad" = 100, "fire" = 50, "acid" = 0)
 
-	habitable_atmos = IMMUNE_ATMOS_REQS
+	habitable_atmos = null
 	unsuitable_atmos_damage = 0
 	minimum_survivable_temperature = TCMB
 	ai_controller = /datum/ai_controller/basic_controller/hivebot
