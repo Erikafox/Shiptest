@@ -1,3 +1,21 @@
+///Use this to define a new ruinturf and associated subtypes easily.
+///Planetary types should still be explicitly defined for description fluff
+	#define LAVA_TURF_HELPER(turf_type)												\
+		/turf/open/floor/##turf_type/lavaplanet {									\
+		baseturfs = /turf/open/floor/plating/asteroid/basalt/lava_land_surface;		\
+		initial_gas_mix = LAVALAND_DEFAULT_ATMOS;									\
+		planetary_atmos = TRUE;														\
+		light_color = COLOR_LAVAPLANET_LIGHT;										\
+	}																				\
+	/turf/open/floor/##turf_type/lavaplanet/lit {									\
+		light_power = 0.8;															\
+		light_range = 2;															\
+	}																				\
+	/turf/open/floor/##turf_type/lavaplanet/interior {								\
+		planetary_atmos = FALSE;													\
+	}
+
+
 ///baseturf
 
 /turf/open/floor/plating/asteroid/basalt
@@ -187,3 +205,15 @@
 	light_range = 2
 	light_power = 0.6
 	light_color = COLOR_LAVAPLANET_LIGHT
+
+
+//cementcrete
+
+LAVA_TURF_HELPER(concrete)
+LAVA_TURF_HELPER(concrete/slab_1)
+LAVA_TURF_HELPER(concrete/slab_2)
+LAVA_TURF_HELPER(concrete/slab_3)
+LAVA_TURF_HELPER(concrete/slab_4)
+LAVA_TURF_HELPER(concrete/tiles)
+LAVA_TURF_HELPER(concrete/reinforced)
+LAVA_TURF_HELPER(concrete/pavement)
