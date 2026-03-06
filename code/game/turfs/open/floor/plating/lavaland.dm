@@ -207,6 +207,22 @@
 	light_color = COLOR_LAVAPLANET_LIGHT
 
 
+LAVA_TURF_HELPER(plating)
+LAVA_TURF_HELPER(plating/rust)
+
+LAVA_TURF_HELPER(plasteel)
+LAVA_TURF_HELPER(plasteel/dark)
+LAVA_TURF_HELPER(plasteel/white)
+
+LAVA_TURF_HELPER(plasteel/tech/grid)
+LAVA_TURF_HELPER(plasteel/mono/dark)
+
+LAVA_TURF_HELPER(plasteel/patterned/brushed)
+
+LAVA_TURF_HELPER(plasteel/freezer)
+
+LAVA_TURF_HELPER(plasteel/stairs)
+
 //cementcrete
 
 LAVA_TURF_HELPER(concrete)
