@@ -351,7 +351,7 @@
 	dir = 4;
 	pixel_x = -31
 	},
-/turf/open/space/basic,
+/turf/template_noop,
 /area/space)
 "hu" = (
 /obj/machinery/door/airlock/external,
@@ -553,7 +553,7 @@
 /area/space)
 "lI" = (
 /obj/structure/platform/military,
-/turf/open/space/basic,
+/turf/template_noop,
 /area/space)
 "lK" = (
 /obj/structure/platform/military/corner{
@@ -612,17 +612,8 @@
 /turf/open/floor/plasteel/dark,
 /area/space)
 "mB" = (
-/obj/effect/turf_decal/industrial/warning{
-	color = "#eeac2e";
-	dir = 6
-	},
-/obj/machinery/porta_turret/ruin/ngr{
-	dir = 6;
-	pixel_x = -9;
-	pixel_y = 12;
-	id = "mellow_turret"
-	},
-/turf/open/floor/plasteel/tech/grid,
+/mob/living/simple_animal/hostile/alien/sentinel,
+/turf/open/floor/plating/asteroid/obsidian,
 /area/space)
 "mG" = (
 /obj/effect/turf_decal/borderfloorblack,
@@ -1283,7 +1274,7 @@
 /obj/structure/platform/military{
 	dir = 10
 	},
-/turf/open/space/basic,
+/turf/template_noop,
 /area/space)
 "Am" = (
 /obj/structure/cable/yellow{
@@ -1752,15 +1743,9 @@
 /turf/open/floor/plating/asteroid/purple/lit,
 /area/space)
 "IL" = (
-/obj/effect/turf_decal/industrial/warning{
-	color = "#eeac2e";
-	dir = 10
-	},
-/obj/machinery/porta_turret/ruin/ngr{
-	dir = 10;
-	pixel_x = 9;
-	pixel_y = 12;
-	id = "mellow_turret"
+/obj/structure/table,
+/obj/structure/window/plasma/reinforced{
+	dir = 4
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/space)
@@ -2249,6 +2234,19 @@
 /obj/machinery/computer/security,
 /turf/open/space/basic,
 /area/space)
+"Vr" = (
+/obj/effect/turf_decal/industrial/warning{
+	color = "#eeac2e";
+	dir = 6
+	},
+/obj/machinery/porta_turret/ruin/ngr{
+	dir = 6;
+	pixel_x = -9;
+	pixel_y = 12;
+	id = "mellow_turret"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/space)
 "Vs" = (
 /obj/effect/turf_decal/corner/opaque/tan/three_quarters,
 /turf/open/floor/plasteel/dark,
@@ -2332,6 +2330,19 @@
 	},
 /obj/effect/turf_decal/siding/thinplating/dark,
 /turf/open/floor/plasteel/mono/dark,
+/area/space)
+"XT" = (
+/obj/effect/turf_decal/industrial/warning{
+	color = "#eeac2e";
+	dir = 10
+	},
+/obj/machinery/porta_turret/ruin/ngr{
+	dir = 10;
+	pixel_x = 9;
+	pixel_y = 12;
+	id = "mellow_turret"
+	},
+/turf/open/floor/plasteel/tech/grid,
 /area/space)
 "Yf" = (
 /obj/structure/table,
@@ -2957,7 +2968,7 @@ Xr
 Xr
 Xr
 JH
-IL
+XT
 Xr
 Xr
 Xr
@@ -3039,7 +3050,7 @@ TO
 rj
 JH
 JH
-IL
+XT
 Xr
 Xr
 qB
@@ -3145,7 +3156,7 @@ fu
 Kq
 nO
 WJ
-WJ
+mB
 WJ
 WJ
 WJ
@@ -3224,7 +3235,7 @@ vE
 fu
 fu
 Kq
-WJ
+mB
 WJ
 WJ
 WJ
@@ -3810,8 +3821,8 @@ OK
 Ea
 JH
 JH
-Yf
-Yf
+IL
+IL
 Yf
 JH
 WL
@@ -4011,7 +4022,7 @@ cX
 yq
 zN
 JH
-IL
+XT
 yq
 qB
 qB
@@ -4173,7 +4184,7 @@ cX
 yq
 zN
 JH
-mB
+Vr
 yq
 yq
 yq
@@ -4821,14 +4832,14 @@ cX
 cX
 cX
 JH
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
+yq
+yq
+yq
+yq
+yq
+qB
+qB
+qB
 "}
 (31,1,1) = {"
 fu
@@ -4899,17 +4910,17 @@ yq
 yq
 cX
 cX
+yq
+yq
+Fa
+yq
+yq
+yq
+yq
 Rl
-Rl
-Jh
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (32,1,1) = {"
 fu
@@ -4980,17 +4991,17 @@ cX
 cX
 cX
 cX
-Rl
+yq
 zN
 JH
-IL
+XT
+yq
+yq
+yq
 Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (33,1,1) = {"
 fu
@@ -5061,17 +5072,17 @@ cX
 cX
 cX
 cX
-Rl
+yq
 zN
 JH
 JH
-Lg
+UO
+yq
 Rl
 Rl
-Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (34,1,1) = {"
 qB
@@ -5137,22 +5148,22 @@ yq
 BB
 BB
 BB
-Rl
-Rl
-Rl
+yq
+yq
+yq
 cX
 cX
-Rl
+yq
 zN
 JH
-mB
+Vr
+yq
+yq
 Rl
 Rl
-Rl
-Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (35,1,1) = {"
 qB
@@ -5220,20 +5231,20 @@ KM
 KM
 Xr
 Xr
-Rl
+yq
 cX
 cX
+yq
+yq
+Fa
+yq
+yq
+yq
 Rl
 Rl
-Jh
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (36,1,1) = {"
 qB
@@ -5304,17 +5315,17 @@ Xr
 Xr
 cX
 cX
+yq
+yq
+Fa
+yq
+yq
+yq
 Rl
 Rl
-Jh
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (37,1,1) = {"
 qB
@@ -5385,17 +5396,17 @@ Xr
 Xr
 cX
 cX
-Rl
-Rl
-Jh
-Rl
-Rl
-Rl
-Rl
-Rl
+yq
+yq
+Fa
+yq
+yq
 Rl
 Rl
 Rl
+qB
+qB
+qB
 "}
 (38,1,1) = {"
 qB
@@ -5467,16 +5478,16 @@ Xr
 cX
 cX
 Xr
-Rl
-Jh
-Rl
-Rl
-Rl
-Rl
-Rl
+yq
+Fa
+yq
+yq
+yq
 Rl
 Rl
-Rl
+qB
+qB
+qB
 "}
 (39,1,1) = {"
 qB
@@ -5542,7 +5553,7 @@ yq
 KM
 KM
 KM
-Rl
+yq
 Xr
 Xr
 cX
@@ -5555,9 +5566,9 @@ Xr
 Xr
 Rl
 Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (40,1,1) = {"
 qB
@@ -5623,8 +5634,8 @@ yq
 KM
 KM
 KM
-Rl
-Rl
+yq
+yq
 Xr
 cX
 cX
@@ -5636,9 +5647,9 @@ Xr
 Xr
 Rl
 Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (41,1,1) = {"
 qB
@@ -5704,12 +5715,12 @@ yq
 KM
 KM
 KM
-Rl
-Rl
-Rl
+yq
+yq
+yq
 cX
 cX
-Rl
+yq
 Xr
 ba
 Xr
@@ -5717,9 +5728,9 @@ Xr
 Rl
 Rl
 Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (42,1,1) = {"
 qB
@@ -5785,12 +5796,12 @@ yq
 KM
 KM
 KM
-Rl
-Rl
-Rl
+yq
+yq
+yq
 cX
 cX
-Rl
+yq
 Xr
 ba
 Xr
@@ -5798,9 +5809,9 @@ Xr
 Xr
 Rl
 Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (43,1,1) = {"
 qB
@@ -5866,22 +5877,22 @@ yq
 KM
 KM
 KM
-Rl
-Rl
-Rl
+yq
+yq
+yq
 cX
 cX
-Rl
-Rl
-Jh
+yq
+yq
+Fa
 Xr
 Xr
 Xr
 Rl
 Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (44,1,1) = {"
 qB
@@ -5947,22 +5958,22 @@ yq
 KM
 KM
 KM
-Rl
-Rl
-Rl
+yq
+yq
+yq
 cX
 cX
+yq
+yq
+Fa
+yq
+yq
+yq
 Rl
 Rl
-Jh
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (45,1,1) = {"
 qB
@@ -6028,22 +6039,22 @@ yq
 KM
 KM
 KM
-Rl
-Rl
-Rl
+yq
+yq
+yq
 cX
 cX
-Rl
-Rl
-Jh
-Rl
-Rl
-Rl
-Rl
-Rl
+yq
+yq
+Fa
+yq
+yq
 Rl
 Rl
 Rl
+qB
+qB
+qB
 "}
 (46,1,1) = {"
 qB
@@ -6109,22 +6120,22 @@ yq
 KM
 KM
 KM
-Rl
-Rl
-Rl
+yq
+yq
+yq
 cX
 cX
-Rl
-Rl
-Jh
-Rl
-Rl
-Rl
-Rl
-Rl
+yq
+yq
+Fa
+yq
+yq
 Rl
 Rl
 Rl
+qB
+qB
+qB
 "}
 (47,1,1) = {"
 fu
@@ -6190,22 +6201,22 @@ yq
 KM
 KM
 KM
-Rl
-Rl
-Rl
+yq
+yq
+yq
 cX
 cX
-Rl
-Rl
-Jh
-Rl
-Rl
-Rl
-Rl
+yq
+yq
+Fa
+yq
 Rl
 Rl
 Rl
 Rl
+qB
+qB
+qB
 "}
 (48,1,1) = {"
 fu
@@ -6271,22 +6282,22 @@ yq
 KM
 KM
 KM
-Rl
+yq
 JH
 JH
 Rl
 Rl
 JH
-Rl
-Jh
-Rl
-Rl
-Rl
+yq
+Fa
+yq
 Rl
 Rl
 Rl
 Rl
-Rl
+qB
+qB
+qB
 "}
 (49,1,1) = {"
 fu
@@ -6348,26 +6359,26 @@ JH
 wS
 wS
 JH
-Rl
+yq
 KM
 KM
 KM
-Rl
+yq
 JH
 Rl
 Rl
 Rl
 JH
-Rl
-Jh
-Rl
-Rl
-Rl
+yq
+Fa
+yq
 Rl
 Rl
 Rl
 Rl
-Rl
+qB
+qB
+qB
 "}
 (50,1,1) = {"
 fu
@@ -6429,26 +6440,26 @@ JH
 wS
 wS
 JH
-Rl
+yq
 KM
 KM
 KM
-Rl
+yq
 JH
 Rl
 Rl
 Rl
 JH
-Rl
-Jh
-Rl
-Rl
-Rl
-Rl
+yq
+Fa
+yq
+yq
 Rl
 Rl
 Rl
-Rl
+qB
+qB
+qB
 "}
 (51,1,1) = {"
 fu
@@ -6510,11 +6521,11 @@ JH
 wS
 wS
 JH
-Rl
+yq
 KM
 KM
 KM
-Rl
+yq
 JH
 JH
 Rl
@@ -6522,14 +6533,14 @@ Rl
 JH
 JH
 JH
+yq
+yq
 Rl
 Rl
 Rl
-Rl
-Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (52,1,1) = {"
 qB
@@ -6603,14 +6614,14 @@ Rl
 Rl
 Rl
 JH
+yq
 Rl
 Rl
 Rl
 Rl
-Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (53,1,1) = {"
 qB
@@ -6684,14 +6695,14 @@ Rl
 Rl
 Rl
 JH
-IL
+XT
 Rl
 Rl
 Rl
 Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (54,1,1) = {"
 qB
@@ -6770,9 +6781,9 @@ Lg
 Rl
 Rl
 Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (55,1,1) = {"
 qB
@@ -6846,14 +6857,14 @@ Rl
 Rl
 Rl
 JH
-mB
+Vr
 Rl
 Rl
 Rl
 Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (56,1,1) = {"
 qB
@@ -6927,14 +6938,14 @@ Rl
 Rl
 Rl
 JH
+yq
 Rl
 Rl
 Rl
 Rl
-Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (57,1,1) = {"
 qB
@@ -7008,14 +7019,14 @@ EY
 EY
 JH
 JH
+yq
+yq
 Rl
 Rl
 Rl
-Rl
-Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (58,1,1) = {"
 qB
@@ -7088,15 +7099,15 @@ Rl
 Rl
 Rl
 Rl
-Jh
+Fa
+yq
+yq
+yq
 Rl
 Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (59,1,1) = {"
 fu
@@ -7169,15 +7180,15 @@ Rl
 Rl
 Rl
 Rl
-Jh
-Rl
+Fa
+yq
 Xr
 Xr
 Rl
 Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (60,1,1) = {"
 fu
@@ -7250,15 +7261,15 @@ Rl
 Rl
 Rl
 Rl
-Jh
+Fa
 Xr
 Xr
 Rl
 Rl
 Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (61,1,1) = {"
 fu
@@ -7337,9 +7348,9 @@ Xr
 Rl
 Rl
 Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (62,1,1) = {"
 qB
@@ -7418,9 +7429,9 @@ Rl
 Rl
 Rl
 Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (63,1,1) = {"
 qB
@@ -7499,9 +7510,9 @@ Rl
 Rl
 Rl
 Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (64,1,1) = {"
 qB
@@ -7580,9 +7591,9 @@ Rl
 Rl
 Rl
 Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (65,1,1) = {"
 qB
@@ -7661,9 +7672,9 @@ Rl
 Rl
 Rl
 Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (66,1,1) = {"
 qB
@@ -7742,9 +7753,9 @@ Rl
 Rl
 Rl
 Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (67,1,1) = {"
 qB
@@ -7823,9 +7834,9 @@ Rl
 Rl
 Rl
 Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (68,1,1) = {"
 qB
@@ -7904,9 +7915,9 @@ Rl
 Rl
 Rl
 Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (69,1,1) = {"
 qB
@@ -7985,9 +7996,9 @@ Rl
 Rl
 Rl
 Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (70,1,1) = {"
 qB
@@ -8066,9 +8077,9 @@ Rl
 Rl
 Rl
 Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (71,1,1) = {"
 qB
@@ -8147,9 +8158,9 @@ Rl
 Rl
 Rl
 Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (72,1,1) = {"
 qB
@@ -8228,9 +8239,9 @@ Rl
 Rl
 Rl
 Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (73,1,1) = {"
 qB
@@ -8309,9 +8320,9 @@ Rl
 Rl
 Rl
 Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (74,1,1) = {"
 qB
@@ -8360,7 +8371,7 @@ vE
 vE
 vE
 vE
-Rl
+qB
 JH
 JH
 JH
@@ -8385,14 +8396,14 @@ QJ
 QJ
 JH
 JH
-mB
+Vr
 Rl
 Rl
 Rl
 Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (75,1,1) = {"
 qB
@@ -8440,11 +8451,11 @@ vE
 vE
 vE
 vE
-Rl
-Rl
+qB
+qB
 yk
 JH
-mB
+Vr
 Rl
 Rl
 Rl
@@ -8465,15 +8476,15 @@ Rl
 Rl
 Rl
 JH
-mB
+Vr
 Rl
 Rl
 Rl
 Rl
 Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
 "}
 (76,1,1) = {"
 qB
@@ -8520,41 +8531,41 @@ vE
 vE
 vE
 vE
-Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
+qB
 hm
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
 "}
 (77,1,1) = {"
 qB
@@ -8601,41 +8612,41 @@ vE
 vE
 vE
 vE
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
 "}
 (78,1,1) = {"
 qB
@@ -8682,39 +8693,39 @@ vE
 vE
 vE
 vE
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
-Rl
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
+qB
 "}
