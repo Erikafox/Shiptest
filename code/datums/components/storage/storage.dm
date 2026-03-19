@@ -62,8 +62,12 @@
 
 	var/allow_big_nesting = FALSE					//allow storage objects of the same or greater size.
 
-	var/attack_hand_interact = TRUE					//interact on attack hand.
-	var/quickdraw = FALSE							//altclick interact
+	/// Should left-click open this storage item while equipped?
+	var/attack_hand_interact = TRUE
+	/// Should alt-click open this storage item?
+	var/alt_click_open = TRUE
+	/// Should alt or right click quickly draw the first available item?
+	var/quickdraw = FALSE
 	///can we quickopen storage when it's in a pocket
 	var/pocket_openable = FALSE
 
@@ -104,7 +108,7 @@
 
 	RegisterSignal(parent, COMSIG_TOPIC, PROC_REF(topic_handle))
 
-	RegisterSignal(parent, COMSIG_PARENT_ATTACKBY, PROC_REF(attackby))
+	RegisterSignal(parent, COMSIG_ATOM_ATTACKBY, PROC_REF(attackby))
 
 	RegisterSignal(parent, COMSIG_ATOM_ATTACK_HAND, PROC_REF(on_attack_hand))
 	RegisterSignal(parent, COMSIG_ATOM_ATTACK_PAW, PROC_REF(on_attack_hand))
@@ -122,10 +126,12 @@
 	RegisterSignal(parent, COMSIG_MOVABLE_POST_THROW, PROC_REF(close_all))
 	RegisterSignal(parent, COMSIG_MOVABLE_MOVED, PROC_REF(on_move))
 
-	RegisterSignals(parent, list(COMSIG_CLICK_ALT, COMSIG_ATOM_ATTACK_HAND_SECONDARY, COMSIG_ITEM_ATTACK_SELF_SECONDARY), PROC_REF(on_open_storage_click))
-	RegisterSignal(parent, COMSIG_PARENT_ATTACKBY_SECONDARY, PROC_REF(on_open_storage_attackby))
+	RegisterSignals(parent, list(COMSIG_ATOM_ATTACK_HAND_SECONDARY, COMSIG_ITEM_ATTACK_SELF_SECONDARY), PROC_REF(on_open_storage_click))
+	RegisterSignal(parent, COMSIG_ATOM_ATTACKBY_SECONDARY, PROC_REF(on_open_storage_attackby))
 	RegisterSignal(parent, COMSIG_MOUSEDROP_ONTO, PROC_REF(mousedrop_onto))
 	RegisterSignal(parent, COMSIG_MOUSEDROPPED_ONTO, PROC_REF(mousedrop_receive))
+	if(alt_click_open)
+		RegisterSignal(parent, COMSIG_CLICK_ALT, PROC_REF(on_open_storage_click))
 
 	update_actions()
 
@@ -433,7 +439,7 @@
 			cansee |= M
 		else
 			LAZYREMOVE(is_using, M)
-			UnregisterSignal(M, COMSIG_PARENT_QDELETING)
+			UnregisterSignal(M, COMSIG_QDELETING)
 	return cansee
 
 //Tries to dump content
