@@ -223,6 +223,8 @@ LAVA_TURF_HELPER(plasteel/freezer)
 
 LAVA_TURF_HELPER(plasteel/stairs)
 
+LAVA_TURF_HELPER(engine/hull/reinforced)
+
 //cementcrete
 
 LAVA_TURF_HELPER(concrete)
