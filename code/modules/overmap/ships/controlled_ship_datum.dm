@@ -48,7 +48,8 @@
 	/// List of mob refs indexed by their job instance
 	var/list/datum/weakref/job_holder_refs = list()
 
-	var/list/datum/mind/owner_candidates
+	/// Dictionary of all candidate minds associated with a list containing their real name and whether they are eligible
+	var/list/list/owner_candidates
 
 	/// The mob of the current ship owner. Tracking mostly uses this; that lets us pick up on logouts, which let us
 	/// determine if a player is switching to control of a mob with a different mind, who thus shouldn't be the ship owner.
@@ -507,7 +508,6 @@
 		SStgui.close_uis(helm)
 		helm.say(helm_locked ? "Helm console is now locked." : "Helm console has been unlocked.")
 
-
 /datum/overmap/ship/controlled/alter_token_appearance()
 	if(!source_template)
 		return ..()
@@ -543,6 +543,13 @@
 
 	if(our_helm)
 		our_helm.cancel_jump()
+
+///Checks to see if the ship already has a high priority mission.
+/datum/overmap/ship/controlled/proc/check_for_high_priority_mission()
+	for(var/datum/mission/target_mission as anything in missions)
+		if(target_mission.high_priority == TRUE)
+			return TRUE
+	return FALSE
 
 /datum/overmap/ship/controlled/activate_cloak()
 	. = ..()
