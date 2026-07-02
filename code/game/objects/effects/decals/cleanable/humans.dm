@@ -415,3 +415,5 @@
 	turf_loc_check = FALSE
 	alpha = 180
 	absorb_squirts = FALSE
+
+MAPPING_DIRECTIONAL_HELPERS(/obj/effect/decal/cleanable/blood/splatter/over_window, 30)

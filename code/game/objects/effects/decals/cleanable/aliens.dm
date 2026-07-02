@@ -74,3 +74,13 @@
 /obj/effect/decal/cleanable/xenoblood/xtracks
 	icon_state = "xtracks"
 	random_icon_states = null
+
+/obj/effect/decal/cleanable/xenoblood/xsplatter/over_window
+	layer = ABOVE_WINDOW_LAYER
+	plane = GAME_PLANE
+	turf_loc_check = FALSE
+	alpha = 180
+	absorb_squirts = FALSE
+	random_icon_states = list("xgibbl1", "xgibbl2", "xgibbl3", "xgibbl4", "xgibbl5")
+
+MAPPING_DIRECTIONAL_HELPERS(/obj/effect/decal/cleanable/xenoblood/xsplatter/over_window, 30)
