@@ -126,7 +126,7 @@
 	open_turf_types = list(
 		/turf/open/floor/plating/asteroid/snow/lit = 25
 	)
-	flora_spawn_list = list(
+	flora_spawn_list = list(	
 		/obj/structure/flora/grass/both = 1,
 	)
 	flora_spawn_chance = 30
